@@ -55,12 +55,14 @@ export default function LearnClient({
       const speechFriendly = text
         .replace(/📌/g, "Concept:")
         .replace(/🌍/g, "Example:")
+        .replace(/📖/g, "Textbook Summary:")
         .replace(/📚/g, "Practice Questions:")
+        .replace(/❓/g, "Test your knowledge:")
         .replace(/🔑/g, "Points to remember:")
         .replace(/✅/g, "Learning tip:")
         .replace(/[#*`]/g, "") 
-        .replace(/---+/g, "Next example.") 
-        .slice(0, 3000); 
+        .replace(/---+/g, "Next item.") 
+        .slice(0, 5000); 
 
       // Language detection
       const isHindi = /[\u0900-\u097F]/.test(text);

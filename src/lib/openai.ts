@@ -11,6 +11,11 @@ interface Example {
   illustration?: string;
 }
 
+interface QA {
+  q: string;
+  a: string;
+}
+
 interface LessonContent {
   what: string;
   example: string;
@@ -18,6 +23,8 @@ interface LessonContent {
   tip: string;
   question: string;
   examples?: Example[];
+  textbookContent?: string;
+  qa?: QA[];
 }
 
 const lessons = (lessonsData as unknown) as Record<string, LessonContent>;
@@ -35,6 +42,19 @@ ${ex.illustration ? `\n*Illustration:* ${ex.illustration}` : ''}
 `).join('\n---\n')}
 ` : '';
 
+    const textbookMd = specific.textbookContent ? `
+📖 **Textbook Summary**
+${specific.textbookContent}
+` : '';
+
+    const qaMd = specific.qa ? `
+❓ **Questions & Answers**
+${specific.qa.map((item, i) => `
+**Q${i + 1}: ${item.q}**
+*Ans:* ${item.a}
+`).join('\n')}
+` : '';
+
     return `
 📌 **What is it?**
 ${specific.what}
@@ -42,7 +62,11 @@ ${specific.what}
 🌍 **Real-life Example**
 ${specific.example}
 
+${textbookMd}
+
 ${examplesMd}
+
+${qaMd}
 
 🔑 **Key Points to Remember**
 ${specific.points.map(p => `- ${p}`).join('\n')}

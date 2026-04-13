@@ -346,6 +346,21 @@
         ],
         "illustration": "[58] Million [423] Thousand [202] -> Fifty-eight million..."
       }
+    ],
+    "textbookContent": "Textbook Chapter 1 introduces large numbers and their comparison. It covers the Indian System of Numeration (using lakhs and crores) and the International System (using millions and billions). It also teaches the use of commas to separate periods for easier reading.",
+    "qa": [
+      {
+        "q": "How many lakhs make one million?",
+        "a": "10 lakhs make one million."
+      },
+      {
+        "q": "What is the place value of 5 in 75,307?",
+        "a": "The place value is 5,000 (Five thousand)."
+      },
+      {
+        "q": "Write the greatest 4-digit number using 5, 0, 8, 2 without repetition.",
+        "a": "The greatest number is 8520."
+      }
     ]
   },
   "math_num_2": {
@@ -434,6 +449,17 @@
           "Successor: 1 + 1 = 2.",
           "Predecessor: 1 - 1 = 0."
         ]
+      }
+    ],
+    "textbookContent": "Chapter 2 deals with Whole Numbers (0, 1, 2, 3...). It defines the successor of a number (n+1) and predecessor (n-1). It highlights that zero is the smallest whole number and there is no largest whole number.",
+    "qa": [
+      {
+        "q": "Which is the smallest natural number?",
+        "a": "1 is the smallest natural number."
+      },
+      {
+        "q": "Does the whole number 0 have a predecessor?",
+        "a": "In the set of whole numbers, 0 does not have a predecessor."
       }
     ]
   },
@@ -1540,6 +1566,21 @@
           "Result: A violet color indicates proteins inside."
         ]
       }
+    ],
+    "textbookContent": "NCERT Class 6 Science Chapter 1 focuses on the diversity of food. It explains that food items like boiled rice are made of just two ingredients (rice and water), while a vegetable curry needs many. It introduces the sources of food: Plants provide grains, cereals, and vegetables, while animals give us milk, meat, and eggs.",
+    "qa": [
+      {
+        "q": "Define ingredients.",
+        "a": "Ingredients are the materials needed to prepare a particular food dish."
+      },
+      {
+        "q": "What are the main sources of our food?",
+        "a": "The two main sources are Plants and Animals."
+      },
+      {
+        "q": "Why do we need food?",
+        "a": "Food provides energy for work, helps in growth, and protects our body from diseases."
+      }
     ]
   },
   "sci_food_2": {
@@ -1566,6 +1607,21 @@
         "steps": [
           "Add Roti/Rice (Carbs), Dal/Paneer (Proteins), Ghee (Fats), and Salad/Veggies (Vitamins/Minerals)."
         ]
+      }
+    ],
+    "textbookContent": "This chapter discusses the components of food: Carbohydrates, Proteins, Fats, Vitamins, and Minerals. It states that Carbohydrates mainly provide energy. Fats also give energy, actually much more compared to the same amount of carbohydrates. Proteins are needed for growth and repair. Vitamins help in protecting our body against diseases.",
+    "qa": [
+      {
+        "q": "What is roughage?",
+        "a": "Roughage is dietary fiber found in plant foods that helps our body get rid of undigested food."
+      },
+      {
+        "q": "Which nutrient is known as energy-giving food?",
+        "a": "Carbohydrates and Fats are energy-giving foods."
+      },
+      {
+        "q": "Name the vitamin that keeps our eyes and skin healthy.",
+        "a": "Vitamin A is essential for healthy eyes and skin."
       }
     ]
   },
@@ -1594,6 +1650,17 @@
           "Tree: Tall with single hard trunk (Neem).",
           "Shrub: Medium size with branches near base (Rose)."
         ]
+      }
+    ],
+    "textbookContent": "Plants are classified into Herbs, Shrubs, and Trees based on their size and stem nature. Herbs have green, tender stems and are usually short. Shrubs have branches arising near the base with a hard but not very thick stem. Trees have a very hard, thick brown stem called a trunk.",
+    "qa": [
+      {
+        "q": "How do creepers differ from climbers?",
+        "a": "Creepers spread on the ground, while climbers take support of neighboring structures to climb up."
+      },
+      {
+        "q": "Give an example of a shrub.",
+        "a": "Rose and Lemon are common examples of shrubs."
       }
     ]
   },
@@ -2228,6 +2295,17 @@
           "It helps organize events in the correct order of time."
         ]
       }
+    ],
+    "textbookContent": "Chapter 1: \"What, Where, How and When?\" introduces historical sources. It explains that people lived along river banks centuries ago. It discusses the use of manuscripts (palm leaf/birch bark) and inscriptions (hard surfaces) as primary evidence for reconstructing the past.",
+    "qa": [
+      {
+        "q": "Who are archeologists?",
+        "a": "Archeologists are scientists who study the remains of buildings, objects, and bones to understand the past."
+      },
+      {
+        "q": "What was the language used in ancient manuscripts?",
+        "a": "Most manuscripts were written in Sanskrit, Prakrit, or Tamil."
+      }
     ]
   },
   "ss_his_2": {
@@ -2519,6 +2597,17 @@
           "Inner (rocky): Mercury, Venus, Earth, Mars.",
           "Outer (gaseous/big): Jupiter, Saturn, Uranus, Neptune."
         ]
+      }
+    ],
+    "textbookContent": "Chapter 1 in Geography covers \"The Earth in the Solar System\". It explains celestial bodies like the sun, moon, and stars. It distinguishes between Planets (no heat/light of their own) and Stars (Luminous). It also defines the \"Full Moon\" (Purnima) and \"New Moon\" (Amavasya).",
+    "qa": [
+      {
+        "q": "Why is Venus called Earth's twin?",
+        "a": "Because its size and shape are very similar to those of the Earth."
+      },
+      {
+        "q": "What is an orbit?",
+        "a": "An orbit is the fixed, elliptical path along which planets revolve around the sun."
       }
     ]
   },
@@ -3852,6 +3941,17 @@
           "ಕರ್ನಾಟಕದ ರಾಜ್ಯ ಲಾಂಛನ \"ಗಂಡಭೇರುಂಡ\".",
           "ಇದು ಎರಡು ತಲೆಗಳನ್ನು ಹೊಂದಿರುವ ಕಾಲ್ಪನಿಕ ಪಕ್ಷಿಯಾಗಿದೆ."
         ]
+      }
+    ],
+    "textbookContent": "ಸಿರಿ ಕನ್ನಡ ಪಠ್ಯಪುಸ್ತಕದ ಮೊದಲ ಪಾಠ \"ಕನ್ನಡ ನಾಡು ನುಡಿ\" ಕರ್ನಾಟಕದ ಇತಿಹಾಸ ಮತ್ತು ಸಾಹಿತ್ಯ ಸೌರಭವನ್ನು ಪರಿಚಯಿಸುತ್ತದೆ. ಇದು ಕನ್ನಡ ಕವಿಗಳ ಕೊಡುಗೆ ಮತ್ತು ಭಾಷೆಯ ಪ್ರಾಚೀನತೆಯನ್ನು ವಿವರಿಸುತ್ತದೆ.",
+    "qa": [
+      {
+        "q": "ಕನ್ನಡ ಅತಿ ಪ್ರಾಚೀನ ಭಾಷೆ ಎಂದು ಹೇಗೆ ಹೇಳುವಿರಿ?",
+        "a": "ಕನ್ನಡವು ೨೦೦೦ ವರ್ಷಗಳಿಗೂ ಹೆಚ್ಚು ಕಾಲ ಉಳಿದುಬಂದಿರುವ ಶಾಸನಗಳು ಮತ್ತು ಸಾಹಿತ್ಯವನ್ನು ಹೊಂದಿದೆ."
+      },
+      {
+        "q": "ಜ್ಞಾನಪೀಠ ಪ್ರಶಸ್ತಿ ಎಂದರೇನು?",
+        "a": "ಇದು ಭಾರತೀಯ ಸಾಹಿತ್ಯ ಕ್ಷೇತ್ರದಲ್ಲಿ ನೀಡಲಾಗುವ ಅತ್ಯುನ್ನತ ರಾಷ್ಟ್ರೀಯ ಪ್ರಶಸ್ತಿಯಾಗಿದೆ."
       }
     ]
   },
