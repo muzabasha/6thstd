@@ -58,11 +58,12 @@ export default function LearnClient({
         .replace(/📖/g, "Textbook Summary:")
         .replace(/📚/g, "Practice Questions:")
         .replace(/❓/g, "Test your knowledge:")
+        .replace(/🌟/g, "Learning Scenario:")
         .replace(/🔑/g, "Points to remember:")
         .replace(/✅/g, "Learning tip:")
         .replace(/[#*`]/g, "") 
         .replace(/---+/g, "Next item.") 
-        .slice(0, 5000); 
+        .slice(0, 6500); 
 
       // Language detection
       const isHindi = /[\u0900-\u097F]/.test(text);

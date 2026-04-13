@@ -25,6 +25,7 @@ interface LessonContent {
   examples?: Example[];
   textbookContent?: string;
   qa?: QA[];
+  scenarios?: QA[];
 }
 
 const lessons = (lessonsData as unknown) as Record<string, LessonContent>;
@@ -55,6 +56,14 @@ ${specific.qa.map((item, i) => `
 `).join('\n')}
 ` : '';
 
+    const scenariosMd = specific.scenarios ? `
+🌟 **Scenario-Based Learning**
+${specific.scenarios.map((item, i) => `
+**Scenario ${i + 1}: ${item.q}**
+*Solution:* ${item.a}
+`).join('\n')}
+` : '';
+
     return `
 📌 **What is it?**
 ${specific.what}
@@ -67,6 +76,8 @@ ${textbookMd}
 ${examplesMd}
 
 ${qaMd}
+
+${scenariosMd}
 
 🔑 **Key Points to Remember**
 ${specific.points.map(p => `- ${p}`).join('\n')}

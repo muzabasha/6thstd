@@ -389,6 +389,48 @@
         "q": "Which is larger: 700 or 070?",
         "a": "700 is larger."
       }
+    ],
+    "scenarios": [
+      {
+        "q": "You are counting the population of a small town which is 75,307. Write this in the Indian system.",
+        "a": "Seventy-five thousand three hundred and seven."
+      },
+      {
+        "q": "An international athlete wins 1,500,000 dollars. How many millions is this?",
+        "a": "One point five million dollars."
+      },
+      {
+        "q": "A school library has 9,999 books. If they buy 1 more, what is the new total?",
+        "a": "10,000 (The smallest 5-digit number)."
+      },
+      {
+        "q": "You have digits 4, 0, 7. What is the smallest 3-digit number you can make?",
+        "a": "407. (Zero cannot be at the start)."
+      },
+      {
+        "q": "A truck carries 5,000 kg of wheat. How many grams is this?",
+        "a": "5,000,000 grams (5 million grams)."
+      },
+      {
+        "q": "A runner covers 2 km. Their friend covers 2,000 m. Who ran further?",
+        "a": "Both ran the same distance (2 km = 2,000 m)."
+      },
+      {
+        "q": "You are reading a price tag of 4,50,000. Is this Indian or International system?",
+        "a": "Indian system, because of the comma at the ten-thousand place (Lakhs)."
+      },
+      {
+        "q": "Round your bill of 789 rupees to the nearest hundred for a quick estimate.",
+        "a": "800 rupees."
+      },
+      {
+        "q": "If a map uses 1cm = 100km, and the distance between two cities is 5cm, what is the real distance?",
+        "a": "500 km."
+      },
+      {
+        "q": "A company produces 58,423,202 pens. Write this in word form for an international report.",
+        "a": "Fifty-eight million four hundred twenty-three thousand two hundred and two."
+      }
     ]
   },
   "math_num_2": {
@@ -1669,6 +1711,48 @@
         "q": "Is milk a plant or animal product?",
         "a": "Milk is an animal product obtained from cows, goats, and buffaloes."
       }
+    ],
+    "scenarios": [
+      {
+        "q": "You are making a fruit salad. What are the ingredients you use?",
+        "a": "Fruits like apples, bananas, and grapes, plus honey or lemon juice as additional ingredients."
+      },
+      {
+        "q": "Suhail observes a squirrel eating a nut. What category does the squirrel belong to?",
+        "a": "Herbivore, because it is eating a plant product (nut)."
+      },
+      {
+        "q": "A chef is making Dal. They need water, pulses, and salt. Which of these is an animal product?",
+        "a": "None. All these are plant or mineral products."
+      },
+      {
+        "q": "Riya finds a beehive in her garden. How do the bees help her garden while making honey?",
+        "a": "They pollinate the flowers, which helps more fruits and seeds grow."
+      },
+      {
+        "q": "You see a bird eating both grains and small insects. What is it?",
+        "a": "An Omnivore."
+      },
+      {
+        "q": "If a plant's roots are edible, give an example of what you might pull from the soil.",
+        "a": "Carrots, Radishes, or Beetroots."
+      },
+      {
+        "q": "A farmer grows mustard. He wants to make oil. Which part of the plant will he use?",
+        "a": "The seeds of the mustard plant."
+      },
+      {
+        "q": "You drink a glass of milk every morning. Trace this milk back to its source.",
+        "a": "Milk comes from an animal (cow/buffalo) which eats grass (plant) to produce it."
+      },
+      {
+        "q": "Why do we wash vegetables before cooking them?",
+        "a": "To remove dirt, chemicals, and tiny insects from the ingredients."
+      },
+      {
+        "q": "In a forest, a tiger hunts a deer. Why is the tiger a carnivore?",
+        "a": "Because its diet consists entirely of other animals (meat)."
+      }
     ]
   },
   "sci_food_2": {
@@ -2485,6 +2569,48 @@
       {
         "q": "What do historians call the past?",
         "a": "A collection of stories based on sources."
+      }
+    ],
+    "scenarios": [
+      {
+        "q": "You find a very old palm leaf with writing in your attic. What historical source is this?",
+        "a": "A manuscript."
+      },
+      {
+        "q": "If you are archeologist digging in a field and find a gold coin, what does it tell you about the people who lived there?",
+        "a": "They were likely wealthy and used a system of trade or currency."
+      },
+      {
+        "q": "A river changes its course over 1000 years. How does this affect people living on its banks?",
+        "a": "They might have to move their village (migration) to stay near water."
+      },
+      {
+        "q": "You see a stone pillar with carved messages. Is this a manuscript or an inscription?",
+        "a": "An inscription."
+      },
+      {
+        "q": "Why would a king choose Prakrit for his inscriptions instead of Sanskrit?",
+        "a": "So that common people who didn't know Sanskrit could understand his message."
+      },
+      {
+        "q": "While traveling in Egypt, you see strange symbols on a wall. What is the process of reading these called?",
+        "a": "Decipherment."
+      },
+      {
+        "q": "You find burnt grain in an ancient kitchen. What does this prove?",
+        "a": "That the people used fire and knew how to cook or process grain."
+      },
+      {
+        "q": "A map shows \"Sindhu\" river. Which modern country is this mostly in?",
+        "a": "Pakistan (The Indus river)."
+      },
+      {
+        "q": "You are reading a book written in 2026. Will this be a primary source for people in the year 3000?",
+        "a": "Yes, it will be a source from the past for them."
+      },
+      {
+        "q": "If you want to know what happened 100 years ago in your family, whom would you ask?",
+        "a": "Ancestors or elders (Oral history)."
       }
     ]
   },
@@ -4164,6 +4290,48 @@
       {
         "q": "ಜ್ಞಾನಪೀಠ ಪ್ರಶಸ್ತಿ ಪಡೆದ ಮೊದಲ ಮಹಿಳೆ ಯಾರು?",
         "a": "ಕನ್ನಡದಲ್ಲಿ ಇನ್ನೂ ಮಹಿಳೆಯರು ಜ್ಞಾನಪೀಠ ಪಡೆದಿಲ್ಲ (Ashapurna Devi was first in India)."
+      }
+    ],
+    "scenarios": [
+      {
+        "q": "ನೀವು ಹಲ್ಮಿಡಿ ಗ್ರಾಮಕ್ಕೆ ಭೇಟಿ ನೀಡಿದ್ದೀರಿ. ಅಲ್ಲಿ ನೀವು ನೋಡುವ ಅತಿ ಪ್ರಮುಖ ಐತಿಹಾಸಿಕ ವಸ್ತು ಯಾವುದು?",
+        "a": "ಹಲ್ಮಿಡಿ ಶಾಸನ (ಕನ್ನಡದ ಮೊದಲ ಶಾಸನ)."
+      },
+      {
+        "q": "ಒಬ್ಬ ಬಾಲಕ ಕುವೆಂಪು ಅವರ ಮನೆಗೆ ಹೋಗಿದ್ದಾನೆ. ಅವನು ನೋಡಬಹುದಾದ ಪ್ರಮುಖ ವಸ್ತು ಯಾವುದು?",
+        "a": "ಜ್ಞಾನಪೀಠ ಪ್ರಶಸ್ತಿ ಫಲಕ."
+      },
+      {
+        "q": "ಒಬ್ಬ ಪ್ರವಾಸಿ ಕರ್ನಾಟಕಕ್ಕೆ ಬಂದಾಗ ಮೊದಲು ಯಾವ ಭಾಷೆಯಲ್ಲಿ ಮಾತನಾಡಲು ಪ್ರಯತ್ನಿಸಬೇಕು?",
+        "a": "ಕನ್ನಡದಲ್ಲಿ."
+      },
+      {
+        "q": "ಶಾಲೆಯಲ್ಲಿ ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ ಆಚರಿಸುವಾಗ ಯಾವ ಹಾಡು ಕಡ್ಡಾಯ?",
+        "a": "ಜಯ ಭಾರತ ಜನನಿಯ ತನುಜಾತೆ."
+      },
+      {
+        "q": "ಒಬ್ಬ ಕವಿ ಬೆಟ್ಟದ ಮೇಲೆ ಕುಳಿತು ಪ್ರಕೃತಿಯ ಬಗ್ಗೆ ಬರೆಯುತ್ತಾನೆ. ಇದು ಯಾವ ತರಹದ ಸಾಹಿತ್ಯ?",
+        "a": "ಭಾವಗೀತೆ ಅಥವಾ ನಿಸರ್ಗ ಕವನ."
+      },
+      {
+        "q": "ನೀವು ಹಳೆಯ ಓಲೆಗರಿಗಳನ್ನು ನೋಡಿದಾಗ ಅದನ್ನು ಏನನ್ನುತ್ತೀರಿ?",
+        "a": "ಹಸ್ತಪ್ರತಿ ಅಥವಾ ತಾಳೆಗರಿ."
+      },
+      {
+        "q": "ಒಬ್ಬ ವಿದೇಶಿ ಗೆಳೆಯನಿಗೆ ಕರ್ನಾಟಕದ ಸಂಸ್ಕೃತಿಯ ಬಗ್ಗೆ ತಿಳಿಸಲು ನೀವು ಯಾವ ಕಲೆಯ ಬಗ್ಗೆ ಹೇಳುತ್ತೀರಿ?",
+        "a": "ಯಕ್ಷಗಾನ ಅಥವಾ ವೀರಗಾಸೆ."
+      },
+      {
+        "q": "ಕನ್ನಡ ಅಕ್ಷರಮಾಲೆಯಲ್ಲಿ ೪೯ ಅಕ್ಷರಗಳಿವೆ ಎಂದು ನಿಮ್ಮ ಗೆಳೆಯನಿಗೆ ಹೇಗೆ ವಿವರಿಸುತ್ತೀರಿ?",
+        "a": "ಸ್ವರಗಳು, ವ್ಯಂಜನಗಳು ಮತ್ತು ಯೋಗವಾಹಗಳ ಮೊತ್ತವೇ ೪೯."
+      },
+      {
+        "q": "ವಚನಗಳನ್ನು ಓದುವಾಗ ನೀವು ಗಮನಿಸುವ ಮುಖ್ಯ ಅಂಶ ಯಾವುದು?",
+        "a": "ಸರಳ ಭಾಷೆ ಮತ್ತು ಸಮಾಜದ ಸುಧಾರಣೆಯ ಸಂದೇಶ."
+      },
+      {
+        "q": "ಜ್ಞಾನಪೀಠ ಪ್ರಶಸ್ತಿ ವಿಜೇತರ ಸಾಲಿನಲ್ಲಿ ನೀವು ಯಾರ ಹೆಸರನ್ನು ಮೊದಲು ನೆನಪಿಸಿಕೊಳ್ಳುತ್ತೀರಿ?",
+        "a": "ಕುವೆಂಪು ಅಥವಾ ದ.ರಾ. ಬೇಂದ್ರೆ."
       }
     ]
   },
