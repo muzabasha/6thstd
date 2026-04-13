@@ -1,0 +1,231 @@
+"use client";
+
+import { use, useState, useEffect, useCallback } from "react";
+import { notFound } from "next/navigation";
+import Link from "next/link";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+import curriculumData from "@/data/curriculum.json";
+import AIChat from "@/components/AIChat";
+import VoiceAssistant from "@/components/VoiceAssistant";
+import QuizCard from "@/components/QuizCard";
+import { getSubjectColor, slugify } from "@/lib/utils";
+import { explainTopic } from "@/lib/openai";
+import { markTopicComplete, getSubjectProgress } from "@/lib/storage";
+
+
+type Topic = { id: string; title: string; description: string };
+type Chapter = { title: string; topics: Topic[] };
+type SubjectData = { name: string; icon: string; chapters: Chapter[] };
+
+type Tab = "learn" | "chat" | "quiz";
+
+export default function LearnPage({ params }: { params: Promise<{ subject: string; topicId: string }> }) {
+  const { subject: subjectSlug, topicId } = use(params);
+  const subjects = curriculumData.subjects as SubjectData[];
+
+  // Find subject and topic
+  const subject = subjects.find((s) => slugify(s.name) === subjectSlug);
+  if (!subject) notFound();
+
+  let foundTopic: Topic | null = null;
+  let foundChapter: Chapter | null = null;
+  for (const ch of subject.chapters) {
+    const t = ch.topics.find((tp) => tp.id === topicId);
+    if (t) { foundTopic = t; foundChapter = ch; break; }
+  }
+  if (!foundTopic || !foundChapter) notFound();
+
+  const topic = foundTopic;
+  const chapter = foundChapter;
+  const color = getSubjectColor(subject.name);
+
+  // Adjacent topics
+  const allTopics = subject.chapters.flatMap((c) => c.topics);
+  const currentIdx = allTopics.findIndex((t) => t.id === topicId);
+  const prevTopic = currentIdx > 0 ? allTopics[currentIdx - 1] : null;
+  const nextTopic = currentIdx < allTopics.length - 1 ? allTopics[currentIdx + 1] : null;
+
+  const [tab, setTab] = useState<Tab>("learn");
+  const [explanation, setExplanation] = useState("");
+  const [loadingExplain, setLoadingExplain] = useState(false);
+  const [explainError, setExplainError] = useState("");
+  const [completed, setCompleted] = useState(false);
+  const [voiceInput, setVoiceInput] = useState("");
+  const [speakText, setSpeakText] = useState("");
+
+  // Check if already completed
+  useEffect(() => {
+    const prog = getSubjectProgress(subject.name);
+    setCompleted(prog[topic.id]?.completed ?? false);
+  }, [subject.name, topic.id]);
+
+  // Auto-fetch explanation on tab "learn"
+  const fetchExplanation = useCallback(async () => {
+    setLoadingExplain(true);
+    setExplainError("");
+    try {
+      const text = await explainTopic(subject.name, topic.title);
+      setExplanation(text);
+      setSpeakText(text.replace(/[#*`]/g, "").slice(0, 500));
+    } catch (e: unknown) {
+      setExplainError(e instanceof Error ? e.message : "Failed to load explanation.");
+    } finally {
+      setLoadingExplain(false);
+    }
+  }, [subject.name, topic.title]);
+
+  useEffect(() => {
+    if (tab === "learn" && !explanation) {
+      void fetchExplanation();
+    }
+  }, [tab, explanation, fetchExplanation]);
+
+  const handleMarkDone = () => {
+    markTopicComplete(subject.name, topic.id);
+    setCompleted(true);
+  };
+
+  const handleVoiceTranscript = (text: string) => {
+    setVoiceInput(text);
+    setTab("chat");
+  };
+
+  return (
+    <main style={{ maxWidth: 960, margin: "0 auto", padding: "20px 16px 60px" }}>
+      {/* Breadcrumb */}
+      <div style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 20, fontSize: "0.82rem", color: "var(--text-muted)", flexWrap: "wrap" }}>
+        <Link href="/" style={{ color: "var(--text-muted)", textDecoration: "none" }}>Home</Link>
+        <span>›</span>
+        <Link href={`/subject/${subjectSlug}`} style={{ color: color.text, textDecoration: "none", fontWeight: 600 }}>
+          {subject.name}
+        </Link>
+        <span>›</span>
+        <span style={{ color: "var(--text-secondary)" }}>{chapter.title}</span>
+        <span>›</span>
+        <span style={{ color: "var(--text-primary)", fontWeight: 700 }}>{topic.title}</span>
+      </div>
+
+      {/* Topic header */}
+      <div className="glass" style={{ borderRadius: 20, padding: "22px 26px", marginBottom: 20, position: "relative", overflow: "hidden" }}>
+        <div style={{ position: "absolute", top: 0, right: 0, width: 140, height: 140, background: color.bg, opacity: 0.07, borderRadius: "0 20px 0 100%" }} />
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 12, flexWrap: "wrap" }}>
+          <div>
+            <span style={{ fontSize: "0.72rem", color: color.text, fontWeight: 700, padding: "3px 10px", borderRadius: 99, background: color.badge, marginBottom: 8, display: "inline-block" }}>
+              {chapter.title}
+            </span>
+            <h1 style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 800, fontSize: "clamp(1.2rem,4vw,1.6rem)", lineHeight: 1.25, marginBottom: 6 }}>
+              {topic.title}
+            </h1>
+            <p style={{ color: "var(--text-muted)", fontSize: "0.85rem" }}>{topic.description}</p>
+          </div>
+          <div style={{ display: "flex", flexDirection: "column", gap: 8, alignItems: "flex-end" }}>
+            {completed ? (
+              <div style={{ padding: "6px 14px", borderRadius: 99, background: "rgba(52,211,153,0.15)", border: "1px solid rgba(52,211,153,0.35)", color: "#34d399", fontSize: "0.8rem", fontWeight: 700 }}>
+                ✓ Completed
+              </div>
+            ) : (
+              <button
+                className="btn-secondary"
+                style={{ fontSize: "0.8rem", padding: "6px 14px" }}
+                onClick={handleMarkDone}
+              >
+                Mark as Done ✓
+              </button>
+            )}
+            <VoiceAssistant
+              onTranscript={handleVoiceTranscript}
+              speakText={tab === "learn" ? speakText : undefined}
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* Tabs */}
+      <div style={{ display: "flex", gap: 6, marginBottom: 20, background: "rgba(255,255,255,0.04)", borderRadius: 12, padding: 4 }}>
+        {(["learn", "chat", "quiz"] as Tab[]).map((t) => (
+          <button
+            key={t}
+            onClick={() => setTab(t)}
+            style={{
+              flex: 1,
+              padding: "10px 0",
+              borderRadius: 9,
+              border: "none",
+              background: tab === t ? color.bg : "transparent",
+              color: tab === t ? "white" : "var(--text-muted)",
+              fontWeight: tab === t ? 700 : 500,
+              fontSize: "0.88rem",
+              cursor: "pointer",
+              transition: "all 0.25s ease",
+              boxShadow: tab === t ? `0 4px 16px ${color.glow}` : "none",
+              textTransform: "capitalize",
+            }}
+          >
+            {t === "learn" ? "📖 Learn" : t === "chat" ? "🤖 Ask AI" : "🧠 Quiz"}
+          </button>
+        ))}
+      </div>
+
+      {/* Tab content */}
+      <div>
+        {tab === "learn" && (
+          <div className="glass" style={{ borderRadius: 20, padding: 28 }}>
+            {loadingExplain && (
+              <div style={{ textAlign: "center", padding: "32px 0" }}>
+                <div style={{ fontSize: "2.5rem", animation: "float 2s infinite", marginBottom: 12 }}>🤖</div>
+                <p style={{ color: "var(--text-secondary)", fontWeight: 600 }}>AI is preparing your lesson…</p>
+              </div>
+            )}
+            {explainError && (
+              <div style={{ textAlign: "center", padding: 24 }}>
+                <p style={{ color: "#f87171", marginBottom: 16 }}>⚠️ {explainError}</p>
+                <button className="btn-primary" onClick={() => void fetchExplanation()}>Retry</button>
+              </div>
+            )}
+            {explanation && !loadingExplain && (
+              <div style={{ lineHeight: 1.75, fontSize: "0.95rem", color: "var(--text-secondary)" }}>
+                <ReactMarkdown remarkPlugins={[remarkGfm]}>{explanation}</ReactMarkdown>
+              </div>
+            )}
+          </div>
+        )}
+
+        {tab === "chat" && (
+          <div className="glass" style={{ borderRadius: 20, padding: 24 }}>
+            <AIChat
+              subject={subject.name}
+              topic={topic.title}
+              initialMessage={voiceInput}
+            />
+          </div>
+        )}
+
+        {tab === "quiz" && (
+          <QuizCard subject={subject.name} topic={topic.title} topicId={topic.id} />
+        )}
+      </div>
+
+      {/* Navigation */}
+      <div style={{ display: "flex", justifyContent: "space-between", marginTop: 28, gap: 12 }}>
+        {prevTopic ? (
+          <Link href={`/learn/${subjectSlug}/${prevTopic.id}`} style={{ textDecoration: "none", flex: 1 }}>
+            <div className="glass glass-hover" style={{ borderRadius: 14, padding: "14px 18px" }}>
+              <p style={{ fontSize: "0.72rem", color: "var(--text-muted)", marginBottom: 4 }}>← Previous</p>
+              <p style={{ fontWeight: 700, fontSize: "0.88rem", color: "var(--text-primary)" }}>{prevTopic.title}</p>
+            </div>
+          </Link>
+        ) : <div style={{ flex: 1 }} />}
+
+        {nextTopic ? (
+          <Link href={`/learn/${subjectSlug}/${nextTopic.id}`} style={{ textDecoration: "none", flex: 1 }}>
+            <div className="glass glass-hover" style={{ borderRadius: 14, padding: "14px 18px", textAlign: "right" }}>
+              <p style={{ fontSize: "0.72rem", color: "var(--text-muted)", marginBottom: 4 }}>Next →</p>
+              <p style={{ fontWeight: 700, fontSize: "0.88rem", color: "var(--text-primary)" }}>{nextTopic.title}</p>
+            </div>
+          </Link>
+        ) : <div style={{ flex: 1 }} />}
+      </div>
+    </main>
+  );
+}

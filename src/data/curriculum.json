@@ -1,0 +1,399 @@
+{
+  "subjects": [
+    {
+      "name": "English",
+      "icon": "BookOpen",
+      "chapters": [
+        {
+          "title": "Honeysuckle – Prose",
+          "topics": [
+            { "id": "eng_pr_1", "title": "Who Did Patrick's Homework?", "description": "A boy lets a magical elf do his homework — with surprising results." },
+            { "id": "eng_pr_2", "title": "How the Dog Found Himself a New Master!", "description": "A folktale about a dog searching for the strongest master." },
+            { "id": "eng_pr_3", "title": "Taro's Reward", "description": "A Japanese tale about honesty and its rewards." },
+            { "id": "eng_pr_4", "title": "An Indian-American Woman in Space: Kalpana Chawla", "description": "Biography of India's pioneering woman astronaut." },
+            { "id": "eng_pr_5", "title": "A Different Kind of School", "description": "A school that builds empathy for differently-abled children." },
+            { "id": "eng_pr_6", "title": "Who I Am", "description": "Children from different backgrounds describe their identities." },
+            { "id": "eng_pr_7", "title": "Fair Play", "description": "A story about honesty and the spirit of sportsmanship." },
+            { "id": "eng_pr_8", "title": "A Game of Chance", "description": "Rasheed's adventure and lesson at a fair." },
+            { "id": "eng_pr_9", "title": "Desert Animals", "description": "How animals survive in extreme desert conditions." },
+            { "id": "eng_pr_10", "title": "The Banyan Tree", "description": "An old banyan tree witnesses a fierce battle between a cobra and a mongoose." }
+          ]
+        },
+        {
+          "title": "Honeysuckle – Poems",
+          "topics": [
+            { "id": "eng_po_1", "title": "A House, A Home", "description": "Difference between a house made of bricks and a home made of love." },
+            { "id": "eng_po_2", "title": "The Kite", "description": "A vivid description of a kite soaring through the sky." },
+            { "id": "eng_po_3", "title": "The Quarrel", "description": "A poem about sibling fights and making up." },
+            { "id": "eng_po_4", "title": "Beauty", "description": "Beauty found in nature, work, and truth." },
+            { "id": "eng_po_5", "title": "Where Do All the Teachers Go?", "description": "A child's curiosity about teachers' lives outside school." },
+            { "id": "eng_po_6", "title": "The Wonderful Words", "description": "Celebrating the power and magic of language." },
+            { "id": "eng_po_7", "title": "Vocation", "description": "A child's envy of those who have fun all day." },
+            { "id": "eng_po_8", "title": "Whatif", "description": "A child's night-time worries and 'what if' questions." }
+          ]
+        },
+        {
+          "title": "A Pact with the Sun – Supplementary Reader",
+          "topics": [
+            { "id": "eng_sup_1", "title": "A Tale of Two Birds", "description": "Two birds raised in different environments grow up very differently." },
+            { "id": "eng_sup_2", "title": "The Friendly Mongoose", "description": "A mongoose saves a baby from a snake, but the mother misjudges it." },
+            { "id": "eng_sup_3", "title": "The Shepherd's Treasure", "description": "An honest shepherd is rewarded for his simplicity and integrity." },
+            { "id": "eng_sup_4", "title": "The Old-Clock Shop", "description": "A shopkeeper's generosity earns him an unexpected gift." },
+            { "id": "eng_sup_5", "title": "Tansen", "description": "The legendary musician at Akbar's court and his life story." },
+            { "id": "eng_sup_6", "title": "The Monkey and the Crocodile", "description": "A Jataka tale about a clever monkey outwitting a crocodile." },
+            { "id": "eng_sup_7", "title": "The Wonder Called Sleep", "description": "A scientific look at why we sleep and what happens when we do." },
+            { "id": "eng_sup_8", "title": "A Pact with the Sun", "description": "A sick woman's daughter makes a brave pact with the sun for her health." }
+          ]
+        },
+        {
+          "title": "Grammar & Writing",
+          "topics": [
+            { "id": "eng_gr_1", "title": "Nouns and Pronouns", "description": "Types of nouns (common, proper, abstract, collective) and pronouns." },
+            { "id": "eng_gr_2", "title": "Verbs", "description": "Action verbs, linking verbs, and auxiliary verbs." },
+            { "id": "eng_gr_3", "title": "Adjectives and Adverbs", "description": "Descriptive words for nouns (adjectives) and verbs (adverbs)." },
+            { "id": "eng_gr_4", "title": "Tenses", "description": "Simple past, present, future tenses with examples." },
+            { "id": "eng_gr_5", "title": "Articles and Prepositions", "description": "Using a, an, the and common prepositions correctly." },
+            { "id": "eng_gr_6", "title": "Sentence Formation", "description": "Subject, predicate, types of sentences — declarative, interrogative, imperative." },
+            { "id": "eng_gr_7", "title": "Active and Passive Voice (Basic)", "description": "Understanding who does the action — active vs passive structure." },
+            { "id": "eng_gr_8", "title": "Paragraph Writing", "description": "Writing a coherent paragraph with a topic sentence and supporting details." },
+            { "id": "eng_gr_9", "title": "Letter Writing", "description": "Formal and informal letter formats with examples." },
+            { "id": "eng_gr_10", "title": "Story Writing", "description": "Creating a short story with a beginning, middle, and end." }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mathematics",
+      "icon": "Calculator",
+      "chapters": [
+        {
+          "title": "Knowing Our Numbers",
+          "topics": [
+            { "id": "math_num_1", "title": "Large Numbers", "description": "Reading, writing and comparing numbers up to crores." },
+            { "id": "math_num_2", "title": "Estimation", "description": "Rounding off numbers and estimating sums, differences and products." },
+            { "id": "math_num_3", "title": "Roman Numerals", "description": "Understanding the Roman numeral system and converting numbers." }
+          ]
+        },
+        {
+          "title": "Whole Numbers",
+          "topics": [
+            { "id": "math_wn_1", "title": "Introduction to Whole Numbers", "description": "Natural numbers, zero and the set of whole numbers." },
+            { "id": "math_wn_2", "title": "Number Line", "description": "Representing whole numbers on a number line." },
+            { "id": "math_wn_3", "title": "Properties of Whole Numbers", "description": "Commutativity, associativity, distributivity and identity." }
+          ]
+        },
+        {
+          "title": "Playing with Numbers",
+          "topics": [
+            { "id": "math_pn_1", "title": "Factors and Multiples", "description": "Finding factors and multiples; perfect numbers." },
+            { "id": "math_pn_2", "title": "Prime and Composite Numbers", "description": "Sieve of Eratosthenes; identifying primes and composites." },
+            { "id": "math_pn_3", "title": "HCF and LCM", "description": "Highest Common Factor and Lowest Common Multiple methods." },
+            { "id": "math_pn_4", "title": "Divisibility Rules", "description": "Quick divisibility checks for 2, 3, 4, 5, 6, 8, 9, 10, 11." }
+          ]
+        },
+        {
+          "title": "Basic Geometrical Ideas",
+          "topics": [
+            { "id": "math_geo_1", "title": "Points, Lines and Angles", "description": "Definitions of point, line segment, ray, angle and their types." },
+            { "id": "math_geo_2", "title": "Curves and Polygons", "description": "Open and closed curves; simple and non-simple curves; polygons." },
+            { "id": "math_geo_3", "title": "Triangles and Quadrilaterals", "description": "Parts of a triangle and types of quadrilaterals." }
+          ]
+        },
+        {
+          "title": "Understanding Elementary Shapes",
+          "topics": [
+            { "id": "math_shp_1", "title": "Measuring Line Segments", "description": "Using ruler and divider to measure lengths." },
+            { "id": "math_shp_2", "title": "Angles – Acute, Obtuse, Reflex", "description": "Types and measurement of angles using a protractor." },
+            { "id": "math_shp_3", "title": "2D and 3D Shapes", "description": "Properties of triangles, quadrilaterals, circles; cubes, cylinders, cones." }
+          ]
+        },
+        {
+          "title": "Integers",
+          "topics": [
+            { "id": "math_int_1", "title": "Introduction to Integers", "description": "Negative numbers, zero, positive numbers on a number line." },
+            { "id": "math_int_2", "title": "Addition and Subtraction of Integers", "description": "Rules for adding and subtracting positive and negative integers." }
+          ]
+        },
+        {
+          "title": "Fractions",
+          "topics": [
+            { "id": "math_frac_1", "title": "Introduction to Fractions", "description": "Numerator, denominator and representing fractions on a number line." },
+            { "id": "math_frac_2", "title": "Proper, Improper and Mixed Fractions", "description": "Types of fractions and conversion between them." },
+            { "id": "math_frac_3", "title": "Equivalent Fractions", "description": "Finding equivalent fractions and simplifying to lowest terms." },
+            { "id": "math_frac_4", "title": "Comparing Fractions", "description": "Ordering fractions using LCM of denominators." },
+            { "id": "math_frac_5", "title": "Operations on Fractions", "description": "Adding and subtracting like and unlike fractions." }
+          ]
+        },
+        {
+          "title": "Decimals",
+          "topics": [
+            { "id": "math_dec_1", "title": "Introduction to Decimals", "description": "Tenths, hundredths, thousandths and the decimal point." },
+            { "id": "math_dec_2", "title": "Comparing Decimals", "description": "Ordering decimal numbers by place value." },
+            { "id": "math_dec_3", "title": "Operations on Decimals", "description": "Adding and subtracting decimal numbers in real-life contexts." }
+          ]
+        },
+        {
+          "title": "Data Handling",
+          "topics": [
+            { "id": "math_dh_1", "title": "Recording Data", "description": "Tally marks and frequency tables." },
+            { "id": "math_dh_2", "title": "Bar Graphs and Pictographs", "description": "Drawing and reading bar graphs and pictographs." }
+          ]
+        },
+        {
+          "title": "Mensuration",
+          "topics": [
+            { "id": "math_men_1", "title": "Perimeter", "description": "Calculating the perimeter of squares, rectangles and triangles." },
+            { "id": "math_men_2", "title": "Area", "description": "Area of rectangles and squares using unit squares." }
+          ]
+        },
+        {
+          "title": "Algebra",
+          "topics": [
+            { "id": "math_alg_1", "title": "Introduction to Algebra", "description": "Variables, constants and writing algebraic expressions." },
+            { "id": "math_alg_2", "title": "Simple Equations", "description": "Solving one-step equations using trial and error and systematic methods." }
+          ]
+        },
+        {
+          "title": "Ratio and Proportion",
+          "topics": [
+            { "id": "math_rp_1", "title": "Ratio", "description": "Comparing two quantities; simplifying ratios." },
+            { "id": "math_rp_2", "title": "Proportion", "description": "Equivalent ratios; checking if four numbers are in proportion." },
+            { "id": "math_rp_3", "title": "Unitary Method", "description": "Solving word problems using the unitary method." }
+          ]
+        },
+        {
+          "title": "Symmetry",
+          "topics": [
+            { "id": "math_sym_1", "title": "Line of Symmetry", "description": "Identifying lines of symmetry in 2D shapes and letters." },
+            { "id": "math_sym_2", "title": "Reflection Symmetry", "description": "Mirror images and reflective symmetry." }
+          ]
+        },
+        {
+          "title": "Practical Geometry",
+          "topics": [
+            { "id": "math_pg_1", "title": "Drawing Circles and Arcs", "description": "Using a compass to draw circles of given radius." },
+            { "id": "math_pg_2", "title": "Constructing Line Segments", "description": "Constructing line segments and their perpendicular bisectors." },
+            { "id": "math_pg_3", "title": "Constructing Angles", "description": "Drawing angles with a protractor and constructing special angles." }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Science",
+      "icon": "FlaskConical",
+      "chapters": [
+        {
+          "title": "Biology",
+          "topics": [
+            { "id": "sci_food_1", "title": "Components of Food – Nutrients", "description": "Carbohydrates, proteins, fats, vitamins, minerals and water." },
+            { "id": "sci_food_2", "title": "Balanced Diet & Deficiency Diseases", "description": "Balanced meals and diseases from nutrient deficiency." },
+            { "id": "sci_plt_1", "title": "Types of Plants", "description": "Herbs, shrubs, trees and their characteristics." },
+            { "id": "sci_plt_2", "title": "Parts of a Plant and Their Functions", "description": "Roots, stems, leaves, flowers, fruits and seeds." },
+            { "id": "sci_plt_3", "title": "Photosynthesis", "description": "How plants make food using sunlight, water and CO₂." },
+            { "id": "sci_body_1", "title": "Types of Joints and Movement", "description": "Ball-and-socket, hinge, pivot and fixed joints in the human body." },
+            { "id": "sci_body_2", "title": "Muscles and Skeleton", "description": "How bones and muscles coordinate to produce movement." },
+            { "id": "sci_liv_1", "title": "Habitats – Terrestrial and Aquatic", "description": "Desert, forest, mountain, pond, ocean and other habitats." },
+            { "id": "sci_liv_2", "title": "Adaptation of Living Organisms", "description": "How plants and animals adapt to their environments." }
+          ]
+        },
+        {
+          "title": "Chemistry",
+          "topics": [
+            { "id": "sci_mat_1", "title": "Sorting Materials into Groups", "description": "Properties: appearance, hardness, solubility, transparency, conductivity." },
+            { "id": "sci_sep_1", "title": "Methods of Separation", "description": "Handpicking, threshing, winnowing, sieving, sedimentation, filtration." },
+            { "id": "sci_sep_2", "title": "Evaporation and Condensation", "description": "Separating salt from water; the water cycle." },
+            { "id": "sci_chg_1", "title": "Reversible and Irreversible Changes", "description": "Changes that can be undone vs permanent changes." }
+          ]
+        },
+        {
+          "title": "Physics",
+          "topics": [
+            { "id": "sci_mot_1", "title": "Measurement of Distances", "description": "SI units; measuring length using ruler and tape." },
+            { "id": "sci_mot_2", "title": "Types of Motion", "description": "Rectilinear, circular, oscillatory and periodic motion." },
+            { "id": "sci_lgt_1", "title": "Light and Shadows", "description": "Sources of light; transparent, translucent, opaque; shadow formation." },
+            { "id": "sci_lgt_2", "title": "Reflection of Light", "description": "How mirrors reflect light; pinhole camera." },
+            { "id": "sci_elec_1", "title": "Electric Circuit", "description": "Components of a circuit: cell, bulb, switch, connecting wires." },
+            { "id": "sci_elec_2", "title": "Conductors and Insulators", "description": "Materials that allow or block current flow." },
+            { "id": "sci_mag_1", "title": "Properties of Magnets", "description": "Poles, magnetic field, attraction, repulsion, compass needle." }
+          ]
+        },
+        {
+          "title": "Environment & Resources",
+          "topics": [
+            { "id": "sci_wtr_1", "title": "Sources and Uses of Water", "description": "Rivers, groundwater, rainfall; uses in daily life." },
+            { "id": "sci_wtr_2", "title": "Water Cycle", "description": "Evaporation, condensation, precipitation and collection." },
+            { "id": "sci_air_1", "title": "Composition of Air", "description": "Nitrogen, oxygen, CO₂, water vapour and their roles." },
+            { "id": "sci_grb_1", "title": "Garbage and Waste Management", "description": "Biodegradable vs non-biodegradable; composting; recycling." }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Social Science",
+      "icon": "Globe",
+      "chapters": [
+        {
+          "title": "History – Our Pasts I",
+          "topics": [
+            { "id": "ss_his_1", "title": "What, Where, How and When?", "description": "Introduction to history — sources, timelines, BCE/CE." },
+            { "id": "ss_his_2", "title": "From Hunting–Gathering to Growing Food", "description": "Stone Age hunter-gatherers turning to early farmers." },
+            { "id": "ss_his_3", "title": "In the Earliest Cities", "description": "Harappan / Indus Valley Civilisation — cities, trade, writing." },
+            { "id": "ss_his_4", "title": "What Books and Burials Tell Us", "description": "Vedic period: Rigveda, burial rituals, megalithic graves." },
+            { "id": "ss_his_5", "title": "Kingdoms, Kings and an Early Republic", "description": "Janapadas, Mahajanapadas, rajas and oligarchies." },
+            { "id": "ss_his_6", "title": "New Questions and Ideas", "description": "Rise of Buddhism and Jainism; Upanishads." },
+            { "id": "ss_his_7", "title": "From a Kingdom to an Empire – Ashoka", "description": "Maurya Empire; Ashoka's dhamma and rock edicts." },
+            { "id": "ss_his_8", "title": "Villages, Towns and Trade", "description": "Iron tools, artisans, guilds, Silk Route." },
+            { "id": "ss_his_9", "title": "New Empires and Kingdoms", "description": "Guptas, Pallavas, Chalukyas — art and governance." },
+            { "id": "ss_his_10", "title": "Buildings, Paintings and Books", "description": "Ancient temples, caves, poetry and Sanskrit literature." }
+          ]
+        },
+        {
+          "title": "Geography – The Earth: Our Habitat",
+          "topics": [
+            { "id": "ss_geo_1", "title": "The Earth in the Solar System", "description": "Planets, stars, the moon; Earth's unique features." },
+            { "id": "ss_geo_2", "title": "Globe: Latitudes and Longitudes", "description": "Equator, tropics, polar circles, meridians, time zones." },
+            { "id": "ss_geo_3", "title": "Motions of the Earth", "description": "Rotation (day & night) and revolution (seasons & year)." },
+            { "id": "ss_geo_4", "title": "Maps", "description": "Physical, political and thematic maps; scale, direction, symbols." },
+            { "id": "ss_geo_5", "title": "Major Domains of the Earth", "description": "Lithosphere, hydrosphere, atmosphere, biosphere." },
+            { "id": "ss_geo_6", "title": "Major Landforms of the Earth", "description": "Mountains, plateaus and plains — formation and features." },
+            { "id": "ss_geo_7", "title": "Our Country – India", "description": "Physical features, neighbouring countries, states and capitals." },
+            { "id": "ss_geo_8", "title": "India: Climate, Vegetation and Wildlife", "description": "Monsoon seasons, natural vegetation zones, national parks." }
+          ]
+        },
+        {
+          "title": "Civics – Social and Political Life I",
+          "topics": [
+            { "id": "ss_civ_1", "title": "Understanding Diversity", "description": "Unity in diversity — India's cultural, linguistic, religious mosaic." },
+            { "id": "ss_civ_2", "title": "Diversity and Discrimination", "description": "Types of discrimination; constitutional equality; prejudice." },
+            { "id": "ss_civ_3", "title": "What is Government?", "description": "Democratic vs non-democratic governments; levels of government." },
+            { "id": "ss_civ_4", "title": "Key Elements of a Democratic Government", "description": "Participation, conflict resolution, equality, justice." },
+            { "id": "ss_civ_5", "title": "Panchayati Raj", "description": "Gram Sabha, Gram Panchayat, Panchayat Samiti." },
+            { "id": "ss_civ_6", "title": "Rural Administration", "description": "Patwari, revenue inspector, police station roles." },
+            { "id": "ss_civ_7", "title": "Urban Administration", "description": "Municipal corporations, ward councillors, mayor." },
+            { "id": "ss_civ_8", "title": "Rural Livelihoods", "description": "Farming seasons, landowners vs landless workers, weavers." },
+            { "id": "ss_civ_9", "title": "Urban Livelihoods", "description": "Street vendors, factory workers, salaried professionals." }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Hindi",
+      "icon": "Languages",
+      "chapters": [
+        {
+          "title": "वसंत – गद्य और पद्य",
+          "topics": [
+            { "id": "hin_vas_1", "title": "वह चिड़िया जो", "description": "स्वतंत्रता और प्रकृति-प्रेम पर एक खूबसूरत कविता।" },
+            { "id": "hin_vas_2", "title": "बचपन", "description": "लेखिका की बचपन की यादें और पुराने ज़माने की चीज़ें।" },
+            { "id": "hin_vas_3", "title": "नादान दोस्त", "description": "केशव और श्यामा की चिड़ियों के अण्डों की भोली देखभाल।" },
+            { "id": "hin_vas_4", "title": "चाँद से थोड़ी सी गप्पें", "description": "बच्चे और चाँद के बीच मज़ेदार काल्पनिक बातचीत।" },
+            { "id": "hin_vas_5", "title": "अक्षरों का महत्व", "description": "लेखन कला की खोज और मानव सभ्यता में अक्षरों का महत्व।" },
+            { "id": "hin_vas_6", "title": "पार नज़र के", "description": "एक साहसी बच्चे की कहानी जो अंधकार से लड़ता है।" },
+            { "id": "hin_vas_7", "title": "साथी हाथ बढ़ाना", "description": "मिल-जुलकर काम करने और एकता की शक्ति पर गीत।" },
+            { "id": "hin_vas_8", "title": "ऐसे – ऐसे", "description": "एकांकी नाटक — एक अनोखी और मज़ेदार बीमारी की कहानी।" },
+            { "id": "hin_vas_9", "title": "टिकट एलबम", "description": "डाक टिकट जमा करने के शौक और बच्चों की दोस्ती।" },
+            { "id": "hin_vas_10", "title": "झाँसी की रानी", "description": "वीरांगना रानी लक्ष्मीबाई के शौर्य पर सुभद्रा कुमारी चौहान की ओजस्वी कविता।" }
+          ]
+        },
+        {
+          "title": "बाल राम कथा",
+          "topics": [
+            { "id": "hin_ram_1", "title": "अवधपुरी में राम", "description": "दशरथ के महल में राम और उनके भाइयों का बचपन।" },
+            { "id": "hin_ram_2", "title": "जंगल और जनकपुर", "description": "विश्वामित्र के साथ राम की यात्रा और सीता स्वयंवर।" },
+            { "id": "hin_ram_3", "title": "दो वरदान", "description": "कैकेयी के वरदान और राम का वनवास।" },
+            { "id": "hin_ram_4", "title": "राम का वन-गमन", "description": "राम, सीता और लक्ष्मण का वन की ओर प्रस्थान।" }
+          ]
+        },
+        {
+          "title": "व्याकरण",
+          "topics": [
+            { "id": "hin_gr_1", "title": "संज्ञा एवं सर्वनाम", "description": "Nouns (proper, common, abstract) and pronouns in Hindi." },
+            { "id": "hin_gr_2", "title": "क्रिया एवं विशेषण", "description": "Action words (kriya) and descriptive words (visheshan)." },
+            { "id": "hin_gr_3", "title": "वाक्य रचना", "description": "Types of sentences and their formation in Hindi." },
+            { "id": "hin_gr_4", "title": "पत्र लेखन", "description": "Formal and informal letter writing in Hindi." },
+            { "id": "hin_gr_5", "title": "अनुच्छेद लेखन", "description": "Writing short paragraphs on given topics in Hindi." }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Computer / ICT",
+      "icon": "Monitor",
+      "chapters": [
+        {
+          "title": "Basics of Computers",
+          "topics": [
+            { "id": "comp_1", "title": "What is a Computer?", "description": "Definition, characteristics, types and generations of computers." },
+            { "id": "comp_2", "title": "Input and Output Devices", "description": "Keyboard, mouse, scanner, monitor, printer, speakers." },
+            { "id": "comp_3", "title": "Parts of a Computer", "description": "CPU, RAM, ROM, hard disk, motherboard — functions and roles." }
+          ]
+        },
+        {
+          "title": "Software and OS",
+          "topics": [
+            { "id": "comp_os_1", "title": "Operating System Basics", "description": "Desktop, taskbar, icons, start menu — navigating Windows." },
+            { "id": "comp_os_2", "title": "Files and Folders", "description": "Creating, renaming, moving, copying and deleting files and folders." }
+          ]
+        },
+        {
+          "title": "MS Word / Docs",
+          "topics": [
+            { "id": "comp_word_1", "title": "Typing and Formatting Text", "description": "Font, size, bold, italic, underline, alignment and spacing." },
+            { "id": "comp_word_2", "title": "Inserting and Editing", "description": "Images, tables, headers, footers and page layout." }
+          ]
+        },
+        {
+          "title": "Paint and Drawing Tools",
+          "topics": [
+            { "id": "comp_paint_1", "title": "MS Paint Basics", "description": "Drawing tools, colours, shapes, eraser and fill in MS Paint." },
+            { "id": "comp_paint_2", "title": "Digital Art", "description": "Creating simple digital artworks using drawing tools." }
+          ]
+        },
+        {
+          "title": "Internet Basics",
+          "topics": [
+            { "id": "comp_net_1", "title": "What is the Internet?", "description": "World Wide Web, browsers (Chrome, Firefox) and search engines." },
+            { "id": "comp_net_2", "title": "Email Basics", "description": "Sending, receiving and managing email; inbox and attachments." },
+            { "id": "comp_net_3", "title": "Cyber Safety", "description": "Online safety rules, protecting personal info, identifying scams." }
+          ]
+        },
+        {
+          "title": "Introduction to Coding",
+          "topics": [
+            { "id": "comp_prog_1", "title": "Introduction to Scratch", "description": "Blocks, sprites, backdrops — creating simple animations." },
+            { "id": "comp_prog_2", "title": "Loops and Conditions in Scratch", "description": "Repeat blocks, if-else, events and interactive projects." },
+            { "id": "comp_prog_3", "title": "Introduction to Blockly", "description": "Visual coding with Blockly for simple algorithms." }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "General Knowledge",
+      "icon": "Lightbulb",
+      "chapters": [
+        {
+          "title": "Current Affairs",
+          "topics": [
+            { "id": "gk_ca_1", "title": "National Events and Achievements", "description": "Important national news, sports wins, scientific achievements." },
+            { "id": "gk_ca_2", "title": "International Events", "description": "Major world events, organisations (UN, WHO) and their roles." }
+          ]
+        },
+        {
+          "title": "India & World Facts",
+          "topics": [
+            { "id": "gk_ind_1", "title": "India – States, Capitals and Symbols", "description": "29 states, capitals, national bird, animal, tree and flower." },
+            { "id": "gk_ind_2", "title": "World Geography Basics", "description": "Seven continents, five oceans, largest and highest features." },
+            { "id": "gk_ind_3", "title": "Famous Personalities", "description": "Scientists, freedom fighters, artists and sport stars." }
+          ]
+        },
+        {
+          "title": "Basic Science Awareness",
+          "topics": [
+            { "id": "gk_sci_1", "title": "Inventions and Discoveries", "description": "Who invented the telephone, bulb, internet and more." },
+            { "id": "gk_sci_2", "title": "Human Body Basics", "description": "Major organs and their functions — heart, lungs, brain, stomach." }
+          ]
+        }
+      ]
+    }
+  ]
+}
