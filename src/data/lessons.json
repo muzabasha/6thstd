@@ -682,6 +682,23 @@
         ],
         "illustration": "Primes: 2, 3, 5, 7"
       }
+    ],
+    "textbookContent": "Focus on Prime and Composite numbers. Explains the Sieve of Eratosthenes.",
+    "qa": [
+      {
+        "q": "Smallest prime?",
+        "a": "2"
+      },
+      {
+        "q": "Is 1 prime?",
+        "a": "No"
+      }
+    ],
+    "scenarios": [
+      {
+        "q": "You have 7 chocolates. Can you share them exactly equally between two people?",
+        "a": "No, because 7 is a prime number."
+      }
     ]
   },
   "math_pn_3": {
@@ -712,6 +729,19 @@
           "Smallest common multiple is 36."
         ],
         "illustration": "LCM(12, 18) = 36"
+      }
+    ],
+    "textbookContent": "HCF and LCM concepts.",
+    "qa": [
+      {
+        "q": "HCF of 4, 8?",
+        "a": "4"
+      }
+    ],
+    "scenarios": [
+      {
+        "q": "A bell rings every 10 mins, another every 15 mins. When do they ring together?",
+        "a": "After 30 mins (LCM)."
       }
     ]
   },
@@ -946,6 +976,19 @@
           "Result: -20 is smaller."
         ],
         "illustration": "-20 < -10"
+      }
+    ],
+    "textbookContent": "Negative numbers and their representation.",
+    "qa": [
+      {
+        "q": "Is -5 > -1?",
+        "a": "No"
+      }
+    ],
+    "scenarios": [
+      {
+        "q": "Temperature is -5 and drops by 2. What is it now?",
+        "a": "-7"
       }
     ]
   },
@@ -2413,6 +2456,27 @@
           "Collecting rain water from rooftops into underground tanks for later use."
         ]
       }
+    ],
+    "textbookContent": "Chapter on Water explains its importance for animals and plants. It covers the sources of water (oceans, rivers, lakes, groundwater) and the concept of freshwater versus saltwater. It also discusses Drought and Flood conditions.",
+    "qa": [
+      {
+        "q": "What is the main source of water?",
+        "a": "Oceans are the largest source, but rain is the primary source of freshwater."
+      },
+      {
+        "q": "What is groundwater?",
+        "a": "Water found beneath the Earth's surface in the cracks and spaces in soil, sand and rock."
+      }
+    ],
+    "scenarios": [
+      {
+        "q": "It hasn't rained in your village for 2 years. What is this condition called?",
+        "a": "Drought."
+      },
+      {
+        "q": "A factory dumps chemicals into a lake. How does this affect us?",
+        "a": "It pollutes the water source, making it unsafe for drinking and harmful to fish."
+      }
     ]
   },
   "sci_wtr_2": {
@@ -2469,6 +2533,27 @@
           "As we go higher, the air becomes thinner and oxygen becomes less.",
           "Helps them breathe properly at high altitudes."
         ]
+      }
+    ],
+    "textbookContent": "Air is all around us. It is a mixture of nitrogen, oxygen, small amounts of carbon dioxide, water vapor and other gases. The layer of air surrounding the earth is the atmosphere.",
+    "qa": [
+      {
+        "q": "Which gas is highest in air?",
+        "a": "Nitrogen (around 78%)."
+      },
+      {
+        "q": "Importance of Oxygen?",
+        "a": "Essential for respiration and burning."
+      }
+    ],
+    "scenarios": [
+      {
+        "q": "You light a candle and cover it with a glass. Why does it go out?",
+        "a": "Because the oxygen inside the glass is used up, and fire needs oxygen to burn."
+      },
+      {
+        "q": "Why do we see dust particles in a beam of sunlight in a dark room?",
+        "a": "Because air contains tiny suspended dust particles."
       }
     ]
   },
@@ -3805,6 +3890,27 @@
           "Go to the \"Backdrops\" section on the right.",
           "Click \"Choose a Backdrop\" and select a new image."
         ]
+      }
+    ],
+    "textbookContent": "Introduction to Scratch, a block-based visual programming language. It explains Sprites (characters), Stage (background), and Scripts (code blocks that snap together).",
+    "qa": [
+      {
+        "q": "What is a Sprite?",
+        "a": "A character or object that can move and perform actions in Scratch."
+      },
+      {
+        "q": "What is the Green Flag used for?",
+        "a": "To start the execution of the scripts."
+      }
+    ],
+    "scenarios": [
+      {
+        "q": "You want your cat to walk non-stop across the screen. Which block do you use?",
+        "a": "The \"forever\" loop block."
+      },
+      {
+        "q": "You want the backdrop to change when the cat touches a wall. Which block helps?",
+        "a": "The \"Sensing\" block (if touching edge) combined with \"Looks\" (next backdrop)."
       }
     ]
   },
