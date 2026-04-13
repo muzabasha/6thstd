@@ -48,7 +48,7 @@ export default function LearnClient({
     setLoadingExplain(true);
     setExplainError("");
     try {
-      const text = await explainTopic(subjectName, topic.title, topic.description);
+      const text = await explainTopic(subjectName, topic.title, topic.description, topic.id);
       setExplanation(text);
       setSpeakText(text.replace(/[#*`]/g, "").slice(0, 500));
     } catch (e: unknown) {

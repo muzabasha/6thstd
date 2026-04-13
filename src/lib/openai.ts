@@ -1,13 +1,42 @@
-// lib/openai.ts
-// This file has been refactored to remove all OpenAI dependencies
-// and provide accurate, offline topic-wise content.
+import lessonsData from "@/data/lessons.json";
 
 export interface ChatMessage {
   role: "system" | "user" | "assistant";
   content: string;
 }
 
-export async function explainTopic(subject: string, topic: string, description?: string): Promise<string> {
+interface LessonContent {
+  what: string;
+  example: string;
+  points: string[];
+  tip: string;
+  question: string;
+}
+
+const lessons = lessonsData as Record<string, LessonContent>;
+
+export async function explainTopic(subject: string, topic: string, description?: string, topicId?: string): Promise<string> {
+  const specific = topicId ? lessons[topicId] : null;
+
+  if (specific) {
+    return `
+📌 **What is it?**
+${specific.what}
+
+🌍 **Real-life Example**
+${specific.example}
+
+🔑 **Key Points to Remember**
+${specific.points.map(p => `- ${p}`).join('\n')}
+
+✅ **Quick Learning Tip**
+${specific.tip} 🌟
+
+**Let's Think:** ${specific.question}
+    `.trim();
+  }
+
+  // Fallback if not in lessons.json
   const intro = description ? `As we explore ${subject}, let's look at **${topic}**. ${description}` : `Welcome to our ${subject} lesson on **${topic}**!`;
 
   return `
