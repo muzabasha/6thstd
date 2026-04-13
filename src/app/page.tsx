@@ -118,21 +118,7 @@ export default function Dashboard() {
         </div>
       </section>
 
-      {/* ── API Key Warning ── */}
-      {!process.env.NEXT_PUBLIC_OPENAI_API_KEY && (
-        <div style={{
-          padding: "12px 20px",
-          borderRadius: 12,
-          background: "rgba(251,146,60,0.1)",
-          border: "1px solid rgba(251,146,60,0.3)",
-          color: "#fb923c",
-          fontSize: "0.85rem",
-          marginBottom: 32,
-          textAlign: "center",
-        }}>
-          ⚠️ <strong>Set up your OpenAI API key</strong> in <code>.env.local</code> as <code>NEXT_PUBLIC_OPENAI_API_KEY=sk-...</code> to enable AI features.
-        </div>
-      )}
+
 
       {/* ── Subject Cards ── */}
       <section>

@@ -91,7 +91,7 @@ export default function AIChat({ subject, topic, initialMessage }: AIChatProps) 
           fontWeight: 700,
           border: "1px solid rgba(52,211,153,0.3)",
         }}>
-          ● Online
+          ● AI Tutor (Offline)
         </div>
       </div>
 
@@ -113,8 +113,8 @@ export default function AIChat({ subject, topic, initialMessage }: AIChatProps) 
         {messages.length === 0 && (
           <div style={{ textAlign: "center", padding: "24px 0", color: "var(--text-muted)" }}>
             <div style={{ fontSize: "2.5rem", marginBottom: 8 }}>💬</div>
-            <p style={{ fontWeight: 600, marginBottom: 4 }}>Start a conversation!</p>
-            <p style={{ fontSize: "0.82rem" }}>Ask anything about {topic}</p>
+            <p style={{ fontWeight: 600, marginBottom: 4 }}>Ask the AI Tutor!</p>
+            <p style={{ fontSize: "0.82rem" }}>Enter a question about {topic}</p>
           </div>
         )}
 
