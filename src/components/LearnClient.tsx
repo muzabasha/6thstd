@@ -50,7 +50,31 @@ export default function LearnClient({
     try {
       const text = await explainTopic(subjectName, topic.title, topic.description, topic.id);
       setExplanation(text);
-      setSpeakText(text.replace(/[#*`]/g, "").slice(0, 500));
+      
+      // Clean up text for screen reading
+      const speechFriendly = text
+        .replace(/📌/g, "Concept:")
+        .replace(/🌍/g, "Example:")
+        .replace(/📚/g, "Practice Questions:")
+        .replace(/🔑/g, "Points to remember:")
+        .replace(/✅/g, "Learning tip:")
+        .replace(/[#*`]/g, "") 
+        .replace(/---+/g, "Next example.") 
+        .slice(0, 3000); 
+
+      // Simple Hindi detection (check for Devanagari characters)
+      const isHindi = /[\u0900-\u097F]/.test(text);
+      
+      setSpeakText(speechFriendly);
+      
+      // Auto-speak on first load with correct language
+      setTimeout(() => {
+        window.speechSynthesis?.cancel();
+        const utt = new SpeechSynthesisUtterance(speechFriendly);
+        utt.lang = isHindi ? "hi-IN" : "en-IN";
+        utt.rate = 0.9;
+        window.speechSynthesis?.speak(utt);
+      }, 500);
     } catch (e: unknown) {
       setExplainError(e instanceof Error ? e.message : "Failed to load explanation.");
     } finally {
@@ -168,6 +192,21 @@ export default function LearnClient({
             )}
             {explanation && !loadingExplain && (
               <div style={{ lineHeight: 1.75, fontSize: "0.95rem", color: "var(--text-secondary)" }}>
+                <div style={{ display: "flex", justifyContent: "flex-end", marginBottom: 15 }}>
+                  <button 
+                    onClick={() => {
+                        window.speechSynthesis?.cancel();
+                        const utt = new SpeechSynthesisUtterance(speakText);
+                        utt.lang = "en-IN";
+                        utt.rate = 0.9;
+                        window.speechSynthesis?.speak(utt);
+                    }}
+                    className="btn-secondary"
+                    style={{ fontSize: "0.78rem", padding: "5px 12px", display: "flex", alignItems: "center", gap: 6 }}
+                  >
+                    🔊 Read Lesson Aloud
+                  </button>
+                </div>
                 <ReactMarkdown remarkPlugins={[remarkGfm]}>{explanation}</ReactMarkdown>
               </div>
             )}
