@@ -8,7 +8,26 @@
       "Patrick develops a habit of working hard by the end"
     ],
     "tip": "Self-help is the best help! Patrick thought the elf was helping, but he was helping himself!",
-    "question": "Who do you think really did the homework — Patrick or the elf?"
+    "question": "Who do you think really did the homework — Patrick or the elf?",
+    "examples": [
+      {
+        "question": "Describe why the elf needed Patrick's help despite promising to do his homework.",
+        "steps": [
+          "The elf was tiny and knew nothing about human subjects like history or math.",
+          "He needed Patrick to read the dictionary and guide him through every step.",
+          "This forced Patrick to study harder than he ever had before."
+        ],
+        "illustration": "Little elf sitting on a pile of books, confused"
+      },
+      {
+        "question": "What was Patrick's \"new habit\" at the end of the story?",
+        "steps": [
+          "He cleaned his own room and did all his chores.",
+          "He was always cheerful and never rude to anyone.",
+          "He realized that he had developed his own self-discipline."
+        ]
+      }
+    ]
   },
   "eng_pr_2": {
     "what": "A story about how dogs evolved from wild animals to man's most loyal friends by searching for the strongest master.",
@@ -19,7 +38,25 @@
       "It explains why dogs have been faithful to humans for centuries"
     ],
     "tip": "True strength is not just physical; even lions are afraid of humans because of our intelligence!",
-    "question": "Which animal did the dog think was the strongest before he met Man?"
+    "question": "Which animal did the dog think was the strongest before he met Man?",
+    "examples": [
+      {
+        "question": "Why did the dog decide to serve the Lion after the Bear?",
+        "steps": [
+          "The Bear was afraid of the Lion.",
+          "The dog thought the Lion was the strongest beast in the forest.",
+          "He served the Lion for a long time until he saw the Lion was afraid of Man."
+        ],
+        "illustration": "Dog standing proudly next to a large lion"
+      },
+      {
+        "question": "Why is Man considered the best master by the dog?",
+        "steps": [
+          "Unlike wild animals, Man is intelligent and provides safety and love.",
+          "The dog realized that no wild beast could truly overpower a humans brain."
+        ]
+      }
+    ]
   },
   "eng_pr_3": {
     "what": "Taro is a thoughtful and loving son who works hard as a woodcutter to provide for his elderly parents.",
@@ -30,7 +67,25 @@
       "The Emperor of Japan rewards Taro for his goodness and devotion"
     ],
     "tip": "Kindness and hard work are always rewarded in unexpected ways!",
-    "question": "Why did the other villagers only get cold water from the waterfall?"
+    "question": "Why did the other villagers only get cold water from the waterfall?",
+    "examples": [
+      {
+        "question": "Why was the waterfall \"magical\" for Taro but just cold water for others?",
+        "steps": [
+          "The waterfall rewarded Taro for being a thoughtful and kind son.",
+          "Others were greedy and only wanted the sake for themselves.",
+          "It shows that goodness is acknowledged by nature itself."
+        ],
+        "illustration": "Taro filling his pitcher with golden liquid"
+      },
+      {
+        "question": "How did the Emperor reward Taro's kind heart?",
+        "steps": [
+          "Given him twenty pieces of gold.",
+          "Named the most beautiful fountain in the city after him."
+        ]
+      }
+    ]
   },
   "eng_pr_4": {
     "what": "An inspiring biography of Kalpana Chawla, the first Indian-origin woman to go into space.",
@@ -41,7 +96,23 @@
       "Her life teaches us that the path from dreams to success does exist"
     ],
     "tip": "No dream is too big if you have the courage to pursue it!",
-    "question": "What was the name of the space shuttle Kalpana Chawla was in?"
+    "question": "What was the name of the space shuttle Kalpana Chawla was in?",
+    "examples": [
+      {
+        "question": "Mention two major achievements of Kalpana Chawla.",
+        "steps": [
+          "Became the first Indian-origin woman to go into space.",
+          "Spent over 372 hours in space across her missions."
+        ],
+        "illustration": "Kalpana Chawla in a blue space suit"
+      },
+      {
+        "question": "What was her message for students in India?",
+        "steps": [
+          "\"The path from dreams to success does exist. May you have the vision to find it.\""
+        ]
+      }
+    ]
   },
   "eng_pr_5": {
     "what": "A story about an innovative school where students spend days pretending to be blind, deaf, or lame to learn empathy.",
@@ -52,7 +123,25 @@
       "Students learn to help one another through these experiences"
     ],
     "tip": "Understanding other people's pain makes you a better person.",
-    "question": "Why did Miss Beam make every child have one 'blind day' in the term?"
+    "question": "Why did Miss Beam make every child have one 'blind day' in the term?",
+    "examples": [
+      {
+        "question": "Why did the children have a \"lame day\" or a \"blind day\"?",
+        "steps": [
+          "To experience the difficulties faced by differently-abled people.",
+          "To learn how to help others with kindness and patience.",
+          "The system builds deep empathy and human values."
+        ],
+        "illustration": "Child with a bandage over eyes, guided by a friend"
+      },
+      {
+        "question": "What did the narrator learn after his visit to Miss Beam's school?",
+        "steps": [
+          "He realized that he was ten times more thoughtful than before.",
+          "He understood that true education is about learning to be kind."
+        ]
+      }
+    ]
   },
   "eng_pr_6": {
     "what": "This chapter introduces different children like Radha, Nasir, and Rohit, sharing their unique dreams and hobbies.",
@@ -2120,7 +2209,26 @@
       "History helps us understand how our ancestors lived"
     ],
     "tip": "BC/BCE means Before Common Era; AD/CE means Common Era.",
-    "question": "Where were manuscripts usually written in ancient India?"
+    "question": "Where were manuscripts usually written in ancient India?",
+    "examples": [
+      {
+        "question": "If you found an old inscription on a stone, how would a historian try to identify its age?",
+        "steps": [
+          "Look for dates or names of kings mentioned in the text.",
+          "Analyze the script or language used (e.g., Brahmi script is ancient).",
+          "Use scientific methods like carbon dating if organic material is nearby."
+        ],
+        "illustration": "Stone with carved symbols = Inscription"
+      },
+      {
+        "question": "Why do we study history using timelines like BC and AD?",
+        "steps": [
+          "BC/BCE stands for years before the birth of Christ (counts backwards).",
+          "AD/CE stands for years after his birth (counts forwards).",
+          "It helps organize events in the correct order of time."
+        ]
+      }
+    ]
   },
   "ss_his_2": {
     "what": "Early humans were hunter-gatherers who later learned to farm and live in one place.",
@@ -2131,7 +2239,26 @@
       "The wheel was a major invention of this period"
     ],
     "tip": "The Paleolithic age is also known as the Old Stone Age.",
-    "question": "Why did early humans live in caves?"
+    "question": "Why did early humans live in caves?",
+    "examples": [
+      {
+        "question": "Describe how early humans accidental discovery of fire changed their lives.",
+        "steps": [
+          "Used fire to cook meat, making it easier to digest.",
+          "Used fire as a light source in dark caves.",
+          "Used it to scare away dangerous wild animals."
+        ],
+        "illustration": "Fire = Light, Heat, and Protection"
+      },
+      {
+        "question": "Why did early humans settle near rivers?",
+        "steps": [
+          "Rivers provided plenty of water for drinking and daily use.",
+          "The soil near rivers was very fertile for growing crops.",
+          "River routes could be used for simple transportation."
+        ]
+      }
+    ]
   },
   "ss_his_3": {
     "what": "The Indus Valley Civilization (or Harappan) was one of the world's earliest urban cultures with planned cities.",
@@ -2142,7 +2269,25 @@
       "They had an amazing drainage system that was covered"
     ],
     "tip": "Harappan cities were famous for their grid-like street patterns!",
-    "question": "Which civilization is known for its \"Great Bath\"?"
+    "question": "Which civilization is known for its \"Great Bath\"?",
+    "examples": [
+      {
+        "question": "What was so special about the Harappan house planning?",
+        "steps": [
+          "Houses were built in a grid system with straight streets.",
+          "Most houses had separate bathing areas and their own wells.",
+          "Windows were usually small and placed high for privacy."
+        ],
+        "illustration": "Grid-like streets with covered drains"
+      },
+      {
+        "question": "How do we know the Indus Valley people traded with distant lands?",
+        "steps": [
+          "Archeologists found seals from Indus Valley in Mesopotamia (Iraq).",
+          "Precious stones like Lapis Lazuli found in cities came from far-off mountains."
+        ]
+      }
+    ]
   },
   "ss_his_4": {
     "what": "The Vedic period is known for the Vedas, especially the Rigveda, and the megalithic burial sites.",
@@ -2153,7 +2298,25 @@
       "Chariots were drawn by horses and used in battles"
     ],
     "tip": "Iron tools were a major technological leap during the later Vedic period!",
-    "question": "Which is the oldest Veda?"
+    "question": "Which is the oldest Veda?",
+    "examples": [
+      {
+        "question": "How were the Vedas passed down before being written?",
+        "steps": [
+          "Teachers recited the hymns clearly and slowly.",
+          "Students listened, memorized, and repeated them repeatedly.",
+          "This oral tradition kept the knowledge alive for centuries."
+        ],
+        "illustration": "Guru speaking -> Shishya listening and repeating"
+      },
+      {
+        "question": "What can we learn from a Megalith burial site?",
+        "steps": [
+          "Items found with the body tell us about the person's occupation or wealth.",
+          "Circle of stones on top indicates it was a burial marker."
+        ]
+      }
+    ]
   },
   "ss_his_5": {
     "what": "Rise of Mahajanapadas (large kingdoms) like Magadha and republics like Vajji.",
@@ -2164,7 +2327,25 @@
       "Magadha had two very powerful rulers: Bimbisara and Ajatashatru"
     ],
     "tip": "Vajji was a Gana or Sangha, which means it was ruled by a group of people!",
-    "question": "What was the capital of Magadha?"
+    "question": "What was the capital of Magadha?",
+    "examples": [
+      {
+        "question": "Why was Magadha more successful than other Mahajanapadas?",
+        "steps": [
+          "It was surrounded by the Ganga and Son rivers (transport and water).",
+          "It had iron ore mines to make strong weapons and tools.",
+          "It had thick forests nearby providing timber and elephants for the army."
+        ],
+        "illustration": "River + Iron Mines + Forest = Power"
+      },
+      {
+        "question": "What was the role of Rajagriha in Magadha's history?",
+        "steps": [
+          "It was the first capital of Magadha.",
+          "It was surrounded by five hills making it very safe from enemies."
+        ]
+      }
+    ]
   },
   "ss_his_6": {
     "what": "Rise of new religious ideas by Siddhartha (Buddha) and Mahavira, and the philosophy of Upanishads.",
@@ -2175,7 +2356,25 @@
       "The Upanishads discuss the nature of the soul (Atman) and Brahman"
     ],
     "tip": "Buddhacharita is a famous biography of the Buddha!",
-    "question": "What was the original name of the Buddha?"
+    "question": "What was the original name of the Buddha?",
+    "examples": [
+      {
+        "question": "Why did Buddhism become popular among common people?",
+        "steps": [
+          "Buddha taught in Prakrit, the language of the common people.",
+          "He preached equality and rejected the strict caste system.",
+          "He focused on kindness (Ahimsa) and simple living."
+        ],
+        "illustration": "Buddha teaching thousands of people under a tree"
+      },
+      {
+        "question": "What is the meaning of \"Upanishad\"?",
+        "steps": [
+          "Actually means \"sitting near\" a teacher to learn.",
+          "It recording discussions between teachers and students about the soul."
+        ]
+      }
+    ]
   },
   "ss_his_7": {
     "what": "Ashoka was a unique Mauryan ruler who gave up war after the Kalinga battle and spread Dhamma.",
@@ -2186,7 +2385,26 @@
       "The lion capital on our currency is from Ashoka's pillar at Sarnath"
     ],
     "tip": "Ashoka was the first king in world history to give up conquest after winning a war.",
-    "question": "Which battle changed Ashoka's life?"
+    "question": "Which battle changed Ashoka's life?",
+    "examples": [
+      {
+        "question": "Why did Ashoka stop fighting after the Kalinga war?",
+        "steps": [
+          "He saw thousands of deaths and suffering on both sides.",
+          "He felt deep sorrow and realized that victory through force is not true victory.",
+          "He decided to conquer people's hearts through \"Dhamma\"."
+        ],
+        "illustration": "Ashoka looking at a battlefield with sadness"
+      },
+      {
+        "question": "Give an example of Ashoka's Dhamma message.",
+        "steps": [
+          "\"Respect your parents and elders.\"",
+          "\"Be kind to your servants and animals.\"",
+          "\"Do not criticize other people's religions.\""
+        ]
+      }
+    ]
   },
   "ss_his_8": {
     "what": "Growth of towns and trade led to prosperous villages and the rise of the Silk Route.",
@@ -2197,7 +2415,25 @@
       "South India was famous for gold, spices, and precious stones"
     ],
     "tip": "The Silk Route was a network of trade routes connecting China to the West!",
-    "question": "What was a \"Shreni\" in ancient India?"
+    "question": "What was a \"Shreni\" in ancient India?",
+    "examples": [
+      {
+        "question": "How did the use of iron tools change farming?",
+        "steps": [
+          "Iron ploughshares could dig deeper than wooden ones.",
+          "Farmers could prepare tough soil for better crops.",
+          "It led to more food production and the growth of towns."
+        ],
+        "illustration": "Iron plough = More food = Bigger towns"
+      },
+      {
+        "question": "What would a traveling merchant carry along the Silk Route?",
+        "steps": [
+          "Silk from China, cotton from India, spices and precious stones.",
+          "They also carried new ideas and religions back and forth."
+        ]
+      }
+    ]
   },
   "ss_his_9": {
     "what": "After the Mauryas, new dynasties like the Guptas and Pallavas established powerful kingdoms.",
@@ -2208,7 +2444,25 @@
       "The Pallavas and Chalukyas were major powers in South India"
     ],
     "tip": "Prashasti means \"in praise of\" in Sanskrit!",
-    "question": "Who was the court poet of Samudragupta?"
+    "question": "Who was the court poet of Samudragupta?",
+    "examples": [
+      {
+        "question": "What is a Prashasti? Give an example.",
+        "steps": [
+          "It means \"In Praise Of\".",
+          "Samudragupta's prashasti on the Allahabad Pillar is a famous example.",
+          "It lists his bravery and how he defeated many kings."
+        ],
+        "illustration": "Tall pillar with carved Sanskrit poems"
+      },
+      {
+        "question": "How did Samudragupta treat kings of South India?",
+        "steps": [
+          "He defeated them in war but allowed them to rule again.",
+          "They had to pay him tribute and accept his authority."
+        ]
+      }
+    ]
   },
   "ss_his_10": {
     "what": "Ancient India was a hub of great architecture (temples, stupas) and literature.",
@@ -2219,7 +2473,25 @@
       "Puranas and Epics like Ramayana and Mahabharata were compiled"
     ],
     "tip": "The Iron Pillar at Mehrauli has not rusted even after 1500 years!",
-    "question": "Who wrote the book \"Aryabhatiyam\"?"
+    "question": "Who wrote the book \"Aryabhatiyam\"?",
+    "examples": [
+      {
+        "question": "Describe a Stupa.",
+        "steps": [
+          "It is a mound-like structure (Anda) built over sacred relics.",
+          "It has a walkway (Pradakshina patha) for people to go around it.",
+          "The Sanchi Stupa is one of the most famous examples."
+        ],
+        "illustration": "Round dome structure = Stupa"
+      },
+      {
+        "question": "Why is the Mehrauli Iron Pillar a wonder of science?",
+        "steps": [
+          "It is over 1500 years old but has not rusted at all.",
+          "It shows that ancient Indians were masters of metallurgy (working with metal)."
+        ]
+      }
+    ]
   },
   "ss_geo_1": {
     "what": "The Earth is one of the eight planets in the solar system, orbiting the Sun.",
@@ -2230,7 +2502,25 @@
       "Earth is the only planet known to support life"
     ],
     "tip": "Mercury is the closest planet to the sun, but Venus is the hottest!",
-    "question": "Which is the largest planet in our solar system?"
+    "question": "Which is the largest planet in our solar system?",
+    "examples": [
+      {
+        "question": "Why is life possible only on Earth in our solar system?",
+        "steps": [
+          "Earth has the right distance from the sun (not too hot or cold).",
+          "It has air with oxygen to breathe.",
+          "It has precious water in liquid form."
+        ],
+        "illustration": "Earth = Blue Marble with clouds and oceans"
+      },
+      {
+        "question": "Identify the inner and outer planets.",
+        "steps": [
+          "Inner (rocky): Mercury, Venus, Earth, Mars.",
+          "Outer (gaseous/big): Jupiter, Saturn, Uranus, Neptune."
+        ]
+      }
+    ]
   },
   "ss_geo_2": {
     "what": "Latitudes and longitudes are imaginary lines on the globe used to locate any place.",
@@ -2241,7 +2531,25 @@
       "Standard Time in India is based on the 82°30' E longitude"
     ],
     "tip": "Latitudes are like rungs on a ladder; Longitudes go from pole to pole!",
-    "question": "What is the latitude of the North Pole?"
+    "question": "What is the latitude of the North Pole?",
+    "examples": [
+      {
+        "question": "Find the time difference if you move 15 degrees east of Greenwich.",
+        "steps": [
+          "Earth rotates 1 degree in 4 minutes.",
+          "15 degrees x 4 = 60 minutes.",
+          "So, the time would be 1 hour ahead of Greenwich."
+        ],
+        "illustration": "15 deg movement = 1 hour shift"
+      },
+      {
+        "question": "Where is the Torrid Zone located?",
+        "steps": [
+          "It is the area between the Tropic of Cancer (23.5° N) and the Tropic of Capricorn (23.5° S).",
+          "It receives direct sunlight and is the hottest zone."
+        ]
+      }
+    ]
   },
   "ss_geo_3": {
     "what": "The Earth has two motions: Rotation (spinning on axis) and Revolution (moving around the sun).",
@@ -2252,7 +2560,25 @@
       "The tilting of the Earth's axis is why we have different seasons"
     ],
     "tip": "A leap year has 366 days, with an extra day in February!",
-    "question": "What causes day and night on Earth?"
+    "question": "What causes day and night on Earth?",
+    "examples": [
+      {
+        "question": "Why do we have different seasons?",
+        "steps": [
+          "Earth revolves around the sun on a tilted axis.",
+          "When the North Pole tilts toward the sun, it is summer there.",
+          "When it tilts away, it is winter."
+        ],
+        "illustration": "Tilt + Orbit = Changing Seasons"
+      },
+      {
+        "question": "What is an Equinox?",
+        "steps": [
+          "Happens on March 21 and Sep 23.",
+          "The whole world has equal length of day and night because sunlight falls directly on the equator."
+        ]
+      }
+    ]
   },
   "ss_geo_4": {
     "what": "Maps are flat representations of the Earth or parts of it, including physical, political, and thematic types.",
@@ -2263,7 +2589,26 @@
       "Symbols and colors represent different things on a map"
     ],
     "tip": "The top of a map is almost always North!",
-    "question": "What type of map shows rainfall or industries?"
+    "question": "What type of map shows rainfall or industries?",
+    "examples": [
+      {
+        "question": "How to calculate distance on a map using a scale?",
+        "steps": [
+          "Find the scale (e.g., 1 cm = 100 km).",
+          "Measure distance between two cities on map (e.g., 5 cm).",
+          "Multiply: 5 x 100 = 500 km."
+        ],
+        "illustration": "Ruler measure x Scale = Real distance"
+      },
+      {
+        "question": "What do the colors Blue, Brown, and Green represent on a map?",
+        "steps": [
+          "Blue: Water bodies.",
+          "Brown: Mountains/Highlands.",
+          "Green: Plains/Vegetation."
+        ]
+      }
+    ]
   },
   "ss_geo_5": {
     "what": "The four major spheres of Earth: Lithosphere (land), Hydrosphere (water), Atmosphere (air), and Biosphere (life).",
@@ -2274,7 +2619,24 @@
       "Nitrogen and Oxygen are the main gases in the atmosphere"
     ],
     "tip": "Mount Everest is the highest point on the Lithosphere!",
-    "question": "Which is the largest continent on Earth?"
+    "question": "Which is the largest continent on Earth?",
+    "examples": [
+      {
+        "question": "Identify the highest peak and the deepest ocean point.",
+        "steps": [
+          "Highest: Mt. Everest (Lithosphere) - 8848m.",
+          "Deepest: Mariana Trench (Hydrosphere) - over 11,000m."
+        ],
+        "illustration": "Mt. Everest vs Mariana Trench"
+      },
+      {
+        "question": "Name the gas that helps traps heat and keeps Earth warm.",
+        "steps": [
+          "Carbon Dioxide (CO2).",
+          "In small amounts, it is essential but too much causes Global Warming."
+        ]
+      }
+    ]
   },
   "ss_geo_6": {
     "what": "Major landforms include mountains, plateaus, and plains formed by internal and external processes.",
@@ -2285,7 +2647,24 @@
       "Block mountains form when large areas are broken and displaced"
     ],
     "tip": "Most of the world's population lives in plains because they are easy to farm!",
-    "question": "Name a plateau in India."
+    "question": "Name a plateau in India.",
+    "examples": [
+      {
+        "question": "Difference between a Fold Mountain and a Block Mountain.",
+        "steps": [
+          "Fold: Formed by wrinkling of Earth's surface (Himalayas).",
+          "Block: Formed when large areas break and lift up (Vindhyas)."
+        ],
+        "illustration": "Crush = Fold; Crack & Lift = Block"
+      },
+      {
+        "question": "Why are plateaus called \"storehouses of minerals\"?",
+        "steps": [
+          "The Deccan Plateau in India is rich in iron, coal, and manganese deposits.",
+          "The African plateau is famous for gold and diamonds."
+        ]
+      }
+    ]
   },
   "ss_geo_7": {
     "what": "India is a vast country with diverse physical features like the Himalayas, the Thar Desert, and the Coastal Plains.",
@@ -2296,7 +2675,25 @@
       "The Himalayas mean the \"Abode of Snow\""
     ],
     "tip": "India is the 7th largest country in the world by area!",
-    "question": "Which ocean is named after India?"
+    "question": "Which ocean is named after India?",
+    "examples": [
+      {
+        "question": "Identify India's neighbors to the North and South.",
+        "steps": [
+          "North: China, Nepal, Bhutan.",
+          "South: Sri Lanka and Maldives."
+        ],
+        "illustration": "Map of India with surrounding countries"
+      },
+      {
+        "question": "What are the three main ranges of the Himalayas?",
+        "steps": [
+          "Himadri (Great Himalayas) - highest.",
+          "Himachal (Middle Himalayas).",
+          "Shivalik (Outer Himalayas) - lowest."
+        ]
+      }
+    ]
   },
   "ss_geo_8": {
     "what": "Exploring India's tropical monsoon climate, diverse forests, and rich wildlife.",
@@ -2307,7 +2704,24 @@
       "Wildlife sanctuaries protect endangered animals"
     ],
     "tip": "Trees like Neem and Tulsi have great medicinal value!",
-    "question": "What type of climate does India have?"
+    "question": "What type of climate does India have?",
+    "examples": [
+      {
+        "question": "Contrast Evergreen and Deciduous forests.",
+        "steps": [
+          "Evergreen: Trees shed leaves at different times, so never appear bare.",
+          "Deciduous: Trees shed leaves all at once in a specific dry season."
+        ],
+        "illustration": "Green year-round vs Seasonal shedding"
+      },
+      {
+        "question": "Why is the lion \"Project Tiger\" important?",
+        "steps": [
+          "It was launched to save the declining population of tigers in India.",
+          "It helps protect the whole forest ecosystem."
+        ]
+      }
+    ]
   },
   "ss_civ_1": {
     "what": "Diversity means variety — in language, religion, food, and culture. India is a land of great diversity.",
@@ -2318,7 +2732,24 @@
       "Diversity enriches our lives by exposing us to new perspectives"
     ],
     "tip": "Despite our differences, we are all part of one big family — India!",
-    "question": "Who coined the phrase \"Unity in Diversity\"?"
+    "question": "Who coined the phrase \"Unity in Diversity\"?",
+    "examples": [
+      {
+        "question": "How does diversity help in a sports team?",
+        "steps": [
+          "Players from different backgrounds bring different strengths and strategies.",
+          "It teaches teammates to respect and welcome new ideas."
+        ],
+        "illustration": "Team of diverse players working together"
+      },
+      {
+        "question": "How did historical factors lead to diversity in Ladakh?",
+        "steps": [
+          "Being on a trade route, it welcomed people from Tibet and Central Asia.",
+          "It became a place where Buddhism and Islam coexist peacefully."
+        ]
+      }
+    ]
   },
   "ss_civ_2": {
     "what": "Prejudice and stereotypes lead to discrimination. Equality is a fundamental right in democracy.",
@@ -2329,7 +2760,24 @@
       "Untouchability has been abolished by law"
     ],
     "tip": "Treating everyone with respect is the first step toward equality.",
-    "question": "Who is known as the Father of the Indian Constitution?"
+    "question": "Who is known as the Father of the Indian Constitution?",
+    "examples": [
+      {
+        "question": "What is the main difference between a stereotype and a prejudice?",
+        "steps": [
+          "Prejudice is a negative opinion about someone before knowing them.",
+          "Stereotype is fitting a whole group into one fixed image (e.g., \"girls are weak\")."
+        ],
+        "illustration": "Prejudice = \"I don't like them\" ; Stereotype = \"They are all like this\""
+      },
+      {
+        "question": "Mention a constitutional right that promotes equality.",
+        "steps": [
+          "Untouchability is an offense and has been abolished by law.",
+          "Every citizen has equal opportunity for jobs and education."
+        ]
+      }
+    ]
   },
   "ss_civ_3": {
     "what": "Government is a group of people that governs a country or state, making rules and decisions.",
@@ -2340,7 +2788,24 @@
       "Government works at three levels: Local, State, and National"
     ],
     "tip": "Universal Adult Franchise means all adults can vote, regardless of their background.",
-    "question": "What is the minimum age to vote in India?"
+    "question": "What is the minimum age to vote in India?",
+    "examples": [
+      {
+        "question": "Why is the voting age 18 in India?",
+        "steps": [
+          "By 18, citizens are considered mature enough to understand their choices.",
+          "It ensures that the government is chosen by adults who are responsible for their actions."
+        ],
+        "illustration": "Adult citizen casting a vote"
+      },
+      {
+        "question": "Identify two main types of government.",
+        "steps": [
+          "Democracy: People choose their leaders.",
+          "Monarchy: One family rules through generations."
+        ]
+      }
+    ]
   },
   "ss_civ_4": {
     "what": "Democracy works through public participation, resolution of conflict, and ensuring equality and justice.",
@@ -2351,7 +2816,25 @@
       "Equality and justice are the pillars of democratic government"
     ],
     "tip": "The police and courts play a huge role in resolving societal conflicts.",
-    "question": "How often are general elections held in India?"
+    "question": "How often are general elections held in India?",
+    "examples": [
+      {
+        "question": "How do people participate in a democracy other than voting?",
+        "steps": [
+          "By joining peaceful protests or rallies.",
+          "By writing letters to ministers or signing petitions.",
+          "By taking part in television debates and discussions."
+        ],
+        "illustration": "Peaceful march for a cause"
+      },
+      {
+        "question": "How are river water disputes solved?",
+        "steps": [
+          "The Central government steps in to settle disputes between two states.",
+          "Courts might be involved to find a fair sharing system."
+        ]
+      }
+    ]
   },
   "ss_civ_5": {
     "what": "The local government in villages, consisting of the Gram Sabha and the Gram Panchayat.",
@@ -2362,7 +2845,24 @@
       "Panchayati Raj has three levels: Village, Block, and District"
     ],
     "tip": "Gram Sabha is the best example of direct democracy at the root level!",
-    "question": "Who is the head of the Gram Panchayat?"
+    "question": "Who is the head of the Gram Panchayat?",
+    "examples": [
+      {
+        "question": "Who can be a member of the Gram Sabha?",
+        "steps": [
+          "Any adult (18+) who has the right to vote.",
+          "They must live in the area covered by the Panchayat."
+        ],
+        "illustration": "Village meeting under a large tree"
+      },
+      {
+        "question": "How does the Gram Panchayat get its money?",
+        "steps": [
+          "Taxes on houses, marketplaces, and fairs.",
+          "Government grants from the district and state."
+        ]
+      }
+    ]
   },
   "ss_civ_6": {
     "what": "Key officials like the Patwari and the SHO ensure peace and record-keeping in rural areas.",
@@ -2373,7 +2873,24 @@
       "District Collector is the head of the entire district administration"
     ],
     "tip": "The Hindu Succession Amendment Act (2005) gives equal property rights to daughters.",
-    "question": "What is the main job of a Patwari?"
+    "question": "What is the main job of a Patwari?",
+    "examples": [
+      {
+        "question": "If a farmer wants to see his land map, whom should he go to?",
+        "steps": [
+          "He should visit the local Patwari.",
+          "The Patwari maintains records of all land holdings in the area."
+        ],
+        "illustration": "Map showing farmer's field boundaries"
+      },
+      {
+        "question": "What can you do if there is a theft in your house in a village?",
+        "steps": [
+          "Go to the nearest police station.",
+          "Ask the SHO to register an FIR (First Information Report)."
+        ]
+      }
+    ]
   },
   "ss_civ_7": {
     "what": "Urban areas are managed by Municipal Corporations (big cities) or Municipal Councils (smaller towns).",
@@ -2384,7 +2901,24 @@
       "Protests like \"The Surat cleaning drive\" show community power"
     ],
     "tip": "Elected councillors make the policies; appointed officials carry them out.",
-    "question": "What is the head of a Municipal Corporation called?"
+    "question": "What is the head of a Municipal Corporation called?",
+    "examples": [
+      {
+        "question": "Why are cities divided into wards?",
+        "steps": [
+          "Cities are too big for one person to manage.",
+          "Division into wards makes it easy to attend to local problems like street lights or drainage."
+        ],
+        "illustration": "City map divided into color-coded Wards"
+      },
+      {
+        "question": "Where does the Municipal Corporation get money from?",
+        "steps": [
+          "Property tax, water tax, and fees for building permissions.",
+          "State government fund support."
+        ]
+      }
+    ]
   },
   "ss_civ_8": {
     "what": "Farmers, laborers, and artisans earn their living in villages through agriculture and related work.",
@@ -2395,7 +2929,24 @@
       "Fishing is a major livelihood in coastal villages"
     ],
     "tip": "Most rural families depend on agriculture, but many also do pottery or weaving.",
-    "question": "What is the main problem faced by small farmers?"
+    "question": "What is the main problem faced by small farmers?",
+    "examples": [
+      {
+        "question": "What are the main causes of debt for small farmers?",
+        "steps": [
+          "High cost of seeds and fertilizers.",
+          "Failure of crops due to lack of rain or pests.",
+          "Taking loans at very high interest rates from moneylenders."
+        ],
+        "illustration": "Loan cycle = Seeds -> No Rain -> Debt"
+      },
+      {
+        "question": "Identify a non-farming occupation in rural areas.",
+        "steps": [
+          "Pottery, basket weaving, or working in a local sugar mill."
+        ]
+      }
+    ]
   },
   "ss_civ_9": {
     "what": "In cities, people work in factories, offices, and as street vendors or shopkeepers.",
@@ -2406,7 +2957,24 @@
       "Casual workers are hired only when there is more work"
     ],
     "tip": "Service sector (IT, banking) is growing fast in Indian cities!",
-    "question": "Name one benefit of a permanent job compared to a casual job."
+    "question": "Name one benefit of a permanent job compared to a casual job.",
+    "examples": [
+      {
+        "question": "Difference between a self-employed person and a salaried person.",
+        "steps": [
+          "Self-employed: Owns the business, no fixed income (e.g., tailor).",
+          "Salaried: Works for a company, gets fixed monthly pay and benefits."
+        ],
+        "illustration": "Shopkeeper vs Office worker"
+      },
+      {
+        "question": "Mention a challenge faced by street vendors.",
+        "steps": [
+          "They have no permanent space to work.",
+          "Police might ask them to move their stalls at any time."
+        ]
+      }
+    ]
   },
   "hin_vas_1": {
     "what": "यह कविता एक नन्हीं नीले पंखों वाली चिड़िया के बारे में है जो संतोषी है और प्रकृति से प्यार करती है।",
@@ -2417,7 +2985,24 @@
       "यह कविता हमें संतोषी बनने की सीख देती है"
     ],
     "tip": "अपनी छोटी-छोटी खुशियों में आनंद ढूंढना सीखें!",
-    "question": "चिड़िया को किन-किन चीज़ों से प्यार है?"
+    "question": "चिड़िया को किन-किन चीज़ों से प्यार है?",
+    "examples": [
+      {
+        "question": "चिड़िया को \"संतोषी\" क्यों कहा गया है?",
+        "steps": [
+          "वह थोड़े से दाने खाकर भी ख़ुश रहती है।",
+          "वह नदी के बीच से मोती रूपी जल लाती है जिससे उसका मान बढ़ता है।"
+        ],
+        "illustration": "नीले पंखों वाली नन्हीं चिड़िया का चित्र"
+      },
+      {
+        "question": "चिड़िया किन चीज़ों से बहुत प्यार करती है?",
+        "steps": [
+          "उसे अन्न (अनाज के दाने) से बहुत प्यार है।",
+          "उसे विजन (एकांत) और नदी से बहुत गहरा लगाव है।"
+        ]
+      }
+    ]
   },
   "hin_vas_2": {
     "what": "लेखिका कृष्णा सोबती अपने बचपन की यादें साझा करती हैं और बताती हैं कि तब और अब के समय में कितना बदलाव आया है।",
@@ -2428,7 +3013,23 @@
       "समय के साथ खाने-पीने और पहनावे में भी बहुत बदलाव आया है"
     ],
     "tip": "बड़ों के अनुभवों से सीखना हमेशा दिलचस्प होता है!",
-    "question": "लेखिका बचपन में इतवार की सुबह क्या-क्या काम करती थी?"
+    "question": "लेखिका बचपन में इतवार की सुबह क्या-क्या काम करती थी?",
+    "examples": [
+      {
+        "question": "लेखिका के समय की कुल्फी अब किस चीज़ में बदल गई है?",
+        "steps": [
+          "लेखिका जब बच्ची थीं तो कुल्फी होती थी।",
+          "आजकल वह कुल्फी आइसक्रीम (Ice-cream) में बदल गई है।"
+        ],
+        "illustration": "कुल्फी का चित्र बनाम आधुनिक आइसक्रीम"
+      },
+      {
+        "question": "लेखिका को शनिवार को क्या कड़वी चीज़ पीनी पड़ती थी?",
+        "steps": [
+          "लेखिका को तंदुरुस्ती के लिए शनिवार को \"कैस्टर ऑयल\" या \"ओलिव ऑयल\" पीना पड़ता था।"
+        ]
+      }
+    ]
   },
   "hin_vas_3": {
     "what": "केशव और श्यामा दो भाई-बहन हैं जो चिड़िया के अंडों की हिफाजत करना चाहते हैं, लेकिन अपनी नादानी में उन्हें खराब कर देते हैं।",
@@ -2439,7 +3040,24 @@
       "यह कहानी बाल सुलभ जिज्ञासा और नादानी को दर्शाती है"
     ],
     "tip": "जीव-जंतुओं की मदद करने से पहले उनके बारे में सही जानकारी ले लेनी चाहिए।",
-    "question": "केशव ने अंडों के लिए कार्निस पर क्या-क्या चीज़ें रखी थीं?"
+    "question": "केशव ने अंडों के लिए कार्निस पर क्या-क्या चीज़ें रखी थीं?",
+    "examples": [
+      {
+        "question": "अंडों को छूने के बाद चिड़िया ने क्या किया और क्यों?",
+        "steps": [
+          "चिड़िया ने अंडों को घोंसले से नीचे गिरा दिया।",
+          "चिड़िया के अनुसार इंसान के छूने से अंडे गंदे हो जाते हैं और वह फिर उन्हें नहीं सेती।"
+        ],
+        "illustration": "केशव का उदास चेहरा और टूटे हुए अंडे"
+      },
+      {
+        "question": "श्यामा ने केशव की क्या मदद की थी?",
+        "steps": [
+          "श्यामा ने स्टूल के नीचे पुरानी धोती की गद्दी बनाकर दी थी।",
+          "वह दरवाज़े पर नज़र रख रही थी कि कहीं अम्मा न आ जाएँ।"
+        ]
+      }
+    ]
   },
   "hin_vas_4": {
     "what": "एक १०-११ साल की बच्ची चाँद को हाथ लगाकर उससे बातें कर रही है और उसकी घटती-बढ़ती आकृति पर अपनी कल्पना व्यक्त कर रही है।",
@@ -2494,7 +3112,23 @@
       "अंत में मास्टर जी ने राज खोला कि यह केवल होमवर्क न करने का डर है"
     ],
     "tip": "ईमानदारी और समय पर काम करना ही सर्वश्रेष्ठ है!",
-    "question": "मोहन की बीमारी का असली कारण क्या था?"
+    "question": "मोहन की बीमारी का असली कारण क्या था?",
+    "examples": [
+      {
+        "question": "मास्टर जी ने मोहन की बीमारी का क्या इलाज बताया?",
+        "steps": [
+          "उन्होंने कहा कि मोहन को \"ऐसे-ऐसे\" की दवा नहीं, बल्कि छुट्टी के दो दिन चाहिए।",
+          "उन्होंने मोहन को स्कूल का अधूरा काम पूरा करने का आदेश दिया।"
+        ],
+        "illustration": "मास्टर जी मुस्कुराते हुए और मोहन का डर"
+      },
+      {
+        "question": "मोहन के माता-पिता क्यों घबरा गए थे?",
+        "steps": [
+          "उन्हें लगा कि मोहन को सच में कोई गंभीर पेट दर्द है जिसे डॉक्टर भी नहीं समझ पा रहे।"
+        ]
+      }
+    ]
   },
   "hin_vas_9": {
     "what": "राजप्पा और नागराजन की टिकट एलबम को लेकर प्रतिस्पर्धा और ईर्ष्या की कहानी।",
@@ -2549,7 +3183,23 @@
       "जैसे: मैं, तुम, वह, हम, आप"
     ],
     "tip": "भाववाचक संज्ञा हमारी भावनाओं को व्यक्त करती है जैसे खुशी या क्रोध।",
-    "question": "संज्ञा के किन्हीं तीन उदाहरणों के नाम बताएं।"
+    "question": "संज्ञा के किन्हीं तीन उदाहरणों के नाम बताएं।",
+    "examples": [
+      {
+        "question": "\"हिमालय बहुत ऊँचा पर्वत है\" - इस वाक्य में संज्ञा शब्द पहचानें।",
+        "steps": [
+          "हिमालय (व्यक्तिवाचक संज्ञा) क्योंकि यह एक विशेष पर्वत का नाम है।",
+          "पर्वत (जातिवाचक संज्ञा) क्योंकि यह पूरी पर्वत श्रेणी को दर्शाता है।"
+        ],
+        "illustration": "पर्वतराज हिमालय का चित्र"
+      },
+      {
+        "question": "\"वह जयपुर जा रहा है\" - यहाँ सर्वनाम शब्द कौन सा है?",
+        "steps": [
+          "\"वह\" शब्द सर्वनाम है क्योंकि यह किसी व्यक्ति के नाम (संज्ञा) की जगह आया है।"
+        ]
+      }
+    ]
   },
   "comp_1": {
     "what": "A computer is a smart electronic machine that takes data, processes it, and gives useful output.",
@@ -2560,7 +3210,25 @@
       "First generation used vacuum tubes; now we use microchips"
     ],
     "tip": "The physical parts of a computer are called Hardware; the programs are Software.",
-    "question": "Who is known as the Father of Computing?"
+    "question": "Who is known as the Father of Computing?",
+    "examples": [
+      {
+        "question": "Describe the Input-Process-Output (IPO) cycle for solving a math problem on a calculator.",
+        "steps": [
+          "Input: You type numbers and signs like 5 + 3.",
+          "Process: The CPU calculates the sum internally.",
+          "Output: The number 8 appears on the screen."
+        ],
+        "illustration": "Numbers -> CPU -> Result"
+      },
+      {
+        "question": "Why is a computer called a \"fast\" machine?",
+        "steps": [
+          "It can perform millions of calculations in one second.",
+          "Humans take minutes to solve complex math; computers do it instantly."
+        ]
+      }
+    ]
   },
   "comp_2": {
     "what": "Input devices give data to the computer (keyboard); Output devices show the results (monitor).",
@@ -2571,7 +3239,24 @@
       "A touchscreen is both an input and an output device"
     ],
     "tip": "The most common keyboard layout is called QWERTY!",
-    "question": "Is a printer an input or output device?"
+    "question": "Is a printer an input or output device?",
+    "examples": [
+      {
+        "question": "If you want to put your paper photograph inside the computer, which device will you use?",
+        "steps": [
+          "You will use a Scanner.",
+          "Place photo on the glass, press Scan, and it becomes a digital file."
+        ],
+        "illustration": "Scanner taking photo into the binary world"
+      },
+      {
+        "question": "Identify the output device needed to hear music.",
+        "steps": [
+          "Speakers or Headphones.",
+          "They take digital signals and turn them into sound waves you can hear."
+        ]
+      }
+    ]
   },
   "comp_3": {
     "what": "The brain of the computer (CPU) and its storage (RAM/Hard Disk) work together to perform tasks.",
@@ -2582,7 +3267,25 @@
       "The Motherboard connects all parts together"
     ],
     "tip": "More RAM usually makes your computer faster when multi-tasking!",
-    "question": "What does CPU stand for?"
+    "question": "What does CPU stand for?",
+    "examples": [
+      {
+        "question": "Why is RAM called \"Volatile\" memory?",
+        "steps": [
+          "RAM holds data only as long as the computer is ON.",
+          "If you turn off the computer without saving, data in RAM is deleted.",
+          "That's why we need Hard Disks for permanent storage."
+        ],
+        "illustration": "RAM = Temporary workbench; Disk = Permanent cupboard"
+      },
+      {
+        "question": "What is the function of the Motherboard?",
+        "steps": [
+          "It is the main circuit board that connects CPU, RAM, and all other parts.",
+          "It acts like the nervous system of the computer."
+        ]
+      }
+    ]
   },
   "comp_os_1": {
     "what": "The Operating System (like Windows) is the main software that manages everything on the computer.",
@@ -2648,7 +3351,25 @@
       "The Stage is where the action happens"
     ],
     "tip": "Every script in Scratch starts with an Event block (like \"When Green Flag Clicked\")!",
-    "question": "What is the character in Scratch called?"
+    "question": "What is the character in Scratch called?",
+    "examples": [
+      {
+        "question": "How do you make a cat sprite move 50 steps in Scratch?",
+        "steps": [
+          "Drag the \"Move 10 steps\" block.",
+          "Change the number 10 to 50.",
+          "Click the block or add an event block above it."
+        ],
+        "illustration": "Move block with [50] in the center"
+      },
+      {
+        "question": "How to change the background of your project?",
+        "steps": [
+          "Go to the \"Backdrops\" section on the right.",
+          "Click \"Choose a Backdrop\" and select a new image."
+        ]
+      }
+    ]
   },
   "comp_prog_2": {
     "what": "Loops repeat actions, and Conditions (if-else) help characters make decisions.",
@@ -2681,7 +3402,24 @@
       "Cyberbullying is wrong — always tell a teacher or parent if it happens"
     ],
     "tip": "Think before you post! Anything you share online might stay there forever.",
-    "question": "Should you share your login password with your friends?"
+    "question": "Should you share your login password with your friends?",
+    "examples": [
+      {
+        "question": "Identify if this password is secure: \"123456\"",
+        "steps": [
+          "No, it is very weak and easy for hackers to guess.",
+          "A strong password should be like: \"@StUdEnT#2026\"."
+        ],
+        "illustration": "Weak (❌) vs Strong (✅) passwords"
+      },
+      {
+        "question": "What should you do if you receive a message from a stranger online?",
+        "steps": [
+          "Do not reply or click any links.",
+          "Immediately tell your parents or a trusted adult."
+        ]
+      }
+    ]
   },
   "gk_ca_1": {
     "what": "Staying updated with the latest news about India's achievements in sports, space, and science.",
@@ -2714,7 +3452,25 @@
       "Our national anthem \"Jana Gana Mana\" was written by Rabindranath Tagore"
     ],
     "tip": "Each state in India has its own unique language and festival!",
-    "question": "Which is the national tree of India?"
+    "question": "Which is the national tree of India?",
+    "examples": [
+      {
+        "question": "Identify the colors in the Indian National Flag and their meanings.",
+        "steps": [
+          "Saffron: Courage and Sacrifice.",
+          "White: Peace and Truth.",
+          "Green: Fertility and Growth.",
+          "The wheel (Chakra): Progress."
+        ],
+        "illustration": "Tricolor flag with 24-spoke wheel"
+      },
+      {
+        "question": "Who wrote our national song \"Vande Mataram\"?",
+        "steps": [
+          "It was written by Bankim Chandra Chattopadhyay in his book \"Anandamath\"."
+        ]
+      }
+    ]
   },
   "gk_ind_2": {
     "what": "Fascinating facts about the world's continents, oceans, and extreme geographical features.",
@@ -2747,7 +3503,23 @@
       "Charles Babbage is credited with the idea of the computer"
     ],
     "tip": "An invention starts with a simple \"Why not?\" or \"What if?\"",
-    "question": "Who invented the lightbulb?"
+    "question": "Who invented the lightbulb?",
+    "examples": [
+      {
+        "question": "How did the invention of the steam engine change history?",
+        "steps": [
+          "It allowed trains and ships to travel much faster without needing wind or horses.",
+          "It led to the growth of factories and modern industries."
+        ],
+        "illustration": "Old steam engine puffing smoke"
+      },
+      {
+        "question": "Identify the inventor of the Computer.",
+        "steps": [
+          "Charles Babbage is known as the inventor, though Ada Lovelace wrote the first program for it."
+        ]
+      }
+    ]
   },
   "gk_sci_2": {
     "what": "Basic understanding of how our amazing body works — our heart, brain, and lungs.",
@@ -2769,7 +3541,27 @@
       "Pronouns like I, you, we, they make sentences smoother"
     ],
     "tip": "Proper nouns always start with a capital letter!",
-    "question": "Can you find three nouns and two pronouns in your room?"
+    "question": "Can you find three nouns and two pronouns in your room?",
+    "examples": [
+      {
+        "question": "Identify nouns in: \"Sadiya drove her car to the park in Bangalore.\"",
+        "steps": [
+          "Names of people: Sadiya.",
+          "Things: car, park.",
+          "Places: Bangalore.",
+          "All these are nouns."
+        ],
+        "illustration": "Sadiya(N) -> Car(N) -> Park(N)"
+      },
+      {
+        "question": "Replace the noun with a pronoun: \"The boy is eating a sandwich because the boy is hungry.\"",
+        "steps": [
+          "Identify the repeated noun: \"the boy\".",
+          "Use \"He\" for the second part.",
+          "Result: \"The boy is eating a sandwich because he is hungry.\""
+        ]
+      }
+    ]
   },
   "eng_gr_2": {
     "what": "Verbs are action words that tell us what someone or something is doing.",
@@ -2780,7 +3572,24 @@
       "Every complete sentence must have atleast one verb"
     ],
     "tip": "Verbs are the engine of a sentence — they keep it moving!",
-    "question": "What is the verb in the sentence: \"Sadiya is reading a book\"?"
+    "question": "What is the verb in the sentence: \"Sadiya is reading a book\"?",
+    "examples": [
+      {
+        "question": "Find the verb in: \"The birds are flying southward for winter.\"",
+        "steps": [
+          "What are the birds doing? They \"are flying\".",
+          "\"Flying\" is the main action verb."
+        ],
+        "illustration": "Birds in sky = Flying (Verb)"
+      },
+      {
+        "question": "Identify the helping verb in: \"I have finished my homework.\"",
+        "steps": [
+          "Main action is \"finished\".",
+          "\"Have\" is helping the main action."
+        ]
+      }
+    ]
   },
   "eng_gr_3": {
     "what": "Adjectives describe Nouns, while Adverbs describe Verbs, Adjectives, or other Adverbs.",
@@ -2791,7 +3600,25 @@
       "They help make our writing more interesting and vivid"
     ],
     "tip": "Adverbs answer the question: How, When, or Where?",
-    "question": "In \"The happy girl sang loudly\", which word is the adverb?"
+    "question": "In \"The happy girl sang loudly\", which word is the adverb?",
+    "examples": [
+      {
+        "question": "Add an adjective and an adverb to this: \"The dog barked.\"",
+        "steps": [
+          "Adjective describes dog: \"The *angry* dog\".",
+          "Adverb describes barking: \"barked *loudly*\".",
+          "Result: \"The angry dog barked loudly.\""
+        ],
+        "illustration": "Angry(Adj) -> Dog -> Loudly(Adv)"
+      },
+      {
+        "question": "Find the adverb in: \"She solved the difficult puzzle easily.\"",
+        "steps": [
+          "How did she solve it? \"Easily\".",
+          "\"Easily\" is the adverb."
+        ]
+      }
+    ]
   },
   "eng_gr_4": {
     "what": "Tenses show when an action happens — in the past, present, or future.",
@@ -2802,7 +3629,25 @@
       "Future tense tells us what is going to happen"
     ],
     "tip": "Most past tense verbs end in \"-ed\", but some are irregular like \"ran\"!",
-    "question": "Change \"I walk to school\" into the future tense."
+    "question": "Change \"I walk to school\" into the future tense.",
+    "examples": [
+      {
+        "question": "Change \"They sing a song\" into Past Tense.",
+        "steps": [
+          "Identify verb: \"sing\".",
+          "Past form of sing is \"sang\".",
+          "Result: \"They sang a song.\""
+        ],
+        "illustration": "Sing (Present) -> Sang (Past)"
+      },
+      {
+        "question": "Write \"We play cricket\" in Future Tense.",
+        "steps": [
+          "Add \"will\" before the verb.",
+          "Result: \"We will play cricket.\""
+        ]
+      }
+    ]
   },
   "eng_gr_5": {
     "what": "Articles (a, an, the) and Prepositions (in, on, at) are small words with big roles.",
@@ -2813,7 +3658,25 @@
       "\"The\" is used for specific things we already know about"
     ],
     "tip": "Don't say \"a onion\", say \"an onion\" because 'o' is a vowel!",
-    "question": "Which preposition would you use to say where your pencil is?"
+    "question": "Which preposition would you use to say where your pencil is?",
+    "examples": [
+      {
+        "question": "Fill in the blanks: \"___ elephant is standing ___ the tree.\"",
+        "steps": [
+          "Elephant starts with vowel sound (e), so use \"An\".",
+          "Standing next to or under? Use \"under\".",
+          "Result: \"An elephant is standing under the tree.\""
+        ],
+        "illustration": "An(Article) Elephant under(Preposition) Tree"
+      },
+      {
+        "question": "Explain use of \"a\" vs \"an\" with \"university\" and \"hour\".",
+        "steps": [
+          "University starts with \"y\" sound (consonant) -> Use \"a university\".",
+          "Hour starts with \"o\" sound (vowel) -> Use \"an hour\"."
+        ]
+      }
+    ]
   },
   "eng_gr_6": {
     "what": "A sentence is a group of words that makes complete sense, starting with a capital and ending with a punctuation.",
@@ -2824,7 +3687,24 @@
       "Interrogative sentences ask questions (?)"
     ],
     "tip": "A sentence is like a train — it needs an engine (verb) to go!",
-    "question": "Is \"Eating an apple\" a complete sentence?"
+    "question": "Is \"Eating an apple\" a complete sentence?",
+    "examples": [
+      {
+        "question": "Split this sentence into subject and predicate: \"The large cat slept on the mat.\"",
+        "steps": [
+          "Who is it about? \"The large cat\" (Subject).",
+          "What happened? \"slept on the mat\" (Predicate)."
+        ],
+        "illustration": "[Subject] + [Predicate]"
+      },
+      {
+        "question": "Identify the type of sentence: \"Please close the door.\"",
+        "steps": [
+          "It gives an order or request.",
+          "Therefore, it is an Imperative sentence."
+        ]
+      }
+    ]
   },
   "eng_gr_7": {
     "what": "Active voice means the subject does the action. Passive voice means the action is done to the subject.",
@@ -2835,7 +3715,25 @@
       "Use passive voice when the result is more important than the doer"
     ],
     "tip": "If it was done by someone, start with them for Active voice!",
-    "question": "Is \"The window was broken\" active or passive?"
+    "question": "Is \"The window was broken\" active or passive?",
+    "examples": [
+      {
+        "question": "Change to Passive: \"Rahul painted the fence.\"",
+        "steps": [
+          "Object \"the fence\" comes first.",
+          "Add \"was painted by\".",
+          "Result: \"The fence was painted by Rahul.\""
+        ],
+        "illustration": "Actor -> Action -> Target (Active)"
+      },
+      {
+        "question": "Change to Active: \"The cake was eaten by the dog.\"",
+        "steps": [
+          "The dog (doer) comes first.",
+          "Result: \"The dog ate the cake.\""
+        ]
+      }
+    ]
   },
   "eng_gr_10": {
     "what": "Story writing is the art of creating a sequence of events with characters, a setting, and a plot.",
@@ -2846,7 +3744,23 @@
       "Show how they solve it and what happens in the end"
     ],
     "tip": "Show, don't just tell! Instead of \"he was sad\", describe his tears.",
-    "question": "What are the three main parts of any good story?"
+    "question": "What are the three main parts of any good story?",
+    "examples": [
+      {
+        "question": "Suggest a title and a moral for a story about an honest woodcutter.",
+        "steps": [
+          "Title: \"The Honest Woodcutter\".",
+          "Moral: \"Honesty is the best policy.\""
+        ],
+        "illustration": "Woodcutter with a golden axe"
+      },
+      {
+        "question": "Write a beginning sentence for a story about a dragon.",
+        "steps": [
+          "\"Far beyond the misty mountains, in a cave made of blue ice, lived a dragon who was afraid of fire.\""
+        ]
+      }
+    ]
   },
   "hin_gr_2": {
     "what": "क्रिया किसी काम के होने या करने का बोध कराती है। विशेषण संज्ञा या सर्वनाम की विशेषता बताते हैं।",
