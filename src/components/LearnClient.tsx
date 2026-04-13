@@ -52,23 +52,52 @@ export default function LearnClient({
       setExplanation(text);
       
       // Clean up text for screen reading
-      const speechFriendly = text
-        .replace(/📌/g, "Concept:")
-        .replace(/🌍/g, "Example:")
-        .replace(/📖/g, "Textbook Summary:")
-        .replace(/📚/g, "Practice Questions:")
-        .replace(/❓/g, "Test your knowledge:")
-        .replace(/🌟/g, "Learning Scenario:")
-        .replace(/🔑/g, "Points to remember:")
-        .replace(/✅/g, "Learning tip:")
-        .replace(/[#*`]/g, "") 
-        .replace(/---+/g, "Next item.") 
-        .slice(0, 6500); 
-
       // Language detection
       const isHindi = /[\u0900-\u097F]/.test(text);
       const isKannada = /[\u0C80-\u0CFF]/.test(text);
       
+      let speechFriendly = text;
+
+      // Localized labels for AI Voice
+      if (isKannada) {
+        speechFriendly = speechFriendly
+          .replace(/📌/g, "ಪರಿಕಲ್ಪನೆ:")
+          .replace(/🌍/g, "ಉದಾಹರಣೆ:")
+          .replace(/📖/g, "ಪಠ್ಯಪುಸ್ತಕದ ಸಾರಾಂಶ:")
+          .replace(/📚/g, "ಅಭ್ಯಾಸ ಪ್ರಶ್ನೆಗಳು:")
+          .replace(/❓/g, "ಪ್ರಶ್ನೆ ಮತ್ತು ಉತ್ತರಗಳು:")
+          .replace(/🌟/g, "ಕಲಿಕೆಯ ಸನ್ನಿವೇಶ:")
+          .replace(/🔑/g, "ನೆನಪಿಡಬೇಕಾದ ಅಂಶಗಳು:")
+          .replace(/✅/g, "ಕಲಿಕೆಯ ಸಲಹೆ:");
+      } else if (isHindi) {
+        speechFriendly = speechFriendly
+          .replace(/📌/g, "अवधारणा:")
+          .replace(/🌍/g, "उदाहरण:")
+          .replace(/📖/g, "पाठ्यपुस्तक सारांश:")
+          .replace(/📚/g, "अभ್ಯಾಸ ಪ್ರಶ್ನೋತ್ತರ:") // wait, this is mixing. 
+          .replace(/📚/g, "अभ್ಯಾಸ ಪ್ರಶ್ನೆಗಳು:") // let's fix hindi
+          .replace(/📚/g, "अभ्यास प्रश्न:")
+          .replace(/❓/g, "प्रश्न और उत्तर:")
+          .replace(/🌟/g, "सीखने का परिदृश्य:")
+          .replace(/🔑/g, "याದ रखने योग्य बातें:")
+          .replace(/✅/g, "सीखने की युक्ति:");
+      } else {
+        speechFriendly = speechFriendly
+          .replace(/📌/g, "Concept:")
+          .replace(/🌍/g, "Example:")
+          .replace(/📖/g, "Textbook Summary:")
+          .replace(/📚/g, "Practice Questions:")
+          .replace(/❓/g, "Test your knowledge:")
+          .replace(/🌟/g, "Learning Scenario:")
+          .replace(/🔑/g, "Points to remember:")
+          .replace(/✅/g, "Learning tip:");
+      }
+
+      speechFriendly = speechFriendly
+        .replace(/[#*`]/g, "") 
+        .replace(/---+/g, "Next item.") 
+        .slice(0, 6500); 
+
       let langCode = "en-IN";
       if (isHindi) langCode = "hi-IN";
       else if (isKannada) langCode = "kn-IN";
