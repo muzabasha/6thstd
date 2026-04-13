@@ -62,8 +62,13 @@ export default function LearnClient({
         .replace(/---+/g, "Next example.") 
         .slice(0, 3000); 
 
-      // Simple Hindi detection (check for Devanagari characters)
+      // Language detection
       const isHindi = /[\u0900-\u097F]/.test(text);
+      const isKannada = /[\u0C80-\u0CFF]/.test(text);
+      
+      let langCode = "en-IN";
+      if (isHindi) langCode = "hi-IN";
+      else if (isKannada) langCode = "kn-IN";
       
       setSpeakText(speechFriendly);
       
@@ -71,7 +76,7 @@ export default function LearnClient({
       setTimeout(() => {
         window.speechSynthesis?.cancel();
         const utt = new SpeechSynthesisUtterance(speechFriendly);
-        utt.lang = isHindi ? "hi-IN" : "en-IN";
+        utt.lang = langCode;
         utt.rate = 0.9;
         window.speechSynthesis?.speak(utt);
       }, 500);
