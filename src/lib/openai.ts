@@ -5,26 +5,44 @@ export interface ChatMessage {
   content: string;
 }
 
+interface Example {
+  question: string;
+  steps: string[];
+  illustration?: string;
+}
+
 interface LessonContent {
   what: string;
   example: string;
   points: string[];
   tip: string;
   question: string;
+  examples?: Example[];
 }
 
-const lessons = lessonsData as Record<string, LessonContent>;
+const lessons = (lessonsData as unknown) as Record<string, LessonContent>;
 
 export async function explainTopic(subject: string, topic: string, description?: string, topicId?: string): Promise<string> {
   const specific = topicId ? lessons[topicId] : null;
 
   if (specific) {
+    const examplesMd = specific.examples ? `
+📚 **Practice Examples**
+${specific.examples.map((ex, i) => `
+**Example ${i + 1}: ${ex.question}**
+${ex.steps.map((s, j) => `${j + 1}. ${s}`).join('\n')}
+${ex.illustration ? `\n*Illustration:* ${ex.illustration}` : ''}
+`).join('\n---\n')}
+` : '';
+
     return `
 📌 **What is it?**
 ${specific.what}
 
 🌍 **Real-life Example**
 ${specific.example}
+
+${examplesMd}
 
 🔑 **Key Points to Remember**
 ${specific.points.map(p => `- ${p}`).join('\n')}

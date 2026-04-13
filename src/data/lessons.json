@@ -239,7 +239,25 @@
       "Place value helps us compare which number is bigger"
     ],
     "tip": "Place commas correctly (3,2,2 for Indian; 3,3,3 for International) to read numbers easily!",
-    "question": "How many millions make one crore?"
+    "question": "How many millions make one crore?",
+    "examples": [
+      {
+        "question": "Write 73,75,307 in words using the Indian system.",
+        "steps": [
+          "Identify the periods: 73 (Lakhs), 75 (Thousands), 307 (Ones).",
+          "Read the number in each period: Seventy-three Lakh Seventy-five Thousand Three Hundred Seven."
+        ],
+        "illustration": "[73] , [75] , [307] -> Seventy-three lakh, seventy-five thousand, three hundred and seven."
+      },
+      {
+        "question": "Write 58,423,202 in words using the International system.",
+        "steps": [
+          "Identify the periods: 58 (Millions), 423 (Thousands), 202 (Ones).",
+          "Read: Fifty-eight million, four hundred twenty-three thousand, two hundred and two."
+        ],
+        "illustration": "[58] Million [423] Thousand [202] -> Fifty-eight million..."
+      }
+    ]
   },
   "math_num_2": {
     "what": "Estimation is about finding a number that is close enough to the exact answer to be useful.",
@@ -250,7 +268,26 @@
       "Useful for checking if your exact answer makes sense"
     ],
     "tip": "If the digit is 5 or more, round up; if it is 4 or less, round down.",
-    "question": "What is 482 rounded off to the nearest hundred?"
+    "question": "What is 482 rounded off to the nearest hundred?",
+    "examples": [
+      {
+        "question": "Round 789 to the nearest hundred.",
+        "steps": [
+          "Identify the digit in tens place (8).",
+          "Since 8 >= 5, add 1 to the hundreds digit (7+1=8).",
+          "Change remaining digits to zero. Result: 800."
+        ],
+        "illustration": "7|8|9 -> 8 is more than 5 -> Round up -> 800"
+      },
+      {
+        "question": "Estimate the sum of 5290 and 17986 to the nearest thousand.",
+        "steps": [
+          "Round 5290 to 5000.",
+          "Round 17986 to 18000.",
+          "Add: 5000 + 18000 = 23000."
+        ]
+      }
+    ]
   },
   "math_num_3": {
     "what": "The Roman Numeral system uses letters (I, V, X, L, C, D, M) to represent numbers.",
@@ -261,7 +298,27 @@
       "Symbols like V, L, and D are never repeated"
     ],
     "tip": "Remember that Roman numerals do not have a symbol for Zero!",
-    "question": "How do you write the number 29 in Roman numerals?"
+    "question": "How do you write the number 29 in Roman numerals?",
+    "examples": [
+      {
+        "question": "Convert 45 to Roman Numerals.",
+        "steps": [
+          "Break it down: 40 + 5.",
+          "40 is XL (10 before 50).",
+          "5 is V.",
+          "Result: XLV."
+        ],
+        "illustration": "40(XL) + 5(V) = XLV"
+      },
+      {
+        "question": "Convert XCIX to a Hindu-Arabic number.",
+        "steps": [
+          "XC = 100 - 10 = 90.",
+          "IX = 10 - 1 = 9.",
+          "Add them: 90 + 9 = 99."
+        ]
+      }
+    ]
   },
   "math_wn_1": {
     "what": "Whole numbers are the set of natural numbers (1,2,3...) plus the number Zero (0).",
@@ -272,7 +329,24 @@
       "Every natural number is a whole number, but 0 is not a natural number"
     ],
     "tip": "The predecessor of 1 in natural numbers doesnt exist, but in whole numbers it is 0!",
-    "question": "What is the smallest whole number?"
+    "question": "What is the smallest whole number?",
+    "examples": [
+      {
+        "question": "Are all whole numbers natural numbers? Why?",
+        "steps": [
+          "Natural numbers: 1, 2, 3, ...",
+          "Whole numbers: 0, 1, 2, 3, ...",
+          "Check 0: It is a whole number but not a natural number. So the answer is No."
+        ]
+      },
+      {
+        "question": "Find the successor and predecessor of 1 in the set of whole numbers.",
+        "steps": [
+          "Successor: 1 + 1 = 2.",
+          "Predecessor: 1 - 1 = 0."
+        ]
+      }
+    ]
   },
   "math_wn_2": {
     "what": "A horizontal line where numbers are placed at equal intervals to help visualize addition and subtraction.",
@@ -283,7 +357,26 @@
       "The distance between any two consecutive numbers is called unit distance"
     ],
     "tip": "The number line is a great way to see how numbers grow as you move away from zero.",
-    "question": "If you start at 3 and move 4 steps to the right, where do you land?"
+    "question": "If you start at 3 and move 4 steps to the right, where do you land?",
+    "examples": [
+      {
+        "question": "Show 2 + 5 on a number line.",
+        "steps": [
+          "Start at 2.",
+          "Move 5 steps to the right.",
+          "You arrive at 7."
+        ],
+        "illustration": "0---1---2---3---4---5---6---7; (Start at 2) +5 -> land on 7"
+      },
+      {
+        "question": "Show 6 - 4 on a number line.",
+        "steps": [
+          "Start at 6.",
+          "Move 4 steps to the left.",
+          "You arrive at 2."
+        ]
+      }
+    ]
   },
   "math_wn_3": {
     "what": "Rules like Commutativity and Associativity that make adding and multiplying whole numbers easier.",
@@ -294,7 +387,25 @@
       "Distributive: a(b+c) = ab + ac"
     ],
     "tip": "Division by Zero is not defined in mathematics!",
-    "question": "What is the additive identity for whole numbers?"
+    "question": "What is the additive identity for whole numbers?",
+    "examples": [
+      {
+        "question": "Solve using distributive property: 12 x (35 + 8)",
+        "steps": [
+          "Apply rule: (12 x 35) + (12 x 8).",
+          "Multiply: 420 + 96.",
+          "Add: 516."
+        ]
+      },
+      {
+        "question": "Is subtraction commutative for whole numbers? (Example: 8 - 5 vs 5 - 8)",
+        "steps": [
+          "8 - 5 = 3 (a whole number).",
+          "5 - 8 = -3 (not a whole number).",
+          "Since results differ and -3 isn't a whole number, Subtraction is NOT commutative."
+        ]
+      }
+    ]
   },
   "math_pn_1": {
     "what": "Factors are numbers that divide another number exactly. Multiples are the results of multiplying a number.",
@@ -305,7 +416,24 @@
       "Perfect numbers are those where the sum of factors (except itself) equals the number"
     ],
     "tip": "Every number has a finite number of factors but infinite multiples!",
-    "question": "What are the factors of 10?"
+    "question": "What are the factors of 10?",
+    "examples": [
+      {
+        "question": "Find all factors of 24.",
+        "steps": [
+          "Find pairs that multiply to 24: 1x24, 2x12, 3x8, 4x6.",
+          "List them: 1, 2, 3, 4, 6, 8, 12, 24."
+        ],
+        "illustration": "Factors are the building blocks: 1, 2, 3, 4, 6, 8, 12, 24"
+      },
+      {
+        "question": "List the first five multiples of 7.",
+        "steps": [
+          "7x1=7, 7x2=14, 7x3=21, 7x4=28, 7x5=35."
+        ],
+        "illustration": "Counting by 7s: 7, 14, 21, 28, 35"
+      }
+    ]
   },
   "math_pn_2": {
     "what": "Prime numbers have exactly two factors (1 and itself). Composite numbers have more than two factors.",
@@ -316,7 +444,28 @@
       "The Sieve of Eratosthenes is a method to find all primes up to a number"
     ],
     "tip": "If a number ends in an even digit, it cannot be prime (except 2)!",
-    "question": "What is the smallest composite number?"
+    "question": "What is the smallest composite number?",
+    "examples": [
+      {
+        "question": "Are all odd numbers prime? Explain with an example.",
+        "steps": [
+          "Look at 9. 9 is an odd number.",
+          "Its factors are 1, 3, 9.",
+          "Since it has more than two factors, it is composite. So, the answer is No."
+        ],
+        "illustration": "9 is odd but not prime (3 x 3 = 9)"
+      },
+      {
+        "question": "Find prime numbers between 1 and 10.",
+        "steps": [
+          "Factors of 2: 1,2 (Prime)",
+          "Factors of 3: 1,3 (Prime)",
+          "Factors of 4: 1,2,4 (Composite)",
+          "List: 2, 3, 5, 7."
+        ],
+        "illustration": "Primes: 2, 3, 5, 7"
+      }
+    ]
   },
   "math_pn_3": {
     "what": "HCF is the largest factor common to two numbers. LCM is the smallest multiple common to them.",
@@ -327,7 +476,27 @@
       "Product of two numbers = HCF x LCM"
     ],
     "tip": "HCF is always less than or equal to the smallest number; LCM is always more than or equal to the largest!",
-    "question": "Find the LCM of 3 and 5."
+    "question": "Find the LCM of 3 and 5.",
+    "examples": [
+      {
+        "question": "Find HCF of 12 and 16.",
+        "steps": [
+          "Factors of 12: 1, 2, 3, 4, 6, 12.",
+          "Factors of 16: 1, 2, 4, 8, 16.",
+          "Common factors: 1, 2, 4. Largest is 4."
+        ],
+        "illustration": "HCF(12, 16) = 4"
+      },
+      {
+        "question": "Find LCM of 12 and 18.",
+        "steps": [
+          "Multiples of 12: 12, 24, 36, 48.",
+          "Multiples of 18: 18, 36, 54.",
+          "Smallest common multiple is 36."
+        ],
+        "illustration": "LCM(12, 18) = 36"
+      }
+    ]
   },
   "math_pn_4": {
     "what": "Quick rules to check if a number can be divided by another without doing the full division.",
@@ -338,7 +507,26 @@
       "Divisible by 9 if the sum of its digits is divisible by 9"
     ],
     "tip": "Check the sum of digits for 3 and 9; check the last digit for 2, 5, and 10!",
-    "question": "Is 123 divisible by 3? Why?"
+    "question": "Is 123 divisible by 3? Why?",
+    "examples": [
+      {
+        "question": "Is 1584 divisible by 6?",
+        "steps": [
+          "Check 2: Ends in 4 (Even), so Yes.",
+          "Check 3: Sum of digits 1+5+8+4 = 18. 18 is divisible by 3, so Yes.",
+          "Since divisible by both 2 and 3, it is divisible by 6."
+        ],
+        "illustration": "1+5+8+4=18 (ok for 3), ends in 4 (ok for 2) -> Divisible by 6!"
+      },
+      {
+        "question": "Is 128 divisible by 4?",
+        "steps": [
+          "Check the last two digits: 28.",
+          "28 is divisible by 4 (4x7=28).",
+          "So, 128 is divisible by 4."
+        ]
+      }
+    ]
   },
   "math_geo_1": {
     "what": "The building blocks of geometry: Points (location), Lines (infinite length), and Angles (space between lines).",
@@ -349,7 +537,24 @@
       "Angles are measured in degrees using a protractor"
     ],
     "tip": "Parallel lines never meet, no matter how far they go!",
-    "question": "How many rays can start from a single point?"
+    "question": "How many rays can start from a single point?",
+    "examples": [
+      {
+        "question": "Difference between a Ray and a Line Segment.",
+        "steps": [
+          "Ray has one endpoint and goes forever in one direction.",
+          "Line Segment has two fixed endpoints and a fixed length."
+        ],
+        "illustration": "Ray: .-----> ; Segment: .-----."
+      },
+      {
+        "question": "Identify type of angle for 95 degrees.",
+        "steps": [
+          "90 < 95 < 180.",
+          "Therefore, it is an Obtuse angle."
+        ]
+      }
+    ]
   },
   "math_geo_2": {
     "what": "Curves are lines that are not necessarily straight. Polygons are closed shapes made only of line segments.",
@@ -360,7 +565,26 @@
       "A triangle is the polygon with the fewest number of sides"
     ],
     "tip": "A polygon must be \"closed\" - you cannot have an open polygon!",
-    "question": "Is a circle a polygon?"
+    "question": "Is a circle a polygon?",
+    "examples": [
+      {
+        "question": "Is a square a simple closed curve?",
+        "steps": [
+          "It is closed: Yes.",
+          "It does not cross itself: Yes.",
+          "Therefore, it is a simple closed curve."
+        ],
+        "illustration": "[Square] -> Simple closed curve"
+      },
+      {
+        "question": "Why is a circle not a polygon?",
+        "steps": [
+          "A polygon is made of straight line segments.",
+          "A circle is a curved line.",
+          "Therefore, it is not a polygon."
+        ]
+      }
+    ]
   },
   "math_geo_3": {
     "what": "Triangles are 3-sided polygons. Quadrilaterals are 4-sided polygons.",
@@ -371,7 +595,25 @@
       "The diagonals of a shape connect opposite corners"
     ],
     "tip": "The sum of angles in a triangle is always 180 degrees!",
-    "question": "How many sides does a pentagon have?"
+    "question": "How many sides does a pentagon have?",
+    "examples": [
+      {
+        "question": "How many diagonals does a triangle have?",
+        "steps": [
+          "Try connecting non-adjacent vertices.",
+          "In a triangle, all vertices are adjacent to each other.",
+          "Therefore, a triangle has 0 diagonals."
+        ],
+        "illustration": "Triangle has 0 diagonals!"
+      },
+      {
+        "question": "Name a quadrilateral with all sides equal.",
+        "steps": [
+          "A Square has all sides equal.",
+          "A Rhombus also has all sides equal."
+        ]
+      }
+    ]
   },
   "math_shp_1": {
     "what": "Using tools like a ruler or divider to find the exact length of line segments.",
@@ -382,7 +624,25 @@
       "Lengths are usually measured in mm, cm, or m"
     ],
     "tip": "When using a ruler, start measuring from the 0 mark, not the very edge of the plastic!",
-    "question": "Which is more accurate for comparing two lines: a ruler or a divider?"
+    "question": "Which is more accurate for comparing two lines: a ruler or a divider?",
+    "examples": [
+      {
+        "question": "If a line is 5.3 cm long, how many millimeters is it?",
+        "steps": [
+          "1 cm = 10 mm.",
+          "5.3 x 10 = 53 mm."
+        ],
+        "illustration": "5.3cm x 10 = 53mm"
+      },
+      {
+        "question": "How to measure a line accurately using a divider?",
+        "steps": [
+          "Place one point of divider on start, other on end.",
+          "Lift divider without changing spread.",
+          "Place on ruler to read length."
+        ]
+      }
+    ]
   },
   "math_shp_2": {
     "what": "Categorizing angles based on their size: Acute (<90), Obtuse (>90), and Reflex (>180).",
@@ -393,7 +653,25 @@
       "A full rotation is exactly 360 degrees"
     ],
     "tip": "A right angle looks like the letter L!",
-    "question": "What kind of angle is 120 degrees?"
+    "question": "What kind of angle is 120 degrees?",
+    "examples": [
+      {
+        "question": "What kind of angle is 210 degrees?",
+        "steps": [
+          "180 < 210 < 360.",
+          "Therefore, it is a Reflex angle."
+        ],
+        "illustration": "Reflex angle (>180)"
+      },
+      {
+        "question": "If an angle is 1/4 of a full rotation, how many degrees is it?",
+        "steps": [
+          "Full rotation = 360.",
+          "1/4 x 360 = 90 degrees.",
+          "It is a Right angle."
+        ]
+      }
+    ]
   },
   "math_shp_3": {
     "what": "Distinguishing between flat shapes (2D) and solid objects (3D) like cubes and spheres.",
@@ -404,7 +682,24 @@
       "A cylinder has two circular faces and one curved surface"
     ],
     "tip": "A cube is a special 3D shape where all faces are equal squares!",
-    "question": "Give an example of a cone-shaped object in real life."
+    "question": "Give an example of a cone-shaped object in real life.",
+    "examples": [
+      {
+        "question": "How many faces and vertices does a cube have?",
+        "steps": [
+          "Faces: 6 square faces.",
+          "Vertices: 8 corners."
+        ],
+        "illustration": "[Cube] -> 6 Faces, 8 Vertices, 12 Edges"
+      },
+      {
+        "question": "Give an example of look-alikes for a sphere and a cylinder.",
+        "steps": [
+          "Sphere: Football, Orange.",
+          "Cylinder: Pen, Gas Cylinder, Candle."
+        ]
+      }
+    ]
   },
   "math_int_1": {
     "what": "Integers are the set of whole numbers and their negative opposites.",
@@ -415,7 +710,27 @@
       "Zero is neither positive nor negative"
     ],
     "tip": "The further a negative number is from zero, the smaller it is!",
-    "question": "Which is bigger: -5 or -1?"
+    "question": "Which is bigger: -5 or -1?",
+    "examples": [
+      {
+        "question": "Represent -3 on a number line.",
+        "steps": [
+          "Start at 0.",
+          "Move 3 steps to the left.",
+          "Mark it as -3."
+        ],
+        "illustration": "(-3)---(-2)---(-1)---(0)---(+1)"
+      },
+      {
+        "question": "Which is smaller: -20 or -10?",
+        "steps": [
+          "On a negative scale, the larger digit is smaller value.",
+          "-20 is further left than -10.",
+          "Result: -20 is smaller."
+        ],
+        "illustration": "-20 < -10"
+      }
+    ]
   },
   "math_int_2": {
     "what": "Rules for adding and subtracting numbers when some are positive and some are negative.",
@@ -426,7 +741,27 @@
       "On a number line, + means move right and - means move left"
     ],
     "tip": "Remember: Adding a negative is just going backwards!",
-    "question": "What is 5 + (-3)?"
+    "question": "What is 5 + (-3)?",
+    "examples": [
+      {
+        "question": "Calculate: (+5) + (-8)",
+        "steps": [
+          "Start at 5.",
+          "Minus 8 means move 8 steps left.",
+          "You arrive at -3."
+        ],
+        "illustration": "5 - 8 = -3"
+      },
+      {
+        "question": "Calculate: (-10) - (-2)",
+        "steps": [
+          "Minus of minus becomes plus.",
+          "-10 + 2.",
+          "Move 2 steps right from -10 to -8."
+        ],
+        "illustration": "-10 - (-2) = -8"
+      }
+    ]
   },
   "math_frac_1": {
     "what": "A fraction represents a part of a whole, written with a numerator (part) and denominator (whole).",
@@ -437,7 +772,26 @@
       "Representing fractions on a number line helps visualize their value"
     ],
     "tip": "The line between the numbers is called the viniculum or division bar.",
-    "question": "What does the denominator in a fraction tell us?"
+    "question": "What does the denominator in a fraction tell us?",
+    "examples": [
+      {
+        "question": "Identify numerator and denominator in 3/7.",
+        "steps": [
+          "Top number is 3 (Numerator).",
+          "Bottom number is 7 (Denominator)."
+        ],
+        "illustration": "3(Num) / 7(Den)"
+      },
+      {
+        "question": "What fraction of an hour is 20 minutes?",
+        "steps": [
+          "1 hour = 60 minutes.",
+          "Fraction = 20/60.",
+          "Divide both by 20 to simplify -> 1/3."
+        ],
+        "illustration": "20/60 = 1/3"
+      }
+    ]
   },
   "math_frac_2": {
     "what": "Categorizing fractions based on whether the numerator is smaller or larger than the denominator.",
@@ -448,7 +802,27 @@
       "Mixed fractions combine a whole number and a proper fraction"
     ],
     "tip": "You can convert an improper fraction to a mixed fraction by dividing the top by the bottom!",
-    "question": "Which type of fraction is 7/4?"
+    "question": "Which type of fraction is 7/4?",
+    "examples": [
+      {
+        "question": "Convert 11/4 into a mixed fraction.",
+        "steps": [
+          "Divide 11 by 4.",
+          "Quotient = 2, Remainder = 3.",
+          "Mixed form = 2 3/4."
+        ],
+        "illustration": "11/4 = 2 whole and 3/4"
+      },
+      {
+        "question": "Convert 2 1/3 into an improper fraction.",
+        "steps": [
+          "Multiply whole (2) by denominator (3) = 6.",
+          "Add numerator (1) = 7.",
+          "Keep denominator (3) -> 7/3."
+        ],
+        "illustration": "(2x3)+1 / 3 = 7/3"
+      }
+    ]
   },
   "math_frac_3": {
     "what": "Fractions that look different but have the same value when simplified.",
@@ -459,7 +833,27 @@
       "Cross-multiplication can check if two fractions are equivalent"
     ],
     "tip": "Equivalent fractions are just different ways of saying the same thing!",
-    "question": "Find an equivalent fraction for 3/5."
+    "question": "Find an equivalent fraction for 3/5.",
+    "examples": [
+      {
+        "question": "Find an equivalent fraction of 2/5 with denominator 20.",
+        "steps": [
+          "Compare 5 to 20: 5 x 4 = 20.",
+          "Multiply numerator by 4: 2 x 4 = 8.",
+          "Result: 8/20."
+        ],
+        "illustration": "2/5 x 4/4 = 8/20"
+      },
+      {
+        "question": "Simplify 12/18 to lowest terms.",
+        "steps": [
+          "HCF of 12 and 18 is 6.",
+          "Divide both by 6.",
+          "12/6 = 2; 18/6 = 3. Result: 2/3."
+        ],
+        "illustration": "12/18 = 2/3"
+      }
+    ]
   },
   "math_frac_4": {
     "what": "Finding out which fraction is larger by using a common denominator.",
@@ -470,7 +864,26 @@
       "Cross-multiplication is a fast way to compare two fractions"
     ],
     "tip": "If the numerators are the same, the fraction with the smaller denominator is actually bigger!",
-    "question": "Which is larger: 2/5 or 2/7?"
+    "question": "Which is larger: 2/5 or 2/7?",
+    "examples": [
+      {
+        "question": "Which is larger: 2/3 or 3/4?",
+        "steps": [
+          "Cross multiply: (2x4) and (3x3).",
+          "8 vs 9.",
+          "Since 9 is larger, 3/4 is larger."
+        ],
+        "illustration": "2/3 [?] 3/4 -> 2x4=8, 3x3=9. 3/4 is bigger."
+      },
+      {
+        "question": "Compare 1/5 and 2/5.",
+        "steps": [
+          "Denominators are same.",
+          "Numerator 2 > 1.",
+          "Result: 2/5 is larger."
+        ]
+      }
+    ]
   },
   "math_frac_5": {
     "what": "Learning to add and subtract parts of a whole.",
@@ -481,7 +894,27 @@
       "Always simplify your final answer if possible"
     ],
     "tip": "Think of shared denominator as a shared language between the fractions.",
-    "question": "What is 1/2 + 1/4?"
+    "question": "What is 1/2 + 1/4?",
+    "examples": [
+      {
+        "question": "Calculate 1/3 + 1/4.",
+        "steps": [
+          "Find LCM of 3 and 4: 12.",
+          "Make like fractions: (4/12) + (3/12).",
+          "Add: 7/12."
+        ],
+        "illustration": "1/3 + 1/4 = 4/12 + 3/12 = 7/12"
+      },
+      {
+        "question": "Calculate 3/4 - 1/8.",
+        "steps": [
+          "LCM of 4 and 8 is 8.",
+          "Convert 3/4 to 6/8.",
+          "Subtract: 6/8 - 1/8 = 5/8."
+        ],
+        "illustration": "6/8 - 1/8 = 5/8"
+      }
+    ]
   },
   "math_dec_1": {
     "what": "Decimals are another way of expressing fractions using a point (.), representing parts of 10, 100, etc.",
@@ -492,7 +925,26 @@
       "Decimals are used in money (rupees and paise)"
     ],
     "tip": "Zeroes at the end of a decimal (like 0.50) don't change its value!",
-    "question": "How many tenths make one whole?"
+    "question": "How many tenths make one whole?",
+    "examples": [
+      {
+        "question": "Write 2/10 as a decimal.",
+        "steps": [
+          "Tenths place is first after dot.",
+          "Result: 0.2."
+        ],
+        "illustration": "2/10 = 0.2"
+      },
+      {
+        "question": "Write 0.25 as a fraction in simplest form.",
+        "steps": [
+          "Fraction = 25/100.",
+          "Divide both by 25.",
+          "Result: 1/4."
+        ],
+        "illustration": "0.25 = 25/100 = 1/4"
+      }
+    ]
   },
   "math_dec_2": {
     "what": "Comparing decimal numbers by looking at their place values from left to right.",
@@ -503,7 +955,25 @@
       "Adding zeroes to make lengths equal makes comparison easier"
     ],
     "tip": "Always line up the decimal points when comparing or calculating!",
-    "question": "Which is bigger: 1.2 or 1.02?"
+    "question": "Which is bigger: 1.2 or 1.02?",
+    "examples": [
+      {
+        "question": "Which is smaller: 1.07 or 1.7?",
+        "steps": [
+          "Compare at same length: 1.07 vs 1.70.",
+          "1.07 is smaller than 1.70.",
+          "Result: 1.07 is smaller."
+        ],
+        "illustration": "1.07 < 1.70"
+      },
+      {
+        "question": "Compare 0.5 and 0.500.",
+        "steps": [
+          "Adding zeroes at end doesn't change value.",
+          "Therefore, 0.5 = 0.500."
+        ]
+      }
+    ]
   },
   "math_dec_3": {
     "what": "Performing addition and subtraction with decimal numbers.",
@@ -514,7 +984,25 @@
       "The decimal point goes in the same position in the answer"
     ],
     "tip": "Treat decimals like normal numbers, just don't forget to place the dot!",
-    "question": "Find the sum of 10.5 and 2.05."
+    "question": "Find the sum of 10.5 and 2.05.",
+    "examples": [
+      {
+        "question": "Add: 12.35 + 4.9",
+        "steps": [
+          "Align: 12.35 + 04.90.",
+          "Add: 17.25."
+        ],
+        "illustration": "12.35 + 4.90 = 17.25"
+      },
+      {
+        "question": "Subtract: 5 - 2.8",
+        "steps": [
+          "Align: 5.0 - 2.8.",
+          "Subtract: 2.2."
+        ],
+        "illustration": "5.0 - 2.8 = 2.2"
+      }
+    ]
   },
   "math_dh_1": {
     "what": "Recording information in an organized way using symbols like tally marks.",
@@ -525,7 +1013,27 @@
       "Makes large amounts of data easy to read"
     ],
     "tip": "Tallying is the fastest way to record data as it happens!",
-    "question": "How do you represent the number 7 using tally marks?"
+    "question": "How do you represent the number 7 using tally marks?",
+    "examples": [
+      {
+        "question": "Represent 13 using tally marks.",
+        "steps": [
+          "Group of 5: ||||/",
+          "Group of 5: ||||/",
+          "Three left: |||.",
+          "Total: ||||/ ||||/ |||."
+        ],
+        "illustration": "[5] [5] [3] = 13"
+      },
+      {
+        "question": "If a data set is: 2, 3, 2, 4, 3, 2, make a frequency table.",
+        "steps": [
+          "Number 2: ||| (3)",
+          "Number 3: || (2)",
+          "Number 4: | (1)."
+        ]
+      }
+    ]
   },
   "math_dh_2": {
     "what": "Representing data using pictures (pictographs) or rectangular bars (bar graphs).",
@@ -536,7 +1044,25 @@
       "Graphs give a quick visual summary of the information"
     ],
     "tip": "Always look at the \"scale\" (e.g., 1 unit = 5 students) specified in the graph.",
-    "question": "In a pictograph, if one star represents 10 stars, how many stars do 3 stars represent?"
+    "question": "In a pictograph, if one star represents 10 stars, how many stars do 3 stars represent?",
+    "examples": [
+      {
+        "question": "Read pictograph: If 1 car icon = 5 cars, and row has 4 icons, how many cars?",
+        "steps": [
+          "Multiply Icons by Scale.",
+          "4 x 5 = 20 cars."
+        ],
+        "illustration": "[Car] [Car] [Car] [Car] = 20"
+      },
+      {
+        "question": "Read bar graph: If bar for \"Apples\" reaches level 15 on Y-axis, how many apples?",
+        "steps": [
+          "Look at the top of the bar.",
+          "It aligns with 15.",
+          "Result: 15 apples."
+        ]
+      }
+    ]
   },
   "math_men_1": {
     "what": "Perimeter is the total length of the boundary of a closed figure.",
@@ -547,7 +1073,26 @@
       "Measured in units of length like cm, m, or km"
     ],
     "tip": "Perimeter is \"around the edge\"; Area is \"the space inside\".",
-    "question": "Find the perimeter of a square with side 5 cm."
+    "question": "Find the perimeter of a square with side 5 cm.",
+    "examples": [
+      {
+        "question": "Find perimeter of a rectangle with length 10cm and breadth 5cm.",
+        "steps": [
+          "Formula: 2 x (L + B).",
+          "2 x (10 + 5) = 2 x 15 = 30 cm."
+        ],
+        "illustration": "2(10+5) = 30cm"
+      },
+      {
+        "question": "Find side of a square whose perimeter is 40m.",
+        "steps": [
+          "Formula: Perimeter = 4 x Side.",
+          "Side = Perimeter / 4.",
+          "40 / 4 = 10m."
+        ],
+        "illustration": "Square Side = 40/4 = 10m"
+      }
+    ]
   },
   "math_men_2": {
     "what": "Area is the amount of surface covered by a closed figure.",
@@ -558,7 +1103,26 @@
       "Measured in square units like sq.cm or sq.m"
     ],
     "tip": "Think of area as how many small 1x1 squares can fit inside a shape!",
-    "question": "If a rectangle has length 4m and breadth 3m, what is its area?"
+    "question": "If a rectangle has length 4m and breadth 3m, what is its area?",
+    "examples": [
+      {
+        "question": "Find area of a square plot of side 8m.",
+        "steps": [
+          "Formula: Side x Side.",
+          "8 x 8 = 64 sq.m."
+        ],
+        "illustration": "8 x 8 = 64m²"
+      },
+      {
+        "question": "Area of rectangle is 50 sq.cm. If length is 10cm, find breadth.",
+        "steps": [
+          "Formula: Area = L x B.",
+          "B = Area / L.",
+          "50 / 10 = 5 cm."
+        ],
+        "illustration": "Breadth = 50 / 10 = 5cm"
+      }
+    ]
   },
   "math_alg_1": {
     "what": "Algebra uses letters (variables) to represent numbers we don't know yet.",
@@ -569,7 +1133,25 @@
       "Helps in writing general rules and formulas"
     ],
     "tip": "In algebra, we often use 'x' or 'n' as the most common variables.",
-    "question": "Write an expression for \"5 more than y\"."
+    "question": "Write an expression for \"5 more than y\".",
+    "examples": [
+      {
+        "question": "Write expression: 7 subtracted from twice of x.",
+        "steps": [
+          "Twice of x is 2x.",
+          "Subtract 7 from it.",
+          "Result: 2x - 7."
+        ],
+        "illustration": "2x - 7"
+      },
+      {
+        "question": "If a matchbox cost x rupees, what is the cost of 10 matchboxes?",
+        "steps": [
+          "Multiply units by price per unit.",
+          "10 x x = 10x rupees."
+        ]
+      }
+    ]
   },
   "math_alg_2": {
     "what": "An equation is a statement where two expressions are equal (=).",
@@ -580,7 +1162,26 @@
       "Maintaining balance is key: do the same to both sides"
     ],
     "tip": "Think of an equation like a balanced weighing scale!",
-    "question": "Solve for x: x - 5 = 12."
+    "question": "Solve for x: x - 5 = 12.",
+    "examples": [
+      {
+        "question": "What value of p satisfies p + 5 = 12?",
+        "steps": [
+          "Use trial or subtract 5 from both sides.",
+          "p = 12 - 5.",
+          "p = 7."
+        ],
+        "illustration": "p = 7 satisfies the equation"
+      },
+      {
+        "question": "Is x = 2 a solution for 3x - 1 = 5?",
+        "steps": [
+          "Put x = 2 in LHS.",
+          "3(2) - 1 = 6 - 1 = 5.",
+          "LHS = RHS. Yes, it is a solution."
+        ]
+      }
+    ]
   },
   "math_rp_1": {
     "what": "Ratio is a way of comparing two quantities of the same kind by division.",
@@ -591,7 +1192,27 @@
       "Always write ratios in their simplest form"
     ],
     "tip": "The order of numbers in a ratio matters! 2:3 is not the same as 3:2.",
-    "question": "In a class of 20 boys and 30 girls, what is the ratio of boys to girls?"
+    "question": "In a class of 20 boys and 30 girls, what is the ratio of boys to girls?",
+    "examples": [
+      {
+        "question": "Simplify ratio 15 : 25.",
+        "steps": [
+          "HCF of 15 and 25 is 5.",
+          "15/5 = 3; 25/5 = 5.",
+          "Simplified Ratio: 3 : 5."
+        ],
+        "illustration": "15:25 = 3:5"
+      },
+      {
+        "question": "Find ratio of 30cm to 1m.",
+        "steps": [
+          "Convert to same unit: 1m = 100cm.",
+          "Ratio = 30 : 100.",
+          "Divide by 10 to simplify -> 3 : 10."
+        ],
+        "illustration": "30cm : 100cm = 3:10"
+      }
+    ]
   },
   "math_rp_2": {
     "what": "Proportion means that two ratios are equal.",
@@ -602,7 +1223,27 @@
       "Product of extremes = Product of means"
     ],
     "tip": "Proportion is just a way of saying \"the relationship is the same\".",
-    "question": "Are 2, 4, 8, 16 in proportion?"
+    "question": "Are 2, 4, 8, 16 in proportion?",
+    "examples": [
+      {
+        "question": "Find missing term in 3 : 5 :: x : 10",
+        "steps": [
+          "Product of Means = Product of Extremes.",
+          "5 * x = 3 * 10.",
+          "5x = 30. x = 6."
+        ],
+        "illustration": "x=6"
+      },
+      {
+        "question": "Check if 2, 4, 10, 20 are in proportion.",
+        "steps": [
+          "Ratio 1: 2/4 = 1/2.",
+          "Ratio 2: 10/20 = 1/2.",
+          "Since ratios are equal, Yes they are in proportion."
+        ],
+        "illustration": "1/2 = 1/2 -> Yes!"
+      }
+    ]
   },
   "math_rp_3": {
     "what": "A method where we find the value of one unit first and then find the value of the required number of units.",
@@ -613,7 +1254,26 @@
       "Very useful for shopping and daily calculations"
     ],
     "tip": "Always go 'down to one' before going 'up to many'!",
-    "question": "If 3 notebooks cost 90, how much will 5 cost?"
+    "question": "If 3 notebooks cost 90, how much will 5 cost?",
+    "examples": [
+      {
+        "question": "Cost of 1 dozen bananas is 36. Find cost of 7 bananas.",
+        "steps": [
+          "1 dozen = 12 units.",
+          "Cost of 1 = 36 / 12 = 3.",
+          "Cost of 7 = 3 * 7 = 21."
+        ],
+        "illustration": "7 bananas cost 21"
+      },
+      {
+        "question": "A car travels 90 km in 2 hours. How far in 5 hours at same speed?",
+        "steps": [
+          "Distance in 1 hour = 90 / 2 = 45 km.",
+          "Distance in 5 hours = 45 * 5 = 225 km."
+        ],
+        "illustration": "225 km"
+      }
+    ]
   },
   "math_sym_1": {
     "what": "A line that divides a shape into two identical halves that match exactly.",
@@ -624,7 +1284,25 @@
       "A square has four lines of symmetry"
     ],
     "tip": "Think of a line of symmetry like a mirror line.",
-    "question": "How many lines of symmetry does a rectangle have?"
+    "question": "How many lines of symmetry does a rectangle have?",
+    "examples": [
+      {
+        "question": "Identify number of lines of symmetry in an isosceles triangle.",
+        "steps": [
+          "An isosceles triangle has 2 sides equal.",
+          "It has only 1 line of symmetry (vertical)."
+        ],
+        "illustration": "A [Triangle] with 1 symmetry line."
+      },
+      {
+        "question": "How many lines of symmetry does a circle have?",
+        "steps": [
+          "A circle can be folded along any diameter.",
+          "Therefore, it has infinite lines of symmetry."
+        ],
+        "illustration": "Circle has infinite lines of symmetry!"
+      }
+    ]
   },
   "math_sym_2": {
     "what": "The type of symmetry where one half is the mirror image of the other.",
@@ -635,7 +1313,25 @@
       "Nature uses reflection symmetry in wings of butterflies"
     ],
     "tip": "Check for reflection by holding a small mirror along the symmetry line.",
-    "question": "Which letter of the alphabet has vertical reflection symmetry? (A, B, or C?)"
+    "question": "Which letter of the alphabet has vertical reflection symmetry? (A, B, or C?)",
+    "examples": [
+      {
+        "question": "Draw the reflection of the letter \"P\".",
+        "steps": [
+          "Hold a mirror on the right of P.",
+          "The bubble of P points left in reflection.",
+          "Result: 𐑧 (mirrored P)."
+        ],
+        "illustration": "P | q "
+      },
+      {
+        "question": "Example of reflection symmetry in nature.",
+        "steps": [
+          "A butterfly with wings spread.",
+          "Each wing is a mirror image of the other."
+        ]
+      }
+    ]
   },
   "math_pg_1": {
     "what": "Learning to use a compass to draw perfect circles and arcs of a given radius.",
@@ -646,7 +1342,26 @@
       "An arc is just a part of a circle"
     ],
     "tip": "Keep your compass needle firm and your pencil sharp for best results!",
-    "question": "What is the line segment joining any two points on a circle called?"
+    "question": "What is the line segment joining any two points on a circle called?",
+    "examples": [
+      {
+        "question": "Draw a circle of radius 3cm.",
+        "steps": [
+          "Set compass distance to 3cm using ruler.",
+          "Place needle on paper.",
+          "Rotate 360 degrees."
+        ],
+        "illustration": "Radius = 3cm"
+      },
+      {
+        "question": "Draw two concentric circles of radii 2cm and 4cm.",
+        "steps": [
+          "Concentric means same center.",
+          "Fix center, draw 2cm circle.",
+          "Keep same center, draw 4cm circle."
+        ]
+      }
+    ]
   },
   "math_pg_2": {
     "what": "Constructing lines of exact length and dividing them exactly into two halves.",
@@ -657,7 +1372,26 @@
       "Constructing using only a ruler and compass is a classic skill"
     ],
     "tip": "Arcs are your best friends in construction — they help find exact points!",
-    "question": "What angle does a perpendicular bisector make with the line?"
+    "question": "What angle does a perpendicular bisector make with the line?",
+    "examples": [
+      {
+        "question": "Construct a line segment of 5cm using compass.",
+        "steps": [
+          "Draw a line L, mark point A.",
+          "Set compass to 5cm distance.",
+          "Place at A, mark arc at B. AB is 5cm."
+        ],
+        "illustration": "A ---[5cm]--- B"
+      },
+      {
+        "question": "Construct perpendicular bisector of a 6cm segment.",
+        "steps": [
+          "Set compass > 3cm.",
+          "Draw arcs above/below from both ends.",
+          "Connect the meeting points of arcs."
+        ]
+      }
+    ]
   },
   "math_pg_3": {
     "what": "Using a protractor or compass to draw angles like 60, 90, and 120 degrees.",
@@ -668,7 +1402,26 @@
       "Bisecting an angle means splitting it into two smaller equal angles"
     ],
     "tip": "Angle construction is all about the steady movement of your hand!",
-    "question": "How many degrees is half of a right angle?"
+    "question": "How many degrees is half of a right angle?",
+    "examples": [
+      {
+        "question": "Construct a 60-degree angle using compass.",
+        "steps": [
+          "Draw ray OA. Take center O, draw arc.",
+          "Using same radius, center at intersection, draw arc.",
+          "Connect O to new point."
+        ],
+        "illustration": "60 degrees"
+      },
+      {
+        "question": "Bisect a 90-degree angle.",
+        "steps": [
+          "Set compass on 90-deg marks.",
+          "Draw intersecting arcs in middle.",
+          "Resulting angle is 45 degrees."
+        ]
+      }
+    ]
   },
   "sci_food_1": {
     "what": "Our food contains nutrients like carbohydrates, proteins, fats, vitamins, and minerals that give us energy and keep us healthy.",
@@ -679,7 +1432,26 @@
       "Roughage helps in digestion but is not a nutrient"
     ],
     "tip": "Wash vegetables before cutting them to keep the vitamins safe!",
-    "question": "Which nutrient is known as the body-building food?"
+    "question": "Which nutrient is known as the body-building food?",
+    "examples": [
+      {
+        "question": "Test for presence of starch in a food item.",
+        "steps": [
+          "Take a small quantity of food (e.g., boiled potato).",
+          "Add 2-3 drops of dilute iodine solution.",
+          "Result: If color turns blue-black, starch is present."
+        ],
+        "illustration": "Iodine + Potato = Blue-black color"
+      },
+      {
+        "question": "Test for presence of proteins.",
+        "steps": [
+          "Make a paste of food item.",
+          "Add 2 drops of Copper Sulphate and 10 drops of Caustic Soda.",
+          "Result: A violet color indicates proteins inside."
+        ]
+      }
+    ]
   },
   "sci_food_2": {
     "what": "A balanced diet provides all nutrients in right amounts. Lack of these leads to deficiency diseases.",
@@ -690,7 +1462,23 @@
       "Iodine deficiency causes goiter (swelled neck)"
     ],
     "tip": "A rainbow-colored plate (different veggies) usually means a balanced meal!",
-    "question": "What disease is caused by the deficiency of Iron?"
+    "question": "What disease is caused by the deficiency of Iron?",
+    "examples": [
+      {
+        "question": "Why is eating junk food daily bad for a balanced diet?",
+        "steps": [
+          "Junk food is high in fats and carbs but low in vitamins and minerals.",
+          "It leads to obesity and nutrient deficiency diseases over time."
+        ],
+        "illustration": "Healthy plate = Rainbow of colors; Junk plate = Beige"
+      },
+      {
+        "question": "Suggest a meal that is balanced for a growing child.",
+        "steps": [
+          "Add Roti/Rice (Carbs), Dal/Paneer (Proteins), Ghee (Fats), and Salad/Veggies (Vitamins/Minerals)."
+        ]
+      }
+    ]
   },
   "sci_plt_1": {
     "what": "Plants are grouped into herbs (soft stems), shrubs (woody stems at base), and trees (hard, thick trunks).",
@@ -701,7 +1489,24 @@
       "Trees have branches high up on the stem"
     ],
     "tip": "Climbers and creepers are special plants that need support to grow up!",
-    "question": "Is a Peepal tree a herb, shrub, or tree?"
+    "question": "Is a Peepal tree a herb, shrub, or tree?",
+    "examples": [
+      {
+        "question": "Identify a climber in your garden.",
+        "steps": [
+          "Look for a plant with thin, weak stems that wraps around a pole.",
+          "Example: Money plant or Pea plant."
+        ],
+        "illustration": "[Plant] ---coiling around---> [Support]"
+      },
+      {
+        "question": "Difference between a Tree and a Shrub.",
+        "steps": [
+          "Tree: Tall with single hard trunk (Neem).",
+          "Shrub: Medium size with branches near base (Rose)."
+        ]
+      }
+    ]
   },
   "sci_plt_2": {
     "what": "Each part of a plant — root, stem, leaf, flower — has a vital job to do.",
@@ -712,7 +1517,25 @@
       "Flowers are the reproductive parts that become seeds"
     ],
     "tip": "Most plants have two types of roots: Taproot or Fibrous root!",
-    "question": "What is the flat green part of a leaf called?"
+    "question": "What is the flat green part of a leaf called?",
+    "examples": [
+      {
+        "question": "Observe how water moves through a plant.",
+        "steps": [
+          "Put a white carnation flower in red-colored water.",
+          "Wait for a few hours.",
+          "Result: The petals turn red, showing the stem carries water up."
+        ],
+        "illustration": "Stem acts like a drinking straw"
+      },
+      {
+        "question": "Observe the leaf venation of a peepal leaf.",
+        "steps": [
+          "Look at the network of veins.",
+          "Since it forms a net-like structure, it is \"Reticulate Venation\"."
+        ]
+      }
+    ]
   },
   "sci_plt_3": {
     "what": "The process by which green plants make their own food using sunlight, air (CO2), and water.",
@@ -723,7 +1546,25 @@
       "Glucose is the food produced, stored as starch"
     ],
     "tip": "Photosynthesis happens mostly during the day when sunlight is available.",
-    "question": "Which gas do plants release during photosynthesis?"
+    "question": "Which gas do plants release during photosynthesis?",
+    "examples": [
+      {
+        "question": "Prove that plants need sunlight for food.",
+        "steps": [
+          "Cover a portion of a leaf with black paper.",
+          "Keep in sun for days.",
+          "Test the covered part for starch.",
+          "Result: No starch found in covered part; it needs sun!"
+        ],
+        "illustration": "Sunlight + CO2 + Water -> Glucose + Oxygen"
+      },
+      {
+        "question": "Where do plants get carbon dioxide from?",
+        "steps": [
+          "They absorb it from the surrounding air through tiny pores called Stomata."
+        ]
+      }
+    ]
   },
   "sci_body_1": {
     "what": "Our body has different joints like ball-and-socket, hinge, and pivot that allow us to move in different ways.",
@@ -734,7 +1575,24 @@
       "The backbone is made of many small bones called vertebrae"
     ],
     "tip": "Regular exercise keeps your joints flexible and healthy!",
-    "question": "Where in your body can you find a ball-and-socket joint?"
+    "question": "Where in your body can you find a ball-and-socket joint?",
+    "examples": [
+      {
+        "question": "Why can you rotate your arm in a full circle but not your knee?",
+        "steps": [
+          "Arm has a ball-and-socket joint which allows 360-deg movement.",
+          "Knee has a hinge joint which only allows back-and-forth movement."
+        ],
+        "illustration": "Ball-and-socket = 3D movement; Hinge = 2D movement"
+      },
+      {
+        "question": "Identify fixed joints in your body.",
+        "steps": [
+          "Try to move your upper jaw.",
+          "You can't! The joint between skull and upper jaw is fixed."
+        ]
+      }
+    ]
   },
   "sci_body_2": {
     "what": "Our skeleton provides shape and protection, while muscles help the bones move.",
@@ -745,7 +1603,25 @@
       "Cartilage is a softer tissue found at joints and in your nose/ears"
     ],
     "tip": "Bones need Calcium and Vitamin D to stay strong!",
-    "question": "How many bones are there in the human adult skeleton?"
+    "question": "How many bones are there in the human adult skeleton?",
+    "examples": [
+      {
+        "question": "How do muscles help move your arm?",
+        "steps": [
+          "Muscles work in pairs (Biceps and Triceps).",
+          "When you lift, biceps contract (get shorter) and triceps relax.",
+          "To straighten, the opposite happens."
+        ],
+        "illustration": "Muscle contracts -> Pulls bone -> Movement"
+      },
+      {
+        "question": "Describe the function of the rib cage.",
+        "steps": [
+          "It forms a cage of bones around our chest.",
+          "Protects delicate organs like heart and lungs from injury."
+        ]
+      }
+    ]
   },
   "sci_liv_1": {
     "what": "A habitat is the natural home of an organism, providing food, water, and shelter.",
@@ -756,7 +1632,24 @@
       "The place where an organism lives is its address in nature"
     ],
     "tip": "Different habitats have different weather and plants!",
-    "question": "Is an ocean a terrestrial or aquatic habitat?"
+    "question": "Is an ocean a terrestrial or aquatic habitat?",
+    "examples": [
+      {
+        "question": "Identify biotic and abiotic components in a pond.",
+        "steps": [
+          "Biotic (Living): Fish, Frogs, Water plants.",
+          "Abiotic (Non-living): Water, Sunlight, Mud, Stones."
+        ],
+        "illustration": "Biotic + Abiotic = Ecosystem"
+      },
+      {
+        "question": "Why do trees in mountain regions have needle-like leaves?",
+        "steps": [
+          "This shape helps snow to slide off easily.",
+          "Prevents branches from breaking under heavy snow."
+        ]
+      }
+    ]
   },
   "sci_liv_2": {
     "what": "Adaptation is the presence of specific features that help a plant or animal survive in its surroundings.",
@@ -767,7 +1660,26 @@
       "Aquatic plants have hollow stems to stay afloat"
     ],
     "tip": "Adaptations happen over thousands of years to help species survive!",
-    "question": "How do gills help a fish?"
+    "question": "How do gills help a fish?",
+    "examples": [
+      {
+        "question": "How is a cactus adapted to live in a desert?",
+        "steps": [
+          "Leaves are reduced to spines (save water).",
+          "Stem is green and fleshy (performs photosynthesis and stores water).",
+          "Deep roots to find groundwater."
+        ],
+        "illustration": "[Cactus] -> Spines, Waxy skin"
+      },
+      {
+        "question": "How do fish breathe in water?",
+        "steps": [
+          "They use Gills.",
+          "Water enters through mouth and passes over gills.",
+          "Gills extract oxygen and release CO2 into water."
+        ]
+      }
+    ]
   },
   "sci_mat_1": {
     "what": "Grouping materials based on properties like appearance, hardness, and whether they sink or float.",
@@ -778,7 +1690,25 @@
       "Transparent materials let light pass through (like glass)"
     ],
     "tip": "Sorting things helps us find them easily and understand their uses!",
-    "question": "Name one material that is transparent."
+    "question": "Name one material that is transparent.",
+    "examples": [
+      {
+        "question": "Test if oil is soluble in water.",
+        "steps": [
+          "Take a glass of water, add 1 spoon of oil.",
+          "Stir it well.",
+          "Result: Oil forms a separate layer on top. It is insoluble (immiscible)."
+        ],
+        "illustration": "Water + Oil = Two separate layers"
+      },
+      {
+        "question": "Identify a material that is both hard and lustrous.",
+        "steps": [
+          "Iron or Aluminum.",
+          "They are tough to compress (hard) and shine when polished (lustrous)."
+        ]
+      }
+    ]
   },
   "sci_sep_1": {
     "what": "Methods like handpicking, winnowing, and sieving used to separate components of a mixture.",
@@ -789,7 +1719,25 @@
       "Sedimentation is letting heavy dirt settle in water"
     ],
     "tip": "Use filtration with a cloth or paper to remove very fine dirt from water!",
-    "question": "Why do we use winnowing for separating grains?"
+    "question": "Why do we use winnowing for separating grains?",
+    "examples": [
+      {
+        "question": "How to separate sand and iron filings from a mixture?",
+        "steps": [
+          "Use a magnet.",
+          "Pass the magnet over the mixture.",
+          "Iron filings stick to it, leaving sand behind."
+        ],
+        "illustration": "Magnet pulls iron out of sand"
+      },
+      {
+        "question": "Separate tea leaves from tea.",
+        "steps": [
+          "Use a strainer (sieve).",
+          "The liquid tea passes through, leaves stay behind. This is filtration."
+        ]
+      }
+    ]
   },
   "sci_sep_2": {
     "what": "Evaporation is water turning into vapor; condensation is vapor turning back into liquid.",
@@ -800,7 +1748,26 @@
       "Distillation uses both to get very pure water"
     ],
     "tip": "The \"sweat\" on the outside of a cold soda can is condensation!",
-    "question": "How is salt made from sea water?"
+    "question": "How is salt made from sea water?",
+    "examples": [
+      {
+        "question": "Obtain salt from salt-water solution.",
+        "steps": [
+          "Heat the solution in a dish.",
+          "Water turns to vapor and disappears.",
+          "Salt crystals are left behind."
+        ],
+        "illustration": "Heat -> Evaporation -> Solid remains"
+      },
+      {
+        "question": "Prove that air has water vapor.",
+        "steps": [
+          "Take a metal glass with ice-cold water.",
+          "Wait for a few minutes.",
+          "Droplets form on the outside. This is condensation of vapor from air."
+        ]
+      }
+    ]
   },
   "sci_chg_1": {
     "what": "Reversible changes can be undone (like melting ice); irreversible changes are permanent (like burning wood).",
@@ -811,7 +1778,26 @@
       "Curdling of milk into curd is irreversible"
     ],
     "tip": "Most physical changes are reversible, while most chemical changes are not.",
-    "question": "Is the melting of wax a reversible or irreversible change?"
+    "question": "Is the melting of wax a reversible or irreversible change?",
+    "examples": [
+      {
+        "question": "Is glowing of a bulb a reversible change?",
+        "steps": [
+          "Turn on: It glows.",
+          "Turn off: It returns to original state.",
+          "Yes, it is reversible."
+        ],
+        "illustration": "On <-> Off (Reversible)"
+      },
+      {
+        "question": "Change of raw egg to boiled egg.",
+        "steps": [
+          "Heat changes the egg structure.",
+          "You cannot turn a boiled egg back to raw.",
+          "Therefore, it is Irreversible."
+        ]
+      }
+    ]
   },
   "sci_mot_1": {
     "what": "Measurement is comparing an unknown quantity with a known fixed quantity called a unit.",
@@ -822,7 +1808,25 @@
       "1 kilometer = 1000 meters"
     ],
     "tip": "Always keep the ruler exactly along the length you are measuring!",
-    "question": "What is the standard unit of length across the world?"
+    "question": "What is the standard unit of length across the world?",
+    "examples": [
+      {
+        "question": "Measure the length of a curved line.",
+        "steps": [
+          "Use a piece of thread.",
+          "Place thread along the curve carefully.",
+          "Stretch the thread along a ruler to get length."
+        ],
+        "illustration": "Curve -> Thread -> Ruler"
+      },
+      {
+        "question": "Why use SI units?",
+        "steps": [
+          "Different people have different hand sizes.",
+          "Using a fixed standard unit (metre) gives same result for everyone."
+        ]
+      }
+    ]
   },
   "sci_mot_2": {
     "what": "Motion is the change in position of an object over time. It can be straight, circular, or periodic.",
@@ -833,7 +1837,25 @@
       "Circular motion happens when an object moves around a center point"
     ],
     "tip": "A rolling ball has both rectilinear and rotational motion!",
-    "question": "What type of motion does a swinging cradle have?"
+    "question": "What type of motion does a swinging cradle have?",
+    "examples": [
+      {
+        "question": "Identify motion of a clock's hands.",
+        "steps": [
+          "The tips move around a center.",
+          "They repeat movement every hour/minute.",
+          "It is both Circular and Periodic motion."
+        ],
+        "illustration": "[Clock] -> Periodic & Circular"
+      },
+      {
+        "question": "Motion of a falling stone.",
+        "steps": [
+          "It falls in a straight path towards ground.",
+          "It is Rectilinear motion."
+        ]
+      }
+    ]
   },
   "sci_lgt_1": {
     "what": "Light is a form of energy that helps us see. Shadows form when an object blocks light.",
@@ -844,7 +1866,24 @@
       "Transparent objects let all light pass through"
     ],
     "tip": "Light always travels in a straight line!",
-    "question": "Can a transparent object form a dark shadow?"
+    "question": "Can a transparent object form a dark shadow?",
+    "examples": [
+      {
+        "question": "How is a shadow formed?",
+        "steps": [
+          "Place an opaque object in path of light.",
+          "Light cannot pass through it.",
+          "A dark patch (shadow) forms on the screen behind it."
+        ],
+        "illustration": "Light Source -> Object -> Shadow"
+      },
+      {
+        "question": "Can we see a shadow in a completely dark room?",
+        "steps": [
+          "No. We need a light source, an object, and a screen to see a shadow."
+        ]
+      }
+    ]
   },
   "sci_lgt_2": {
     "what": "Reflection is the bouncing back of light from a surface, like a mirror.",
@@ -855,7 +1894,25 @@
       "Smooth surfaces reflect light better than rough ones"
     ],
     "tip": "Periscopes use reflection to see over or around obstacles.",
-    "question": "What kind of image is formed by a pinhole camera?"
+    "question": "What kind of image is formed by a pinhole camera?",
+    "examples": [
+      {
+        "question": "Write your name on paper and hold it to a mirror.",
+        "steps": [
+          "The letters appear reversed (Left becomes Right).",
+          "This is called Lateral Inversion."
+        ],
+        "illustration": "CAT -> TAƆ"
+      },
+      {
+        "question": "Prove light travels in a straight line.",
+        "steps": [
+          "Look at a candle through a straight pipe: Visible.",
+          "Bend the pipe: Not visible.",
+          "Proof: Light travels in straight lines."
+        ]
+      }
+    ]
   },
   "sci_elec_1": {
     "what": "An electric circuit is a path through which current flows from a cell to a device.",
@@ -866,7 +1923,25 @@
       "The filament of a bulb is the thin wire that glows"
     ],
     "tip": "Always use a switch to safely turn devices on and off!",
-    "question": "How many terminals does an electric cell have?"
+    "question": "How many terminals does an electric cell have?",
+    "examples": [
+      {
+        "question": "Why does a bulb not glow if one wire is broken?",
+        "steps": [
+          "Electricity needs a continuous path to flow.",
+          "A broken wire creates a \"gap\" (open circuit).",
+          "Current cannot jump the gap, so bulb stays off."
+        ],
+        "illustration": "[+] --[gap]-- [-] = No Light"
+      },
+      {
+        "question": "Difference between a cell and a battery.",
+        "steps": [
+          "Cell: Single unit producing electricity.",
+          "Battery: Group of cells connected together."
+        ]
+      }
+    ]
   },
   "sci_elec_2": {
     "what": "Conductors allow electricity to pass through; insulators do not.",
@@ -877,7 +1952,24 @@
       "Water (unless very pure) is also a conductor"
     ],
     "tip": "Never touch electric switches with wet hands!",
-    "question": "Is wood a conductor or an insulator?"
+    "question": "Is wood a conductor or an insulator?",
+    "examples": [
+      {
+        "question": "Why are testers handled with plastic handles?",
+        "steps": [
+          "Plastic is an insulator.",
+          "It stops current from reaching your hand.",
+          "Prevents electric shocks."
+        ],
+        "illustration": "Safety handle = Insulator"
+      },
+      {
+        "question": "Is salt water a conductor?",
+        "steps": [
+          "Yes. Adding salt to water makes it conduct electricity very well."
+        ]
+      }
+    ]
   },
   "sci_mag_1": {
     "what": "Magnets are materials that attract iron. They always have two poles: North and South.",
@@ -888,7 +1980,25 @@
       "Magnetic property is strongest at the poles"
     ],
     "tip": "Never heat or drop a magnet, or it might lose its power!",
-    "question": "What happens when two North poles are brought close to each other?"
+    "question": "What happens when two North poles are brought close to each other?",
+    "examples": [
+      {
+        "question": "Difference between Magnetic and Non-magnetic materials.",
+        "steps": [
+          "Magnetic: Attracted to magnets (Iron, Nickel).",
+          "Non-magnetic: Not attracted (Plastic, Rubber, Wood)."
+        ],
+        "illustration": "Magnet picks up paper clips, but not erasers."
+      },
+      {
+        "question": "How to find North direction using a bar magnet?",
+        "steps": [
+          "Tie a thread at middle and hang it freely.",
+          "Wait for it to stop.",
+          "One end will point towards geographical North."
+        ]
+      }
+    ]
   },
   "sci_wtr_1": {
     "what": "Water is essential for life. We get it from rivers, lakes, ponds, and groundwater.",
@@ -899,7 +2009,23 @@
       "Plants need water to survive and stay cool"
     ],
     "tip": "Save water by turning off the tap while brushing your teeth!",
-    "question": "What is the main source of water on Earth?"
+    "question": "What is the main source of water on Earth?",
+    "examples": [
+      {
+        "question": "What causes drought?",
+        "steps": [
+          "If it doesn't rain for a long time (year or more).",
+          "Soil dries up, wells go empty, and crops fail."
+        ],
+        "illustration": "No rain -> Cracked earth -> Drought"
+      },
+      {
+        "question": "What is Rain Water Harvesting?",
+        "steps": [
+          "Collecting rain water from rooftops into underground tanks for later use."
+        ]
+      }
+    ]
   },
   "sci_wtr_2": {
     "what": "The continuous movement of water from Earth to the atmosphere and back.",
@@ -910,7 +2036,24 @@
       "Transpiration is the release of water vapor by plant leaves"
     ],
     "tip": "The sun is the engine that drives the whole water cycle!",
-    "question": "What is the process of plants releasing water into the air called?"
+    "question": "What is the process of plants releasing water into the air called?",
+    "examples": [
+      {
+        "question": "Explain formation of dew.",
+        "steps": [
+          "At night, objects cool down.",
+          "Water vapor in air condenses on cold leaves/surfaces.",
+          "Forms tiny droplets called dew."
+        ],
+        "illustration": "Cool surface -> Vapor to liquid"
+      },
+      {
+        "question": "Importance of Transpiration.",
+        "steps": [
+          "Helps in cooling the plant and pulling water up from roots to leaves."
+        ]
+      }
+    ]
   },
   "sci_air_1": {
     "what": "Air is a mixture of gases that surrounds the Earth like a blanket called the atmosphere.",
@@ -921,7 +2064,25 @@
       "Air contains dust, smoke, and water vapor too"
     ],
     "tip": "Even soil and water have some air trapped in them!",
-    "question": "Which gas in the air is needed for things to burn?"
+    "question": "Which gas in the air is needed for things to burn?",
+    "examples": [
+      {
+        "question": "Prove that air occupies space.",
+        "steps": [
+          "Blow air into a balloon.",
+          "The balloon swells and becomes bigger.",
+          "Conclusion: Air takes up space inside the balloon."
+        ],
+        "illustration": "Flat balloon -> Round balloon (filled with air)"
+      },
+      {
+        "question": "Why do mountaineers carry oxygen cylinders?",
+        "steps": [
+          "As we go higher, the air becomes thinner and oxygen becomes less.",
+          "Helps them breathe properly at high altitudes."
+        ]
+      }
+    ]
   },
   "sci_grb_1": {
     "what": "Waste management is about reducing garbage and using methods like composting and recycling.",
@@ -932,7 +2093,23 @@
       "Vermicomposting uses redworms to make high-quality manure"
     ],
     "tip": "Follow the 3 Rs: Reduce, Reuse, and Recycle!",
-    "question": "What are redworms used for in waste management?"
+    "question": "What are redworms used for in waste management?",
+    "examples": [
+      {
+        "question": "What items can we compost?",
+        "steps": [
+          "Vegetable peels, fruit skins, leftover food, tea leaves.",
+          "Do not add plastic, metal, or glass as they don't rot."
+        ],
+        "illustration": "Organic waste -> Compost"
+      },
+      {
+        "question": "Why is burning plastic bad?",
+        "steps": [
+          "Burning plastic releases poisonous gases that pollute air and cause health problems."
+        ]
+      }
+    ]
   },
   "ss_his_1": {
     "what": "History is the study of our past. We learn about it from sources like manuscripts, inscriptions, and archeological findings.",
