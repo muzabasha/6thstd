@@ -350,16 +350,44 @@
     "textbookContent": "Textbook Chapter 1 introduces large numbers and their comparison. It covers the Indian System of Numeration (using lakhs and crores) and the International System (using millions and billions). It also teaches the use of commas to separate periods for easier reading.",
     "qa": [
       {
-        "q": "How many lakhs make one million?",
-        "a": "10 lakhs make one million."
+        "q": "Smallest 5-digit number?",
+        "a": "10,000."
       },
       {
-        "q": "What is the place value of 5 in 75,307?",
-        "a": "The place value is 5,000 (Five thousand)."
+        "q": "Greatest 5-digit number?",
+        "a": "99,999."
       },
       {
-        "q": "Write the greatest 4-digit number using 5, 0, 8, 2 without repetition.",
-        "a": "The greatest number is 8520."
+        "q": "1 million = ? lakhs",
+        "a": "10 lakhs."
+      },
+      {
+        "q": "1 crore = ? millions",
+        "a": "10 millions."
+      },
+      {
+        "q": "1 km = ? metres",
+        "a": "1,000 metres."
+      },
+      {
+        "q": "1 kg = ? grams",
+        "a": "1,000 grams."
+      },
+      {
+        "q": "1 gram = ? milligrams",
+        "a": "1,000 milligrams."
+      },
+      {
+        "q": "Place value of 4 in 4,56,789?",
+        "a": "4,00,000 (Four lakhs)."
+      },
+      {
+        "q": "What is expanded form?",
+        "a": "Expressing a number as the sum of its place values."
+      },
+      {
+        "q": "Which is larger: 700 or 070?",
+        "a": "700 is larger."
       }
     ]
   },
@@ -454,12 +482,44 @@
     "textbookContent": "Chapter 2 deals with Whole Numbers (0, 1, 2, 3...). It defines the successor of a number (n+1) and predecessor (n-1). It highlights that zero is the smallest whole number and there is no largest whole number.",
     "qa": [
       {
-        "q": "Which is the smallest natural number?",
-        "a": "1 is the smallest natural number."
+        "q": "Smallest whole number?",
+        "a": "0."
       },
       {
-        "q": "Does the whole number 0 have a predecessor?",
-        "a": "In the set of whole numbers, 0 does not have a predecessor."
+        "q": "Smallest natural number?",
+        "a": "1."
+      },
+      {
+        "q": "Successor of 1099?",
+        "a": "1100."
+      },
+      {
+        "q": "Predecessor of 2000?",
+        "a": "1999."
+      },
+      {
+        "q": "What is a whole number?",
+        "a": "Natural numbers along with 0."
+      },
+      {
+        "q": "Are all natural numbers whole numbers?",
+        "a": "Yes."
+      },
+      {
+        "q": "Are all whole numbers natural numbers?",
+        "a": "No, 0 is not a natural number."
+      },
+      {
+        "q": "What is a number line?",
+        "a": "A straight line where numbers are marked at equal intervals."
+      },
+      {
+        "q": "Property of 1 for multiplication?",
+        "a": "Identity property (any number times 1 is itself)."
+      },
+      {
+        "q": "Property of 0 for addition?",
+        "a": "Additive identity (any number plus 0 is itself)."
       }
     ]
   },
@@ -1570,16 +1630,44 @@
     "textbookContent": "NCERT Class 6 Science Chapter 1 focuses on the diversity of food. It explains that food items like boiled rice are made of just two ingredients (rice and water), while a vegetable curry needs many. It introduces the sources of food: Plants provide grains, cereals, and vegetables, while animals give us milk, meat, and eggs.",
     "qa": [
       {
-        "q": "Define ingredients.",
-        "a": "Ingredients are the materials needed to prepare a particular food dish."
+        "q": "What are ingredients?",
+        "a": "Materials needed to prepare a dish, like rice and water for boiled rice."
       },
       {
-        "q": "What are the main sources of our food?",
-        "a": "The two main sources are Plants and Animals."
+        "q": "Name two plant parts used as food.",
+        "a": "Fruits (apple) and Seeds (pulses)."
       },
       {
-        "q": "Why do we need food?",
-        "a": "Food provides energy for work, helps in growth, and protects our body from diseases."
+        "q": "What are herbivores?",
+        "a": "Animals that eat only plants or plant products."
+      },
+      {
+        "q": "What are carnivores?",
+        "a": "Animals that eat only other animals."
+      },
+      {
+        "q": "What are omnivores?",
+        "a": "Animals that eat both plants and animals."
+      },
+      {
+        "q": "Where do bees collect nectar from?",
+        "a": "Bees collect nectar from flowers."
+      },
+      {
+        "q": "What do bees turn nectar into?",
+        "a": "They turn it into honey and store it in their beehive."
+      },
+      {
+        "q": "Are all animals herbivores?",
+        "a": "No, animals are classified as herbivores, carnivores, or omnivores based on food habits."
+      },
+      {
+        "q": "Which part of the mustard plant is used as food?",
+        "a": "Leaves (vegetable) and Seeds (oil)."
+      },
+      {
+        "q": "Is milk a plant or animal product?",
+        "a": "Milk is an animal product obtained from cows, goats, and buffaloes."
       }
     ]
   },
@@ -1612,16 +1700,44 @@
     "textbookContent": "This chapter discusses the components of food: Carbohydrates, Proteins, Fats, Vitamins, and Minerals. It states that Carbohydrates mainly provide energy. Fats also give energy, actually much more compared to the same amount of carbohydrates. Proteins are needed for growth and repair. Vitamins help in protecting our body against diseases.",
     "qa": [
       {
-        "q": "What is roughage?",
-        "a": "Roughage is dietary fiber found in plant foods that helps our body get rid of undigested food."
+        "q": "What are nutrients?",
+        "a": "Chemical substances in food that our body needs to grow and stay healthy."
       },
       {
-        "q": "Which nutrient is known as energy-giving food?",
-        "a": "Carbohydrates and Fats are energy-giving foods."
+        "q": "Name the major nutrients in our food.",
+        "a": "Carbohydrates, Proteins, Fats, Vitamins, and Minerals."
       },
       {
-        "q": "Name the vitamin that keeps our eyes and skin healthy.",
-        "a": "Vitamin A is essential for healthy eyes and skin."
+        "q": "Which nutrient provides more energy than carbohydrates?",
+        "a": "Fats provide much more energy than the same amount of carbohydrates."
+      },
+      {
+        "q": "Why are proteins called body-building foods?",
+        "a": "Because they are needed for the growth and repair of our body."
+      },
+      {
+        "q": "Which vitamin is essential for good eyesight?",
+        "a": "Vitamin A."
+      },
+      {
+        "q": "Which vitamin helps our body use calcium for bones and teeth?",
+        "a": "Vitamin D."
+      },
+      {
+        "q": "What is a balanced diet?",
+        "a": "A diet that contains all required nutrients in the right proportion along with roughage and water."
+      },
+      {
+        "q": "What are deficiency diseases?",
+        "a": "Diseases caused by the lack of certain nutrients over a long period."
+      },
+      {
+        "q": "Name the disease caused by Vitamin C deficiency.",
+        "a": "Scurvy (bleeding gums)."
+      },
+      {
+        "q": "Which mineral is needed for making red blood cells?",
+        "a": "Iron."
       }
     ]
   },
@@ -1655,12 +1771,44 @@
     "textbookContent": "Plants are classified into Herbs, Shrubs, and Trees based on their size and stem nature. Herbs have green, tender stems and are usually short. Shrubs have branches arising near the base with a hard but not very thick stem. Trees have a very hard, thick brown stem called a trunk.",
     "qa": [
       {
-        "q": "How do creepers differ from climbers?",
-        "a": "Creepers spread on the ground, while climbers take support of neighboring structures to climb up."
+        "q": "What are herbs?",
+        "a": "Green, tender-stemmed plants, usually short."
       },
       {
-        "q": "Give an example of a shrub.",
-        "a": "Rose and Lemon are common examples of shrubs."
+        "q": "What are shrubs?",
+        "a": "Plants with hard stems branching near the base."
+      },
+      {
+        "q": "What are trees?",
+        "a": "Tall plants with thick, hard brown trunks."
+      },
+      {
+        "q": "What are creepers?",
+        "a": "Plants with weak stems that spread on ground."
+      },
+      {
+        "q": "What are climbers?",
+        "a": "Plants that take support to climb up."
+      },
+      {
+        "q": "Function of a stem?",
+        "a": "Transports water and minerals to all parts."
+      },
+      {
+        "q": "What is reticulate venation?",
+        "a": "Net-like design of veins on a leaf."
+      },
+      {
+        "q": "What is parallel venation?",
+        "a": "Veins running parallel to each other."
+      },
+      {
+        "q": "What is transpiration?",
+        "a": "Process of water loss from leaves as vapor."
+      },
+      {
+        "q": "What are the main parts of a flower?",
+        "a": "Sepals, Petals, Stamens, and Pistil."
       }
     ]
   },
@@ -2299,12 +2447,44 @@
     "textbookContent": "Chapter 1: \"What, Where, How and When?\" introduces historical sources. It explains that people lived along river banks centuries ago. It discusses the use of manuscripts (palm leaf/birch bark) and inscriptions (hard surfaces) as primary evidence for reconstructing the past.",
     "qa": [
       {
-        "q": "Who are archeologists?",
-        "a": "Archeologists are scientists who study the remains of buildings, objects, and bones to understand the past."
+        "q": "What are manuscripts?",
+        "a": "Hand-written books on palm leaves or birch bark."
       },
       {
-        "q": "What was the language used in ancient manuscripts?",
-        "a": "Most manuscripts were written in Sanskrit, Prakrit, or Tamil."
+        "q": "What are inscriptions?",
+        "a": "Writings carved on hard surfaces like stone or metal."
+      },
+      {
+        "q": "Where did people first live in India?",
+        "a": "Banks of the river Narmada."
+      },
+      {
+        "q": "What does BCE stand for?",
+        "a": "Before Common Era."
+      },
+      {
+        "q": "What is the river Indus called in Sanskrit?",
+        "a": "Sindhu."
+      },
+      {
+        "q": "What are tributaries?",
+        "a": "Smaller rivers that flow into a larger river."
+      },
+      {
+        "q": "Who found the first traces of wheat and barley?",
+        "a": "People of the Sulaiman and Kirthar hills."
+      },
+      {
+        "q": "What objects do archeologists study?",
+        "a": "Tools, weapons, pots, pans, and coins."
+      },
+      {
+        "q": "Origin of the name \"India\"?",
+        "a": "Comes from the Indus (Sindhu)."
+      },
+      {
+        "q": "What do historians call the past?",
+        "a": "A collection of stories based on sources."
       }
     ]
   },
@@ -3946,12 +4126,44 @@
     "textbookContent": "ಸಿರಿ ಕನ್ನಡ ಪಠ್ಯಪುಸ್ತಕದ ಮೊದಲ ಪಾಠ \"ಕನ್ನಡ ನಾಡು ನುಡಿ\" ಕರ್ನಾಟಕದ ಇತಿಹಾಸ ಮತ್ತು ಸಾಹಿತ್ಯ ಸೌರಭವನ್ನು ಪರಿಚಯಿಸುತ್ತದೆ. ಇದು ಕನ್ನಡ ಕವಿಗಳ ಕೊಡುಗೆ ಮತ್ತು ಭಾಷೆಯ ಪ್ರಾಚೀನತೆಯನ್ನು ವಿವರಿಸುತ್ತದೆ.",
     "qa": [
       {
-        "q": "ಕನ್ನಡ ಅತಿ ಪ್ರಾಚೀನ ಭಾಷೆ ಎಂದು ಹೇಗೆ ಹೇಳುವಿರಿ?",
-        "a": "ಕನ್ನಡವು ೨೦೦೦ ವರ್ಷಗಳಿಗೂ ಹೆಚ್ಚು ಕಾಲ ಉಳಿದುಬಂದಿರುವ ಶಾಸನಗಳು ಮತ್ತು ಸಾಹಿತ್ಯವನ್ನು ಹೊಂದಿದೆ."
+        "q": "ಕನ್ನಡ ಅತಿ ಪ್ರಾಚೀನ ಭಾಷೆ ಎಂದು ಹೇಗೆ ಹೇಳುತ್ತಾರೆ?",
+        "a": "ಕ್ರಿ.ಶ. ೪೫೦ರ ಹಲ್ಮಿಡಿ ಶಾಸನವು ಕನ್ನಡದ ಪ್ರಾಚೀನತೆಗೆ ಸಾಕ್ಷಿಯಾಗಿದೆ."
       },
       {
-        "q": "ಜ್ಞಾನಪೀಠ ಪ್ರಶಸ್ತಿ ಎಂದರೇನು?",
-        "a": "ಇದು ಭಾರತೀಯ ಸಾಹಿತ್ಯ ಕ್ಷೇತ್ರದಲ್ಲಿ ನೀಡಲಾಗುವ ಅತ್ಯುನ್ನತ ರಾಷ್ಟ್ರೀಯ ಪ್ರಶಸ್ತಿಯಾಗಿದೆ."
+        "q": "ಕನ್ನಡದ ಮೊದಲ ಜ್ಞಾನಪೀಠ ಪ್ರಶಸ್ತಿ ವಿಜೇತ ಯಾರು?",
+        "a": "ಕುವೆಂಪು (ಶ್ರೀ ರಾಮಾಯಣ ದರ್ಶನಂ ಕೃತಿಗೆ)."
+      },
+      {
+        "q": "ಕರ್ನಾಟಕದ ರಾಜ್ಯ ಘೋಷವಾಕ್ಯ ಯಾವುದು?",
+        "a": "\"ಜಯ ಭಾರತ ಜನನಿಯ ತನುಜಾತೆ\"."
+      },
+      {
+        "q": "ಕನ್ನಡ ಸಾಹಿತ್ಯ ಪರಿಷತ್ತು ಎಲ್ಲಿಯಲ್ಲಿದೆ?",
+        "a": "ಬೆಂಗಳೂರಿನಲ್ಲಿದೆ."
+      },
+      {
+        "q": "ಆದಿಕವಿ ಎಂದು ಯಾರನ್ನು ಕರೆಯುತ್ತಾರೆ?",
+        "a": "ಪಂಪ ಕವಿಯನ್ನು."
+      },
+      {
+        "q": "ಕನ್ನಡದ ಮೊದಲ ನಾಟಕ ಯಾವುದು?",
+        "a": "ಮಿತ್ರವಿಂದಾ ಗೋವಿಂದ."
+      },
+      {
+        "q": "ವಚನ ಸಾಹಿತ್ಯದ ಪಿತಾಮಹ ಯಾರು?",
+        "a": "ಬಸವಣ್ಣನವರು."
+      },
+      {
+        "q": "ಕರ್ನಾಟಕ ದಿನಾಚರಣೆ ಎಂದು?",
+        "a": "ನವೆಂಬರ್ ೧."
+      },
+      {
+        "q": "ಕನ್ನಡದ ಮೊದಲ ಶಾಸನ ಯಾವುದು?",
+        "a": "ಹಲ್ಮಿಡಿ ಶಾಸನ."
+      },
+      {
+        "q": "ಜ್ಞಾನಪೀಠ ಪ್ರಶಸ್ತಿ ಪಡೆದ ಮೊದಲ ಮಹಿಳೆ ಯಾರು?",
+        "a": "ಕನ್ನಡದಲ್ಲಿ ಇನ್ನೂ ಮಹಿಳೆಯರು ಜ್ಞಾನಪೀಠ ಪಡೆದಿಲ್ಲ (Ashapurna Devi was first in India)."
       }
     ]
   },
