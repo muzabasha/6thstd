@@ -33,7 +33,7 @@ export default function QuizCard({ subject, topic, topicId }: QuizCardProps) {
     setShortAnswer("");
     setRevealed(false);
     try {
-      const qs = await generateQuiz(subject, topic);
+      const qs = await generateQuiz(subject, topic, topicId);
       if (!qs || qs.length === 0) throw new Error("No questions returned.");
       setQuestions(qs);
       setPhase("active");
@@ -82,7 +82,7 @@ export default function QuizCard({ subject, topic, topicId }: QuizCardProps) {
         <h3 style={{ fontWeight: 800, fontSize: "1.2rem", marginBottom: 8 }}>Practice Quiz</h3>
         <p style={{ color: "var(--text-muted)", fontSize: "0.88rem", marginBottom: 20 }}>
           Test your knowledge on <strong>{topic}</strong>
-          <br />8 AI-generated questions await!
+          <br />10 feedback-based questions await!
         </p>
         <button className="btn-primary" onClick={() => void startQuiz()}>
           🚀 Start Quiz
@@ -202,16 +202,15 @@ export default function QuizCard({ subject, topic, topicId }: QuizCardProps) {
                   textAlign: "left",
                   padding: "11px 16px",
                   borderRadius: 12,
-                  border: `1px solid ${
-                    isCorrect ? "rgba(52,211,153,0.6)"
+                  border: `1px solid ${isCorrect ? "rgba(52,211,153,0.6)"
                     : isWrong ? "rgba(248,113,113,0.6)"
-                    : isSelected ? "rgba(79,142,247,0.6)"
-                    : "var(--glass-border)"
-                  }`,
+                      : isSelected ? "rgba(79,142,247,0.6)"
+                        : "var(--glass-border)"
+                    }`,
                   background: isCorrect ? "rgba(52,211,153,0.12)"
                     : isWrong ? "rgba(248,113,113,0.12)"
-                    : isSelected ? "rgba(79,142,247,0.12)"
-                    : "var(--glass-bg)",
+                      : isSelected ? "rgba(79,142,247,0.12)"
+                        : "var(--glass-bg)",
                   color: "var(--text-primary)",
                   cursor: revealed ? "default" : "pointer",
                   fontSize: "0.88rem",

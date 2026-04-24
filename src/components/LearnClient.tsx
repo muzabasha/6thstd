@@ -11,18 +11,55 @@ import { getSubjectColor } from "@/lib/utils";
 import { explainTopic } from "@/lib/openai";
 import { markTopicComplete, getSubjectProgress } from "@/lib/storage";
 
+// NEP 2020 section markers and their visual config
+const NEP_SECTIONS: { marker: string; icon: string; label: string; bg: string; border: string; color: string }[] = [
+  { marker: "🛠️", icon: "🛠️", label: "Hands-On Activity", bg: "rgba(251,146,60,0.10)", border: "rgba(251,146,60,0.35)", color: "#fb923c" },
+  { marker: "🎯", icon: "🎯", label: "Try It Yourself", bg: "rgba(52,211,153,0.10)", border: "rgba(52,211,153,0.35)", color: "#34d399" },
+  { marker: "💬", icon: "💬", label: "Think & Discuss", bg: "rgba(167,139,250,0.10)", border: "rgba(167,139,250,0.35)", color: "#a78bfa" },
+  { marker: "🌟", icon: "🌟", label: "Scenario-Based", bg: "rgba(250,204,21,0.10)", border: "rgba(250,204,21,0.35)", color: "#facc15" },
+  { marker: "📚", icon: "📚", label: "Practice Examples", bg: "rgba(79,142,247,0.10)", border: "rgba(79,142,247,0.35)", color: "#4f8ef7" },
+  { marker: "❓", icon: "❓", label: "Q & A", bg: "rgba(34,211,238,0.10)", border: "rgba(34,211,238,0.35)", color: "#22d3ee" },
+];
+
+function splitIntoSections(md: string): { sectionKey: string | null; content: string }[] {
+  const lines = md.split('\n');
+  const result: { sectionKey: string | null; content: string }[] = [];
+  let currentKey: string | null = null;
+  let buffer: string[] = [];
+
+  const flush = () => {
+    if (buffer.length) {
+      result.push({ sectionKey: currentKey, content: buffer.join('\n').trim() });
+      buffer = [];
+    }
+  };
+
+  for (const line of lines) {
+    const match = NEP_SECTIONS.find(s => line.startsWith(s.marker));
+    if (match) {
+      flush();
+      currentKey = match.marker;
+      buffer.push(line);
+    } else {
+      buffer.push(line);
+    }
+  }
+  flush();
+  return result;
+}
+
 type Topic = { id: string; title: string; description: string };
 type Chapter = { title: string; topics: Topic[] };
 type Tab = "learn" | "chat" | "quiz";
 
-export default function LearnClient({ 
-  subjectName, 
-  subjectSlug, 
-  topic, 
-  chapter, 
-  prevTopic, 
-  nextTopic 
-}: { 
+export default function LearnClient({
+  subjectName,
+  subjectSlug,
+  topic,
+  chapter,
+  prevTopic,
+  nextTopic
+}: {
   subjectName: string;
   subjectSlug: string;
   topic: Topic;
@@ -50,12 +87,12 @@ export default function LearnClient({
     try {
       const text = await explainTopic(subjectName, topic.title, topic.description, topic.id);
       setExplanation(text);
-      
+
       // Clean up text for screen reading
       // Language detection
       const isHindi = /[\u0900-\u097F]/.test(text);
       const isKannada = /[\u0C80-\u0CFF]/.test(text);
-      
+
       let speechFriendly = text;
 
       // Localized labels for AI Voice
@@ -94,16 +131,16 @@ export default function LearnClient({
       }
 
       speechFriendly = speechFriendly
-        .replace(/[#*`]/g, "") 
-        .replace(/---+/g, "Next item.") 
-        .slice(0, 6500); 
+        .replace(/[#*`]/g, "")
+        .replace(/---+/g, "Next item.")
+        .slice(0, 6500);
 
       let langCode = "en-IN";
       if (isHindi) langCode = "hi-IN";
       else if (isKannada) langCode = "kn-IN";
-      
+
       setSpeakText(speechFriendly);
-      
+
       // Auto-speak on first load with correct language
       setTimeout(() => {
         window.speechSynthesis?.cancel();
@@ -230,13 +267,13 @@ export default function LearnClient({
             {explanation && !loadingExplain && (
               <div style={{ lineHeight: 1.75, fontSize: "0.95rem", color: "var(--text-secondary)" }}>
                 <div style={{ display: "flex", justifyContent: "flex-end", marginBottom: 15 }}>
-                  <button 
+                  <button
                     onClick={() => {
-                        window.speechSynthesis?.cancel();
-                        const utt = new SpeechSynthesisUtterance(speakText);
-                        utt.lang = "en-IN";
-                        utt.rate = 0.9;
-                        window.speechSynthesis?.speak(utt);
+                      window.speechSynthesis?.cancel();
+                      const utt = new SpeechSynthesisUtterance(speakText);
+                      utt.lang = "en-IN";
+                      utt.rate = 0.9;
+                      window.speechSynthesis?.speak(utt);
                     }}
                     className="btn-secondary"
                     style={{ fontSize: "0.78rem", padding: "5px 12px", display: "flex", alignItems: "center", gap: 6 }}
@@ -244,7 +281,28 @@ export default function LearnClient({
                     🔊 Read Lesson Aloud
                   </button>
                 </div>
-                <ReactMarkdown remarkPlugins={[remarkGfm]}>{explanation}</ReactMarkdown>
+                {splitIntoSections(explanation).map((sec, idx) => {
+                  const nepCfg = NEP_SECTIONS.find(s => s.marker === sec.sectionKey);
+                  if (nepCfg) {
+                    return (
+                      <div key={idx} style={{
+                        margin: "20px 0",
+                        borderRadius: 14,
+                        border: `1px solid ${nepCfg.border}`,
+                        background: nepCfg.bg,
+                        padding: "16px 20px",
+                      }}>
+                        <div style={{ fontWeight: 800, fontSize: "0.82rem", color: nepCfg.color, marginBottom: 10, textTransform: "uppercase", letterSpacing: "0.06em" }}>
+                          {nepCfg.icon} {nepCfg.label}
+                        </div>
+                        <ReactMarkdown remarkPlugins={[remarkGfm]}>{sec.content}</ReactMarkdown>
+                      </div>
+                    );
+                  }
+                  return (
+                    <ReactMarkdown key={idx} remarkPlugins={[remarkGfm]}>{sec.content}</ReactMarkdown>
+                  );
+                })}
               </div>
             )}
           </div>

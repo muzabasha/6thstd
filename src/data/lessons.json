@@ -4643,5 +4643,644 @@
         ]
       }
     ]
+  },
+  "eng_sup_4": {
+    "what": "A kind shopkeeper helps a poor man fix his old clock, and in return receives an unexpected reward.",
+    "example": "Have you ever helped someone without expecting anything in return?",
+    "points": [
+      "The shopkeeper repairs the clock for free out of kindness",
+      "The old man turns out to be a wealthy person in disguise",
+      "Acts of generosity often bring unexpected blessings"
+    ],
+    "tip": "Kindness is never wasted — it always comes back in some form!",
+    "question": "Why did the shopkeeper help the old man?",
+    "tryIt": [
+      "Think of one act of kindness you can do today for someone in need.",
+      "Write a short paragraph about how helping others makes you feel.",
+      "Share a story with your family about a time someone helped you."
+    ],
+    "thinkDiscuss": [
+      "Do you think the shopkeeper would have helped if he knew the man was wealthy?",
+      "What does this story teach us about judging people by their appearance?"
+    ]
+  },
+  "eng_sup_5": {
+    "what": "Tansen was the greatest musician in Emperor Akbar's court, famous for his magical voice that could light lamps and bring rain.",
+    "example": "Imagine singing so beautifully that nature itself responds to your voice!",
+    "points": [
+      "Tansen learned music from the great guru Swami Haridas",
+      "His Raga Deepak could light lamps, and Raga Megh Malhar brought rain",
+      "He was one of the Navaratnas (nine jewels) in Akbar's court"
+    ],
+    "tip": "True mastery comes from years of dedicated practice and learning from great teachers!",
+    "question": "What made Tansen's music so special?",
+    "tryIt": [
+      "Listen to a classical Indian raga and notice how it makes you feel.",
+      "Try humming a tune and see if you can make someone smile.",
+      "Research one other Navaratna from Akbar's court."
+    ],
+    "thinkDiscuss": [
+      "Why do you think music has such a powerful effect on our emotions?",
+      "Can dedication and practice make anyone a master like Tansen?"
+    ]
+  },
+  "eng_sup_6": {
+    "what": "A clever monkey outwits a crocodile who tries to trick him, teaching us about quick thinking and true friendship.",
+    "example": "Have you ever had to think fast to get out of a tricky situation?",
+    "points": [
+      "The monkey and crocodile become friends despite being different",
+      "The crocodile's wife wants to eat the monkey's heart",
+      "The monkey uses his intelligence to escape the crocodile's trap"
+    ],
+    "tip": "Quick thinking and presence of mind can save you from danger!",
+    "question": "How did the monkey escape from the crocodile?",
+    "tryIt": [
+      "Act out the story with friends, taking turns being the monkey and crocodile.",
+      "Write an alternate ending where the crocodile refuses to trick his friend.",
+      "Draw a comic strip showing the key moments of the story."
+    ],
+    "thinkDiscuss": [
+      "Was the crocodile a true friend? Why or why not?",
+      "What would you do if someone asked you to betray a friend?"
+    ]
+  },
+  "eng_sup_7": {
+    "what": "Sleep is a natural state of rest that our body and brain need to stay healthy, repair themselves, and process memories.",
+    "example": "Just like your phone needs charging, your body needs sleep to recharge!",
+    "points": [
+      "We spend about one-third of our lives sleeping",
+      "During sleep, our brain organizes memories and our body repairs itself",
+      "Dreams occur during REM (Rapid Eye Movement) sleep"
+    ],
+    "tip": "Getting 8-10 hours of sleep helps you learn better and stay healthy!",
+    "question": "Why do we need sleep?",
+    "activity": {
+      "title": "Sleep Diary Experiment",
+      "materials": [
+        "Notebook",
+        "Pen",
+        "Clock"
+      ],
+      "instructions": [
+        "For one week, note down what time you go to bed and wake up.",
+        "Rate how you feel each morning (1-5 scale: tired to energetic).",
+        "Notice if sleeping more or less affects your mood and energy.",
+        "Share your findings with the class."
+      ],
+      "outcome": "You'll discover your ideal sleep duration and how it affects your daily performance."
+    },
+    "thinkDiscuss": [
+      "What happens to your body and mind when you don't get enough sleep?",
+      "Why do babies sleep so much more than adults?"
+    ]
+  },
+  "eng_sup_8": {
+    "what": "A brave girl makes a pact with the Sun to help her sick mother recover by bringing sunlight into their dark house.",
+    "example": "Sometimes we need courage to ask for help, even from nature itself!",
+    "points": [
+      "The girl's mother is sick because their house gets no sunlight",
+      "She bravely asks the Sun to shine into their home",
+      "The Sun agrees, and the mother recovers with warmth and light"
+    ],
+    "tip": "Sunlight and fresh air are essential for good health!",
+    "question": "Why was the mother sick?",
+    "activity": {
+      "title": "Sunlight and Health",
+      "materials": [
+        "Two small plants",
+        "Sunny spot",
+        "Dark cupboard"
+      ],
+      "instructions": [
+        "Place one plant in sunlight and another in a dark cupboard.",
+        "Water both plants equally for one week.",
+        "Observe and note the differences in their growth and color.",
+        "Discuss why sunlight is important for living things."
+      ],
+      "outcome": "The plant in sunlight will be healthier, showing how vital sunlight is for life."
+    },
+    "thinkDiscuss": [
+      "How does sunlight affect our mood and health?",
+      "What can we do if our house doesn't get enough natural light?"
+    ]
+  },
+  "eng_gr_8": {
+    "what": "A paragraph is a group of sentences about one main idea, with a topic sentence, supporting details, and a concluding sentence.",
+    "example": "Think of a paragraph like a sandwich: the topic sentence is the top bun, details are the filling, and the conclusion is the bottom bun!",
+    "points": [
+      "Start with a clear topic sentence that states the main idea",
+      "Add 3-5 supporting sentences with details and examples",
+      "End with a concluding sentence that wraps up the idea"
+    ],
+    "tip": "Use transition words like 'firstly', 'moreover', 'finally' to connect your sentences smoothly!",
+    "question": "What are the three parts of a good paragraph?",
+    "tryIt": [
+      "Write a paragraph about your favorite hobby (5-6 sentences).",
+      "Underline the topic sentence, circle the supporting details, and highlight the conclusion.",
+      "Exchange paragraphs with a classmate and give feedback."
+    ],
+    "examples": [
+      {
+        "question": "Write a paragraph about 'My School'.",
+        "steps": [
+          "Topic sentence: My school is a wonderful place to learn and grow.",
+          "Supporting details: It has spacious classrooms, a large playground, and a well-stocked library. The teachers are kind and helpful. We have many fun activities like sports and art.",
+          "Conclusion: I feel lucky to study in such a great school."
+        ]
+      }
+    ]
+  },
+  "eng_gr_9": {
+    "what": "Letter writing is a way to communicate formally or informally through written messages, following specific formats.",
+    "example": "Writing a letter is like having a conversation on paper with someone far away!",
+    "points": [
+      "Formal letters: used for official purposes (applications, complaints)",
+      "Informal letters: used for personal communication (friends, family)",
+      "Both types have specific formats with sender's address, date, greeting, body, and closing"
+    ],
+    "tip": "Always proofread your letter before sending — first impressions matter!",
+    "question": "What is the difference between formal and informal letters?",
+    "tryIt": [
+      "Write an informal letter to a friend describing your recent vacation.",
+      "Write a formal letter to your principal requesting a library book.",
+      "Compare the tone and language used in both letters."
+    ],
+    "examples": [
+      {
+        "question": "Format of an informal letter",
+        "steps": [
+          "Sender's address (top right)",
+          "Date",
+          "Greeting: Dear [Name],",
+          "Body: 2-3 paragraphs sharing news",
+          "Closing: Your friend, [Your name]"
+        ]
+      },
+      {
+        "question": "Format of a formal letter",
+        "steps": [
+          "Sender's address (top left)",
+          "Date",
+          "Receiver's address",
+          "Subject line",
+          "Salutation: Respected Sir/Madam,",
+          "Body: Clear, polite, to-the-point",
+          "Closing: Yours sincerely, [Your name]"
+        ]
+      }
+    ]
+  },
+  "hin_gr_4": {
+    "what": "पत्र लेखन औपचारिक या अनौपचारिक संदेश भेजने का एक तरीका है, जिसमें विशेष प्रारूप का पालन किया जाता है।",
+    "example": "पत्र लिखना कागज़ पर किसी दूर के व्यक्ति से बातचीत करने जैसा है!",
+    "points": [
+      "औपचारिक पत्र: आधिकारिक उद्देश्यों के लिए (आवेदन, शिकायत)",
+      "अनौपचारिक पत्र: व्यक्तिगत संचार के लिए (मित्र, परिवार)",
+      "दोनों प्रकार के पत्रों में विशेष प्रारूप होता है"
+    ],
+    "tip": "पत्र भेजने से पहले हमेशा जाँच लें — पहली छाप महत्वपूर्ण होती है!",
+    "question": "औपचारिक और अनौपचारिक पत्र में क्या अंतर है?",
+    "tryIt": [
+      "अपने मित्र को छुट्टियों के बारे में एक अनौपचारिक पत्र लिखें।",
+      "प्रधानाचार्य को पुस्तकालय की किताब के लिए औपचारिक पत्र लिखें।"
+    ],
+    "examples": [
+      {
+        "question": "अनौपचारिक पत्र का प्रारूप",
+        "steps": [
+          "प्रेषक का पता (ऊपर दाईं ओर)",
+          "दिनांक",
+          "अभिवादन: प्रिय [नाम],",
+          "मुख्य भाग: 2-3 अनुच्छेद",
+          "समापन: तुम्हारा मित्र, [तुम्हारा नाम]"
+        ]
+      }
+    ]
+  },
+  "hin_gr_5": {
+    "what": "अनुच्छेद लेखन एक मुख्य विचार के बारे में वाक्यों का समूह है, जिसमें विषय वाक्य, सहायक विवरण और निष्कर्ष होता है।",
+    "example": "अनुच्छेद एक सैंडविच की तरह है: विषय वाक्य ऊपर की रोटी है, विवरण भरावन है, और निष्कर्ष नीचे की रोटी है!",
+    "points": [
+      "स्पष्ट विषय वाक्य से शुरू करें जो मुख्य विचार बताए",
+      "3-5 सहायक वाक्य जोड़ें विवरण और उदाहरणों के साथ",
+      "निष्कर्ष वाक्य से समाप्त करें"
+    ],
+    "tip": "संक्रमण शब्दों का उपयोग करें जैसे 'पहले', 'इसके अलावा', 'अंत में' वाक्यों को जोड़ने के लिए!",
+    "question": "एक अच्छे अनुच्छेद के तीन भाग क्या हैं?",
+    "tryIt": [
+      "अपने पसंदीदा शौक के बारे में एक अनुच्छेद लिखें (5-6 वाक्य)।",
+      "विषय वाक्य को रेखांकित करें और निष्कर्ष को हाइलाइट करें।"
+    ]
+  },
+  "comp_paint_2": {
+    "what": "Digital art is creating artwork using computer software and tools like MS Paint, allowing you to draw, color, and design on screen.",
+    "example": "Just like painting on paper, but you can undo mistakes with one click!",
+    "points": [
+      "Use drawing tools like pencil, brush, and spray paint for different effects",
+      "Fill tool helps color large areas quickly",
+      "You can save and edit your artwork anytime without wasting paper"
+    ],
+    "tip": "Experiment with different colors and tools — digital art lets you try unlimited ideas!",
+    "question": "What are the advantages of digital art over traditional art?",
+    "activity": {
+      "title": "Create a Digital Greeting Card",
+      "materials": [
+        "Computer with MS Paint or similar software"
+      ],
+      "instructions": [
+        "Open MS Paint and set canvas size to 800x600 pixels.",
+        "Use shapes tool to create a border and decorative elements.",
+        "Add text with a greeting message using the text tool.",
+        "Use colors and brushes to make it colorful and attractive.",
+        "Save your card and share it with family or friends."
+      ],
+      "outcome": "You'll create a personalized digital greeting card that can be printed or shared online."
+    },
+    "tryIt": [
+      "Draw your favorite cartoon character using MS Paint.",
+      "Create a poster about 'Save Water' with drawings and text.",
+      "Design a simple logo for your class or school club."
+    ]
+  },
+  "kan_lit_3": {
+    "what": "ಐಕ್ಯತೆ ಎಂದರೆ ಒಗ್ಗಟ್ಟು ಮತ್ತು ಸೌಹಾರ್ದತೆ — ಎಲ್ಲರೂ ಒಟ್ಟಾಗಿ ಕೆಲಸ ಮಾಡುವುದು ಮತ್ತು ದೇಶಪ್ರೇಮದ ಸಂದೇಶ.",
+    "example": "ಅನೇಕ ದಾರಗಳು ಸೇರಿ ಬಲವಾದ ಹಗ್ಗವಾಗುವಂತೆ, ಐಕ್ಯತೆಯಿಂದ ನಾವು ಬಲಶಾಲಿಯಾಗುತ್ತೇವೆ!",
+    "points": [
+      "ವಿವಿಧ ಸಂಸ್ಕೃತಿಗಳು ಮತ್ತು ಭಾಷೆಗಳ ಜನರು ಒಟ್ಟಾಗಿ ವಾಸಿಸುವುದು",
+      "ಐಕ್ಯತೆಯಲ್ಲಿ ಶಕ್ತಿ ಇದೆ",
+      "ದೇಶದ ಪ್ರಗತಿಗೆ ಸೌಹಾರ್ದತೆ ಅತ್ಯಗತ್ಯ"
+    ],
+    "tip": "ವಿಭಿನ್ನತೆಯಲ್ಲಿ ಐಕ್ಯತೆ — ಇದು ಭಾರತದ ವಿಶೇಷತೆ!",
+    "question": "ಐಕ್ಯತೆ ಏಕೆ ಮುಖ್ಯ?",
+    "thinkDiscuss": [
+      "ನಿಮ್ಮ ತರಗತಿಯಲ್ಲಿ ವಿವಿಧ ಹಿನ್ನೆಲೆಯ ವಿದ್ಯಾರ್ಥಿಗಳು ಹೇಗೆ ಒಟ್ಟಾಗಿ ಕೆಲಸ ಮಾಡುತ್ತಾರೆ?",
+      "ಐಕ್ಯತೆಯನ್ನು ಬೆಳೆಸಲು ನಾವು ಏನು ಮಾಡಬಹುದು?"
+    ]
+  },
+  "kan_pro_1": {
+    "what": "ಸ್ವರಾರ್ಪಣ ಎಂದರೆ ಸಂಗೀತ ಮತ್ತು ಕಲೆಯ ಮೂಲಕ ತನ್ನ ಭಾವನೆಗಳನ್ನು ವ್ಯಕ್ತಪಡಿಸುವುದು.",
+    "example": "ಹಾಡು ಹಾಡುವಾಗ ನಿಮ್ಮ ಹೃದಯದ ಭಾವನೆಗಳು ಹೊರಬರುತ್ತವೆ!",
+    "points": [
+      "ಸಂಗೀತವು ಸಾರ್ವತ್ರಿಕ ಭಾಷೆ",
+      "ಕಲೆ ಮತ್ತು ಸಂಗೀತ ಮನಸ್ಸಿಗೆ ಶಾಂತಿ ತರುತ್ತದೆ",
+      "ಅಭ್ಯಾಸದಿಂದ ಕಲೆಯಲ್ಲಿ ಪರಿಣತಿ ಬರುತ್ತದೆ"
+    ],
+    "tip": "ಪ್ರತಿದಿನ ಸ್ವಲ್ಪ ಸಮಯ ಸಂಗೀತ ಅಥವಾ ಕಲೆಗೆ ಮೀಸಲಿಡಿ!",
+    "question": "ಸಂಗೀತ ಮತ್ತು ಕಲೆ ನಮ್ಮ ಜೀವನದಲ್ಲಿ ಏಕೆ ಮುಖ್ಯ?",
+    "tryIt": [
+      "ನಿಮ್ಮ ನೆಚ್ಚಿನ ಹಾಡನ್ನು ಹಾಡಿ ಮತ್ತು ಅದರ ಭಾವನೆಯನ್ನು ಅನುಭವಿಸಿ.",
+      "ಸರಳ ಚಿತ್ರವನ್ನು ಬಿಡಿಸಿ ಮತ್ತು ಬಣ್ಣ ತುಂಬಿ."
+    ]
+  },
+  "kan_pro_2": {
+    "what": "ಧೀರ ಸೇನಾನಿ ಎಂದರೆ ದೇಶದ ರಕ್ಷಣೆಗಾಗಿ ಧೈರ್ಯದಿಂದ ಹೋರಾಡಿದ ವೀರ ಯೋಧನ ಕಥೆ.",
+    "example": "ಸೈನಿಕರು ನಮ್ಮ ದೇಶವನ್ನು ರಕ್ಷಿಸಲು ತಮ್ಮ ಜೀವವನ್ನು ಅಪಾಯಕ್ಕೆ ಒಡ್ಡುತ್ತಾರೆ!",
+    "points": [
+      "ಸೈನಿಕರು ದೇಶಕ್ಕಾಗಿ ತ್ಯಾಗ ಮಾಡುತ್ತಾರೆ",
+      "ಧೈರ್ಯ ಮತ್ತು ಶಿಸ್ತು ಸೈನಿಕರ ಗುಣಗಳು",
+      "ನಾವು ಸೈನಿಕರನ್ನು ಗೌರವಿಸಬೇಕು"
+    ],
+    "tip": "ದೇಶಪ್ರೇಮ ಎಂದರೆ ನಮ್ಮ ದೇಶವನ್ನು ಪ್ರೀತಿಸುವುದು ಮತ್ತು ಅದರ ಕಲ್ಯಾಣಕ್ಕಾಗಿ ಕೆಲಸ ಮಾಡುವುದು!",
+    "question": "ಸೈನಿಕರು ನಮ್ಮ ದೇಶಕ್ಕೆ ಹೇಗೆ ಸೇವೆ ಸಲ್ಲಿಸುತ್ತಾರೆ?",
+    "thinkDiscuss": [
+      "ಸೈನಿಕರ ಕುಟುಂಬಗಳು ಎದುರಿಸುವ ಸವಾಲುಗಳು ಯಾವುವು?",
+      "ನಾವು ಸೈನಿಕರಿಗೆ ಕೃತಜ್ಞತೆ ತೋರಿಸಲು ಏನು ಮಾಡಬಹುದು?"
+    ]
+  },
+  "kan_gr_3": {
+    "what": "ಕ್ರಿಯಾಪದ ಎಂದರೆ ಕೆಲಸ ಅಥವಾ ಕ್ರಿಯೆಯನ್ನು ತಿಳಿಸುವ ಪದ. ಕಾಲಗಳು ಕ್ರಿಯೆ ಯಾವಾಗ ನಡೆಯುತ್ತದೆ ಎಂಬುದನ್ನು ತೋರಿಸುತ್ತವೆ.",
+    "example": "ನಾನು ಓದುತ್ತೇನೆ (ವರ್ತಮಾನ), ನಾನು ಓದಿದೆ (ಭೂತ), ನಾನು ಓದುವೆನು (ಭವಿಷ್ಯತ್)",
+    "points": [
+      "ವರ್ತಮಾನ ಕಾಲ: ಈಗ ನಡೆಯುತ್ತಿರುವ ಕ್ರಿಯೆ",
+      "ಭೂತಕಾಲ: ಮುಗಿದ ಕ್ರಿಯೆ",
+      "ಭವಿಷ್ಯತ್ ಕಾಲ: ಮುಂದೆ ನಡೆಯುವ ಕ್ರಿಯೆ"
+    ],
+    "tip": "ಕ್ರಿಯಾಪದವಿಲ್ಲದೆ ವಾಕ್ಯ ಪೂರ್ಣವಾಗುವುದಿಲ್ಲ!",
+    "question": "ಕ್ರಿಯಾಪದದ ಮೂರು ಕಾಲಗಳು ಯಾವುವು?",
+    "tryIt": [
+      "ಈ ಕ್ರಿಯಾಪದಗಳನ್ನು ಮೂರು ಕಾಲಗಳಲ್ಲಿ ಬರೆಯಿರಿ: ಓಡು, ತಿನ್ನು, ಬರೆ",
+      "ನಿಮ್ಮ ದಿನದ ಚಟುವಟಿಕೆಗಳನ್ನು ಕ್ರಿಯಾಪದಗಳೊಂದಿಗೆ ವಾಕ್ಯಗಳಲ್ಲಿ ಬರೆಯಿರಿ."
+    ],
+    "examples": [
+      {
+        "question": "ವರ್ತಮಾನ ಕಾಲದ ಉದಾಹರಣೆಗಳು",
+        "steps": [
+          "ನಾನು ಶಾಲೆಗೆ ಹೋಗುತ್ತೇನೆ.",
+          "ಅವಳು ಪುಸ್ತಕ ಓದುತ್ತಾಳೆ.",
+          "ಅವರು ಆಟವಾಡುತ್ತಾರೆ."
+        ]
+      }
+    ]
+  },
+  "eng_sup_4": {
+    "what": "A kind shopkeeper helps a poor man fix his old clock, and in return receives an unexpected reward.",
+    "example": "Have you ever helped someone without expecting anything in return?",
+    "points": [
+      "The shopkeeper repairs the clock for free out of kindness",
+      "The old man turns out to be a wealthy person in disguise",
+      "Kindness and generosity are always rewarded"
+    ],
+    "tip": "True generosity means helping others without expecting rewards!",
+    "question": "Why did the shopkeeper help the old man?",
+    "tryIt": [
+      "Think of one act of kindness you can do today for someone in need.",
+      "Write a short paragraph about how helping others makes you feel.",
+      "Share your story with your classmates."
+    ],
+    "thinkDiscuss": [
+      "Do you think the shopkeeper would have helped if he knew the man was wealthy?",
+      "What does this story teach us about judging people by their appearance?"
+    ]
+  },
+  "eng_sup_5": {
+    "what": "Tansen was one of the greatest musicians in Emperor Akbar's court, famous for his magical voice and mastery of ragas.",
+    "example": "Imagine a singer so talented that their music could light lamps or bring rain!",
+    "points": [
+      "Tansen learned music from the great guru Swami Haridas",
+      "He could sing Raga Deepak to light lamps and Raga Megh Malhar to bring rain",
+      "His dedication and practice made him a legend"
+    ],
+    "tip": "Practice and dedication can turn talent into mastery!",
+    "question": "Which raga did Tansen sing to bring rain?",
+    "tryIt": [
+      "Listen to a classical Indian raga online and describe how it makes you feel.",
+      "Try humming a simple tune and practice it daily for a week.",
+      "Research one famous Indian classical musician and present their story."
+    ],
+    "thinkDiscuss": [
+      "Why do you think music was so important in Emperor Akbar's court?",
+      "Can dedication and practice help you master any skill? Give examples."
+    ]
+  },
+  "eng_sup_6": {
+    "what": "A clever monkey outwits a crocodile who tries to trick him, teaching us about quick thinking and friendship.",
+    "example": "Have you ever had to think quickly to get out of a tricky situation?",
+    "points": [
+      "The crocodile befriends the monkey but plans to betray him",
+      "The monkey uses his intelligence to escape the crocodile's trap",
+      "True friendship is based on trust, not deception"
+    ],
+    "tip": "Quick thinking and presence of mind can save you from danger!",
+    "question": "How did the monkey escape from the crocodile?",
+    "tryIt": [
+      "Act out the story with your friends, taking turns as the monkey and crocodile.",
+      "Write an alternate ending where the crocodile learns his lesson.",
+      "Draw a comic strip showing the key moments of the story."
+    ],
+    "thinkDiscuss": [
+      "Was the crocodile a true friend? Why or why not?",
+      "What would you do if a friend betrayed your trust?"
+    ]
+  },
+  "eng_sup_7": {
+    "what": "Sleep is a natural state of rest that helps our body and brain recover, grow, and stay healthy.",
+    "example": "After a long day of playing and studying, your body needs sleep to recharge like a phone battery!",
+    "points": [
+      "During sleep, our body repairs tissues and grows",
+      "Dreams occur during REM (Rapid Eye Movement) sleep",
+      "Lack of sleep affects memory, mood, and health"
+    ],
+    "tip": "Get 8-10 hours of sleep every night to stay healthy and alert!",
+    "question": "Why is sleep important for our body?",
+    "activity": {
+      "title": "Sleep Diary Experiment",
+      "materials": [
+        "Notebook",
+        "Pen",
+        "Clock"
+      ],
+      "instructions": [
+        "For one week, record what time you go to bed and wake up.",
+        "Note how you feel each morning (energetic, tired, sleepy).",
+        "Calculate your total sleep hours each night.",
+        "Compare days when you slept well vs. poorly."
+      ],
+      "outcome": "You will discover how sleep affects your energy and mood!"
+    },
+    "tryIt": [
+      "Create a bedtime routine that helps you sleep better.",
+      "Avoid screens 30 minutes before bed and see if you sleep better.",
+      "Share your sleep diary findings with your class."
+    ],
+    "thinkDiscuss": [
+      "What happens to your body when you don't get enough sleep?",
+      "Why do we dream? What do you think dreams mean?"
+    ]
+  },
+  "eng_sup_8": {
+    "what": "A brave girl makes a pact with the sun to help her sick mother recover by bringing sunlight into their dark home.",
+    "example": "Have you ever wished you could talk to nature to solve a problem?",
+    "points": [
+      "The girl's mother is sick because their house gets no sunlight",
+      "She bravely asks the sun for help",
+      "The sun agrees to shine into their home, and her mother recovers"
+    ],
+    "tip": "Courage and determination can help us overcome any obstacle!",
+    "question": "Why was the girl's mother sick?",
+    "tryIt": [
+      "Observe how sunlight enters different rooms in your house throughout the day.",
+      "Write a letter to the sun, moon, or stars expressing your feelings.",
+      "Create a poster showing the importance of sunlight for health."
+    ],
+    "thinkDiscuss": [
+      "How does sunlight affect our health and mood?",
+      "What would you do if someone you love was sick?"
+    ]
+  },
+  "eng_gr_8": {
+    "what": "A paragraph is a group of sentences about one main idea, with a topic sentence, supporting details, and a concluding sentence.",
+    "example": "If you're writing about your favorite sport, all sentences in the paragraph should relate to that sport.",
+    "points": [
+      "Start with a topic sentence that states the main idea",
+      "Add 3-5 supporting sentences with details and examples",
+      "End with a concluding sentence that wraps up the idea"
+    ],
+    "tip": "Use the 'hamburger method': topic sentence (top bun), details (filling), conclusion (bottom bun)!",
+    "question": "What is the purpose of a topic sentence?",
+    "activity": {
+      "title": "Build a Paragraph",
+      "instructions": [
+        "Choose a topic: 'My Favorite Festival' or 'A Place I Want to Visit'.",
+        "Write a topic sentence introducing your main idea.",
+        "Add 3 supporting sentences with specific details.",
+        "Write a concluding sentence that summarizes your thoughts.",
+        "Read your paragraph aloud to check if it flows smoothly."
+      ],
+      "outcome": "You will have written a complete, well-structured paragraph!"
+    },
+    "tryIt": [
+      "Write a paragraph about your best friend.",
+      "Write a paragraph describing your school.",
+      "Exchange paragraphs with a classmate and give feedback."
+    ]
+  },
+  "eng_gr_9": {
+    "what": "A letter is a written message to someone, which can be formal (to authorities) or informal (to friends and family).",
+    "example": "You write a formal letter to your principal requesting a leave, but an informal letter to your cousin about your vacation.",
+    "points": [
+      "Formal letters have: sender's address, date, receiver's address, subject, salutation, body, closing",
+      "Informal letters are more casual with personal tone and friendly language",
+      "Always be polite and clear in your message"
+    ],
+    "tip": "Remember: Formal = Professional tone, Informal = Friendly tone!",
+    "question": "What is the difference between formal and informal letters?",
+    "activity": {
+      "title": "Write Two Letters",
+      "instructions": [
+        "Write a formal letter to your school librarian requesting a new book.",
+        "Write an informal letter to your friend inviting them to your birthday party.",
+        "Compare the tone, language, and format of both letters.",
+        "Share with your teacher for feedback."
+      ],
+      "outcome": "You will understand when to use formal vs. informal letter formats!"
+    },
+    "tryIt": [
+      "Write a thank-you letter to someone who helped you.",
+      "Write a complaint letter about a broken toy (formal).",
+      "Write a letter to your future self."
+    ]
+  },
+  "hin_gr_4": {
+    "what": "पत्र लेखन एक लिखित संदेश है जो औपचारिक (अधिकारियों को) या अनौपचारिक (मित्रों और परिवार को) हो सकता है।",
+    "example": "आप प्रधानाचार्य को छुट्टी के लिए औपचारिक पत्र लिखते हैं, लेकिन अपने चचेरे भाई को छुट्टियों के बारे में अनौपचारिक पत्र लिखते हैं।",
+    "points": [
+      "औपचारिक पत्र में: प्रेषक का पता, दिनांक, प्राप्तकर्ता का पता, विषय, अभिवादन, मुख्य भाग, समापन",
+      "अनौपचारिक पत्र अधिक आकस्मिक और मित्रवत भाषा में होते हैं",
+      "हमेशा विनम्र और स्पष्ट रहें"
+    ],
+    "tip": "याद रखें: औपचारिक = व्यावसायिक लहजा, अनौपचारिक = मित्रवत लहजा!",
+    "question": "औपचारिक और अनौपचारिक पत्र में क्या अंतर है?",
+    "tryIt": [
+      "अपने प्रधानाचार्य को एक औपचारिक पत्र लिखें।",
+      "अपने मित्र को जन्मदिन की पार्टी का निमंत्रण पत्र लिखें।",
+      "किसी ऐसे व्यक्ति को धन्यवाद पत्र लिखें जिसने आपकी मदद की।"
+    ]
+  },
+  "hin_gr_5": {
+    "what": "अनुच्छेद लेखन एक मुख्य विचार के बारे में वाक्यों का समूह है, जिसमें विषय वाक्य, सहायक विवरण और निष्कर्ष वाक्य होता है।",
+    "example": "यदि आप अपने पसंदीदा खेल के बारे में लिख रहे हैं, तो अनुच्छेद के सभी वाक्य उस खेल से संबंधित होने चाहिए।",
+    "points": [
+      "विषय वाक्य से शुरू करें जो मुख्य विचार बताता है",
+      "3-5 सहायक वाक्य जोड़ें जिनमें विवरण और उदाहरण हों",
+      "निष्कर्ष वाक्य से समाप्त करें जो विचार को समेटता है"
+    ],
+    "tip": "हैमबर्गर विधि का उपयोग करें: विषय वाक्य (ऊपरी बन), विवरण (भरावन), निष्कर्ष (निचला बन)!",
+    "question": "विषय वाक्य का उद्देश्य क्या है?",
+    "tryIt": [
+      "'मेरा पसंदीदा त्योहार' विषय पर एक अनुच्छेद लिखें।",
+      "अपने सबसे अच्छे दोस्त के बारे में एक अनुच्छेद लिखें।",
+      "अपने स्कूल का वर्णन करते हुए एक अनुच्छेद लिखें।"
+    ]
+  },
+  "comp_paint_2": {
+    "what": "Digital art is creating artwork using computer software and tools like MS Paint, allowing you to draw, color, and design on screen.",
+    "example": "Instead of using paper and crayons, you use a mouse or stylus to create colorful pictures on your computer!",
+    "points": [
+      "Digital art can be easily edited, copied, and shared",
+      "You can use layers, undo/redo, and special effects",
+      "Common tools: brush, pencil, fill, shapes, text"
+    ],
+    "tip": "Practice using the mouse to draw smooth lines and shapes!",
+    "question": "What is one advantage of digital art over traditional art?",
+    "activity": {
+      "title": "Create a Digital Landscape",
+      "materials": [
+        "Computer with MS Paint or similar software"
+      ],
+      "instructions": [
+        "Open MS Paint and select a large canvas size.",
+        "Draw a horizon line dividing sky and ground.",
+        "Use the fill tool to color the sky blue and ground green.",
+        "Add a sun, clouds, trees, and a house using shape tools.",
+        "Use the brush tool to add details like flowers and birds.",
+        "Save your artwork with a meaningful name."
+      ],
+      "outcome": "You will have created a complete digital landscape scene!"
+    },
+    "tryIt": [
+      "Create a self-portrait using digital tools.",
+      "Design a greeting card for a festival.",
+      "Draw your dream house using shapes and colors."
+    ]
+  },
+  "kan_lit_3": {
+    "what": "ಐಕ್ಯತೆ ಎಂದರೆ ಒಗ್ಗಟ್ಟು ಮತ್ತು ಏಕತೆ. ಈ ಪದ್ಯವು ಸೌಹಾರ್ದತೆ ಮತ್ತು ದೇಶಪ್ರೇಮದ ಸಂದೇಶವನ್ನು ನೀಡುತ್ತದೆ.",
+    "example": "ಅನೇಕ ದಾರಗಳು ಸೇರಿ ಬಲವಾದ ಹಗ್ಗವಾಗುವಂತೆ, ಜನರು ಒಗ್ಗೂಡಿದಾಗ ಶಕ್ತಿಯಾಗುತ್ತಾರೆ.",
+    "points": [
+      "ಐಕ್ಯತೆಯಲ್ಲಿ ಶಕ್ತಿ ಇದೆ",
+      "ವಿವಿಧತೆಯಲ್ಲಿ ಏಕತೆ ಭಾರತದ ವಿಶೇಷತೆ",
+      "ಸೌಹಾರ್ದತೆ ಮತ್ತು ಸಹಕಾರ ಮುಖ್ಯ"
+    ],
+    "tip": "ಒಂದೇ ಕೋಲು ಸುಲಭವಾಗಿ ಮುರಿಯಬಹುದು, ಆದರೆ ಕಟ್ಟು ಕೋಲುಗಳನ್ನು ಮುರಿಯಲು ಕಷ್ಟ!",
+    "question": "ಐಕ್ಯತೆಯ ಪ್ರಾಮುಖ್ಯತೆ ಏನು?",
+    "tryIt": [
+      "ನಿಮ್ಮ ತರಗತಿಯಲ್ಲಿ ಒಂದು ಸಾಮೂಹಿಕ ಚಟುವಟಿಕೆಯನ್ನು ಆಯೋಜಿಸಿ.",
+      "ವಿವಿಧ ಸಂಸ್ಕೃತಿಗಳ ಬಗ್ಗೆ ತಿಳಿದುಕೊಳ್ಳಿ ಮತ್ತು ಹಂಚಿಕೊಳ್ಳಿ.",
+      "ಐಕ್ಯತೆಯ ಬಗ್ಗೆ ಒಂದು ಚಿಕ್ಕ ಕವನ ಬರೆಯಿರಿ."
+    ]
+  },
+  "kan_pro_1": {
+    "what": "ಸ್ವರಾರ್ಪಣ ಎಂದರೆ ಸಂಗೀತ ಮತ್ತು ಕಲೆಯ ಮೂಲಕ ತನ್ನ ಭಾವನೆಗಳನ್ನು ವ್ಯಕ್ತಪಡಿಸುವುದು.",
+    "example": "ಹಾಡುಗಾರನು ತನ್ನ ಧ್ವನಿಯ ಮೂಲಕ ಸಂತೋಷ, ದುಃಖ, ಅಥವಾ ಭಕ್ತಿಯನ್ನು ವ್ಯಕ್ತಪಡಿಸುತ್ತಾನೆ.",
+    "points": [
+      "ಸಂಗೀತವು ಭಾವನೆಗಳನ್ನು ವ್ಯಕ್ತಪಡಿಸುವ ಶಕ್ತಿಶಾಲಿ ಮಾಧ್ಯಮ",
+      "ಕಲೆ ಮತ್ತು ಸಂಗೀತವು ಸಂಸ್ಕೃತಿಯ ಭಾಗ",
+      "ಅಭ್ಯಾಸ ಮತ್ತು ಸಮರ್ಪಣೆ ಮುಖ್ಯ"
+    ],
+    "tip": "ಪ್ರತಿದಿನ ಅಭ್ಯಾಸ ಮಾಡಿದರೆ ಯಾವುದೇ ಕಲೆಯಲ್ಲಿ ಪರಿಣತರಾಗಬಹುದು!",
+    "question": "ಸಂಗೀತದ ಮಹತ್ವ ಏನು?",
+    "tryIt": [
+      "ನಿಮಗೆ ಇಷ್ಟವಾದ ಒಂದು ಹಾಡನ್ನು ಕಲಿಯಿರಿ.",
+      "ಸರಳ ತಾಳವನ್ನು ಚಪ್ಪಾಳೆ ಹೊಡೆಯುವ ಮೂಲಕ ಅಭ್ಯಾಸ ಮಾಡಿ.",
+      "ನಿಮ್ಮ ಕುಟುಂಬದವರಿಗೆ ಒಂದು ಹಾಡು ಹಾಡಿ ತೋರಿಸಿ."
+    ]
+  },
+  "kan_pro_2": {
+    "what": "ಧೀರ ಸೇನಾನಿ ಎಂದರೆ ದೇಶದ ರಕ್ಷಣೆಗಾಗಿ ಧೈರ್ಯದಿಂದ ಹೋರಾಡುವ ಯೋಧ.",
+    "example": "ಸೈನಿಕರು ಗಡಿಯಲ್ಲಿ ನಮ್ಮ ದೇಶವನ್ನು ರಕ್ಷಿಸಲು ತಮ್ಮ ಜೀವವನ್ನು ಪಣಕ್ಕಿಡುತ್ತಾರೆ.",
+    "points": [
+      "ಧೈರ್ಯ ಮತ್ತು ಸಮರ್ಪಣೆ ಸೇನಾನಿಯ ಗುಣಗಳು",
+      "ದೇಶಪ್ರೇಮವು ಅತ್ಯುನ್ನತ ಗುಣ",
+      "ಸೈನಿಕರು ನಮ್ಮ ಸುರಕ್ಷತೆಗಾಗಿ ತ್ಯಾಗ ಮಾಡುತ್ತಾರೆ"
+    ],
+    "tip": "ಸೈನಿಕರನ್ನು ಗೌರವಿಸಿ ಮತ್ತು ಅವರ ತ್ಯಾಗವನ್ನು ನೆನಪಿಡಿ!",
+    "question": "ಸೇನಾನಿಗಳು ಏಕೆ ಮುಖ್ಯರು?",
+    "tryIt": [
+      "ಭಾರತೀಯ ಸೇನೆಯ ಬಗ್ಗೆ ಮಾಹಿತಿ ಸಂಗ್ರಹಿಸಿ.",
+      "ಒಬ್ಬ ಪ್ರಸಿದ್ಧ ಸೈನಿಕನ ಕಥೆಯನ್ನು ಓದಿ ಮತ್ತು ಹಂಚಿಕೊಳ್ಳಿ.",
+      "ಸೈನಿಕರಿಗೆ ಧನ್ಯವಾದ ಪತ್ರ ಬರೆಯಿರಿ."
+    ]
+  },
+  "kan_gr_3": {
+    "what": "ಕ್ರಿಯಾಪದವು ಕೆಲಸ ಅಥವಾ ಕ್ರಿಯೆಯನ್ನು ತಿಳಿಸುವ ಪದ. ಕಾಲಗಳು ಕ್ರಿಯೆ ಯಾವಾಗ ನಡೆಯುತ್ತದೆ ಎಂಬುದನ್ನು ತೋರಿಸುತ್ತವೆ.",
+    "example": "ರಾಮನು ಓಡುತ್ತಾನೆ (ವರ್ತಮಾನ), ರಾಮನು ಓಡಿದನು (ಭೂತ), ರಾಮನು ಓಡುವನು (ಭವಿಷ್ಯತ್).",
+    "points": [
+      "ವರ್ತಮಾನ ಕಾಲ: ಈಗ ನಡೆಯುತ್ತಿರುವ ಕ್ರಿಯೆ",
+      "ಭೂತಕಾಲ: ಮುಗಿದ ಕ್ರಿಯೆ",
+      "ಭವಿಷ್ಯತ್ ಕಾಲ: ಮುಂದೆ ನಡೆಯುವ ಕ್ರಿಯೆ"
+    ],
+    "tip": "ಕ್ರಿಯಾಪದವನ್ನು ಗುರುತಿಸಲು 'ಏನು ಮಾಡುತ್ತಾನೆ?' ಎಂದು ಕೇಳಿ!",
+    "question": "ಕ್ರಿಯಾಪದದ ಮೂರು ಕಾಲಗಳು ಯಾವುವು?",
+    "examples": [
+      {
+        "question": "ವರ್ತಮಾನ ಕಾಲದ ಉದಾಹರಣೆ ನೀಡಿ.",
+        "steps": [
+          "ಅವಳು ಓದುತ್ತಾಳೆ (ಈಗ ನಡೆಯುತ್ತಿದೆ).",
+          "ನಾವು ಆಡುತ್ತೇವೆ (ಈಗ ನಡೆಯುತ್ತಿದೆ)."
+        ]
+      },
+      {
+        "question": "ಭೂತಕಾಲದ ಉದಾಹರಣೆ ನೀಡಿ.",
+        "steps": [
+          "ಅವನು ಬಂದನು (ಮುಗಿದ ಕ್ರಿಯೆ).",
+          "ನಾನು ತಿಂದೆ (ಮುಗಿದ ಕ್ರಿಯೆ)."
+        ]
+      }
+    ],
+    "tryIt": [
+      "10 ಕ್ರಿಯಾಪದಗಳನ್ನು ಬರೆದು ಮೂರು ಕಾಲಗಳಲ್ಲಿ ಬದಲಾಯಿಸಿ.",
+      "ನಿಮ್ಮ ದಿನಚರಿಯನ್ನು ವರ್ತಮಾನ ಕಾಲದಲ್ಲಿ ವರ್ಣಿಸಿ.",
+      "ನಿನ್ನೆ ಏನು ಮಾಡಿದೆ ಎಂಬುದನ್ನು ಭೂತಕಾಲದಲ್ಲಿ ಬರೆಯಿರಿ."
+    ]
   }
 }
