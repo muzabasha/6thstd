@@ -30,90 +30,53 @@ export default function TopicCard({
   const href = `/learn/${slugify(subjectName)}/${topicId}`;
 
   return (
-    <Link href={href} style={{ textDecoration: "none" }}>
+    <Link href={href} className="no-underline block group">
       <div
-        className="glass glass-hover"
+        className={`glass glass-hover rounded-2xl p-4 sm:p-5 cursor-pointer relative overflow-hidden opacity-0 h-full transition-all duration-300 ${
+          completed ? "border-[rgba(52,211,153,0.35)]" : "border-[var(--glass-border)]"
+        }`}
         style={{
-          borderRadius: 16,
-          padding: "16px 18px",
-          cursor: "pointer",
-          position: "relative",
-          overflow: "hidden",
-          animationDelay: `${index * 0.06}s`,
-          opacity: 0,
           animation: `fadeInUp 0.5s ease forwards ${index * 0.06}s`,
-          border: completed
-            ? "1px solid rgba(52,211,153,0.35)"
-            : "1px solid var(--glass-border)",
         }}
       >
         {/* Glow accent */}
-        <div style={{
-          position: "absolute",
-          top: 0, left: 0,
-          width: "4px",
-          height: "100%",
-          background: color.bg,
-          borderRadius: "4px 0 0 4px",
-        }} />
+        <div 
+          className="absolute top-0 left-0 w-1 h-full rounded-l-2xl transition-all group-hover:w-2" 
+          style={{ background: color.bg }} 
+        />
 
-        <div style={{ paddingLeft: 8 }}>
-          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 8 }}>
-            <p style={{
-              fontWeight: 700,
-              fontSize: "0.92rem",
-              color: "var(--text-primary)",
-              lineHeight: 1.35,
-              flex: 1,
-            }}>
+        <div className="pl-3">
+          <div className="flex justify-between items-start gap-3">
+            <p className="font-bold text-sm sm:text-[15px] text-[var(--text-primary)] leading-snug flex-1 group-hover:text-white transition-colors">
               {topicTitle}
             </p>
             {completed && (
-              <div style={{
-                width: 22, height: 22,
-                borderRadius: "50%",
-                background: "linear-gradient(135deg,#34d399,#059669)",
-                display: "flex", alignItems: "center", justifyContent: "center",
-                fontSize: "0.7rem",
-                flexShrink: 0,
-              }}>
+              <div className="w-6 h-6 rounded-full bg-gradient-to-br from-[#34d399] to-[#059669] flex items-center justify-center text-[10px] text-white shrink-0 shadow-lg shadow-green-900/20">
                 ✓
               </div>
             )}
           </div>
 
-          <p style={{
-            fontSize: "0.78rem",
-            color: "var(--text-muted)",
-            marginTop: 4,
-            lineHeight: 1.45,
-          }}>
+          <p className="text-[11px] sm:text-[13px] text-[var(--text-muted)] mt-2 leading-relaxed line-clamp-2">
             {topicDescription}
           </p>
 
-          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginTop: 10 }}>
-            <span style={{
-              fontSize: "0.7rem",
-              color: color.text,
-              fontWeight: 600,
-              padding: "2px 8px",
-              borderRadius: 99,
-              background: color.badge,
-            }}>
+          <div className="flex items-center justify-between mt-4">
+            <span 
+              className="text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider" 
+              style={{ color: color.text, background: color.badge }}
+            >
               {chapterTitle}
             </span>
             {quizScore !== undefined && quizTotal !== undefined && (
-              <span style={{
-                fontSize: "0.7rem",
-                color: quizScore / quizTotal >= 0.6 ? "#34d399" : "#fb923c",
-                fontWeight: 700,
-              }}>
-                Quiz: {quizScore}/{quizTotal}
+              <span className={`text-[11px] font-black ${quizScore / quizTotal >= 0.6 ? "text-[#34d399]" : "text-[#fb923c]"}`}>
+                Score: {quizScore}/{quizTotal}
               </span>
             )}
           </div>
         </div>
       </div>
     </Link>
+
   );
 }

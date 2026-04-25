@@ -173,74 +173,76 @@ export default function LearnClient({
   };
 
   return (
-    <main style={{ maxWidth: 960, margin: "0 auto", padding: "20px 16px 60px" }}>
+    <main className="max-w-[960px] mx-auto px-4 sm:px-6 py-4 sm:py-8 pb-24">
       {/* Breadcrumb */}
-      <div style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 20, fontSize: "0.82rem", color: "var(--text-muted)", flexWrap: "wrap" }}>
-        <Link href="/" style={{ color: "var(--text-muted)", textDecoration: "none" }}>Home</Link>
-        <span>›</span>
-        <Link href={`/subject/${subjectSlug}`} style={{ color: color.text, textDecoration: "none", fontWeight: 600 }}>
+      <div className="flex items-center gap-2 mb-6 text-[11px] sm:text-[13px] text-[var(--text-muted)] flex-wrap">
+        <Link href="/" className="hover:text-[var(--text-primary)] transition-colors no-underline">Home</Link>
+        <span className="opacity-50">›</span>
+        <Link href={`/subject/${subjectSlug}`} className="font-bold hover:opacity-80 transition-opacity no-underline" style={{ color: color.text }}>
           {subjectName}
         </Link>
-        <span>›</span>
-        <span style={{ color: "var(--text-secondary)" }}>{chapter.title}</span>
-        <span>›</span>
-        <span style={{ color: "var(--text-primary)", fontWeight: 700 }}>{topic.title}</span>
+        <span className="opacity-50">›</span>
+        <span className="text-[var(--text-secondary)]">{chapter.title}</span>
+        <span className="opacity-50 hidden sm:inline">›</span>
+        <span className="text-[var(--text-primary)] font-black hidden sm:inline">{topic.title}</span>
       </div>
 
       {/* Topic header */}
-      <div className="glass" style={{ borderRadius: 20, padding: "22px 26px", marginBottom: 20, position: "relative", overflow: "hidden" }}>
-        <div style={{ position: "absolute", top: 0, right: 0, width: 140, height: 140, background: color.bg, opacity: 0.07, borderRadius: "0 20px 0 100%" }} />
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 12, flexWrap: "wrap" }}>
-          <div>
-            <span style={{ fontSize: "0.72rem", color: color.text, fontWeight: 700, padding: "3px 10px", borderRadius: 99, background: color.badge, marginBottom: 8, display: "inline-block" }}>
+      <div className="glass rounded-[20px] p-5 sm:p-8 mb-6 relative overflow-hidden">
+        <div 
+          className="absolute top-0 right-0 w-32 h-32 sm:w-48 sm:h-48 opacity-[0.07] rounded-bl-[100px]" 
+          style={{ background: color.bg }} 
+        />
+        <div className="flex flex-col md:flex-row justify-between items-start gap-6 relative z-10">
+          <div className="flex-1">
+            <span 
+              className="text-[10px] sm:text-xs font-black px-3 py-1 rounded-full mb-3 inline-block uppercase tracking-wider"
+              style={{ color: color.text, background: color.badge }}
+            >
               {chapter.title}
             </span>
-            <h1 style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 800, fontSize: "clamp(1.2rem,4vw,1.6rem)", lineHeight: 1.25, marginBottom: 6 }}>
+            <h1 className="font-['Poppins'] font-black text-xl sm:text-3xl md:text-4xl leading-tight mb-3">
               {topic.title}
             </h1>
-            <p style={{ color: "var(--text-muted)", fontSize: "0.85rem" }}>{topic.description}</p>
+            <p className="text-[var(--text-muted)] text-sm sm:text-base max-w-[600px] font-medium leading-relaxed">
+              {topic.description}
+            </p>
           </div>
-          <div style={{ display: "flex", flexDirection: "column", gap: 8, alignItems: "flex-end" }}>
+          <div className="flex flex-row md:flex-col gap-3 items-center md:items-end w-full md:w-auto">
             {completed ? (
-              <div style={{ padding: "6px 14px", borderRadius: 99, background: "rgba(52,211,153,0.15)", border: "1px solid rgba(52,211,153,0.35)", color: "#34d399", fontSize: "0.8rem", fontWeight: 700 }}>
+              <div className="flex-1 md:flex-none text-center px-4 py-2 rounded-full bg-[rgba(52,211,153,0.15)] border border-[rgba(52,211,153,0.35)] text-[#34d399] text-xs sm:text-sm font-black whitespace-nowrap">
                 ✓ Completed
               </div>
             ) : (
               <button
-                className="btn-secondary"
-                style={{ fontSize: "0.8rem", padding: "6px 14px" }}
+                className="flex-1 md:flex-none btn-secondary text-xs sm:text-sm px-4 py-2 whitespace-nowrap"
                 onClick={handleMarkDone}
               >
                 Mark as Done ✓
               </button>
             )}
-            <VoiceAssistant
-              onTranscript={handleVoiceTranscript}
-              speakText={tab === "learn" ? speakText : undefined}
-            />
+            <div className="flex-1 md:flex-none">
+              <VoiceAssistant
+                onTranscript={handleVoiceTranscript}
+                speakText={tab === "learn" ? speakText : undefined}
+              />
+            </div>
           </div>
         </div>
       </div>
 
       {/* Tabs */}
-      <div style={{ display: "flex", gap: 6, marginBottom: 20, background: "rgba(255,255,255,0.04)", borderRadius: 12, padding: 4 }}>
+      <div className="flex gap-1 sm:gap-2 mb-6 bg-[rgba(255,255,255,0.04)] rounded-2xl p-1.5 sm:p-2 border border-[rgba(255,255,255,0.05)]">
         {(["learn", "chat", "quiz"] as Tab[]).map((t) => (
           <button
             key={t}
             onClick={() => setTab(t)}
+            className={`flex-1 flex items-center justify-center gap-2 py-2.5 sm:py-3.5 rounded-xl border-none font-bold text-xs sm:text-sm transition-all duration-300 cursor-pointer ${
+              tab === t ? 'text-white' : 'text-[var(--text-muted)] hover:bg-[rgba(255,255,255,0.03)]'
+            }`}
             style={{
-              flex: 1,
-              padding: "10px 0",
-              borderRadius: 9,
-              border: "none",
               background: tab === t ? color.bg : "transparent",
-              color: tab === t ? "white" : "var(--text-muted)",
-              fontWeight: tab === t ? 700 : 500,
-              fontSize: "0.88rem",
-              cursor: "pointer",
-              transition: "all 0.25s ease",
-              boxShadow: tab === t ? `0 4px 16px ${color.glow}` : "none",
-              textTransform: "capitalize",
+              boxShadow: tab === t ? `0 8px 24px ${color.glow}` : "none",
             }}
           >
             {t === "learn" ? "📖 Learn" : t === "chat" ? "🤖 Ask AI" : "🧠 Quiz"}
@@ -249,24 +251,24 @@ export default function LearnClient({
       </div>
 
       {/* Tab content */}
-      <div>
+      <div className="min-h-[400px]">
         {tab === "learn" && (
-          <div className="glass" style={{ borderRadius: 20, padding: 28 }}>
+          <div className="glass rounded-[20px] p-6 sm:p-10">
             {loadingExplain && (
-              <div style={{ textAlign: "center", padding: "32px 0" }}>
-                <div style={{ fontSize: "2.5rem", animation: "float 2s infinite", marginBottom: 12 }}>🤖</div>
-                <p style={{ color: "var(--text-secondary)", fontWeight: 600 }}>Building your lesson…</p>
+              <div className="text-center py-16">
+                <div className="text-4xl sm:text-6xl animate-float mb-6">🤖</div>
+                <p className="text-[var(--text-secondary)] font-bold text-lg">Building your lesson…</p>
               </div>
             )}
             {explainError && (
-              <div style={{ textAlign: "center", padding: 24 }}>
-                <p style={{ color: "#f87171", marginBottom: 16 }}>⚠️ {explainError}</p>
+              <div className="text-center py-12">
+                <p className="text-[#f87171] mb-6 font-bold">⚠️ {explainError}</p>
                 <button className="btn-primary" onClick={() => void fetchExplanation()}>Retry</button>
               </div>
             )}
             {explanation && !loadingExplain && (
-              <div style={{ lineHeight: 1.75, fontSize: "0.95rem", color: "var(--text-secondary)" }}>
-                <div style={{ display: "flex", justifyContent: "flex-end", marginBottom: 15 }}>
+              <div className="leading-relaxed sm:leading-loose text-sm sm:text-base md:text-lg text-[var(--text-secondary)]">
+                <div className="flex justify-end mb-6">
                   <button
                     onClick={() => {
                       window.speechSynthesis?.cancel();
@@ -275,8 +277,7 @@ export default function LearnClient({
                       utt.rate = 0.9;
                       window.speechSynthesis?.speak(utt);
                     }}
-                    className="btn-secondary"
-                    style={{ fontSize: "0.78rem", padding: "5px 12px", display: "flex", alignItems: "center", gap: 6 }}
+                    className="btn-secondary text-xs px-4 py-2 flex items-center gap-2"
                   >
                     🔊 Read Lesson Aloud
                   </button>
@@ -285,22 +286,23 @@ export default function LearnClient({
                   const nepCfg = NEP_SECTIONS.find(s => s.marker === sec.sectionKey);
                   if (nepCfg) {
                     return (
-                      <div key={idx} style={{
-                        margin: "20px 0",
-                        borderRadius: 14,
-                        border: `1px solid ${nepCfg.border}`,
+                      <div key={idx} className="my-6 sm:my-8 rounded-2xl border p-5 sm:p-8" style={{
+                        borderColor: nepCfg.border,
                         background: nepCfg.bg,
-                        padding: "16px 20px",
                       }}>
-                        <div style={{ fontWeight: 800, fontSize: "0.82rem", color: nepCfg.color, marginBottom: 10, textTransform: "uppercase", letterSpacing: "0.06em" }}>
+                        <div className="font-black text-[10px] sm:text-xs uppercase tracking-[0.1em] mb-4 flex items-center gap-2" style={{ color: nepCfg.color }}>
                           {nepCfg.icon} {nepCfg.label}
                         </div>
-                        <ReactMarkdown remarkPlugins={[remarkGfm]}>{sec.content}</ReactMarkdown>
+                        <div className="prose prose-invert max-w-none">
+                          <ReactMarkdown remarkPlugins={[remarkGfm]}>{sec.content}</ReactMarkdown>
+                        </div>
                       </div>
                     );
                   }
                   return (
-                    <ReactMarkdown key={idx} remarkPlugins={[remarkGfm]}>{sec.content}</ReactMarkdown>
+                    <div key={idx} className="prose prose-invert max-w-none mb-6">
+                      <ReactMarkdown remarkPlugins={[remarkGfm]}>{sec.content}</ReactMarkdown>
+                    </div>
                   );
                 })}
               </div>
@@ -309,7 +311,7 @@ export default function LearnClient({
         )}
 
         {tab === "chat" && (
-          <div className="glass" style={{ borderRadius: 20, padding: 24 }}>
+          <div className="glass rounded-[20px] p-5 sm:p-8">
             <AIChat
               subject={subjectName}
               topic={topic.title}
@@ -324,25 +326,26 @@ export default function LearnClient({
       </div>
 
       {/* Navigation */}
-      <div style={{ display: "flex", justifyContent: "space-between", marginTop: 28, gap: 12 }}>
+      <div className="flex flex-col sm:flex-row justify-between items-stretch mt-10 gap-4">
         {prevTopic ? (
-          <Link href={`/learn/${subjectSlug}/${prevTopic.id}`} style={{ textDecoration: "none", flex: 1 }}>
-            <div className="glass glass-hover" style={{ borderRadius: 14, padding: "14px 18px" }}>
-              <p style={{ fontSize: "0.72rem", color: "var(--text-muted)", marginBottom: 4 }}>← Previous</p>
-              <p style={{ fontWeight: 700, fontSize: "0.88rem", color: "var(--text-primary)" }}>{prevTopic.title}</p>
+          <Link href={`/learn/${subjectSlug}/${prevTopic.id}`} className="no-underline flex-1">
+            <div className="glass glass-hover rounded-2xl p-5 h-full">
+              <p className="text-[10px] sm:text-xs text-[var(--text-muted)] uppercase tracking-wider font-bold mb-2">← Previous</p>
+              <p className="font-black text-sm sm:text-base text-[var(--text-primary)]">{prevTopic.title}</p>
             </div>
           </Link>
-        ) : <div style={{ flex: 1 }} />}
+        ) : <div className="hidden sm:block flex-1" />}
 
         {nextTopic ? (
-          <Link href={`/learn/${subjectSlug}/${nextTopic.id}`} style={{ textDecoration: "none", flex: 1 }}>
-            <div className="glass glass-hover" style={{ borderRadius: 14, padding: "14px 18px", textAlign: "right" }}>
-              <p style={{ fontSize: "0.72rem", color: "var(--text-muted)", marginBottom: 4 }}>Next →</p>
-              <p style={{ fontWeight: 700, fontSize: "0.88rem", color: "var(--text-primary)" }}>{nextTopic.title}</p>
+          <Link href={`/learn/${subjectSlug}/${nextTopic.id}`} className="no-underline flex-1">
+            <div className="glass glass-hover rounded-2xl p-5 h-full text-right border-r-4" style={{ borderColor: color.bg }}>
+              <p className="text-[10px] sm:text-xs text-[var(--text-muted)] uppercase tracking-wider font-bold mb-2">Next Topic →</p>
+              <p className="font-black text-sm sm:text-base text-[var(--text-primary)]">{nextTopic.title}</p>
             </div>
           </Link>
-        ) : <div style={{ flex: 1 }} />}
+        ) : <div className="hidden sm:block flex-1" />}
       </div>
     </main>
+
   );
 }

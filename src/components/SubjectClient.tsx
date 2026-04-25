@@ -34,83 +34,76 @@ export default function SubjectClient({ subject, subjectSlug }: { subject: Subje
   let topicIndex = 0;
 
   return (
-    <main style={{ maxWidth: 900, margin: "0 auto", padding: "24px 20px 60px" }}>
+    <main className="max-w-[900px] mx-auto px-4 sm:px-6 py-6 sm:py-10 pb-20">
       {/* Back */}
-      <Link href="/" style={{ textDecoration: "none" }}>
-        <button className="btn-secondary" style={{ marginBottom: 24, fontSize: "0.85rem" }}>
+      <Link href="/" className="no-underline block mb-6">
+        <button className="btn-secondary text-[13px] sm:text-sm px-4 py-2 flex items-center gap-2">
           ← Back to Dashboard
         </button>
       </Link>
 
       {/* Hero */}
-      <div className="glass" style={{ borderRadius: 24, padding: "28px 32px", marginBottom: 28, position: "relative", overflow: "hidden" }}>
-        <div style={{
-          position: "absolute", top: 0, right: 0,
-          width: 200, height: 200,
-          background: color.bg, opacity: 0.07,
-          borderRadius: "0 24px 0 100%",
-        }} />
-        <div style={{ display: "flex", alignItems: "center", gap: 16, marginBottom: 16 }}>
-          <div style={{
-            width: 60, height: 60,
-            borderRadius: 16,
-            background: color.bg,
-            display: "flex", alignItems: "center", justifyContent: "center",
-            fontSize: "1.8rem",
-            boxShadow: `0 6px 24px ${color.glow}`,
-          }}>
+      <div className="glass rounded-[24px] p-6 sm:p-10 mb-8 relative overflow-hidden">
+        <div 
+          className="absolute top-0 right-0 w-40 h-40 sm:w-56 sm:h-56 opacity-[0.07] rounded-bl-[100px]" 
+          style={{ background: color.bg }} 
+        />
+        <div className="flex flex-col sm:flex-row items-center sm:items-center gap-6 mb-8 relative z-10 text-center sm:text-left">
+          <div 
+            className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl flex items-center justify-center text-3xl sm:text-4xl shrink-0" 
+            style={{ 
+              background: color.bg,
+              boxShadow: `0 8px 32px ${color.glow}`
+            }}
+          >
             {ICONS[subject.icon] ?? "📖"}
           </div>
           <div>
-            <h1 style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 800, fontSize: "1.6rem" }}>
+            <h1 className="font-['Poppins'] font-extrabold text-2xl sm:text-4xl mb-2">
               {subject.name}
             </h1>
-            <p style={{ color: "var(--text-muted)", fontSize: "0.85rem" }}>
+            <p className="text-[var(--text-muted)] text-sm sm:text-base font-medium">
               {subject.chapters.length} chapters · {totalTopics} topics
             </p>
           </div>
         </div>
-        <ProgressBar percent={pct} color={color.bg} label="Overall progress" />
+        <div className="max-w-[600px]">
+          <ProgressBar percent={pct} color={color.bg} label="Overall progress" />
+        </div>
       </div>
 
       {/* Chapters */}
-      {subject.chapters.map((chapter) => (
-        <div key={chapter.title} style={{ marginBottom: 32 }}>
-          <h2 style={{
-            fontWeight: 700, fontSize: "1.05rem",
-            marginBottom: 12,
-            color: color.text,
-            display: "flex", alignItems: "center", gap: 8,
-          }}>
-            <span style={{
-              display: "inline-block",
-              width: 8, height: 8, borderRadius: "50%",
-              background: color.bg,
-            }} />
-            {chapter.title}
-          </h2>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: 12 }}>
-            {chapter.topics.map((t) => {
-              const tp = prog[t.id];
-              topicIndex++;
-              return (
-                <TopicCard
-                  key={t.id}
-                  subjectName={subject.name}
-                  chapterTitle={chapter.title}
-                  topicId={t.id}
-                  topicTitle={t.title}
-                  topicDescription={t.description}
-                  completed={tp?.completed}
-                  quizScore={tp?.quizScore}
-                  quizTotal={tp?.quizTotal}
-                  index={topicIndex}
-                />
-              );
-            })}
+      <div className="space-y-10">
+        {subject.chapters.map((chapter) => (
+          <div key={chapter.title}>
+            <h2 className="font-bold text-lg sm:text-xl mb-4 flex items-center gap-3" style={{ color: color.text }}>
+              <span className="w-2 h-2 rounded-full" style={{ background: color.bg }} />
+              {chapter.title}
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+              {chapter.topics.map((t) => {
+                const tp = prog[t.id];
+                topicIndex++;
+                return (
+                  <TopicCard
+                    key={t.id}
+                    subjectName={subject.name}
+                    chapterTitle={chapter.title}
+                    topicId={t.id}
+                    topicTitle={t.title}
+                    topicDescription={t.description}
+                    completed={tp?.completed}
+                    quizScore={tp?.quizScore}
+                    quizTotal={tp?.quizTotal}
+                    index={topicIndex}
+                  />
+                );
+              })}
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </main>
+
   );
 }

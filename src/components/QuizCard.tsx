@@ -74,17 +74,17 @@ export default function QuizCard({ subject, topic, topicId }: QuizCardProps) {
 
   const pct = questions.length ? Math.round((score / questions.length) * 100) : 0;
 
-  // ── Idle ──────────────────────────────────────────────────────────────────
+    // ── Idle ──────────────────────────────────────────────────────────────────
   if (phase === "idle") {
     return (
-      <div className="glass" style={{ borderRadius: 20, padding: 28, textAlign: "center" }}>
-        <div style={{ fontSize: "3rem", marginBottom: 12 }}>🧠</div>
-        <h3 style={{ fontWeight: 800, fontSize: "1.2rem", marginBottom: 8 }}>Practice Quiz</h3>
-        <p style={{ color: "var(--text-muted)", fontSize: "0.88rem", marginBottom: 20 }}>
-          Test your knowledge on <strong>{topic}</strong>
-          <br />10 feedback-based questions await!
+      <div className="glass rounded-[20px] p-6 sm:p-10 text-center">
+        <div className="text-5xl sm:text-7xl mb-4 animate-float">🧠</div>
+        <h3 className="font-black text-xl sm:text-2xl mb-2">Practice Quiz</h3>
+        <p className="text-[var(--text-muted)] text-sm sm:text-base mb-8 max-w-[400px] mx-auto leading-relaxed">
+          Test your knowledge on <span className="text-[var(--text-primary)] font-bold">{topic}</span>.
+          <br className="hidden sm:block" /> 10 feedback-based questions await!
         </p>
-        <button className="btn-primary" onClick={() => void startQuiz()}>
+        <button className="btn-primary w-full sm:w-auto px-8 py-4 text-lg shadow-xl" onClick={() => void startQuiz()}>
           🚀 Start Quiz
         </button>
       </div>
@@ -94,10 +94,10 @@ export default function QuizCard({ subject, topic, topicId }: QuizCardProps) {
   // ── Loading ────────────────────────────────────────────────────────────────
   if (phase === "loading") {
     return (
-      <div className="glass" style={{ borderRadius: 20, padding: 28, textAlign: "center" }}>
-        <div style={{ fontSize: "2.5rem", marginBottom: 16, animation: "float 2s infinite" }}>⚙️</div>
-        <p style={{ color: "var(--text-secondary)", fontWeight: 600 }}>Generating your quiz…</p>
-        <p style={{ color: "var(--text-muted)", fontSize: "0.82rem", marginTop: 6 }}>AI is crafting questions just for you!</p>
+      <div className="glass rounded-[20px] p-8 sm:p-12 text-center">
+        <div className="text-4xl sm:text-6xl mb-6 animate-spin-slow">⚙️</div>
+        <p className="text-[var(--text-secondary)] font-black text-lg sm:text-xl">Generating your quiz…</p>
+        <p className="text-[var(--text-muted)] text-xs sm:text-sm mt-3">Sadiya is crafting questions just for you!</p>
       </div>
     );
   }
@@ -105,10 +105,10 @@ export default function QuizCard({ subject, topic, topicId }: QuizCardProps) {
   // ── Error ──────────────────────────────────────────────────────────────────
   if (phase === "error") {
     return (
-      <div className="glass" style={{ borderRadius: 20, padding: 28, textAlign: "center" }}>
-        <div style={{ fontSize: "2.5rem", marginBottom: 12 }}>⚠️</div>
-        <p style={{ color: "#f87171", fontWeight: 700, marginBottom: 16 }}>{errorMsg}</p>
-        <button className="btn-secondary" onClick={() => setPhase("idle")}>Try Again</button>
+      <div className="glass rounded-[20px] p-8 sm:p-10 text-center">
+        <div className="text-4xl sm:text-6xl mb-4">⚠️</div>
+        <p className="text-[#f87171] font-black text-base sm:text-lg mb-8">{errorMsg}</p>
+        <button className="btn-secondary w-full sm:w-auto px-6 py-3" onClick={() => setPhase("idle")}>Try Again</button>
       </div>
     );
   }
@@ -117,27 +117,21 @@ export default function QuizCard({ subject, topic, topicId }: QuizCardProps) {
   if (phase === "done") {
     const passed = pct >= 60;
     return (
-      <div className="glass" style={{ borderRadius: 20, padding: 28, textAlign: "center" }}>
-        <div style={{ fontSize: "3.5rem", marginBottom: 12 }}>{passed ? "🎉" : "💪"}</div>
-        <h3 style={{ fontWeight: 800, fontSize: "1.3rem", marginBottom: 8 }}>
-          {passed ? "Excellent work!" : "Keep practising!"}
+      <div className="glass rounded-[20px] p-8 sm:p-12 text-center relative overflow-hidden">
+        <div className={`absolute top-0 inset-x-0 h-2 ${passed ? 'bg-green-500' : 'bg-orange-500'}`} />
+        <div className="text-5xl sm:text-7xl mb-6">{passed ? "🎉" : "💪"}</div>
+        <h3 className="font-black text-2xl sm:text-3xl mb-2">
+          {passed ? "Excellent work!" : "Keep practicing!"}
         </h3>
-        <div style={{
-          fontSize: "3rem",
-          fontWeight: 900,
-          marginBottom: 8,
-          background: passed ? "linear-gradient(135deg,#34d399,#22d3ee)" : "linear-gradient(135deg,#fb923c,#f59e0b)",
-          WebkitBackgroundClip: "text",
-          WebkitTextFillColor: "transparent",
-        }}>
+        <div className={`text-6xl sm:text-8xl font-black mb-4 bg-clip-text text-transparent ${passed ? 'bg-gradient-to-br from-[#34d399] to-[#22d3ee]' : 'bg-gradient-to-br from-[#fb923c] to-[#f59e0b]'}`}>
           {score}/{questions.length}
         </div>
-        <p style={{ color: "var(--text-muted)", fontSize: "0.88rem", marginBottom: 20 }}>
-          You scored <strong>{pct}%</strong> — {passed ? "topic marked complete! ✅" : "score 60% to unlock completion."}
+        <p className="text-[var(--text-muted)] text-sm sm:text-base mb-8 max-w-[400px] mx-auto leading-relaxed">
+          You scored <span className="text-[var(--text-primary)] font-bold">{pct}%</span> — {passed ? "topic marked complete! ✅" : "score 60% to unlock completion."}
         </p>
-        <div style={{ display: "flex", gap: 10, justifyContent: "center" }}>
-          <button className="btn-primary" onClick={() => void startQuiz()}>🔄 Retry</button>
-          <button className="btn-secondary" onClick={() => setPhase("idle")}>Back</button>
+        <div className="flex flex-col sm:flex-row gap-3 justify-center">
+          <button className="btn-primary w-full sm:w-auto px-8 py-3" onClick={() => void startQuiz()}>🔄 Retry Quiz</button>
+          <button className="btn-secondary w-full sm:w-auto px-8 py-3" onClick={() => setPhase("idle")}>Back to Topic</button>
         </div>
       </div>
     );
@@ -145,47 +139,37 @@ export default function QuizCard({ subject, topic, topicId }: QuizCardProps) {
 
   // ── Active ─────────────────────────────────────────────────────────────────
   if (!q) return null;
-  const typeLabel: Record<string, string> = { mcq: "MCQ", short: "Short Answer", application: "Apply It!" };
+  const typeLabel: Record<string, string> = { mcq: "Multiple Choice", short: "Short Answer", application: "Case Study" };
   const typeIcon: Record<string, string> = { mcq: "🔘", short: "✍️", application: "💡" };
 
   return (
-    <div className="glass" style={{ borderRadius: 20, padding: 24 }}>
+    <div className="glass rounded-[24px] p-5 sm:p-8 md:p-10">
       {/* Header */}
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16 }}>
-        <span style={{
-          fontSize: "0.75rem",
-          fontWeight: 700,
-          padding: "4px 10px",
-          borderRadius: 99,
-          background: "rgba(79,142,247,0.15)",
-          color: "#4f8ef7",
-        }}>
+      <div className="flex justify-between items-center mb-6 gap-4">
+        <span className="text-[10px] sm:text-xs font-black px-3 py-1 rounded-full bg-[rgba(79,142,247,0.15)] text-[#4f8ef7] uppercase tracking-wider">
           {typeIcon[q.type]} {typeLabel[q.type]}
         </span>
-        <span style={{ fontSize: "0.8rem", color: "var(--text-muted)" }}>
-          Q {current + 1} / {questions.length} &nbsp;·&nbsp; ✅ {score}
+        <span className="text-xs sm:text-sm font-bold text-[var(--text-muted)] whitespace-nowrap">
+          Question {current + 1} of {questions.length}
         </span>
       </div>
 
       {/* Progress track */}
-      <div style={{ height: 4, background: "rgba(255,255,255,0.08)", borderRadius: 99, marginBottom: 20 }}>
-        <div style={{
-          height: "100%",
-          width: `${((current) / questions.length) * 100}%`,
-          background: "linear-gradient(90deg,#4f8ef7,#22d3ee)",
-          borderRadius: 99,
-          transition: "width 0.5s ease",
-        }} />
+      <div className="h-1.5 w-full bg-[rgba(255,255,255,0.08)] rounded-full mb-8 overflow-hidden">
+        <div 
+          className="h-full bg-gradient-to-r from-[#4f8ef7] to-[#22d3ee] rounded-full transition-all duration-700 ease-out" 
+          style={{ width: `${((current) / questions.length) * 100}%` }}
+        />
       </div>
 
       {/* Question */}
-      <p style={{ fontWeight: 700, fontSize: "1rem", lineHeight: 1.5, marginBottom: 18, color: "var(--text-primary)" }}>
+      <h4 className="font-black text-lg sm:text-xl md:text-2xl leading-snug mb-8 text-[var(--text-primary)]">
         {q.question}
-      </p>
+      </h4>
 
       {/* MCQ options */}
       {q.type === "mcq" && q.options && (
-        <div style={{ display: "flex", flexDirection: "column", gap: 10, marginBottom: 18 }}>
+        <div className="grid grid-cols-1 gap-3 mb-8">
           {q.options.map((opt, i) => {
             const isSelected = selected === opt;
             const isCorrect = revealed && opt.toLowerCase().replace(/^[abcd]\)\s*/i, "").includes(
@@ -198,27 +182,21 @@ export default function QuizCard({ subject, topic, topicId }: QuizCardProps) {
                 key={i}
                 disabled={revealed}
                 onClick={() => setSelected(opt)}
-                style={{
-                  textAlign: "left",
-                  padding: "11px 16px",
-                  borderRadius: 12,
-                  border: `1px solid ${isCorrect ? "rgba(52,211,153,0.6)"
-                    : isWrong ? "rgba(248,113,113,0.6)"
-                      : isSelected ? "rgba(79,142,247,0.6)"
-                        : "var(--glass-border)"
-                    }`,
-                  background: isCorrect ? "rgba(52,211,153,0.12)"
-                    : isWrong ? "rgba(248,113,113,0.12)"
-                      : isSelected ? "rgba(79,142,247,0.12)"
-                        : "var(--glass-bg)",
-                  color: "var(--text-primary)",
-                  cursor: revealed ? "default" : "pointer",
-                  fontSize: "0.88rem",
-                  fontWeight: isSelected ? 700 : 400,
-                  transition: "all 0.2s ease",
-                }}
+                className={`text-left p-4 sm:p-5 rounded-2xl border transition-all duration-300 text-sm sm:text-base flex items-start gap-4 ${
+                  isCorrect ? "border-green-500/50 bg-green-500/10 text-white font-bold"
+                  : isWrong ? "border-red-500/50 bg-red-500/10 text-white font-bold"
+                  : isSelected ? "border-[var(--blue)]/50 bg-[var(--blue)]/10 text-white font-bold"
+                  : "border-[var(--glass-border)] bg-[rgba(255,255,255,0.03)] text-[var(--text-secondary)] hover:bg-[rgba(255,255,255,0.06)]"
+                } ${revealed ? 'cursor-default' : 'cursor-pointer hover:-translate-y-1'}`}
               >
-                {isCorrect && "✓ "}{isWrong && "✗ "}{opt}
+                <span className={`w-6 h-6 rounded-full flex items-center justify-center shrink-0 text-[10px] sm:text-xs ${
+                  isCorrect ? 'bg-green-500 text-white' : 
+                  isWrong ? 'bg-red-500 text-white' : 
+                  isSelected ? 'bg-[var(--blue)] text-white' : 'bg-white/10 text-white/40'
+                }`}>
+                  {isCorrect ? "✓" : isWrong ? "✗" : String.fromCharCode(65 + i)}
+                </span>
+                <span className="flex-1">{opt.replace(/^[abcd]\)\s*/i, "")}</span>
               </button>
             );
           })}
@@ -231,57 +209,47 @@ export default function QuizCard({ subject, topic, topicId }: QuizCardProps) {
           value={shortAnswer}
           onChange={(e) => setShortAnswer(e.target.value)}
           disabled={revealed}
-          placeholder="Type your answer here…"
-          rows={3}
-          style={{
-            width: "100%",
-            padding: "12px 14px",
-            borderRadius: 12,
-            border: "1px solid var(--glass-border)",
-            background: "rgba(255,255,255,0.05)",
-            color: "var(--text-primary)",
-            fontSize: "0.9rem",
-            marginBottom: 16,
-            resize: "vertical",
-            outline: "none",
-          }}
+          placeholder="Enter your detailed answer here..."
+          className="w-full p-5 rounded-2xl border border-[var(--glass-border)] bg-white/5 text-[var(--text-primary)] text-sm sm:text-base mb-8 min-h-[120px] focus:outline-none focus:border-[var(--blue)]/50 transition-colors placeholder:text-white/20 resize-none"
         />
       )}
 
       {/* Explanation after reveal */}
       {revealed && (
-        <div style={{
-          padding: "12px 16px",
-          borderRadius: 12,
-          background: "rgba(79,142,247,0.1)",
-          border: "1px solid rgba(79,142,247,0.25)",
-          marginBottom: 16,
-          fontSize: "0.85rem",
-          color: "var(--text-secondary)",
-          lineHeight: 1.6,
-        }}>
-          <strong style={{ color: "#4f8ef7" }}>✏️ Correct answer:</strong> {q.answer}
-          <br /><strong>💬</strong> {q.explanation}
+        <div className="p-5 sm:p-7 rounded-2xl bg-[#4f8ef7]/10 border border-[#4f8ef7]/20 mb-8 animate-fade-in-up">
+          <div className="flex items-center gap-3 mb-3">
+            <span className="w-8 h-8 rounded-full bg-[#4f8ef7]/20 flex items-center justify-center text-sm">💡</span>
+            <span className="text-[13px] font-black uppercase tracking-widest text-[#4f8ef7]">Explanation</span>
+          </div>
+          <p className="text-sm sm:text-base text-[var(--text-secondary)] leading-relaxed mb-4">
+            {q.explanation}
+          </p>
+          <div className="pt-4 border-t border-white/5">
+            <p className="text-xs uppercase tracking-wider text-[var(--text-muted)] font-bold mb-1">Correct Answer</p>
+            <p className="text-sm sm:text-base font-bold text-white">{q.answer}</p>
+          </div>
         </div>
       )}
 
       {/* Actions */}
-      <div style={{ display: "flex", gap: 10 }}>
+      <div className="flex gap-4">
         {!revealed ? (
           <button
-            className="btn-primary"
+            className={`btn-primary flex-1 py-4 text-base font-black shadow-lg transition-all ${
+              (q.type === "mcq" ? !selected : !shortAnswer.trim()) ? "opacity-30 cursor-not-allowed scale-95" : "hover:scale-[1.02]"
+            }`}
             disabled={q.type === "mcq" ? !selected : !shortAnswer.trim()}
-            style={{ flex: 1, opacity: (q.type === "mcq" ? !selected : !shortAnswer.trim()) ? 0.45 : 1 }}
             onClick={checkAnswer}
           >
             Check Answer
           </button>
         ) : (
-          <button className="btn-primary" style={{ flex: 1 }} onClick={next}>
-            {current + 1 >= questions.length ? "See Results 🏁" : "Next Question →"}
+          <button className="btn-primary flex-1 py-4 text-base font-black shadow-lg hover:scale-[1.02] transition-all" onClick={next}>
+            {current + 1 >= questions.length ? "Finish & See Results 🏁" : "Next Question →"}
           </button>
         )}
       </div>
     </div>
+
   );
 }

@@ -62,78 +62,42 @@ export default function AIChat({ subject, topic, initialMessage }: AIChatProps) 
   ];
 
   return (
-    <div className="flex flex-col h-full" style={{ minHeight: "420px" }}>
+    <div className="flex flex-col h-full min-h-[420px] sm:min-h-[500px]">
       {/* Header */}
-      <div className="flex items-center gap-3 mb-4">
-        <div
-          style={{
-            width: 40, height: 40,
-            borderRadius: "50%",
-            background: "linear-gradient(135deg,#4f8ef7,#a78bfa)",
-            display: "flex", alignItems: "center", justifyContent: "center",
-            fontSize: "1.3rem",
-            boxShadow: "0 0 20px rgba(79,142,247,0.4)",
-          }}
-        >
+      <div className="flex items-center gap-3 mb-4 sm:mb-6">
+        <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br from-[#4f8ef7] to-[#a78bfa] flex items-center justify-center text-xl sm:text-2xl shadow-[0_0_20px_rgba(79,142,247,0.4)]">
           🤖
         </div>
         <div>
-          <p style={{ fontWeight: 700, color: "var(--text-primary)", fontSize: "1rem" }}>AI Tutor</p>
-          <p style={{ fontSize: "0.75rem", color: "var(--text-muted)" }}>Ask me anything about {topic}</p>
+          <p className="font-black text-[var(--text-primary)] text-sm sm:text-base">AI Tutor</p>
+          <p className="text-[10px] sm:text-xs text-[var(--text-muted)] font-medium">Asking about {topic}</p>
         </div>
-        <div style={{
-          marginLeft: "auto",
-          padding: "4px 12px",
-          borderRadius: 99,
-          background: "rgba(52,211,153,0.15)",
-          color: "#34d399",
-          fontSize: "0.72rem",
-          fontWeight: 700,
-          border: "1px solid rgba(52,211,153,0.3)",
-        }}>
-          ● AI Tutor (Offline)
+        <div className="ml-auto px-3 py-1 rounded-full bg-green-500/10 border border-green-500/30 text-green-400 text-[9px] sm:text-[10px] font-black uppercase tracking-widest hidden sm:block">
+          ● AI Active
         </div>
       </div>
 
       {/* Messages */}
       <div
-        className="flex-1 overflow-y-auto"
-        style={{
-          padding: "12px",
-          borderRadius: 12,
-          background: "rgba(0,0,0,0.2)",
-          border: "1px solid var(--glass-border)",
-          marginBottom: 12,
-          maxHeight: "380px",
-          display: "flex",
-          flexDirection: "column",
-          gap: 12,
-        }}
+        className="flex-1 overflow-y-auto p-4 sm:p-5 rounded-2xl bg-black/30 border border-[var(--glass-border)] mb-4 min-h-[300px] flex flex-col gap-4"
       >
         {messages.length === 0 && (
-          <div style={{ textAlign: "center", padding: "24px 0", color: "var(--text-muted)" }}>
-            <div style={{ fontSize: "2.5rem", marginBottom: 8 }}>💬</div>
-            <p style={{ fontWeight: 600, marginBottom: 4 }}>Ask the AI Tutor!</p>
-            <p style={{ fontSize: "0.82rem" }}>Enter a question about {topic}</p>
+          <div className="text-center py-12 text-[var(--text-muted)]">
+            <div className="text-4xl sm:text-5xl mb-4 opacity-50">💬</div>
+            <p className="font-bold text-base sm:text-lg mb-1 text-[var(--text-secondary)]">Ask me anything!</p>
+            <p className="text-xs sm:text-sm">I'm here to help you understand {topic.toLowerCase()} better.</p>
           </div>
         )}
 
         {messages.map((msg, i) => (
-          <div key={i} style={{ display: "flex", justifyContent: msg.role === "user" ? "flex-end" : "flex-start" }}>
+          <div key={i} className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}>
             <div
-              className={msg.role === "user" ? "chat-bubble-user" : "chat-bubble-ai"}
-              style={{
-                maxWidth: "85%",
-                padding: "10px 14px",
-                fontSize: "0.88rem",
-                lineHeight: 1.6,
-                color: "var(--text-primary)",
-              }}
+              className={`${msg.role === "user" ? "chat-bubble-user" : "chat-bubble-ai"} max-w-[90%] sm:max-w-[85%] px-4 py-3 sm:px-5 sm:py-3.5 text-sm sm:text-base leading-relaxed text-[var(--text-primary)] shadow-lg`}
             >
               {msg.role === "user" ? (
-                <p>{msg.content}</p>
+                <p className="font-medium">{msg.content}</p>
               ) : (
-                <div className="prose" style={{ color: "var(--text-primary)" }}>
+                <div className="prose prose-invert prose-sm sm:prose-base max-w-none">
                   <ReactMarkdown remarkPlugins={[remarkGfm]}>{msg.content}</ReactMarkdown>
                 </div>
               )}
@@ -142,18 +106,14 @@ export default function AIChat({ subject, topic, initialMessage }: AIChatProps) 
         ))}
 
         {loading && (
-          <div style={{ display: "flex", alignItems: "flex-start", gap: 8 }}>
-            <div className="chat-bubble-ai" style={{ padding: "12px 16px" }}>
-              <div style={{ display: "flex", gap: 5, alignItems: "center" }}>
+          <div className="flex justify-start">
+            <div className="chat-bubble-ai px-5 py-4">
+              <div className="flex gap-1.5 items-center">
                 {[0, 1, 2].map((i) => (
                   <div
                     key={i}
-                    style={{
-                      width: 8, height: 8,
-                      borderRadius: "50%",
-                      background: "var(--blue)",
-                      animation: `pulse-ring 1.2s ease-in-out ${i * 0.2}s infinite`,
-                    }}
+                    className="w-2 h-2 rounded-full bg-[var(--blue)] animate-bounce"
+                    style={{ animationDelay: `${i * 0.15}s` }}
                   />
                 ))}
               </div>
@@ -162,14 +122,7 @@ export default function AIChat({ subject, topic, initialMessage }: AIChatProps) 
         )}
 
         {error && (
-          <div style={{
-            padding: "10px 14px",
-            borderRadius: 12,
-            background: "rgba(248,113,113,0.12)",
-            border: "1px solid rgba(248,113,113,0.3)",
-            color: "#f87171",
-            fontSize: "0.82rem",
-          }}>
+          <div className="p-4 rounded-xl bg-red-500/10 border border-red-500/30 text-red-400 text-xs sm:text-sm font-medium">
             ⚠️ {error}
           </div>
         )}
@@ -179,23 +132,12 @@ export default function AIChat({ subject, topic, initialMessage }: AIChatProps) 
 
       {/* Suggestions */}
       {messages.length === 0 && (
-        <div style={{ display: "flex", flexWrap: "wrap", gap: 6, marginBottom: 10 }}>
+        <div className="flex flex-wrap gap-2 mb-4">
           {suggestions.map((s) => (
             <button
               key={s}
               onClick={() => sendMessage(s)}
-              style={{
-                padding: "6px 12px",
-                borderRadius: 99,
-                border: "1px solid var(--glass-border)",
-                background: "var(--glass-bg)",
-                color: "var(--text-secondary)",
-                fontSize: "0.78rem",
-                cursor: "pointer",
-                transition: "all 0.2s",
-              }}
-              onMouseEnter={(e) => { (e.target as HTMLElement).style.background = "var(--bg-card-hover)"; }}
-              onMouseLeave={(e) => { (e.target as HTMLElement).style.background = "var(--glass-bg)"; }}
+              className="px-3 py-1.5 rounded-full border border-[var(--glass-border)] bg-[rgba(255,255,255,0.03)] text-[11px] sm:text-xs text-[var(--text-secondary)] hover:bg-[rgba(255,255,255,0.08)] hover:text-white transition-all cursor-pointer whitespace-nowrap"
             >
               {s}
             </button>
@@ -206,33 +148,26 @@ export default function AIChat({ subject, topic, initialMessage }: AIChatProps) 
       {/* Input */}
       <form
         onSubmit={(e) => { e.preventDefault(); void sendMessage(); }}
-        style={{ display: "flex", gap: 8 }}
+        className="flex gap-2 sm:gap-3"
       >
         <input
           value={input}
           onChange={(e) => setInput(e.target.value)}
-          placeholder="Type your question..."
+          placeholder="Ask a follow-up question..."
           disabled={loading}
-          style={{
-            flex: 1,
-            padding: "12px 16px",
-            borderRadius: 12,
-            border: "1px solid var(--glass-border)",
-            background: "rgba(255,255,255,0.06)",
-            color: "var(--text-primary)",
-            fontSize: "0.9rem",
-            outline: "none",
-          }}
+          className="flex-1 px-4 sm:px-6 py-3 sm:py-4 rounded-xl sm:rounded-2xl border border-[var(--glass-border)] bg-white/5 text-[var(--text-primary)] text-sm sm:text-base outline-none focus:border-[var(--blue)]/50 focus:bg-white/10 transition-all placeholder:text-white/20"
         />
         <button
           type="submit"
           disabled={loading || !input.trim()}
-          className="btn-primary"
-          style={{ padding: "12px 18px", opacity: loading || !input.trim() ? 0.5 : 1 }}
+          className={`btn-primary px-4 sm:px-6 rounded-xl sm:rounded-2xl transition-all ${
+            loading || !input.trim() ? "opacity-30 cursor-not-allowed" : "hover:scale-105"
+          }`}
         >
-          ➤
+          <span className="text-xl">➤</span>
         </button>
       </form>
     </div>
+
   );
 }

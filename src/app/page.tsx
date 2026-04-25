@@ -61,75 +61,54 @@ export default function Dashboard() {
   }
 
   return (
-    <main style={{ maxWidth: 1200, margin: "0 auto", padding: "24px 20px 60px" }}>
+    <main className="max-w-[1200px] mx-auto px-4 sm:px-6 py-6 sm:py-12 pb-20">
 
       {/* ── Hero ── */}
-      <section style={{ textAlign: "center", padding: "48px 0 40px" }}>
-        <div style={{ fontSize: "3.5rem", marginBottom: 12 }} className="animate-float">🌟</div>
-        <h1 className="shimmer-text" style={{
-          fontFamily: "'Poppins', sans-serif",
-          fontWeight: 800,
-          fontSize: "clamp(1.8rem,5vw,3rem)",
-          lineHeight: 1.15,
-          marginBottom: 12,
-        }}>
+      <section className="text-center py-8 sm:py-16">
+        <div className="text-5xl sm:text-7xl mb-4 animate-float">🌟</div>
+        <h1 className="shimmer-text font-['Poppins'] font-extrabold text-[clamp(1.8rem,8vw,3.5rem)] leading-[1.1] mb-4">
           Sadiya's Learning Hub
         </h1>
-        <p style={{ color: "var(--text-secondary)", fontSize: "1.05rem", maxWidth: 520, margin: "0 auto 28px" }}>
+        <p className="text-[var(--text-secondary)] text-sm sm:text-base md:text-lg max-w-[520px] mx-auto mb-8">
           Class 6 CBSE · AI-Powered Learning · All Subjects 🚀
         </p>
 
         {/* Overall progress pill */}
-        <div className="glass" style={{
-          display: "inline-flex",
-          alignItems: "center",
-          gap: 16,
-          padding: "14px 28px",
-          borderRadius: 99,
-          marginBottom: 28,
-          flexWrap: "wrap",
-          justifyContent: "center",
-        }}>
-          <div style={{ textAlign: "center" }}>
-            <p style={{ fontSize: "1.6rem", fontWeight: 900, color: "#22d3ee" }}>{totalDone}</p>
-            <p style={{ fontSize: "0.72rem", color: "var(--text-muted)" }}>Topics Done</p>
+        <div className="glass inline-flex items-center gap-4 sm:gap-8 px-6 sm:px-10 py-4 sm:py-6 rounded-full mb-8 flex-wrap justify-center">
+          <div className="text-center min-w-[70px]">
+            <p className="text-2xl sm:text-3xl font-black text-[#22d3ee]">{totalDone}</p>
+            <p className="text-[10px] sm:text-xs text-[var(--text-muted)] uppercase tracking-wider">Topics Done</p>
           </div>
-          <div style={{ width: 1, height: 36, background: "var(--glass-border)" }} />
-          <div style={{ textAlign: "center" }}>
-            <p style={{ fontSize: "1.6rem", fontWeight: 900, color: "#a78bfa" }}>{totalTopics}</p>
-            <p style={{ fontSize: "0.72rem", color: "var(--text-muted)" }}>Total Topics</p>
+          <div className="hidden sm:block w-[1px] h-10 bg-[var(--glass-border)]" />
+          <div className="text-center min-w-[70px]">
+            <p className="text-2xl sm:text-3xl font-black text-[#a78bfa]">{totalTopics}</p>
+            <p className="text-[10px] sm:text-xs text-[var(--text-muted)] uppercase tracking-wider">Total Topics</p>
           </div>
-          <div style={{ width: 1, height: 36, background: "var(--glass-border)" }} />
-          <div style={{ textAlign: "center" }}>
-            <p style={{ fontSize: "1.6rem", fontWeight: 900, color: "#34d399" }}>
+          <div className="hidden sm:block w-[1px] h-10 bg-[var(--glass-border)]" />
+          <div className="text-center min-w-[70px]">
+            <p className="text-2xl sm:text-3xl font-black text-[#34d399]">
               {totalTopics > 0 ? Math.round((totalDone / totalTopics) * 100) : 0}%
             </p>
-            <p style={{ fontSize: "0.72rem", color: "var(--text-muted)" }}>Complete</p>
+            <p className="text-[10px] sm:text-xs text-[var(--text-muted)] uppercase tracking-wider">Complete</p>
           </div>
         </div>
 
-        <div style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap" }}>
-          <Link href={continueHref} className="btn-primary" style={{ textDecoration: "none" }}>
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
+          <Link href={continueHref} className="btn-primary w-full sm:w-auto no-underline">
             ▶ Continue Learning
           </Link>
-          <Link href="/quiz" className="btn-secondary" style={{ textDecoration: "none" }}>
+          <Link href="/quiz" className="btn-secondary w-full sm:w-auto no-underline">
             🧠 Random Quiz
           </Link>
         </div>
       </section>
 
-
-
       {/* ── Subject Cards ── */}
       <section>
-        <h2 style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 700, fontSize: "1.4rem", marginBottom: 20 }}>
+        <h2 className="font-['Poppins'] font-bold text-xl sm:text-2xl mb-6 flex items-center gap-2">
           📚 Choose a Subject
         </h2>
-        <div style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
-          gap: 20,
-        }}>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {subjects.map((subject, idx) => {
             const color = getSubjectColor(subject.name);
             const topicCount = subject.chapters.reduce((a, c) => a + c.topics.length, 0);
@@ -139,76 +118,53 @@ export default function Dashboard() {
               <Link
                 key={subject.name}
                 href={`/subject/${slugify(subject.name)}`}
-                style={{ textDecoration: "none" }}
+                className="no-underline block group"
               >
                 <div
-                  className="glass glass-hover"
+                  className="glass glass-hover rounded-[20px] p-6 cursor-pointer relative overflow-hidden opacity-0 h-full flex flex-col"
                   style={{
-                    borderRadius: 20,
-                    padding: 24,
-                    cursor: "pointer",
-                    position: "relative",
-                    overflow: "hidden",
-                    opacity: 0,
                     animation: `fadeInUp 0.55s ease forwards ${idx * 0.08}s`,
                   }}
                 >
                   {/* Gradient sweep */}
-                  <div style={{
-                    position: "absolute",
-                    top: 0, right: 0,
-                    width: 120, height: 120,
-                    background: color.bg,
-                    opacity: 0.08,
-                    borderRadius: "0 20px 0 100%",
-                  }} />
+                  <div className="absolute top-0 right-0 w-32 h-32 opacity-[0.08] rounded-bl-[100px]" style={{ background: color.bg }} />
 
-                  <div style={{ display: "flex", alignItems: "center", gap: 14, marginBottom: 16 }}>
-                    <div style={{
-                      width: 52, height: 52,
-                      borderRadius: 14,
-                      background: color.bg,
-                      display: "flex", alignItems: "center", justifyContent: "center",
-                      fontSize: "1.6rem",
-                      boxShadow: `0 4px 20px ${color.glow}`,
-                    }}>
+                  <div className="flex items-center gap-4 mb-6">
+                    <div 
+                      className="w-14 h-14 rounded-2xl flex items-center justify-center text-2xl transition-transform group-hover:scale-110" 
+                      style={{ 
+                        background: color.bg,
+                        boxShadow: `0 8px 24px ${color.glow}`
+                      }}
+                    >
                       {ICONS[subject.icon] ?? "📖"}
                     </div>
                     <div>
-                      <h3 style={{ fontWeight: 800, fontSize: "1.05rem", color: "var(--text-primary)" }}>
+                      <h3 className="font-black text-lg text-[var(--text-primary)]">
                         {subject.name}
                       </h3>
-                      <p style={{ fontSize: "0.75rem", color: "var(--text-muted)", marginTop: 2 }}>
+                      <p className="text-xs text-[var(--text-muted)] mt-1 font-medium">
                         {subject.chapters.length} chapters · {topicCount} topics
                       </p>
                     </div>
                   </div>
 
-                  <ProgressBar
-                    percent={pct}
-                    color={color.bg}
-                    height={7}
-                    showLabel={true}
-                  />
+                  <div className="mt-auto">
+                    <ProgressBar
+                      percent={pct}
+                      color={color.bg}
+                      height={8}
+                      showLabel={true}
+                    />
 
-                  <div style={{ display: "flex", justifyContent: "space-between", marginTop: 14 }}>
-                    <span style={{
-                      fontSize: "0.75rem",
-                      overflow: "hidden",
-                      textOverflow: "ellipsis",
-                      whiteSpace: "nowrap",
-                      color: "var(--text-muted)",
-                      maxWidth: "75%",
-                    }}>
-                      {subject.chapters[0].title}…
-                    </span>
-                    <span style={{
-                      fontSize: "0.78rem",
-                      color: color.text,
-                      fontWeight: 700,
-                    }}>
-                      Explore →
-                    </span>
+                    <div className="flex justify-between items-center mt-4 pt-2 border-t border-[rgba(255,255,255,0.05)]">
+                      <span className="text-[11px] text-[var(--text-muted)] truncate max-w-[65%] font-medium">
+                        {subject.chapters[0].title}…
+                      </span>
+                      <span className="text-[13px] font-bold" style={{ color: color.text }}>
+                        Explore →
+                      </span>
+                    </div>
                   </div>
                 </div>
               </Link>
@@ -218,24 +174,25 @@ export default function Dashboard() {
       </section>
 
       {/* ── Quick Tips ── */}
-      <section style={{ marginTop: 48 }}>
-        <h2 style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 700, fontSize: "1.4rem", marginBottom: 20 }}>
+      <section className="mt-16">
+        <h2 className="font-['Poppins'] font-bold text-xl sm:text-2xl mb-6">
           💡 Learning Tips
         </h2>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: 14 }}>
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
           {[
             { icon: "🤖", tip: "Ask the AI tutor any question — it explains with real-life examples!" },
             { icon: "🎤", tip: "Use the voice button to speak your questions hands-free." },
             { icon: "🧠", tip: "Take quizzes after studying to remember topics longer." },
             { icon: "📈", tip: "Your progress is saved automatically — pick up where you left off!" },
           ].map((t, i) => (
-            <div key={i} className="glass" style={{ borderRadius: 16, padding: "16px 18px", display: "flex", gap: 12, alignItems: "flex-start" }}>
-              <span style={{ fontSize: "1.5rem" }}>{t.icon}</span>
-              <p style={{ fontSize: "0.82rem", color: "var(--text-secondary)", lineHeight: 1.5 }}>{t.tip}</p>
+            <div key={i} className="glass rounded-2xl p-5 flex gap-4 items-start transition-all hover:bg-[rgba(255,255,255,0.08)]">
+              <span className="text-2xl shrink-0">{t.icon}</span>
+              <p className="text-sm text-[var(--text-secondary)] leading-relaxed font-medium">{t.tip}</p>
             </div>
           ))}
         </div>
       </section>
     </main>
+
   );
 }
