@@ -59,6 +59,14 @@
             { "id": "eng_gr_9", "title": "Letter Writing", "description": "Formal and informal letter formats with examples." },
             { "id": "eng_gr_10", "title": "Story Writing", "description": "Creating a short story with a beginning, middle, and end." }
           ]
+        },
+        {
+          "title": "Creative Writing & Skills",
+          "topics": [
+            { "id": "eng_cw_1", "title": "Notice Writing", "description": "How to write a formal notice for school notice boards." },
+            { "id": "eng_cw_2", "title": "Diary Entry", "description": "Expressing personal thoughts and feelings in a diary." },
+            { "id": "eng_cw_3", "title": "Message Writing", "description": "Writing short, clear messages for others." }
+          ]
         }
       ]
     },
@@ -301,7 +309,11 @@
             { "id": "hin_ram_1", "title": "अवधपुरी में राम", "description": "दशरथ के महल में राम और उनके भाइयों का बचपन।" },
             { "id": "hin_ram_2", "title": "जंगल और जनकपुर", "description": "विश्वामित्र के साथ राम की यात्रा और सीता स्वयंवर।" },
             { "id": "hin_ram_3", "title": "दो वरदान", "description": "कैकेयी के वरदान और राम का वनवास।" },
-            { "id": "hin_ram_4", "title": "राम का वन-गमन", "description": "राम, सीता और लक्ष्मण का वन की ओर प्रस्थान।" }
+            { "id": "hin_ram_4", "title": "राम का वन-गमन", "description": "राम, सीता और लक्ष्मण का वन की ओर प्रस्थान।" },
+            { "id": "hin_ram_5", "title": "चित्रकूट में भरत", "description": "भरत का राम को वापस लाने का प्रयास और खड़ाऊँ की कहानी।" },
+            { "id": "hin_ram_6", "title": "दंडक वन में दस वर्ष", "description": "वन में ऋषियों की रक्षा और राक्षसों का संहार।" },
+            { "id": "hin_ram_7", "title": "शूर्पणखा और खर-दूषण", "description": "शूर्पणखा का अपमान और युद्ध।" },
+            { "id": "hin_ram_8", "title": "सीता का हरण", "description": "रावण द्वारा सीता का अपहरण और जटायु का बलिदान।" }
           ]
         },
         {
@@ -364,6 +376,13 @@
             { "id": "comp_prog_2", "title": "Loops and Conditions in Scratch", "description": "Repeat blocks, if-else, events and interactive projects." },
             { "id": "comp_prog_3", "title": "Introduction to Blockly", "description": "Visual coding with Blockly for simple algorithms." }
           ]
+        },
+        {
+          "title": "Future Tech & AI",
+          "topics": [
+            { "id": "comp_ai_1", "title": "What is Artificial Intelligence?", "description": "Simple introduction to AI and how it helps us." },
+            { "id": "comp_ai_2", "title": "Generative AI Basics", "description": "Introduction to tools like ChatGPT and image generators." }
+          ]
         }
       ]
     },
@@ -392,6 +411,14 @@
             { "id": "gk_sci_1", "title": "Inventions and Discoveries", "description": "Who invented the telephone, bulb, internet and more." },
             { "id": "gk_sci_2", "title": "Human Body Basics", "description": "Major organs and their functions — heart, lungs, brain, stomach." }
           ]
+        },
+        {
+          "title": "Civic Awareness & Ethics",
+          "topics": [
+            { "id": "gk_civ_1", "title": "Road Safety Rules", "description": "Important traffic rules and safety signs." },
+            { "id": "gk_civ_2", "title": "Basic First Aid", "description": "How to help someone in an emergency." },
+            { "id": "gk_civ_3", "title": "Respecting Others", "description": "Lessons on empathy, kindness and good manners." }
+          ]
         }
       ]
     },
@@ -404,7 +431,8 @@
           "topics": [
             { "id": "kan_lit_1", "title": "ಕನ್ನಡ ನಾಡು ನುಡಿ", "description": "ಕನ್ನಡ ನಾಡಿನ ಹಿರಿಮೆ ಮತ್ತು ಸಾಹಿತ್ಯ ಪರಂಪರೆಯ ಪರಿಚಯ." },
             { "id": "kan_lit_2", "title": "ಗಿಡದ ಗಾಳಿ (ಪದ್ಯ)", "description": "ಪರಿಸರ ಪ್ರೇಮ ಮತ್ತು ಪ್ರಕೃತಿಯ ಮಹತ್ವವನ್ನು ಸಾರುವ ಪದ್ಯ." },
-            { "id": "kan_lit_3", "title": "ಐಕ್ಯತೆ (ಪದ್ಯ)", "description": "ಸೌಹಾರ್ದತೆ ಮತ್ತು ದೇಶಪ್ರೇಮದ ಸಂದೇಶ." }
+            { "id": "kan_lit_3", "title": "ಐಕ್ಯತೆ (ಪದ್ಯ)", "description": "ಸೌಹಾರ್ದತೆ ಮತ್ತು ದೇಶಪ್ರೇಮದ ಸಂದೇಶ." },
+            { "id": "kan_lit_4", "title": "ಕುವೆಂಪು (ಕವಿ ಪರಿಚಯ)", "description": "ನಾಡಿನ ಹೆಮ್ಮೆಯ ರಾಷ್ಟ್ರಕವಿ ಕುವೆಂಪು ಅವರ ಜೀವನ ಮತ್ತು ಸಾಹಿತ್ಯ." }
           ]
         },
         {

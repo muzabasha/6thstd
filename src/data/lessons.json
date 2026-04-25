@@ -19040,5 +19040,1239 @@
         "a": "Answers vary - keep exploring!"
       }
     ]
+  },
+  "eng_cw_1": {
+    "what": "Notice Writing is a formal way of communicating important information to a group of people, usually in a school or organization.",
+    "example": "A notice for a lost water bottle or an upcoming school trip.",
+    "points": [
+      "Keep it brief and to the point.",
+      "Include the name of the organization.",
+      "Write 'NOTICE' in bold letters.",
+      "Include Date, Heading, and the main Message.",
+      "Add the name and designation of the person issuing the notice."
+    ],
+    "tip": "Always put your notice in a box!",
+    "qa": [
+      {
+        "q": "What is a notice?",
+        "a": "A formal written or printed announcement."
+      },
+      {
+        "q": "Where is a notice usually placed?",
+        "a": "On a notice board."
+      },
+      {
+        "q": "What should be at the top of a notice?",
+        "a": "The name of the institution."
+      },
+      {
+        "q": "Should a notice be long?",
+        "a": "No, it should be concise and clear."
+      },
+      {
+        "q": "What is the word limit for a notice usually?",
+        "a": "About 50 words."
+      },
+      {
+        "q": "Is a box necessary for a notice?",
+        "a": "Yes, it is standard format."
+      },
+      {
+        "q": "What details should a notice include?",
+        "a": "Event, Date, Time, Venue."
+      },
+      {
+        "q": "Who signs a notice?",
+        "a": "The person issuing it."
+      },
+      {
+        "q": "Can a notice be informal?",
+        "a": "Usually it is formal."
+      },
+      {
+        "q": "What is the purpose of a notice?",
+        "a": "To inform people about an upcoming event or information."
+      }
+    ],
+    "scenarios": [
+      {
+        "q": "You lost your library card. Write a notice for the school board.",
+        "a": "Heading: LOST LIBRARY CARD, Content: Details of card, contact info."
+      },
+      {
+        "q": "Your school is organizing a trek. What info goes in the notice?",
+        "a": "Date of trek, fee, destination, items to bring."
+      },
+      {
+        "q": "Why is the date important in a notice?",
+        "a": "So people know when the information was issued."
+      },
+      {
+        "q": "Is a notice written in the first person (I/Me)?",
+        "a": "No, usually in the third person."
+      },
+      {
+        "q": "If you find a watch, what title would you use?",
+        "a": "FOUND: GOLD WATCH."
+      },
+      {
+        "q": "Where would you put the name of the school?",
+        "a": "At the very top, centered."
+      },
+      {
+        "q": "How do you make a notice catchy?",
+        "a": "Use a clear, bold heading."
+      },
+      {
+        "q": "Who should you contact if you find a lost item?",
+        "a": "The person mentioned in the notice."
+      },
+      {
+        "q": "Can we use colors in a notice?",
+        "a": "In school, yes, but keep it readable."
+      },
+      {
+        "q": "What if the venue is missing in an event notice?",
+        "a": "People won't know where to go!"
+      }
+    ]
+  },
+  "eng_cw_2": {
+    "what": "Diary Entry is a personal form of writing where an individual records their thoughts, feelings, and events of the day.",
+    "example": "Writing about your first day at a new school.",
+    "points": [
+      "Write in the first person ('I').",
+      "Include the Date and Day at the top.",
+      "Use an informal, personal tone.",
+      "Start with 'Dear Diary'.",
+      "Be honest about your feelings."
+    ],
+    "tip": "A diary is your best friend who never tells secrets!",
+    "qa": [
+      {
+        "q": "What is a diary entry?",
+        "a": "A personal record of daily events and feelings."
+      },
+      {
+        "q": "Is a diary entry formal or informal?",
+        "a": "Informal and personal."
+      },
+      {
+        "q": "What pronoun is used in a diary?",
+        "a": "First person 'I'."
+      },
+      {
+        "q": "What is the usual salutation in a diary?",
+        "a": "Dear Diary."
+      },
+      {
+        "q": "Why do people write diaries?",
+        "a": "To reflect on their day and express emotions."
+      },
+      {
+        "q": "Should a diary entry have a heading?",
+        "a": "Optional, but date and day are essential."
+      },
+      {
+        "q": "Can you use slang in a diary?",
+        "a": "Yes, it's your personal space."
+      },
+      {
+        "q": "How does a diary entry usually end?",
+        "a": "With a signature or just your name."
+      },
+      {
+        "q": "Is the time important in a diary entry?",
+        "a": "Yes, it shows when you were writing (e.g., Night)."
+      },
+      {
+        "q": "What is the main theme of a diary?",
+        "a": "Personal reflection."
+      }
+    ],
+    "scenarios": [
+      {
+        "q": "You won a prize today. How would you start your diary entry?",
+        "a": "Dear Diary, I can't believe I won!"
+      },
+      {
+        "q": "Why is it good to write a diary before bed?",
+        "a": "It helps clear your mind after the day."
+      },
+      {
+        "q": "If you are sad, can you write it in your diary?",
+        "a": "Yes, it helps you feel better."
+      },
+      {
+        "q": "What details about the weather might you include?",
+        "a": "If it matched your mood (e.g., Sunny day)."
+      },
+      {
+        "q": "Is it okay to draw in a diary?",
+        "a": "Absolutely!"
+      },
+      {
+        "q": "Why do we write the date?",
+        "a": "To remember exactly when those feelings happened."
+      },
+      {
+        "q": "What if you forget to write for a day?",
+        "a": "You can just continue the next day."
+      },
+      {
+        "q": "How long should a diary entry be?",
+        "a": "As long or short as you want."
+      },
+      {
+        "q": "Can a diary entry be about a future plan?",
+        "a": "Yes, expressing excitement for tomorrow."
+      },
+      {
+        "q": "Who reads your diary?",
+        "a": "Ideally, only you!"
+      }
+    ]
+  },
+  "comp_ai_1": {
+    "what": "Artificial Intelligence (AI) is the ability of a machine to perform tasks that typically require human intelligence, like learning and problem-solving.",
+    "example": "Google Assistant, Siri, or a chess-playing computer.",
+    "points": [
+      "AI uses data to make decisions.",
+      "It can learn from its mistakes (Machine Learning).",
+      "AI is used in cars, hospitals, and phones.",
+      "It helps humans do things faster and better.",
+      "AI cannot think like humans but can follow complex rules."
+    ],
+    "tip": "AI is a tool to help us, not replace us!",
+    "qa": [
+      {
+        "q": "What does AI stand for?",
+        "a": "Artificial Intelligence."
+      },
+      {
+        "q": "Can AI think for itself?",
+        "a": "No, it follows algorithms and data."
+      },
+      {
+        "q": "Name one AI assistant.",
+        "a": "Siri, Alexa, or Google Assistant."
+      },
+      {
+        "q": "Is a calculator AI?",
+        "a": "Usually no, it just follows simple math rules."
+      },
+      {
+        "q": "What is Machine Learning?",
+        "a": "A part of AI where machines learn from data."
+      },
+      {
+        "q": "Can AI recognize faces?",
+        "a": "Yes, through computer vision."
+      },
+      {
+        "q": "Is AI used in medicine?",
+        "a": "Yes, to help doctors diagnose diseases."
+      },
+      {
+        "q": "Can AI write a story?",
+        "a": "Yes, using Generative AI."
+      },
+      {
+        "q": "Is a robot the same as AI?",
+        "a": "A robot is the body; AI is the brain."
+      },
+      {
+        "q": "Why is data important for AI?",
+        "a": "It's what the AI learns from."
+      }
+    ],
+    "scenarios": [
+      {
+        "q": "Your phone suggests the next word while typing. Is this AI?",
+        "a": "Yes, it's predicting your next move."
+      },
+      {
+        "q": "How can AI help a farmer?",
+        "a": "By predicting weather or checking plant health."
+      },
+      {
+        "q": "If an AI makes a mistake, who is responsible?",
+        "a": "Usually the humans who built or use it."
+      },
+      {
+        "q": "Can AI feel happy or sad?",
+        "a": "No, it doesn't have real emotions."
+      },
+      {
+        "q": "Why do we need to be careful with AI?",
+        "a": "Because it might give wrong info if data is bad."
+      },
+      {
+        "q": "How does YouTube know what videos you like?",
+        "a": "Using an AI recommendation algorithm."
+      },
+      {
+        "q": "Can AI play video games?",
+        "a": "Yes, it can even beat pro players!"
+      },
+      {
+        "q": "Will AI take over the world?",
+        "a": "In movies yes, but in reality it's just software."
+      },
+      {
+        "q": "What is a chatbot?",
+        "a": "An AI program you can talk to."
+      },
+      {
+        "q": "Can AI help translate languages?",
+        "a": "Yes, like Google Translate."
+      }
+    ]
+  },
+  "kan_lit_4": {
+    "what": "ಕುವೆಂಪು (Kuvempu) - ಕನ್ನಡದ ಅಗ್ರಗಣ್ಯ ಕವಿ ಮತ್ತು ರಾಷ್ಟ್ರಕವಿ.",
+    "example": "ಅವರ ಪ್ರಸಿದ್ಧ ಕವನ 'ಜಯ ಭಾರತ ಜನನಿಯ ತನುಜಾತೆ'.",
+    "points": [
+      "ಕುವೆಂಪು ಅವರ ಪೂರ್ಣ ಹೆಸರು ಕುಪ್ಪಳಿ ವೆಂಕಟಪ್ಪ ಪುಟ್ಟಪ್ಪ.",
+      "ಇವರು ಜ್ಞಾನಪೀಠ ಪ್ರಶಸ್ತಿ ಪಡೆದ ಮೊದಲ ಕನ್ನಡಿಗ.",
+      "ಮಲೆಗಳಲ್ಲಿ ಮದುಮಗಳು ಮತ್ತು ಕಾನೂರು ಹೆಗ್ಗಡಿತಿ ಇವರ ಪ್ರಸಿದ್ಧ ಕಾದಂಬರಿಗಳು.",
+      "ವಿಶ್ವಮಾನವ ಸಂದೇಶವನ್ನು ಜಗತ್ತಿಗೆ ನೀಡಿದ್ದಾರೆ.",
+      "ಕನ್ನಡ ಸಾಹಿತ್ಯ ಲೋಕದ ದೈತ್ಯ ಪ್ರತಿಭೆ ಇವರು."
+    ],
+    "tip": "ಕುವೆಂಪು ಅವರ ಕವಿತೆಗಳನ್ನು ಓದುವುದು ಕನ್ನಡದ ಹಿರಿಮೆಯನ್ನು ತಿಳಿಸುತ್ತದೆ.",
+    "qa": [
+      {
+        "q": "ಕುವೆಂಪು ಅವರ ಪೂರ್ಣ ಹೆಸರು ಏನು?",
+        "a": "ಕುಪ್ಪಳಿ ವೆಂಕಟಪ್ಪ ಪುಟ್ಟಪ್ಪ."
+      },
+      {
+        "q": "ಕುವೆಂಪು ಅವರಿಗೆ ಯಾವ ಪ್ರಶಸ್ತಿ ಮೊದಲು ಸಿಕ್ಕಿತು?",
+        "a": "ಜ್ಞಾನಪೀಠ ಪ್ರಶಸ್ತಿ."
+      },
+      {
+        "q": "ಅವರು ಯಾವ ಜಿಲ್ಲೆಯಲ್ಲಿ ಹುಟ್ಟಿದರು?",
+        "a": "ಶಿವಮೊಗ್ಗ ಜಿಲ್ಲೆಯ ಕುಪ್ಪಳಿ."
+      },
+      {
+        "q": "ಅವರು ನೀಡಿದ ಮುಖ್ಯ ಸಂದೇಶ ಯಾವುದು?",
+        "a": "ವಿಶ್ವಮಾನವ ಸಂದೇಶ."
+      },
+      {
+        "q": "ಅವರ ಒಂದು ಪ್ರಸಿದ್ಧ ಕವನದ ಹೆಸರು ತಿಳಿಸಿ.",
+        "a": "ಓ ನನ್ನ ಚೇತನ ಆಗು ನೀ ಅನಿಕೇತನ."
+      },
+      {
+        "q": "ರಾಷ್ಟ್ರಕವಿ ಬಿರುದು ಪಡೆದವರು ಯಾರು?",
+        "a": "ಕುವೆಂಪು."
+      },
+      {
+        "q": "ಅವರ ಕಾದಂಬರಿಯ ಹೆಸರೇನು?",
+        "a": "ಮಲೆಗಳಲ್ಲಿ ಮದುಮಗಳು."
+      },
+      {
+        "q": "ಅವರು ಯಾವ ವರ್ಷ ಜ್ಞಾನಪೀಠ ಪಡೆದರು?",
+        "a": "೧೯೬೭."
+      },
+      {
+        "q": "ಅವರು ಯಾವ ವಿಶ್ವವಿದ್ಯಾಲಯದಲ್ಲಿ ಕುಲಪತಿಗಳಾಗಿದ್ದರು?",
+        "a": "ಮೈಸೂರು ವಿಶ್ವವಿದ್ಯಾಲಯ."
+      },
+      {
+        "q": "ಕುವೆಂಪು ಅವರ ಜನ್ಮದಿನವನ್ನು ಏನಂತ ಆಚರಿಸುತ್ತಾರೆ?",
+        "a": "ವಿಶ್ವಮಾನವ ದಿನ."
+      }
+    ],
+    "scenarios": [
+      {
+        "q": "ನೀವು ಕುವೆಂಪು ಅವರ ಮನೆಗೆ ಭೇಟಿ ನೀಡಿದರೆ ಏನು ನೋಡುತ್ತೀರಿ?",
+        "a": "ಅವರ ಹಳೆಯ ವಸ್ತುಗಳು ಮತ್ತು ಕವಿಶೈಲ."
+      },
+      {
+        "q": "ಕುವೆಂಪು ಅವರ ಪುಸ್ತಕಗಳನ್ನು ಎಲ್ಲಿ ಓದಬಹುದು?",
+        "a": "ಗ್ರಂಥಾಲಯಗಳಲ್ಲಿ."
+      },
+      {
+        "q": "ನಾವೇಕೆ ಕುವೆಂಪು ಅವರನ್ನು ನೆನಪಿಸಿಕೊಳ್ಳಬೇಕು?",
+        "a": "ಅವರು ಕನ್ನಡ ಭಾಷೆ ಮತ್ತು ಸಾಹಿತ್ಯಕ್ಕೆ ನೀಡಿದ ಕೊಡುಗೆಗಾಗಿ."
+      },
+      {
+        "q": "ವಿಶ್ವಮಾನವ ಎಂದರೆ ಯಾರು?",
+        "a": "ಜಾತಿ, ಮತ ಮೀರಿ ಎಲ್ಲರನ್ನೂ ಪ್ರೀತಿಸುವವನು."
+      },
+      {
+        "q": "ಕುವೆಂಪು ಅವರ ಕವಿತೆಗಳಲ್ಲಿ ಪ್ರಕೃತಿಯ ವರ್ಣನೆ ಹೇಗಿರುತ್ತದೆ?",
+        "a": "ತುಂಬಾ ಸುಂದರವಾಗಿ ಮತ್ತು ಜೀವಂತವಾಗಿ."
+      },
+      {
+        "q": "ಶಾಲೆಗಳಲ್ಲಿ ಅವರ ಯಾವ ಗೀತೆಯನ್ನು ಹಾಡುತ್ತಾರೆ?",
+        "a": "ನಾಡಗೀತೆ."
+      },
+      {
+        "q": "ಕವಿತೆ ಬರೆಯಲು ನಮಗೆ ಏನು ಬೇಕು?",
+        "a": "ಕಲ್ಪನೆ ಮತ್ತು ಭಾಷೆಯ ಜ್ಞಾನ."
+      },
+      {
+        "q": "ಕುವೆಂಪು ಅವರ ತಂದೆಯ ಹೆಸರೇನು?",
+        "a": "ವೆಂಕಟಪ್ಪ."
+      },
+      {
+        "q": "ಅವರು ಬರೆದ ಮಕ್ಕಳ ಪುಸ್ತಕ ಯಾವುದು?",
+        "a": "ಬೊಮ್ಮನಹಳ್ಳಿಯ ಕಿಂದರಿಜೋಗಿ."
+      },
+      {
+        "q": "ಸಾಹಿತ್ಯ ಎಂದರೆ ಏನು?",
+        "a": "ಸಮಾಜದ ಕನ್ನಡಿ."
+      }
+    ]
+  },
+  "gk_civ_1": {
+    "what": "Road Safety consists of the rules and measures used to prevent road accidents and protect road users.",
+    "example": "Wearing a helmet while riding a bike.",
+    "points": [
+      "Always cross the road at the Zebra Crossing.",
+      "Wear seatbelts in cars and helmets on bikes.",
+      "Obey traffic lights: Red means Stop, Yellow means Wait, Green means Go.",
+      "Look Left, Right, and then Left again before crossing.",
+      "Do not use mobile phones while driving or walking on the road."
+    ],
+    "tip": "Safe driving saves lives!",
+    "qa": [
+      {
+        "q": "What does the Red light signify?",
+        "a": "Stop."
+      },
+      {
+        "q": "Where should pedestrians cross the road?",
+        "a": "Zebra Crossing."
+      },
+      {
+        "q": "What is the use of a helmet?",
+        "a": "To protect the head during accidents."
+      },
+      {
+        "q": "Should we run on the road?",
+        "a": "No, it is dangerous."
+      },
+      {
+        "q": "What does the Yellow light mean?",
+        "a": "Slow down and prepare to stop."
+      },
+      {
+        "q": "On which side of the road should we walk in India?",
+        "a": "Left side (but facing traffic on narrow roads)."
+      },
+      {
+        "q": "What is a sidewalk used for?",
+        "a": "Walking."
+      },
+      {
+        "q": "Is it safe to play near the road?",
+        "a": "No, always play in parks."
+      },
+      {
+        "q": "What should you do before crossing?",
+        "a": "Look both ways."
+      },
+      {
+        "q": "Why are traffic signs important?",
+        "a": "They guide us and keep us safe."
+      }
+    ],
+    "scenarios": [
+      {
+        "q": "You see a blind person trying to cross the road. What do you do?",
+        "a": "Offer to help them cross safely."
+      },
+      {
+        "q": "The light is yellow but your car is far. Should you speed up?",
+        "a": "No, you should slow down."
+      },
+      {
+        "q": "Why should you never stick your head out of a moving bus?",
+        "a": "You could hit a pole or another vehicle."
+      },
+      {
+        "q": "What if there is no zebra crossing?",
+        "a": "Find a clear spot with good visibility and cross carefully."
+      },
+      {
+        "q": "Why is drinking and driving illegal?",
+        "a": "It impairs judgment and causes accidents."
+      },
+      {
+        "q": "What is the emergency number in India?",
+        "a": "112 (General) or 102 (Ambulance)."
+      },
+      {
+        "q": "Why do we use indicators on a bike?",
+        "a": "To tell others which way we are turning."
+      },
+      {
+        "q": "Is it okay to cross when the 'Don't Walk' sign is on?",
+        "a": "No, wait for the green signal."
+      },
+      {
+        "q": "What is the danger of using earphones while walking on the road?",
+        "a": "You won't hear horns or sirens."
+      },
+      {
+        "q": "What is a flyover used for?",
+        "a": "To cross over busy traffic or intersections."
+      }
+    ]
+  },
+  "hin_ram_5": {
+    "what": "चित्रकूट में भरत - राजा दशरथ की मृत्यु के बाद भरत का राम को वापस अयोध्या लाने का प्रयास।",
+    "example": "भरत राम की खड़ाऊँ (sandals) को सिंहासन पर रखकर शासन करते हैं।",
+    "points": [
+      "भरत अपने ननिहाल से लौटने पर बहुत दुखी हुए।",
+      "उन्होंने अपनी माता कैकेयी का तिरस्कार किया।",
+      "वे समस्त अयोध्यावासियों के साथ राम को मनाने वन गए।",
+      "राम ने पितृ-आज्ञा मानकर वापस लौटने से मना कर दिया।",
+      "अंत में भरत उनकी खड़ाऊँ लेकर लौटे।"
+    ],
+    "tip": "त्याग और प्रेम की पराकाष्ठा ही राम-भरत मिलाप है।",
+    "qa": [
+      {
+        "q": "राम को वापस लाने कौन वन गया?",
+        "a": "भरत।"
+      },
+      {
+        "q": "भरत राम से कहाँ मिले?",
+        "a": "चित्रकूट में।"
+      },
+      {
+        "q": "राम ने लौटने से क्यों मना किया?",
+        "a": "पिता की आज्ञा का पालन करने के लिए।"
+      },
+      {
+        "q": "भरत ने सिंहासन पर क्या रखा?",
+        "a": "राम की खड़ाऊँ।"
+      },
+      {
+        "q": "दशरथ की मृत्यु किस कारण हुई?",
+        "a": "पुत्र वियोग में।"
+      },
+      {
+        "q": "भरत की माता का क्या नाम था?",
+        "a": "कैकेयी।"
+      },
+      {
+        "q": "राम ने भरत को क्या समझाया?",
+        "a": "कर्तव्य पालन का पाठ।"
+      },
+      {
+        "q": "अयोध्या का राज्य किसने संभाला?",
+        "a": "राम की खड़ाऊँ के प्रतीक ने।"
+      },
+      {
+        "q": "चित्रकूट किस नदी के किनारे है?",
+        "a": "मंदाकिनी नदी।"
+      },
+      {
+        "q": "राम के वन जाने के बाद कौन अयोध्या का कार्यभार देख रहा था?",
+        "a": "भरत।"
+      }
+    ],
+    "scenarios": [
+      {
+        "q": "यदि आप भरत की जगह होते तो क्या करते?",
+        "a": "राम की आज्ञा मानकर राज्य संभालते या उनके साथ वन जाते।"
+      },
+      {
+        "q": "भरत ने अपनी माता को क्यों डाँटा?",
+        "a": "क्योंकि उन्होंने राम को वन भेजा था।"
+      },
+      {
+        "q": "खड़ाऊँ को सिंहासन पर रखने का क्या अर्थ है?",
+        "a": "राम को ही असली राजा मानना।"
+      },
+      {
+        "q": "चित्रकूट में राम के साथ और कौन था?",
+        "a": "सीता और लक्ष्मण।"
+      },
+      {
+        "q": "राम के स्वभाव के बारे में क्या पता चलता है?",
+        "a": "वे बहुत शांत और वचन के पक्के थे।"
+      },
+      {
+        "q": "भरत का त्याग महान क्यों है?",
+        "a": "क्योंकि उन्होंने बिना किसी लालच के राज्य लौटाना चाहा।"
+      },
+      {
+        "q": "आज के युग में भरत जैसे भाई का क्या महत्व है?",
+        "a": "निस्वार्थ प्रेम और एकता का प्रतीक।"
+      },
+      {
+        "q": "वनवास कितने वर्ष का था?",
+        "a": "चौदह वर्ष।"
+      },
+      {
+        "q": "राम ने भरत को गले क्यों लगाया?",
+        "a": "भरत के अपार प्रेम को देखकर।"
+      },
+      {
+        "q": "इस कहानी से क्या सीख मिलती है?",
+        "a": "भ्रातृ प्रेम और कर्तव्य परायणता।"
+      }
+    ]
+  },
+  "eng_cw_3": {
+    "what": "Message Writing is a short and informal piece of writing meant to convey specific information to someone who is not present.",
+    "example": "Leaving a message for your mom that you are going to play at a friend's house.",
+    "points": [
+      "Brief and clear.",
+      "Include Time and Date.",
+      "Name of receiver and sender.",
+      "Use a box.",
+      "No extra details."
+    ],
+    "tip": "Stick to the facts!",
+    "qa": [
+      {
+        "q": "What is the word limit for a message?",
+        "a": "Around 50 words."
+      },
+      {
+        "q": "Is a message formal?",
+        "a": "Usually informal."
+      },
+      {
+        "q": "Should we include an address in a message?",
+        "a": "No."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      }
+    ],
+    "scenarios": [
+      {
+        "q": "Write a message for your sister.",
+        "a": "Sis, borrowed your book, will return soon."
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      }
+    ]
+  },
+  "hin_ram_6": {
+    "what": "दंडक वन में दस वर्ष - राम का वन में ऋषियों की सहायता करना।",
+    "example": "राक्षसों के वध की प्रतिज्ञा।",
+    "points": [
+      "ऋषियों की रक्षा.",
+      "पंचवटी में निवास.",
+      "सादा जीवन."
+    ],
+    "tip": "धैर्य और साहस.",
+    "qa": [
+      {
+        "q": "वन में राम कितने वर्ष रहे?",
+        "a": "14 (कुल) - 10 दंडक में."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      }
+    ],
+    "scenarios": [
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      }
+    ]
+  },
+  "hin_ram_7": {
+    "what": "शूर्पणखा और खर-दूषण - रावण की बहन का आगमन और युद्ध।",
+    "example": "लक्ष्मण द्वारा शूर्पणखा की नाक काटना।",
+    "points": [
+      "रावण का क्रोध.",
+      "लड़ाई में विजय."
+    ],
+    "tip": "बदले की भावना विनाशकारी होती है।",
+    "qa": [
+      {
+        "q": "शूर्पणखा किसकी बहन थी?",
+        "a": "रावण की।"
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      }
+    ],
+    "scenarios": [
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      }
+    ]
+  },
+  "hin_ram_8": {
+    "what": "सीता का हरण - स्वर्ण मृग और सीता का अपहरण।",
+    "example": "मारीच का हिरण बनना।",
+    "points": [
+      "लक्ष्मण रेखा.",
+      "रावण का साधु भेष."
+    ],
+    "tip": "लालच बुरा है।",
+    "qa": [
+      {
+        "q": "सीता को किसने चुराया?",
+        "a": "रावण ने।"
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      }
+    ],
+    "scenarios": [
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      }
+    ]
+  },
+  "comp_ai_2": {
+    "what": "Generative AI - AI that can create new content like text, images, and music.",
+    "example": "ChatGPT, Midjourney.",
+    "points": [
+      "Creates new things.",
+      "Needs prompts.",
+      "Uses large models."
+    ],
+    "tip": "Prompt engineering is a key skill!",
+    "qa": [
+      {
+        "q": "What is ChatGPT?",
+        "a": "A generative AI for text."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      }
+    ],
+    "scenarios": [
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      }
+    ]
+  },
+  "gk_civ_2": {
+    "what": "Basic First Aid - Immediate help given to an injured person.",
+    "example": "Cleaning a wound with antiseptic.",
+    "points": [
+      "Stay calm.",
+      "Call for help.",
+      "Use a first aid kit."
+    ],
+    "tip": "Prevention is better than cure.",
+    "qa": [
+      {
+        "q": "What is a first aid kit?",
+        "a": "A box with medicines and bandages."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      }
+    ],
+    "scenarios": [
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      }
+    ]
+  },
+  "gk_civ_3": {
+    "what": "Respecting Others - Treating people with kindness and dignity.",
+    "example": "Listening when someone else speaks.",
+    "points": [
+      "Saying thank you.",
+      "Helping seniors.",
+      "No bullying."
+    ],
+    "tip": "Treat others as you want to be treated.",
+    "qa": [
+      {
+        "q": "Is bullying okay?",
+        "a": "Never."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      },
+      {
+        "q": "Review question",
+        "a": "Please refer to the lesson content."
+      }
+    ],
+    "scenarios": [
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      },
+      {
+        "q": "Think about this topic in daily life.",
+        "a": "How does it affect you?"
+      }
+    ]
   }
 }

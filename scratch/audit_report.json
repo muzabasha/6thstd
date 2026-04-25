@@ -1,0 +1,60 @@
+{
+  "summary": {
+    "totalTopics": 189,
+    "topicsInLessons": 189,
+    "topicsMissing": 0,
+    "topicsWithFewQA": 0,
+    "topicsWithFewScenarios": 0
+  },
+  "bySubject": {
+    "English": {
+      "total": 39,
+      "missing": 0,
+      "thinQA": 0,
+      "thinScenarios": 0
+    },
+    "Mathematics": {
+      "total": 40,
+      "missing": 0,
+      "thinQA": 0,
+      "thinScenarios": 0
+    },
+    "Science": {
+      "total": 24,
+      "missing": 0,
+      "thinQA": 0,
+      "thinScenarios": 0
+    },
+    "Social Science": {
+      "total": 27,
+      "missing": 0,
+      "thinQA": 0,
+      "thinScenarios": 0
+    },
+    "Hindi": {
+      "total": 23,
+      "missing": 0,
+      "thinQA": 0,
+      "thinScenarios": 0
+    },
+    "Computer / ICT": {
+      "total": 17,
+      "missing": 0,
+      "thinQA": 0,
+      "thinScenarios": 0
+    },
+    "General Knowledge": {
+      "total": 10,
+      "missing": 0,
+      "thinQA": 0,
+      "thinScenarios": 0
+    },
+    "Kannada": {
+      "total": 9,
+      "missing": 0,
+      "thinQA": 0,
+      "thinScenarios": 0
+    }
+  },
+  "missingTopicIds": []
+}
