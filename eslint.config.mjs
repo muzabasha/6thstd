@@ -12,6 +12,11 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Scratch scripts are plain Node.js — not part of the app bundle
+    "scratch/**",
+    // Stray files accidentally committed to root
+    "!lessons*",
+    "allIds*",
   ]),
 ]);
 

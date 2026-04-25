@@ -20,26 +20,25 @@ export default function ProgressBar({
   const clamped = Math.min(100, Math.max(0, percent));
 
   return (
-    <div>
+    <div className="w-full">
       {(label || showLabel) && (
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 6 }}>
+        <div className="flex justify-between items-center mb-1.5">
           {label && (
-            <span style={{ fontSize: "0.78rem", color: "var(--text-secondary)", fontWeight: 600 }}>
-              {label}
-            </span>
+            <span className="text-xs text-[var(--text-secondary)] font-semibold truncate mr-2">{label}</span>
           )}
           {showLabel && (
-            <span style={{ fontSize: "0.78rem", color: "var(--text-secondary)", fontWeight: 700 }}>
-              {clamped}%
-            </span>
+            <span className="text-xs text-[var(--text-secondary)] font-bold ml-auto shrink-0">{clamped}%</span>
           )}
         </div>
       )}
-      <div className="progress-track" style={{ height }}>
+      <div
+        className="w-full rounded-full overflow-hidden bg-[rgba(255,255,255,0.1)]"
+        style={{ height }}
+      >
         <div
-          className="progress-fill"
+          className="h-full rounded-full"
           style={{
-            width: animate ? `${clamped}%` : `${clamped}%`,
+            width: `${clamped}%`,
             background: color,
             transition: animate ? "width 1s cubic-bezier(0.4,0,0.2,1)" : "none",
           }}

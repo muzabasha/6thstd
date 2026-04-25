@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useCallback } from "react";
 import { type QuizQuestion, generateQuiz } from "@/lib/openai";
 import { saveQuizScore } from "@/lib/storage";
 import confetti from "canvas-confetti";
@@ -22,13 +22,11 @@ export default function QuizCard({ subject, topic, topicId }: QuizCardProps) {
   const [revealed, setRevealed] = useState(false);
   const [score, setScore] = useState(0);
   const [errorMsg, setErrorMsg] = useState("");
-  const [answers, setAnswers] = useState<boolean[]>([]);
 
   const startQuiz = useCallback(async () => {
     setPhase("loading");
     setScore(0);
     setCurrent(0);
-    setAnswers([]);
     setSelected(null);
     setShortAnswer("");
     setRevealed(false);
@@ -41,7 +39,7 @@ export default function QuizCard({ subject, topic, topicId }: QuizCardProps) {
       setErrorMsg(e instanceof Error ? e.message : "Failed to generate quiz.");
       setPhase("error");
     }
-  }, [subject, topic]);
+  }, [subject, topic, topicId]);
 
   const q = questions[current];
 
@@ -52,13 +50,11 @@ export default function QuizCard({ subject, topic, topicId }: QuizCardProps) {
       ? q.answer.toLowerCase().includes(userAns.toLowerCase().replace(/^[abcd]\)\s*/i, "").slice(0, 10))
       : false;
     setRevealed(true);
-    setAnswers((prev) => [...prev, correct]);
     if (correct) setScore((s) => s + 1);
   }, [q, selected, shortAnswer]);
 
   const next = useCallback(() => {
     if (current + 1 >= questions.length) {
-      const finalScore = score + (answers[current] === undefined && revealed ? 0 : 0);
       saveQuizScore(subject, topicId, score, questions.length);
       setPhase("done");
       if (score / questions.length >= 0.6) {
@@ -70,11 +66,11 @@ export default function QuizCard({ subject, topic, topicId }: QuizCardProps) {
       setShortAnswer("");
       setRevealed(false);
     }
-  }, [current, questions.length, score, answers, revealed, subject, topicId]);
+  }, [current, questions.length, score, subject, topicId]);
 
   const pct = questions.length ? Math.round((score / questions.length) * 100) : 0;
 
-    // ── Idle ──────────────────────────────────────────────────────────────────
+  // ── Idle ──────────────────────────────────────────────────────────────────
   if (phase === "idle") {
     return (
       <div className="glass rounded-[20px] p-6 sm:p-10 text-center">
@@ -156,8 +152,8 @@ export default function QuizCard({ subject, topic, topicId }: QuizCardProps) {
 
       {/* Progress track */}
       <div className="h-1.5 w-full bg-[rgba(255,255,255,0.08)] rounded-full mb-8 overflow-hidden">
-        <div 
-          className="h-full bg-gradient-to-r from-[#4f8ef7] to-[#22d3ee] rounded-full transition-all duration-700 ease-out" 
+        <div
+          className="h-full bg-gradient-to-r from-[#4f8ef7] to-[#22d3ee] rounded-full transition-all duration-700 ease-out"
           style={{ width: `${((current) / questions.length) * 100}%` }}
         />
       </div>
@@ -182,18 +178,16 @@ export default function QuizCard({ subject, topic, topicId }: QuizCardProps) {
                 key={i}
                 disabled={revealed}
                 onClick={() => setSelected(opt)}
-                className={`text-left p-4 sm:p-5 rounded-2xl border transition-all duration-300 text-sm sm:text-base flex items-start gap-4 ${
-                  isCorrect ? "border-green-500/50 bg-green-500/10 text-white font-bold"
+                className={`text-left p-4 sm:p-5 rounded-2xl border transition-all duration-300 text-sm sm:text-base flex items-start gap-4 ${isCorrect ? "border-green-500/50 bg-green-500/10 text-white font-bold"
                   : isWrong ? "border-red-500/50 bg-red-500/10 text-white font-bold"
-                  : isSelected ? "border-[var(--blue)]/50 bg-[var(--blue)]/10 text-white font-bold"
-                  : "border-[var(--glass-border)] bg-[rgba(255,255,255,0.03)] text-[var(--text-secondary)] hover:bg-[rgba(255,255,255,0.06)]"
-                } ${revealed ? 'cursor-default' : 'cursor-pointer hover:-translate-y-1'}`}
+                    : isSelected ? "border-[var(--blue)]/50 bg-[var(--blue)]/10 text-white font-bold"
+                      : "border-[var(--glass-border)] bg-[rgba(255,255,255,0.03)] text-[var(--text-secondary)] hover:bg-[rgba(255,255,255,0.06)]"
+                  } ${revealed ? 'cursor-default' : 'cursor-pointer hover:-translate-y-1'}`}
               >
-                <span className={`w-6 h-6 rounded-full flex items-center justify-center shrink-0 text-[10px] sm:text-xs ${
-                  isCorrect ? 'bg-green-500 text-white' : 
-                  isWrong ? 'bg-red-500 text-white' : 
-                  isSelected ? 'bg-[var(--blue)] text-white' : 'bg-white/10 text-white/40'
-                }`}>
+                <span className={`w-6 h-6 rounded-full flex items-center justify-center shrink-0 text-[10px] sm:text-xs ${isCorrect ? 'bg-green-500 text-white' :
+                  isWrong ? 'bg-red-500 text-white' :
+                    isSelected ? 'bg-[var(--blue)] text-white' : 'bg-white/10 text-white/40'
+                  }`}>
                   {isCorrect ? "✓" : isWrong ? "✗" : String.fromCharCode(65 + i)}
                 </span>
                 <span className="flex-1">{opt.replace(/^[abcd]\)\s*/i, "")}</span>
@@ -235,9 +229,8 @@ export default function QuizCard({ subject, topic, topicId }: QuizCardProps) {
       <div className="flex gap-4">
         {!revealed ? (
           <button
-            className={`btn-primary flex-1 py-4 text-base font-black shadow-lg transition-all ${
-              (q.type === "mcq" ? !selected : !shortAnswer.trim()) ? "opacity-30 cursor-not-allowed scale-95" : "hover:scale-[1.02]"
-            }`}
+            className={`btn-primary flex-1 py-4 text-base font-black shadow-lg transition-all ${(q.type === "mcq" ? !selected : !shortAnswer.trim()) ? "opacity-30 cursor-not-allowed scale-95" : "hover:scale-[1.02]"
+              }`}
             disabled={q.type === "mcq" ? !selected : !shortAnswer.trim()}
             onClick={checkAnswer}
           >

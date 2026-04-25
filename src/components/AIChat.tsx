@@ -42,8 +42,7 @@ export default function AIChat({ subject, topic, initialMessage }: AIChatProps) 
     setError("");
 
     try {
-      const history = messages.slice(-10);
-      const answer = await askTutor(subject, topic, history, question);
+      const answer = await askTutor(subject, topic);
       const aiMsg: ChatMessage = { role: "assistant", content: answer };
       setMessages((prev) => [...prev, aiMsg]);
     } catch (e: unknown) {
@@ -52,7 +51,7 @@ export default function AIChat({ subject, topic, initialMessage }: AIChatProps) 
     } finally {
       setLoading(false);
     }
-  }, [input, loading, messages, subject, topic]);
+  }, [input, loading, subject, topic]);
 
   const suggestions = [
     `Explain ${topic} simply`,
@@ -85,7 +84,7 @@ export default function AIChat({ subject, topic, initialMessage }: AIChatProps) 
           <div className="text-center py-12 text-[var(--text-muted)]">
             <div className="text-4xl sm:text-5xl mb-4 opacity-50">💬</div>
             <p className="font-bold text-base sm:text-lg mb-1 text-[var(--text-secondary)]">Ask me anything!</p>
-            <p className="text-xs sm:text-sm">I'm here to help you understand {topic.toLowerCase()} better.</p>
+            <p className="text-xs sm:text-sm">I&apos;m here to help you understand {topic.toLowerCase()} better.</p>
           </div>
         )}
 
@@ -160,9 +159,8 @@ export default function AIChat({ subject, topic, initialMessage }: AIChatProps) 
         <button
           type="submit"
           disabled={loading || !input.trim()}
-          className={`btn-primary px-4 sm:px-6 rounded-xl sm:rounded-2xl transition-all ${
-            loading || !input.trim() ? "opacity-30 cursor-not-allowed" : "hover:scale-105"
-          }`}
+          className={`btn-primary px-4 sm:px-6 rounded-xl sm:rounded-2xl transition-all ${loading || !input.trim() ? "opacity-30 cursor-not-allowed" : "hover:scale-105"
+            }`}
         >
           <span className="text-xl">➤</span>
         </button>

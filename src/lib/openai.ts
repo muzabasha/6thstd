@@ -155,12 +155,7 @@ Try to find one example of ${topic} in your own home today and explain it to you
   `.trim();
 }
 
-export async function askTutor(
-  subject: string,
-  topic: string,
-  history: ChatMessage[],
-  question: string
-): Promise<string> {
+export async function askTutor(subject: string, topic: string): Promise<string> {
   return `That's a great question about ${topic}! As your offline tutor, I encourage you to check your textbook's section on "${topic}" under ${subject} for the most accurate details, or discuss this specific question with your teacher! Keep exploring! 🌟`;
 }
 

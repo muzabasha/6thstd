@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import curriculumData from "@/data/curriculum.json";
 import ProgressBar from "@/components/ProgressBar";
@@ -23,28 +23,34 @@ type SubjectData = {
   chapters: { title: string; topics: { id: string; title: string; description: string }[] }[];
 };
 
+// Compute all progress-related values in one shot (client-only)
+function loadDashboardData(subjects: SubjectData[]) {
+  const allTopics = subjects.reduce(
+    (acc, s) => acc + s.chapters.reduce((a, c) => a + c.topics.length, 0),
+    0
+  );
+  const prog: Record<string, number> = {};
+  let done = 0;
+  subjects.forEach((s) => {
+    const t = s.chapters.reduce((a, c) => a + c.topics.length, 0);
+    const p = getSubjectCompletionPercent(s.name, t);
+    prog[s.name] = p;
+    done += Math.round((p / 100) * t);
+  });
+  return { allTopics, prog, done };
+}
+
 export default function Dashboard() {
   const subjects = curriculumData.subjects as SubjectData[];
 
-  const [progress, setProgress] = useState<Record<string, number>>({});
-  const [totalDone, setTotalDone] = useState(0);
-  const [totalTopics, setTotalTopics] = useState(0);
+  // Single state object — one setState call, no cascading renders
+  const [dash, setDash] = useState({ allTopics: 0, prog: {} as Record<string, number>, done: 0 });
 
   useEffect(() => {
-    const allTopics = subjects.reduce((acc, s) => acc + s.chapters.reduce((a, c) => a + c.topics.length, 0), 0);
-    setTotalTopics(allTopics);
-
-    const prog: Record<string, number> = {};
-    let done = 0;
-    subjects.forEach((s) => {
-      const t = s.chapters.reduce((a, c) => a + c.topics.length, 0);
-      const p = getSubjectCompletionPercent(s.name, t);
-      prog[s.name] = p;
-      done += Math.round((p / 100) * t);
-    });
-    setProgress(prog);
-    setTotalDone(done);
+    setDash(loadDashboardData(subjects));
   }, [subjects]);
+
+  const { allTopics: totalTopics, prog: progress, done: totalDone } = dash;
 
   // Find last subject with progress for "continue" button
   const allProg = typeof window !== "undefined" ? getProgress() : {};
@@ -67,7 +73,7 @@ export default function Dashboard() {
       <section className="text-center py-8 sm:py-16">
         <div className="text-5xl sm:text-7xl mb-4 animate-float">🌟</div>
         <h1 className="shimmer-text font-['Poppins'] font-extrabold text-[clamp(1.8rem,8vw,3.5rem)] leading-[1.1] mb-4">
-          Sadiya's Learning Hub
+          Sadiya&apos;s Learning Hub
         </h1>
         <p className="text-[var(--text-secondary)] text-sm sm:text-base md:text-lg max-w-[520px] mx-auto mb-8">
           Class 6 CBSE · AI-Powered Learning · All Subjects 🚀
@@ -122,27 +128,19 @@ export default function Dashboard() {
               >
                 <div
                   className="glass glass-hover rounded-[20px] p-6 cursor-pointer relative overflow-hidden opacity-0 h-full flex flex-col"
-                  style={{
-                    animation: `fadeInUp 0.55s ease forwards ${idx * 0.08}s`,
-                  }}
+                  style={{ animation: `fadeInUp 0.55s ease forwards ${idx * 0.08}s` }}
                 >
-                  {/* Gradient sweep */}
                   <div className="absolute top-0 right-0 w-32 h-32 opacity-[0.08] rounded-bl-[100px]" style={{ background: color.bg }} />
 
                   <div className="flex items-center gap-4 mb-6">
-                    <div 
-                      className="w-14 h-14 rounded-2xl flex items-center justify-center text-2xl transition-transform group-hover:scale-110" 
-                      style={{ 
-                        background: color.bg,
-                        boxShadow: `0 8px 24px ${color.glow}`
-                      }}
+                    <div
+                      className="w-14 h-14 rounded-2xl flex items-center justify-center text-2xl transition-transform group-hover:scale-110"
+                      style={{ background: color.bg, boxShadow: `0 8px 24px ${color.glow}` }}
                     >
                       {ICONS[subject.icon] ?? "📖"}
                     </div>
                     <div>
-                      <h3 className="font-black text-lg text-[var(--text-primary)]">
-                        {subject.name}
-                      </h3>
+                      <h3 className="font-black text-lg text-[var(--text-primary)]">{subject.name}</h3>
                       <p className="text-xs text-[var(--text-muted)] mt-1 font-medium">
                         {subject.chapters.length} chapters · {topicCount} topics
                       </p>
@@ -150,13 +148,7 @@ export default function Dashboard() {
                   </div>
 
                   <div className="mt-auto">
-                    <ProgressBar
-                      percent={pct}
-                      color={color.bg}
-                      height={8}
-                      showLabel={true}
-                    />
-
+                    <ProgressBar percent={pct} color={color.bg} height={8} showLabel />
                     <div className="flex justify-between items-center mt-4 pt-2 border-t border-[rgba(255,255,255,0.05)]">
                       <span className="text-[11px] text-[var(--text-muted)] truncate max-w-[65%] font-medium">
                         {subject.chapters[0].title}…
@@ -193,6 +185,5 @@ export default function Dashboard() {
         </div>
       </section>
     </main>
-
   );
 }
