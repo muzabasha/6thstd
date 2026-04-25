@@ -1,14 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Poppins:wght@600;700;800&display=swap');
 @import "tailwindcss";
 
+/* ─── Design tokens ─────────────────────────────────────────── */
 :root {
-  /* Core palette */
   --bg-primary: #0f0c29;
   --bg-secondary: #1a1640;
   --bg-card: rgba(255, 255, 255, 0.05);
   --bg-card-hover: rgba(255, 255, 255, 0.09);
 
-  /* Subject colors */
   --blue: #4f8ef7;
   --green: #34d399;
   --purple: #a78bfa;
@@ -18,12 +17,10 @@
   --yellow: #fbbf24;
   --pink: #f472b6;
 
-  /* Glassmorphism */
   --glass-bg: rgba(255, 255, 255, 0.06);
   --glass-border: rgba(255, 255, 255, 0.12);
   --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
 
-  /* Gradients */
   --grad-hero: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
   --grad-blue: linear-gradient(135deg, #4f8ef7 0%, #7c3aed 100%);
   --grad-green: linear-gradient(135deg, #34d399 0%, #059669 100%);
@@ -33,16 +30,17 @@
   --grad-cyan: linear-gradient(135deg, #22d3ee 0%, #3b82f6 100%);
 
   --text-primary: #f8fafc;
-  --text-secondary: rgba(248, 250, 252, 0.7);
+  --text-secondary: rgba(248, 250, 252, 0.72);
   --text-muted: rgba(248, 250, 252, 0.45);
 
-  --radius: 16px;
-  --radius-sm: 8px;
-  --radius-lg: 24px;
-  --radius-xl: 32px;
+  --nav-h: 60px;
+  /* sticky nav height — used for scroll-padding */
 }
 
-* {
+/* ─── Reset ─────────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -50,6 +48,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: var(--nav-h);
 }
 
 body {
@@ -58,9 +57,64 @@ body {
   color: var(--text-primary);
   font-family: 'Nunito', sans-serif;
   overflow-x: hidden;
+  /* safe-area for notched phones */
+  padding-bottom: env(safe-area-inset-bottom, 0px);
 }
 
-/* ---- Glassmorphism card ---- */
+/* ─── Sticky top nav ─────────────────────────────────────────── */
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  height: var(--nav-h);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.25rem;
+  background: rgba(15, 12, 41, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.site-nav .nav-logo {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 1rem;
+  color: var(--text-primary);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.site-nav .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.site-nav .nav-link {
+  padding: 0.4rem 0.85rem;
+  border-radius: 10px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.site-nav .nav-link:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text-primary);
+}
+
+.site-nav .nav-link.active {
+  background: rgba(79, 142, 247, 0.18);
+  color: var(--blue);
+}
+
+/* ─── Glassmorphism ──────────────────────────────────────────── */
 .glass {
   background: var(--glass-bg);
   border: 1px solid var(--glass-border);
@@ -75,14 +129,14 @@ body {
 
 .glass-hover:hover {
   background: var(--bg-card-hover);
-  transform: translateY(-4px) scale(1.01);
+  transform: translateY(-3px) scale(1.005);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
 }
 
-/* ---- Scrollbar ---- */
+/* ─── Scrollbar ──────────────────────────────────────────────── */
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 5px;
+  height: 5px;
 }
 
 ::-webkit-scrollbar-track {
@@ -90,24 +144,24 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.18);
   border-radius: 99px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.32);
 }
 
-/* ---- Animations ---- */
+/* ─── Animations ─────────────────────────────────────────────── */
 @keyframes float {
 
   0%,
   100% {
-    transform: translateY(0px);
+    transform: translateY(0);
   }
 
   50% {
-    transform: translateY(-12px);
+    transform: translateY(-10px);
   }
 }
 
@@ -136,7 +190,7 @@ body {
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(24px);
+    transform: translateY(20px);
   }
 
   to {
@@ -155,48 +209,24 @@ body {
   }
 }
 
-@keyframes blob {
-
-  0%,
-  100% {
-    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-  }
-
-  50% {
-    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
-  }
-}
-
-@keyframes gradient-shift {
-
-  0%,
-  100% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-}
-
 .animate-float {
   animation: float 4s ease-in-out infinite;
 }
 
 .animate-fade-in-up {
-  animation: fadeInUp 0.6s ease forwards;
+  animation: fadeInUp 0.55s ease forwards;
 }
 
 .animate-spin-slow {
   animation: spin-slow 8s linear infinite;
 }
 
-.animate-blob {
-  animation: blob 8s ease-in-out infinite;
-}
-
 .shimmer-text {
-  background: linear-gradient(90deg, var(--text-primary) 0%, var(--yellow) 40%, var(--cyan) 60%, var(--text-primary) 100%);
+  background: linear-gradient(90deg,
+      var(--text-primary) 0%,
+      var(--yellow) 35%,
+      var(--cyan) 65%,
+      var(--text-primary) 100%);
   background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -204,22 +234,7 @@ body {
   animation: shimmer 3s linear infinite;
 }
 
-/* ---- Gradient border ---- */
-.gradient-border {
-  position: relative;
-  border-radius: var(--radius);
-}
-
-.gradient-border::before {
-  content: '';
-  position: absolute;
-  inset: -1px;
-  border-radius: inherit;
-  background: linear-gradient(135deg, var(--blue), var(--purple), var(--pink));
-  z-index: -1;
-}
-
-/* ---- Progress bar ---- */
+/* ─── Progress bar ───────────────────────────────────────────── */
 .progress-track {
   height: 8px;
   background: rgba(255, 255, 255, 0.1);
@@ -234,7 +249,7 @@ body {
   transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* ---- Chat bubbles ---- */
+/* ─── Chat bubbles ───────────────────────────────────────────── */
 .chat-bubble-user {
   background: var(--grad-blue);
   border-radius: 18px 18px 4px 18px;
@@ -246,94 +261,24 @@ body {
   border-radius: 18px 18px 18px 4px;
 }
 
-/* ---- Badge ---- */
-.badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  padding: 4px 10px;
-  border-radius: 99px;
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-}
-
-/* ---- Staggered animation delays ---- */
-.delay-100 {
-  animation-delay: 0.1s;
-}
-
-.delay-200 {
-  animation-delay: 0.2s;
-}
-
-.delay-300 {
-  animation-delay: 0.3s;
-}
-
-.delay-400 {
-  animation-delay: 0.4s;
-}
-
-.delay-500 {
-  animation-delay: 0.5s;
-}
-
-.delay-600 {
-  animation-delay: 0.6s;
-}
-
-/* ---- Orb backgrounds ---- */
-.orb {
-  position: fixed;
-  border-radius: 50%;
-  filter: blur(80px);
-  opacity: 0.15;
-  pointer-events: none;
-  z-index: 0;
-}
-
-/* Responsive orbs — use vw so they scale with the viewport */
-.orb-1 {
-  width: min(600px, 80vw);
-  height: min(600px, 80vw);
-  top: -15vw;
-  left: -10vw;
-  background: #4f8ef7;
-}
-
-.orb-2 {
-  width: min(400px, 60vw);
-  height: min(400px, 60vw);
-  top: 40vh;
-  right: -8vw;
-  background: #a78bfa;
-}
-
-.orb-3 {
-  width: min(300px, 50vw);
-  height: min(300px, 50vw);
-  bottom: 10vh;
-  left: 30%;
-  background: #34d399;
-}
-
-/* ---- Button styles ---- */
+/* ─── Buttons ────────────────────────────────────────────────── */
 .btn-primary {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 12px 24px;
+  padding: 11px 24px;
   border-radius: 12px;
   font-weight: 700;
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   background: var(--grad-blue);
-  color: white;
+  color: #fff;
   border: none;
   cursor: pointer;
   transition: all 0.2s ease;
   box-shadow: 0 4px 20px rgba(79, 142, 247, 0.35);
+  min-height: 44px;
+  white-space: nowrap;
 }
 
 .btn-primary:hover {
@@ -353,18 +298,55 @@ body {
   padding: 10px 20px;
   border-radius: 12px;
   font-weight: 600;
+  font-size: 0.88rem;
   background: var(--glass-bg);
   border: 1px solid var(--glass-border);
   color: var(--text-primary);
   cursor: pointer;
   transition: all 0.2s ease;
+  min-height: 44px;
+  white-space: nowrap;
 }
 
 .btn-secondary:hover {
   background: var(--bg-card-hover);
 }
 
-/* Voice pulse */
+/* ─── Orb backgrounds ────────────────────────────────────────── */
+.orb {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.13;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.orb-1 {
+  width: min(560px, 75vw);
+  height: min(560px, 75vw);
+  top: -12vw;
+  left: -8vw;
+  background: #4f8ef7;
+}
+
+.orb-2 {
+  width: min(380px, 55vw);
+  height: min(380px, 55vw);
+  top: 40vh;
+  right: -6vw;
+  background: #a78bfa;
+}
+
+.orb-3 {
+  width: min(280px, 45vw);
+  height: min(280px, 45vw);
+  bottom: 8vh;
+  left: 28%;
+  background: #34d399;
+}
+
+/* ─── Voice pulse ────────────────────────────────────────────── */
 .voice-pulse::after {
   content: '';
   position: absolute;
@@ -374,18 +356,15 @@ body {
   animation: pulse-ring 1.5s ease-out infinite;
 }
 
-/* Starburst / confetti container */
+/* ─── Confetti canvas ────────────────────────────────────────── */
 #confetti-canvas {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   pointer-events: none;
   z-index: 9999;
 }
 
-/* ---- Responsive prose (ReactMarkdown) ---- */
+/* ─── Prose (ReactMarkdown) ──────────────────────────────────── */
 .prose-invert {
   color: var(--text-secondary);
   line-height: 1.75;
@@ -397,35 +376,35 @@ body {
   color: var(--text-primary);
   font-family: 'Poppins', sans-serif;
   font-weight: 800;
-  margin: 1.25em 0 0.5em;
+  margin: 1.2em 0 0.45em;
   line-height: 1.25;
 }
 
 .prose-invert h1 {
-  font-size: clamp(1.25rem, 4vw, 1.75rem);
+  font-size: clamp(1.2rem, 4vw, 1.7rem);
 }
 
 .prose-invert h2 {
-  font-size: clamp(1.1rem, 3.5vw, 1.4rem);
+  font-size: clamp(1.05rem, 3.5vw, 1.35rem);
 }
 
 .prose-invert h3 {
-  font-size: clamp(1rem, 3vw, 1.2rem);
+  font-size: clamp(0.95rem, 3vw, 1.15rem);
 }
 
 .prose-invert p {
-  margin: 0.75em 0;
+  margin: 0.7em 0;
   font-size: clamp(0.875rem, 2.5vw, 1rem);
 }
 
 .prose-invert ul,
 .prose-invert ol {
-  padding-left: 1.5em;
-  margin: 0.75em 0;
+  padding-left: 1.4em;
+  margin: 0.7em 0;
 }
 
 .prose-invert li {
-  margin: 0.35em 0;
+  margin: 0.3em 0;
   font-size: clamp(0.875rem, 2.5vw, 1rem);
 }
 
@@ -435,7 +414,6 @@ body {
 }
 
 .prose-invert em {
-  color: var(--text-secondary);
   font-style: italic;
 }
 
@@ -444,7 +422,6 @@ body {
   border-radius: 4px;
   padding: 2px 6px;
   font-size: 0.875em;
-  word-break: break-word;
 }
 
 .prose-invert pre {
@@ -471,9 +448,9 @@ body {
 .prose-invert table {
   width: 100%;
   border-collapse: collapse;
-  font-size: clamp(0.75rem, 2vw, 0.875rem);
-  overflow-x: auto;
   display: block;
+  overflow-x: auto;
+  font-size: clamp(0.75rem, 2vw, 0.875rem);
 }
 
 .prose-invert th,
@@ -492,28 +469,30 @@ body {
 .prose-invert a {
   color: var(--blue);
   text-decoration: underline;
-  word-break: break-word;
 }
 
-/* ---- Minimum tap target for mobile ---- */
-button {
-  min-height: 44px;
+/* ─── Staggered delays ───────────────────────────────────────── */
+.delay-100 {
+  animation-delay: 0.1s;
 }
 
-/* ---- Safe area padding for notched phones ---- */
-@supports (padding: env(safe-area-inset-bottom)) {
-  body {
-    padding-bottom: env(safe-area-inset-bottom);
-  }
+.delay-200 {
+  animation-delay: 0.2s;
 }
 
-/* ---- Prevent text overflow on small screens ---- */
-* {
-  word-break: break-word;
-  overflow-wrap: break-word;
+.delay-300 {
+  animation-delay: 0.3s;
 }
 
-/* ---- Smooth scrolling on iOS ---- */
+.delay-400 {
+  animation-delay: 0.4s;
+}
+
+.delay-500 {
+  animation-delay: 0.5s;
+}
+
+/* ─── iOS smooth scroll ──────────────────────────────────────── */
 .overflow-y-auto,
 .overflow-x-auto {
   -webkit-overflow-scrolling: touch;

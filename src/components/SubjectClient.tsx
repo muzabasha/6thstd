@@ -27,58 +27,60 @@ export default function SubjectClient({ subject }: { subject: SubjectData; subje
   const [prog, setProg] = useState<SubjectProgress>({});
 
   useEffect(() => {
-    // Batch both state updates to avoid cascading renders
-    const nextPct = getSubjectCompletionPercent(subject.name, totalTopics);
-    const nextProg = getSubjectProgress(subject.name);
-    setPct(nextPct);
-    setProg(nextProg);
+    setPct(getSubjectCompletionPercent(subject.name, totalTopics));
+    setProg(getSubjectProgress(subject.name));
   }, [subject.name, totalTopics]);
 
   let topicIndex = 0;
 
   return (
-    <main className="max-w-[900px] mx-auto px-4 sm:px-6 py-6 sm:py-10 pb-20">
-      {/* Back */}
-      <Link href="/" className="no-underline block mb-6">
-        <button className="btn-secondary text-[13px] sm:text-sm px-4 py-2 flex items-center gap-2">
-          ← Back to Dashboard
-        </button>
-      </Link>
+    <div className="max-w-[960px] mx-auto px-4 sm:px-6 lg:px-8 py-6 pb-16">
 
-      {/* Hero */}
-      <div className="glass rounded-[24px] p-6 sm:p-10 mb-8 relative overflow-hidden">
-        <div
-          className="absolute top-0 right-0 w-40 h-40 sm:w-56 sm:h-56 opacity-[0.07] rounded-bl-[100px]"
-          style={{ background: color.bg }}
-        />
-        <div className="flex flex-col sm:flex-row items-center gap-6 mb-8 relative z-10 text-center sm:text-left">
+      {/* Back breadcrumb */}
+      <div className="flex items-center gap-2 mb-6 text-sm">
+        <Link href="/" className="btn-secondary px-3 py-1.5 text-xs no-underline">
+          ← Home
+        </Link>
+        <span className="text-[var(--text-muted)]">/</span>
+        <span className="text-[var(--text-secondary)] font-bold">{subject.name}</span>
+      </div>
+
+      {/* Subject hero */}
+      <div className="glass rounded-2xl p-6 sm:p-8 mb-8 relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-40 h-40 opacity-[0.07] rounded-bl-[80px] pointer-events-none"
+          style={{ background: color.bg }} />
+
+        <div className="flex flex-col sm:flex-row items-center sm:items-start gap-5 mb-6 relative z-10">
           <div
-            className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl flex items-center justify-center text-3xl sm:text-4xl shrink-0"
-            style={{ background: color.bg, boxShadow: `0 8px 32px ${color.glow}` }}
+            className="w-16 h-16 rounded-2xl flex items-center justify-center text-3xl shrink-0"
+            style={{ background: color.bg, boxShadow: `0 8px 28px ${color.glow}` }}
           >
             {ICONS[subject.icon] ?? "📖"}
           </div>
-          <div>
-            <h1 className="font-['Poppins'] font-extrabold text-2xl sm:text-4xl mb-2">{subject.name}</h1>
-            <p className="text-[var(--text-muted)] text-sm sm:text-base font-medium">
+          <div className="text-center sm:text-left">
+            <h1 className="font-['Poppins'] font-extrabold mb-1"
+              style={{ fontSize: "clamp(1.5rem, 5vw, 2.2rem)" }}>
+              {subject.name}
+            </h1>
+            <p className="text-[var(--text-muted)] text-sm font-medium">
               {subject.chapters.length} chapters · {totalTopics} topics
             </p>
           </div>
         </div>
-        <div className="max-w-[600px]">
-          <ProgressBar percent={pct} color={color.bg} label="Overall progress" />
-        </div>
+
+        <ProgressBar percent={pct} color={color.bg} label="Overall progress" />
       </div>
 
       {/* Chapters */}
       <div className="space-y-10">
         {subject.chapters.map((chapter) => (
           <div key={chapter.title}>
-            <h2 className="font-bold text-lg sm:text-xl mb-4 flex items-center gap-3" style={{ color: color.text }}>
+            <h2 className="font-bold text-base sm:text-lg mb-4 flex items-center gap-2"
+              style={{ color: color.text }}>
               <span className="w-2 h-2 rounded-full shrink-0" style={{ background: color.bg }} />
               {chapter.title}
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {chapter.topics.map((t) => {
                 const tp = prog[t.id];
                 topicIndex++;
@@ -101,6 +103,6 @@ export default function SubjectClient({ subject }: { subject: SubjectData; subje
           </div>
         ))}
       </div>
-    </main>
+    </div>
   );
 }

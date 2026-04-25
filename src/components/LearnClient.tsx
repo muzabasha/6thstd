@@ -151,19 +151,19 @@ export default function LearnClient({
   const handleVoiceTranscript = (text: string) => { setVoiceInput(text); setTab("chat"); };
 
   return (
-    <main className="max-w-[960px] mx-auto px-4 sm:px-6 py-4 sm:py-8 pb-24">
+    <div className="max-w-[960px] mx-auto px-4 sm:px-6 lg:px-8 py-5 pb-16">
 
       {/* Breadcrumb */}
-      <nav className="flex items-center gap-1.5 sm:gap-2 mb-5 sm:mb-6 text-[11px] sm:text-[13px] text-[var(--text-muted)] flex-wrap">
-        <Link href="/" className="hover:text-[var(--text-primary)] transition-colors no-underline min-h-0">Home</Link>
+      <nav className="flex items-center gap-1.5 sm:gap-2 mb-5 text-[11px] sm:text-[13px] text-[var(--text-muted)] flex-wrap">
+        <Link href="/" className="hover:text-[var(--text-primary)] transition-colors no-underline min-h-0 leading-none">Home</Link>
         <span className="opacity-40">›</span>
-        <Link href={`/subject/${subjectSlug}`} className="font-bold hover:opacity-80 transition-opacity no-underline min-h-0" style={{ color: color.text }}>
+        <Link href={`/subject/${subjectSlug}`} className="font-bold hover:opacity-80 transition-opacity no-underline min-h-0 leading-none" style={{ color: color.text }}>
           {subjectName}
         </Link>
         <span className="opacity-40">›</span>
-        <span className="text-[var(--text-secondary)] truncate max-w-[120px] sm:max-w-none">{chapter.title}</span>
+        <span className="text-[var(--text-secondary)] truncate max-w-[120px] sm:max-w-none leading-none">{chapter.title}</span>
         <span className="opacity-40 hidden sm:inline">›</span>
-        <span className="text-[var(--text-primary)] font-black hidden sm:inline truncate max-w-[200px]">{topic.title}</span>
+        <span className="text-[var(--text-primary)] font-black hidden sm:inline truncate max-w-[200px] leading-none">{topic.title}</span>
       </nav>
 
       {/* Topic header */}
@@ -299,6 +299,6 @@ export default function LearnClient({
           </Link>
         ) : <div className="hidden sm:block flex-1" />}
       </div>
-    </main>
+    </div>
   );
 }
