@@ -68,6 +68,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             Class 6 CBSE · NEP 2020 · Learn by Doing 🚀
           </footer>
         </div>
+
+        {/* ── Scripts ── */}
+        <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js" async />
       </body>
     </html>
   );

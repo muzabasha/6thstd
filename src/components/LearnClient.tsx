@@ -12,6 +12,8 @@ import { explainTopic } from "@/lib/openai";
 import { markTopicComplete, getSubjectProgress } from "@/lib/storage";
 
 // NEP 2020 section markers and their visual config
+const ModelViewer = "model-viewer" as any;
+
 const NEP_SECTIONS: { marker: string; icon: string; label: string; bg: string; border: string; color: string }[] = [
   { marker: "\u{1F6E0}\uFE0F", icon: "\u{1F6E0}\uFE0F", label: "Hands-On Activity", bg: "rgba(251,146,60,0.10)", border: "rgba(251,146,60,0.35)", color: "#fb923c" },
   { marker: "\u{1F3AF}", icon: "\u{1F3AF}", label: "Try It Yourself", bg: "rgba(52,211,153,0.10)", border: "rgba(52,211,153,0.35)", color: "#34d399" },
@@ -48,12 +50,13 @@ function splitIntoSections(md: string): { sectionKey: string | null; content: st
   return result;
 }
 
-type Topic = { id: string; title: string; description: string };
+type Topic = { id: string; title: string; description: string; modelUrl?: string };
 type Chapter = { title: string; topics: Topic[] };
-type Tab = "learn" | "chat" | "quiz";
+type Tab = "learn" | "lab" | "chat" | "quiz";
 
 const TAB_META: Record<Tab, { icon: string; label: string }> = {
   learn: { icon: "📖", label: "Learn" },
+  lab:   { icon: "🔬", label: "3D Lab" },
   chat:  { icon: "🤖", label: "Ask AI" },
   quiz:  { icon: "🧠", label: "Quiz" },
 };
@@ -310,7 +313,7 @@ export default function LearnClient({
           padding: "0.375rem",
         }}
       >
-        {(["learn", "chat", "quiz"] as Tab[]).map((t) => {
+        {(["learn", "lab", "chat", "quiz"] as Tab[]).map((t) => {
           const meta = TAB_META[t];
           return (
             <button
@@ -443,6 +446,51 @@ export default function LearnClient({
                 })}
               </div>
             )}
+          </div>
+        )}
+
+        {/* 3D Lab */}
+        {tab === "lab" && (
+          <div
+            className="glass rounded-[20px] overflow-hidden flex flex-col"
+            style={{ height: "clamp(400px, 60vh, 600px)" }}
+          >
+            <div className="p-4 border-b border-[var(--glass-border)] flex justify-between items-center">
+              <div>
+                <h3 className="font-bold text-sm">Interactive 3D Model</h3>
+                <p className="text-xs text-[var(--text-muted)]">Rotate, zoom and explore in 3D</p>
+              </div>
+              <div className="flex gap-2">
+                <div className="px-2 py-1 rounded bg-white/5 text-[10px] font-mono border border-white/10 uppercase">
+                  {topic.id}
+                </div>
+              </div>
+            </div>
+            
+            <div className="flex-1 relative bg-black/20">
+              <ModelViewer
+                src={topic.modelUrl}
+                alt={`3D model of ${topic.title}`}
+                auto-rotate=""
+                camera-controls=""
+                shadow-intensity="1"
+                environment-image="neutral"
+                exposure="1"
+                style={{ width: "100%", height: "100%", "--poster-color": "transparent" } as any}
+                ar=""
+                ar-modes="webxr scene-viewer quick-look"
+              >
+                <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-20">
+                  <div className="animate-pulse text-4xl">⏳</div>
+                </div>
+              </ModelViewer>
+            </div>
+
+            <div className="p-4 bg-white/[0.02] border-t border-[var(--glass-border)] text-center">
+              <p className="text-[10px] uppercase tracking-widest font-bold text-[var(--text-muted)]">
+                Powered by Interactive 3D Engine
+              </p>
+            </div>
           </div>
         )}
 

@@ -3,7 +3,7 @@ import curriculumData from "@/data/curriculum.json";
 import { slugify } from "@/lib/utils";
 import LearnClient from "@/components/LearnClient";
 
-type Topic = { id: string; title: string; description: string };
+type Topic = { id: string; title: string; description: string; modelUrl?: string };
 type Chapter = { title: string; topics: Topic[] };
 type SubjectData = { name: string; icon: string; chapters: Chapter[] };
 

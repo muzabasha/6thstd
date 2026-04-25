@@ -6,7 +6,7 @@ import SubjectClient from "@/components/SubjectClient";
 type SubjectData = {
   name: string;
   icon: string;
-  chapters: { title: string; topics: { id: string; title: string; description: string }[] }[];
+  chapters: { title: string; topics: { id: string; title: string; description: string; modelUrl?: string }[] }[];
 };
 
 export async function generateStaticParams() {
