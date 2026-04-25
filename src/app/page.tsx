@@ -73,60 +73,124 @@ export default function Dashboard() {
   }
 
   return (
-    <div className="max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-8 py-8 pb-16">
+    <div className="page-wrapper">
 
       {/* ── Hero ─────────────────────────────────────────────── */}
       <section className="text-center mb-12">
-        <div className="text-6xl mb-5 animate-float inline-block">🌟</div>
+        <div
+          className="animate-float inline-block"
+          style={{ fontSize: "clamp(3rem, 10vw, 5rem)", marginBottom: "1.25rem" }}
+          aria-hidden="true"
+        >
+          🌟
+        </div>
 
-        <h1 className="shimmer-text font-['Poppins'] font-extrabold leading-tight mb-3"
-          style={{ fontSize: "clamp(1.9rem, 6vw, 3.2rem)" }}>
+        <h1
+          className="shimmer-text font-['Poppins'] font-extrabold leading-tight mb-3"
+          style={{ fontSize: "clamp(1.75rem, 6vw, 3.2rem)" }}
+        >
           Sadiya&apos;s Learning Hub
         </h1>
 
-        <p className="text-[var(--text-secondary)] mb-8 mx-auto"
-          style={{ fontSize: "clamp(0.9rem, 2.5vw, 1.1rem)", maxWidth: 480 }}>
+        <p
+          className="text-[var(--text-secondary)] mb-8 mx-auto"
+          style={{ fontSize: "clamp(0.875rem, 2.5vw, 1.05rem)", maxWidth: 460 }}
+        >
           Class 6 CBSE · NEP 2020 · All Subjects 🚀
         </p>
 
         {/* Stats row */}
-        <div className="glass inline-grid grid-cols-3 divide-x divide-[var(--glass-border)] rounded-2xl mb-8 overflow-hidden">
+        <div
+          className="glass inline-grid rounded-2xl mb-8 overflow-hidden"
+          style={{
+            gridTemplateColumns: "repeat(3, 1fr)",
+            borderRadius: "1rem",
+            maxWidth: "100%",
+          }}
+        >
           {[
             { value: totalDone, label: "Done", color: "#22d3ee" },
             { value: totalTopics, label: "Topics", color: "#a78bfa" },
             { value: `${overallPct}%`, label: "Complete", color: "#34d399" },
-          ].map(({ value, label, color }) => (
-            <div key={label} className="px-6 py-4 text-center">
-              <p className="font-black text-2xl sm:text-3xl" style={{ color }}>{value}</p>
-              <p className="text-[10px] sm:text-xs text-[var(--text-muted)] uppercase tracking-widest mt-0.5 font-bold">{label}</p>
+          ].map(({ value, label, color }, i) => (
+            <div
+              key={label}
+              className="text-center"
+              style={{
+                padding: "clamp(0.75rem, 3vw, 1.25rem) clamp(1rem, 4vw, 1.75rem)",
+                borderRight: i < 2 ? "1px solid var(--glass-border)" : "none",
+              }}
+            >
+              <p
+                className="font-black"
+                style={{ fontSize: "clamp(1.4rem, 5vw, 2.25rem)", color, lineHeight: 1 }}
+              >
+                {value}
+              </p>
+              <p
+                style={{
+                  fontSize: "clamp(0.6rem, 1.8vw, 0.7rem)",
+                  color: "var(--text-muted)",
+                  textTransform: "uppercase",
+                  letterSpacing: "0.1em",
+                  marginTop: "0.25rem",
+                  fontWeight: 700,
+                }}
+              >
+                {label}
+              </p>
             </div>
           ))}
         </div>
 
         {/* Overall progress bar */}
-        <div className="max-w-sm mx-auto mb-8">
+        <div style={{ maxWidth: 380, margin: "0 auto 2rem" }}>
           <ProgressBar percent={overallPct} showLabel={false} height={6} />
         </div>
 
         {/* CTA buttons */}
-        <div className="flex flex-col sm:flex-row gap-3 justify-center">
-          <Link href={continueHref} className="btn-primary no-underline">
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "0.75rem",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Link href={continueHref} className="btn-primary no-underline" style={{ width: "100%", maxWidth: 280 }}>
             ▶&nbsp; Continue Learning
           </Link>
-          <Link href="/quiz" className="btn-secondary no-underline">
+          <Link href="/quiz" className="btn-secondary no-underline" style={{ width: "100%", maxWidth: 280 }}>
             🧠&nbsp; Random Quiz
           </Link>
         </div>
+
+        {/* Responsive CTA: side-by-side on sm+ */}
+        <style>{`
+          @media (min-width: 480px) {
+            .hero-ctas { flex-direction: row !important; }
+            .hero-ctas a { width: auto !important; max-width: none !important; }
+          }
+        `}</style>
       </section>
 
       {/* ── Subject Grid ─────────────────────────────────────── */}
       <section className="mb-14">
-        <h2 className="font-['Poppins'] font-bold mb-6 flex items-center gap-2"
-          style={{ fontSize: "clamp(1.1rem, 3vw, 1.4rem)" }}>
+        <h2
+          className="font-['Poppins'] font-bold mb-6 flex items-center gap-2"
+          style={{ fontSize: "clamp(1rem, 3vw, 1.35rem)" }}
+        >
           📚 Choose a Subject
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 280px), 1fr))",
+            gap: "clamp(0.75rem, 2vw, 1.25rem)",
+          }}
+        >
           {subjects.map((subject, idx) => {
             const color = getSubjectColor(subject.name);
             const topicCnt = subject.chapters.reduce((a, c) => a + c.topics.length, 0);
@@ -139,23 +203,37 @@ export default function Dashboard() {
                 className="no-underline block group"
               >
                 <div
-                  className="glass glass-hover rounded-2xl p-5 relative overflow-hidden flex flex-col gap-4 opacity-0 h-full"
-                  style={{ animation: `fadeInUp 0.5s ease forwards ${idx * 0.07}s` }}
+                  className="glass glass-hover rounded-2xl relative overflow-hidden flex flex-col opacity-0 h-full"
+                  style={{
+                    padding: "clamp(1rem, 3vw, 1.35rem)",
+                    gap: "1rem",
+                    animation: `fadeInUp 0.5s ease forwards ${idx * 0.07}s`,
+                  }}
                 >
                   {/* Colour sweep */}
-                  <div className="absolute top-0 right-0 w-28 h-28 rounded-bl-[80px] opacity-[0.08] pointer-events-none"
-                    style={{ background: color.bg }} />
+                  <div
+                    className="absolute top-0 right-0 w-28 h-28 rounded-bl-[80px] opacity-[0.08] pointer-events-none"
+                    style={{ background: color.bg }}
+                  />
 
                   {/* Header row */}
                   <div className="flex items-center gap-3">
                     <div
-                      className="w-12 h-12 rounded-xl flex items-center justify-center text-2xl shrink-0 transition-transform group-hover:scale-110"
-                      style={{ background: color.bg, boxShadow: `0 6px 20px ${color.glow}` }}
+                      className="rounded-xl flex items-center justify-center text-2xl shrink-0 transition-transform group-hover:scale-110"
+                      style={{
+                        width: "clamp(2.5rem, 8vw, 3rem)",
+                        height: "clamp(2.5rem, 8vw, 3rem)",
+                        background: color.bg,
+                        boxShadow: `0 6px 20px ${color.glow}`,
+                        fontSize: "clamp(1.2rem, 4vw, 1.5rem)",
+                      }}
                     >
                       {ICONS[subject.icon] ?? "📖"}
                     </div>
                     <div className="min-w-0">
-                      <h3 className="font-black text-base text-[var(--text-primary)] truncate">{subject.name}</h3>
+                      <h3 className="font-black text-base text-[var(--text-primary)] truncate">
+                        {subject.name}
+                      </h3>
                       <p className="text-[11px] text-[var(--text-muted)] font-medium mt-0.5">
                         {subject.chapters.length} chapters · {topicCnt} topics
                       </p>
@@ -185,16 +263,35 @@ export default function Dashboard() {
 
       {/* ── Learning Tips ─────────────────────────────────────── */}
       <section>
-        <h2 className="font-['Poppins'] font-bold mb-5 flex items-center gap-2"
-          style={{ fontSize: "clamp(1.1rem, 3vw, 1.4rem)" }}>
+        <h2
+          className="font-['Poppins'] font-bold mb-5 flex items-center gap-2"
+          style={{ fontSize: "clamp(1rem, 3vw, 1.35rem)" }}
+        >
           💡 How It Works
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {TIPS.map((t) => (
-            <div key={t.title}
-              className="glass rounded-2xl p-5 flex gap-4 items-start hover:bg-[rgba(255,255,255,0.08)] transition-colors">
-              <span className="text-3xl shrink-0 mt-0.5">{t.icon}</span>
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 260px), 1fr))",
+            gap: "clamp(0.75rem, 2vw, 1rem)",
+          }}
+        >
+          {TIPS.map((t, idx) => (
+            <div
+              key={t.title}
+              className="glass rounded-2xl flex gap-4 items-start opacity-0"
+              style={{
+                padding: "clamp(1rem, 3vw, 1.25rem)",
+                transition: "background 0.2s",
+                animation: `fadeInUp 0.5s ease forwards ${idx * 0.08 + 0.3}s`,
+              }}
+              onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,0.08)")}
+              onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.background = "")}
+            >
+              <span className="shrink-0 mt-0.5" style={{ fontSize: "clamp(1.5rem, 5vw, 1.875rem)" }}>
+                {t.icon}
+              </span>
               <div>
                 <p className="font-black text-sm text-[var(--text-primary)] mb-1">{t.title}</p>
                 <p className="text-sm text-[var(--text-secondary)] leading-relaxed">{t.body}</p>

@@ -31,7 +31,7 @@ function pickRandom(): QuizTarget {
 
 export default function QuizPage() {
   const [target, setTarget] = useState<QuizTarget | null>(null);
-  const [key, setKey] = useState(0); // force remount on new quiz
+  const [key, setKey] = useState(0);
 
   const startRandom = () => {
     setTarget(pickRandom());
@@ -39,109 +39,156 @@ export default function QuizPage() {
   };
 
   return (
-    <main style={{ maxWidth: 760, margin: "0 auto", padding: "24px 16px 60px" }}>
-      <Link href="/" style={{ textDecoration: "none" }}>
-        <button className="btn-secondary" style={{ marginBottom: 24, fontSize: "0.85rem" }}>
+    <div className="page-wrapper-md" style={{ maxWidth: 800 }}>
+
+      {/* Back link */}
+      <Link href="/" className="no-underline">
+        <button className="btn-secondary" style={{ marginBottom: "1.5rem", fontSize: "0.85rem" }}>
           ← Back to Dashboard
         </button>
       </Link>
 
-      {/* Header */}
-      <div style={{ textAlign: "center", marginBottom: 36 }}>
-        <div style={{ fontSize: "3rem", marginBottom: 8 }} className="animate-float">🧠</div>
-        <h1 style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 800, fontSize: "1.8rem", marginBottom: 8 }}>
+      {/* ── Header ────────────────────────────────────────────── */}
+      <div className="text-center" style={{ marginBottom: "2.25rem" }}>
+        <div className="animate-float inline-block" style={{ fontSize: "3rem", marginBottom: "0.5rem" }}>🧠</div>
+        <h1
+          className="font-['Poppins']"
+          style={{ fontWeight: 800, fontSize: "clamp(1.5rem, 5vw, 2rem)", marginBottom: "0.5rem" }}
+        >
           Quiz Arena
         </h1>
-        <p style={{ color: "var(--text-muted)", fontSize: "0.9rem" }}>
+        <p style={{ color: "var(--text-muted)", fontSize: "clamp(0.82rem, 2.5vw, 0.95rem)" }}>
           Pick a subject and topic — or let AI surprise you!
         </p>
       </div>
 
-      {/* Random Quiz Button */}
-      <div style={{ textAlign: "center", marginBottom: 32 }}>
-        <button className="btn-primary" style={{ fontSize: "1rem", padding: "14px 32px" }} onClick={startRandom}>
+      {/* ── Random quiz CTA ───────────────────────────────────── */}
+      <div className="text-center" style={{ marginBottom: "2rem" }}>
+        <button
+          className="btn-primary"
+          style={{ fontSize: "1rem", padding: "14px 36px" }}
+          onClick={startRandom}
+        >
           🎲 Random Quiz
         </button>
         {target && (
-          <p style={{ marginTop: 10, color: "var(--text-muted)", fontSize: "0.82rem" }}>
-            Topic: <strong style={{ color: "var(--text-primary)" }}>{target.topic.title}</strong> · {target.subject}
+          <p
+            style={{
+              marginTop: "0.625rem",
+              color: "var(--text-muted)",
+              fontSize: "0.82rem",
+              lineHeight: 1.5,
+            }}
+          >
+            Topic:{" "}
+            <strong style={{ color: "var(--text-primary)" }}>{target.topic.title}</strong>
+            {" · "}
+            {target.subject}
           </p>
         )}
       </div>
 
-      {/* Quiz by subject/topic selector */}
+      {/* ── Active Quiz ───────────────────────────────────────── */}
+      {target && (
+        <div key={key} className="animate-fade-in-up">
+          <QuizCard subject={target.subject} topic={target.topic.title} topicId={target.topic.id} />
+          <div className="text-center" style={{ marginTop: "1rem" }}>
+            <button
+              className="btn-secondary"
+              style={{ fontSize: "0.85rem" }}
+              onClick={() => setTarget(null)}
+            >
+              Choose Different Topic
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* ── Subject/topic selector (shown when no active quiz) ── */}
       {!target && (
-        <div>
-          <h2 style={{ fontWeight: 700, fontSize: "1.05rem", marginBottom: 16, textAlign: "center" }}>
+        <div className="animate-fade-in-up">
+          <h2
+            className="font-['Poppins']"
+            style={{
+              fontWeight: 700,
+              fontSize: "clamp(1rem, 3vw, 1.15rem)",
+              marginBottom: "1rem",
+              textAlign: "center",
+              color: "var(--text-secondary)",
+            }}
+          >
             Or pick a specific topic:
           </h2>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: 14 }}>
-            {subjects.map((s) => {
+
+          <div className="quiz-subject-grid">
+            {subjects.map((s, idx) => {
               const color = getSubjectColor(s.name);
               return (
-                <div key={s.name} className="glass" style={{ borderRadius: 16, padding: 16 }}>
+                <div
+                  key={s.name}
+                  className="glass rounded-2xl opacity-0"
+                  style={{
+                    padding: "1rem",
+                    animation: `fadeInUp 0.45s ease forwards ${idx * 0.06}s`,
+                  }}
+                >
+                  {/* Subject header */}
                   <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 12 }}>
-                    <div style={{
-                      width: 36, height: 36, borderRadius: 10,
-                      background: color.bg,
-                      display: "flex", alignItems: "center", justifyContent: "center",
-                      fontSize: "1.1rem",
-                    }}>
+                    <div
+                      style={{
+                        width: 36, height: 36, borderRadius: 10,
+                        background: color.bg,
+                        display: "flex", alignItems: "center", justifyContent: "center",
+                        fontSize: "1.1rem",
+                        boxShadow: `0 4px 12px ${color.glow}`,
+                        flexShrink: 0,
+                      }}
+                    >
                       {ICONS[s.icon] ?? "📖"}
                     </div>
-                    <strong style={{ fontSize: "0.9rem" }}>{s.name}</strong>
+                    <strong style={{ fontSize: "0.9rem", color: "var(--text-primary)" }}>
+                      {s.name}
+                    </strong>
                   </div>
-                  <div style={{ display: "flex", flexDirection: "column", gap: 6, maxHeight: 200, overflowY: "auto" }}>
+
+                  {/* Topic list */}
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      gap: 5,
+                      maxHeight: 210,
+                      overflowY: "auto",
+                      marginBottom: 10,
+                    }}
+                  >
                     {s.chapters.flatMap((ch) =>
                       ch.topics.map((tp) => (
                         <button
                           key={tp.id}
+                          className="quiz-topic-btn"
                           onClick={() => { setTarget({ subject: s.name, topic: tp }); setKey((k) => k + 1); }}
-                          style={{
-                            textAlign: "left",
-                            padding: "6px 10px",
-                            borderRadius: 8,
-                            border: "1px solid var(--glass-border)",
-                            background: "transparent",
-                            color: "var(--text-secondary)",
-                            fontSize: "0.78rem",
-                            cursor: "pointer",
-                            transition: "all 0.2s",
-                          }}
-                          onMouseEnter={(e) => { (e.target as HTMLElement).style.background = "var(--bg-card-hover)"; (e.target as HTMLElement).style.color = "var(--text-primary)"; }}
-                          onMouseLeave={(e) => { (e.target as HTMLElement).style.background = "transparent"; (e.target as HTMLElement).style.color = "var(--text-secondary)"; }}
                         >
                           {tp.title}
                         </button>
                       ))
                     )}
                   </div>
-                  <div style={{ marginTop: 10 }}>
-                    <Link
-                      href={`/subject/${slugify(s.name)}`}
-                      style={{ fontSize: "0.75rem", color: color.text, textDecoration: "none", fontWeight: 600 }}
-                    >
-                      Study first →
-                    </Link>
-                  </div>
+
+                  {/* Study first link */}
+                  <Link
+                    href={`/subject/${slugify(s.name)}`}
+                    className="no-underline"
+                    style={{ fontSize: "0.75rem", color: color.text, fontWeight: 700 }}
+                  >
+                    📖 Study first →
+                  </Link>
                 </div>
               );
             })}
           </div>
         </div>
       )}
-
-      {/* Active Quiz */}
-      {target && (
-        <div key={key}>
-          <QuizCard subject={target.subject} topic={target.topic.title} topicId={target.topic.id} />
-          <div style={{ textAlign: "center", marginTop: 16 }}>
-            <button className="btn-secondary" style={{ fontSize: "0.85rem" }} onClick={() => setTarget(null)}>
-              Choose Different Topic
-            </button>
-          </div>
-        </div>
-      )}
-    </main>
+    </div>
   );
 }

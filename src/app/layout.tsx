@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import Link from "next/link";
 import "./globals.css";
 
@@ -15,27 +15,38 @@ export const metadata: Metadata = {
   },
 };
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  minimumScale: 1,
+  viewportFit: "cover",          // honours safe-area on notched devices
+  themeColor: "#0f0c29",
+};
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </head>
       <body>
         {/* Ambient orbs */}
         <div className="orb orb-1" />
         <div className="orb orb-2" />
         <div className="orb orb-3" />
 
-        <div style={{ position: "relative", zIndex: 1, minHeight: "100vh", display: "flex", flexDirection: "column" }}>
+        <div style={{ position: "relative", zIndex: 1, minHeight: "100dvh", display: "flex", flexDirection: "column" }}>
           {/* ── Sticky navigation bar ── */}
           <nav className="site-nav">
             <Link href="/" className="nav-logo">
               🌟 <span>Sadiya&apos;s Hub</span>
             </Link>
             <div className="nav-links">
-              <Link href="/" className="nav-link">🏠 Home</Link>
-              <Link href="/quiz" className="nav-link">🧠 Quiz</Link>
+              <Link href="/" className="nav-link">
+                <span>🏠</span>
+                <span>Home</span>
+              </Link>
+              <Link href="/quiz" className="nav-link">
+                <span>🧠</span>
+                <span>Quiz</span>
+              </Link>
             </div>
           </nav>
 
@@ -47,11 +58,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {/* ── Footer ── */}
           <footer style={{
             borderTop: "1px solid var(--glass-border)",
-            padding: "1rem 1.5rem",
+            padding: "0.875rem max(1.5rem, var(--safe-left))",
             textAlign: "center",
             fontSize: "0.75rem",
             color: "var(--text-muted)",
             background: "rgba(15,12,41,0.6)",
+            paddingBottom: "calc(0.875rem + var(--safe-bottom))",
           }}>
             Class 6 CBSE · NEP 2020 · Learn by Doing 🚀
           </footer>

@@ -33,8 +33,18 @@
   --text-secondary: rgba(248, 250, 252, 0.72);
   --text-muted: rgba(248, 250, 252, 0.45);
 
-  --nav-h: 60px;
-  /* sticky nav height — used for scroll-padding */
+  /* Nav heights */
+  --nav-h: 56px;
+  --nav-h-md: 60px;
+
+  /* Touch target minimum */
+  --touch-min: 44px;
+
+  /* Safe-area insets for notched phones */
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-left: env(safe-area-inset-left, 0px);
+  --safe-right: env(safe-area-inset-right, 0px);
 }
 
 /* ─── Reset ─────────────────────────────────────────────────── */
@@ -49,16 +59,21 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: var(--nav-h);
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
   background: var(--grad-hero);
   min-height: 100vh;
+  min-height: 100dvh;
   color: var(--text-primary);
   font-family: 'Nunito', sans-serif;
   overflow-x: hidden;
-  /* safe-area for notched phones */
-  padding-bottom: env(safe-area-inset-bottom, 0px);
+  /* Safe-area padding for notched phones */
+  padding-left: var(--safe-left);
+  padding-right: var(--safe-right);
+  padding-bottom: var(--safe-bottom);
 }
 
 /* ─── Sticky top nav ─────────────────────────────────────────── */
@@ -70,38 +85,62 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1.25rem;
-  background: rgba(15, 12, 41, 0.75);
+  padding: 0 max(1rem, var(--safe-left));
+  background: rgba(15, 12, 41, 0.82);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--glass-border);
 }
 
+@media (min-width: 640px) {
+  .site-nav {
+    height: var(--nav-h-md);
+    padding: 0 1.5rem;
+  }
+  html {
+    scroll-padding-top: var(--nav-h-md);
+  }
+}
+
 .site-nav .nav-logo {
   font-family: 'Poppins', sans-serif;
   font-weight: 800;
-  font-size: 1rem;
+  font-size: clamp(0.85rem, 3vw, 1rem);
   color: var(--text-primary);
   text-decoration: none;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.4rem;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .site-nav .nav-links {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.25rem;
 }
 
 .site-nav .nav-link {
-  padding: 0.4rem 0.85rem;
+  padding: 0.4rem 0.65rem;
   border-radius: 10px;
-  font-size: 0.82rem;
+  font-size: clamp(0.75rem, 2.5vw, 0.82rem);
   font-weight: 700;
   color: var(--text-secondary);
   text-decoration: none;
   transition: background 0.2s, color 0.2s;
+  min-height: var(--touch-min);
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  white-space: nowrap;
+}
+
+@media (min-width: 640px) {
+  .site-nav .nav-link {
+    padding: 0.4rem 0.85rem;
+    gap: 0.4rem;
+  }
 }
 
 .site-nav .nav-link:hover {
@@ -209,6 +248,11 @@ body {
   }
 }
 
+@keyframes bounce-dots {
+  0%, 80%, 100% { transform: scale(0.7); opacity: 0.5; }
+  40% { transform: scale(1); opacity: 1; }
+}
+
 .animate-float {
   animation: float 4s ease-in-out infinite;
 }
@@ -277,8 +321,13 @@ body {
   cursor: pointer;
   transition: all 0.2s ease;
   box-shadow: 0 4px 20px rgba(79, 142, 247, 0.35);
-  min-height: 44px;
+  min-height: var(--touch-min);
   white-space: nowrap;
+  /* Prevent text selection on tap */
+  user-select: none;
+  -webkit-user-select: none;
+  /* Removes tap highlight on iOS */
+  -webkit-tap-highlight-color: transparent;
 }
 
 .btn-primary:hover {
@@ -304,8 +353,11 @@ body {
   color: var(--text-primary);
   cursor: pointer;
   transition: all 0.2s ease;
-  min-height: 44px;
+  min-height: var(--touch-min);
   white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .btn-secondary:hover {
@@ -496,4 +548,138 @@ body {
 .overflow-y-auto,
 .overflow-x-auto {
   -webkit-overflow-scrolling: touch;
+}
+
+/* ─── Quiz page grid ─────────────────────────────────────────── */
+.quiz-subject-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+@media (min-width: 480px) {
+  .quiz-subject-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .quiz-subject-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ─── Quiz topic button ──────────────────────────────────────── */
+.quiz-topic-btn {
+  text-align: left;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--glass-border);
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: 'Nunito', sans-serif;
+  min-height: 38px;
+  display: block;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.quiz-topic-btn:hover,
+.quiz-topic-btn:focus-visible {
+  background: var(--bg-card-hover);
+  color: var(--text-primary);
+  border-color: rgba(255, 255, 255, 0.2);
+  outline: none;
+}
+
+/* ─── Page wrapper utility ───────────────────────────────────── */
+.page-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.25rem 1rem 4rem;
+}
+
+@media (min-width: 640px) {
+  .page-wrapper {
+    padding: 2rem 1.5rem 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-wrapper {
+    padding: 2.5rem 2rem 5rem;
+  }
+}
+
+/* Narrower variant for content pages */
+.page-wrapper-md {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.25rem 1rem 4rem;
+}
+
+@media (min-width: 640px) {
+  .page-wrapper-md {
+    padding: 1.5rem 1.5rem 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-wrapper-md {
+    padding: 2rem 2rem 5rem;
+  }
+}
+
+/* ─── Stat pill (dashboard stats) ───────────────────────────── */
+.stat-pill {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  overflow: hidden;
+}
+
+/* ─── Chapter heading strip ──────────────────────────────────── */
+.chapter-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  font-weight: 700;
+  font-size: clamp(0.9rem, 2.5vw, 1.05rem);
+  margin-bottom: 1rem;
+}
+
+/* ─── No-underline link reset ────────────────────────────────── */
+a.no-underline {
+  text-decoration: none;
+}
+
+/* ─── Focus-visible ring ─────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid rgba(79, 142, 247, 0.7);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid rgba(79, 142, 247, 0.7);
+  outline-offset: 3px;
+  border-radius: 8px;
+}
+
+/* ─── Reduced motion support ─────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  .animate-float,
+  .animate-fade-in-up,
+  .animate-spin-slow,
+  .shimmer-text {
+    animation: none !important;
+  }
+
+  .glass-hover:hover {
+    transform: none;
+  }
 }

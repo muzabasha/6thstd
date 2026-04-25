@@ -52,6 +52,12 @@ type Topic = { id: string; title: string; description: string };
 type Chapter = { title: string; topics: Topic[] };
 type Tab = "learn" | "chat" | "quiz";
 
+const TAB_META: Record<Tab, { icon: string; label: string }> = {
+  learn: { icon: "📖", label: "Learn" },
+  chat:  { icon: "🤖", label: "Ask AI" },
+  quiz:  { icon: "🧠", label: "Quiz" },
+};
+
 export default function LearnClient({
   subjectName,
   subjectSlug,
@@ -88,7 +94,7 @@ export default function LearnClient({
       const text = await explainTopic(subjectName, topic.title, topic.description, topic.id);
       setExplanation(text);
 
-      const isHindi = /[\u0900-\u097F]/.test(text);
+      const isHindi   = /[\u0900-\u097F]/.test(text);
       const isKannada = /[\u0C80-\u0CFF]/.test(text);
 
       let sf = text;
@@ -98,30 +104,30 @@ export default function LearnClient({
           .replace(/\u{1F30D}/gu, "\u0C89\u0CA6\u0CBE\u0CB9\u0CB0\u0CA3\u0CC6:")
           .replace(/\u{1F4D6}/gu, "\u0CAA\u0CA0\u0CCD\u0CAF\u0CAA\u0CC1\u0CB8\u0CCD\u0CA4\u0C95\u0CA6 \u0CB8\u0CBE\u0CB0\u0CBE\u0C82\u0CB6:")
           .replace(/\u{1F4DA}/gu, "\u0C85\u0CAD\u0CCD\u0CAF\u0CBE\u0CB8 \u0CAA\u0CCD\u0CB0\u0CB6\u0CCD\u0CA8\u0CC6\u0C97\u0CB3\u0CC1:")
-          .replace(/\u2753/gu, "\u0CAA\u0CCD\u0CB0\u0CB6\u0CCD\u0CA8\u0CC6 \u0CAE\u0CA4\u0CCD\u0CA4\u0CC1 \u0C89\u0CA4\u0CCD\u0CA4\u0CB0\u0C97\u0CB3\u0CC1:")
+          .replace(/\u2753/gu,    "\u0CAA\u0CCD\u0CB0\u0CB6\u0CCD\u0CA8\u0CC6 \u0CAE\u0CA4\u0CCD\u0CA4\u0CC1 \u0C89\u0CA4\u0CCD\u0CA4\u0CB0\u0C97\u0CB3\u0CC1:")
           .replace(/\u{1F31F}/gu, "\u0C95\u0CB2\u0CBF\u0C95\u0CC6\u0CAF \u0CB8\u0CA8\u0CCD\u0CA8\u0CBF\u0CB5\u0CC7\u0CB6:")
           .replace(/\u{1F511}/gu, "\u0CA8\u0CC6\u0CA8\u0CAA\u0CBF\u0CA1\u0CAC\u0CC7\u0C95\u0CBE\u0CA6 \u0C85\u0C82\u0CB6\u0C97\u0CB3\u0CC1:")
-          .replace(/\u2705/gu, "\u0C95\u0CB2\u0CBF\u0C95\u0CC6\u0CAF \u0CB8\u0CB2\u0CB9\u0CC6:");
+          .replace(/\u2705/gu,    "\u0C95\u0CB2\u0CBF\u0C95\u0CC6\u0CAF \u0CB8\u0CB2\u0CB9\u0CC6:");
       } else if (isHindi) {
         sf = sf
           .replace(/\u{1F4CC}/gu, "\u0905\u0935\u0927\u093E\u0930\u0923\u093E:")
           .replace(/\u{1F30D}/gu, "\u0909\u0926\u093E\u0939\u0930\u0923:")
           .replace(/\u{1F4D6}/gu, "\u092A\u093E\u0920\u094D\u092F\u092A\u0941\u0938\u094D\u0924\u0915 \u0938\u093E\u0930\u093E\u0902\u0936:")
           .replace(/\u{1F4DA}/gu, "\u0905\u092D\u094D\u092F\u093E\u0938 \u092A\u094D\u0930\u0936\u094D\u0928:")
-          .replace(/\u2753/gu, "\u092A\u094D\u0930\u0936\u094D\u0928 \u0914\u0930 \u0909\u0924\u094D\u0924\u0930:")
+          .replace(/\u2753/gu,    "\u092A\u094D\u0930\u0936\u094D\u0928 \u0914\u0930 \u0909\u0924\u094D\u0924\u0930:")
           .replace(/\u{1F31F}/gu, "\u0938\u0940\u0916\u0928\u0947 \u0915\u093E \u092A\u0930\u093F\u0926\u0943\u0936\u094D\u092F:")
           .replace(/\u{1F511}/gu, "\u092F\u093E\u0926 \u0930\u0916\u0928\u0947 \u092F\u094B\u0917\u094D\u092F \u092C\u093E\u0924\u0947\u0902:")
-          .replace(/\u2705/gu, "\u0938\u0940\u0916\u0928\u0947 \u0915\u0940 \u092F\u0941\u0915\u094D\u0924\u093F:");
+          .replace(/\u2705/gu,    "\u0938\u0940\u0916\u0928\u0947 \u0915\u0940 \u092F\u0941\u0915\u094D\u0924\u093F:");
       } else {
         sf = sf
           .replace(/\u{1F4CC}/gu, "Concept:")
           .replace(/\u{1F30D}/gu, "Example:")
           .replace(/\u{1F4D6}/gu, "Textbook Summary:")
           .replace(/\u{1F4DA}/gu, "Practice Questions:")
-          .replace(/\u2753/gu, "Test your knowledge:")
+          .replace(/\u2753/gu,    "Test your knowledge:")
           .replace(/\u{1F31F}/gu, "Learning Scenario:")
           .replace(/\u{1F511}/gu, "Points to remember:")
-          .replace(/\u2705/gu, "Learning tip:");
+          .replace(/\u2705/gu,    "Learning tip:");
       }
 
       sf = sf.replace(/[#*`]/g, "").replace(/---+/g, "Next item.").slice(0, 6500);
@@ -147,109 +153,277 @@ export default function LearnClient({
     if (tab === "learn" && !explanation) void fetchExplanation();
   }, [tab, explanation, fetchExplanation]);
 
-  const handleMarkDone = () => { markTopicComplete(subjectName, topic.id); setCompleted(true); };
-  const handleVoiceTranscript = (text: string) => { setVoiceInput(text); setTab("chat"); };
+  const handleMarkDone    = () => { markTopicComplete(subjectName, topic.id); setCompleted(true); };
+  const handleVoiceInput  = (text: string) => { setVoiceInput(text); setTab("chat"); };
 
   return (
-    <div className="max-w-[960px] mx-auto px-4 sm:px-6 lg:px-8 py-5 pb-16">
+    <div className="page-wrapper-md">
 
-      {/* Breadcrumb */}
-      <nav className="flex items-center gap-1.5 sm:gap-2 mb-5 text-[11px] sm:text-[13px] text-[var(--text-muted)] flex-wrap">
-        <Link href="/" className="hover:text-[var(--text-primary)] transition-colors no-underline min-h-0 leading-none">Home</Link>
+      {/* ── Breadcrumb ──────────────────────────────────────────── */}
+      <nav
+        className="flex items-center flex-wrap gap-x-1.5 gap-y-1 mb-5"
+        aria-label="breadcrumb"
+        style={{ fontSize: "clamp(0.7rem, 2vw, 0.8125rem)", color: "var(--text-muted)" }}
+      >
+        <Link href="/" className="hover:text-[var(--text-primary)] transition-colors no-underline leading-none">
+          Home
+        </Link>
         <span className="opacity-40">›</span>
-        <Link href={`/subject/${subjectSlug}`} className="font-bold hover:opacity-80 transition-opacity no-underline min-h-0 leading-none" style={{ color: color.text }}>
+        <Link
+          href={`/subject/${subjectSlug}`}
+          className="font-bold hover:opacity-80 transition-opacity no-underline leading-none"
+          style={{ color: color.text }}
+        >
           {subjectName}
         </Link>
         <span className="opacity-40">›</span>
-        <span className="text-[var(--text-secondary)] truncate max-w-[120px] sm:max-w-none leading-none">{chapter.title}</span>
+        <span
+          className="leading-none"
+          style={{
+            color: "var(--text-secondary)",
+            maxWidth: "clamp(100px, 30vw, 200px)",
+            overflow: "hidden",
+            textOverflow: "ellipsis",
+            whiteSpace: "nowrap",
+            display: "inline-block",
+          }}
+        >
+          {chapter.title}
+        </span>
         <span className="opacity-40 hidden sm:inline">›</span>
-        <span className="text-[var(--text-primary)] font-black hidden sm:inline truncate max-w-[200px] leading-none">{topic.title}</span>
+        <span
+          className="text-[var(--text-primary)] font-black hidden sm:inline leading-none"
+          style={{
+            maxWidth: "clamp(120px, 35vw, 280px)",
+            overflow: "hidden",
+            textOverflow: "ellipsis",
+            whiteSpace: "nowrap",
+            display: "inline-block",
+          }}
+        >
+          {topic.title}
+        </span>
       </nav>
 
-      {/* Topic header */}
-      <div className="glass rounded-[20px] p-5 sm:p-8 mb-5 sm:mb-6 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-28 h-28 sm:w-48 sm:h-48 opacity-[0.07] rounded-bl-[100px]" style={{ background: color.bg }} />
-        <div className="flex flex-col md:flex-row justify-between items-start gap-4 sm:gap-6 relative z-10">
-          <div className="flex-1 min-w-0">
-            <span className="text-[10px] sm:text-xs font-black px-3 py-1 rounded-full mb-3 inline-block uppercase tracking-wider" style={{ color: color.text, background: color.badge }}>
+      {/* ── Topic header ────────────────────────────────────────── */}
+      <div
+        className="glass rounded-[20px] relative overflow-hidden mb-5"
+        style={{ padding: "clamp(1rem, 4vw, 2rem)" }}
+      >
+        {/* Color accent sweep */}
+        <div
+          className="absolute top-0 right-0 opacity-[0.07] rounded-bl-[100px] pointer-events-none"
+          style={{
+            width: "clamp(80px, 18vw, 192px)",
+            height: "clamp(80px, 18vw, 192px)",
+            background: color.bg,
+          }}
+        />
+
+        <div
+          className="relative z-10"
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "1rem",
+          }}
+        >
+          {/* Title + description */}
+          <div>
+            <span
+              className="font-black uppercase inline-block mb-3"
+              style={{
+                fontSize: "0.65rem",
+                letterSpacing: "0.1em",
+                padding: "0.25rem 0.75rem",
+                borderRadius: 99,
+                color: color.text,
+                background: color.badge,
+              }}
+            >
               {chapter.title}
             </span>
-            <h1 className="font-['Poppins'] font-black text-xl sm:text-3xl md:text-4xl leading-tight mb-2 sm:mb-3">
+            <h1
+              className="font-['Poppins'] font-black leading-tight mb-2"
+              style={{ fontSize: "clamp(1.2rem, 4.5vw, 2.25rem)" }}
+            >
               {topic.title}
             </h1>
-            <p className="text-[var(--text-muted)] text-sm sm:text-base font-medium leading-relaxed">
+            <p
+              style={{
+                color: "var(--text-muted)",
+                fontSize: "clamp(0.825rem, 2.5vw, 1rem)",
+                fontWeight: 500,
+                lineHeight: 1.6,
+              }}
+            >
               {topic.description}
             </p>
           </div>
-          <div className="flex flex-row md:flex-col gap-3 items-center md:items-end w-full md:w-auto shrink-0">
+
+          {/* Actions row — stacks on mobile, row on md+ */}
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              gap: "0.625rem",
+              alignItems: "center",
+            }}
+          >
             {completed ? (
-              <div className="flex-1 md:flex-none text-center px-4 py-2 rounded-full bg-[rgba(52,211,153,0.15)] border border-[rgba(52,211,153,0.35)] text-[#34d399] text-xs sm:text-sm font-black whitespace-nowrap">
+              <div
+                className="font-black whitespace-nowrap"
+                style={{
+                  padding: "0.4rem 1rem",
+                  borderRadius: 99,
+                  background: "rgba(52,211,153,0.15)",
+                  border: "1px solid rgba(52,211,153,0.35)",
+                  color: "#34d399",
+                  fontSize: "clamp(0.75rem, 2vw, 0.875rem)",
+                }}
+              >
                 ✓ Completed
               </div>
             ) : (
-              <button className="flex-1 md:flex-none btn-secondary text-xs sm:text-sm px-4 py-2 whitespace-nowrap" onClick={handleMarkDone}>
+              <button
+                className="btn-secondary whitespace-nowrap"
+                style={{ fontSize: "clamp(0.75rem, 2vw, 0.875rem)", padding: "0.4rem 1rem" }}
+                onClick={handleMarkDone}
+              >
                 Mark as Done ✓
               </button>
             )}
-            <VoiceAssistant onTranscript={handleVoiceTranscript} speakText={tab === "learn" ? speakText : undefined} />
+            <VoiceAssistant
+              onTranscript={handleVoiceInput}
+              speakText={tab === "learn" ? speakText : undefined}
+            />
           </div>
         </div>
       </div>
 
-      {/* Tabs */}
-      <div className="flex gap-1 sm:gap-2 mb-5 sm:mb-6 bg-[rgba(255,255,255,0.04)] rounded-2xl p-1.5 border border-[rgba(255,255,255,0.05)]">
-        {(["learn", "chat", "quiz"] as Tab[]).map((t) => (
-          <button
-            key={t}
-            onClick={() => setTab(t)}
-            className={`flex-1 flex items-center justify-center gap-1 sm:gap-2 py-2.5 sm:py-3.5 rounded-xl border-none font-bold text-[11px] sm:text-sm transition-all duration-300 cursor-pointer ${tab === t ? "text-white" : "text-[var(--text-muted)] hover:bg-[rgba(255,255,255,0.03)]"
-              }`}
-            style={{ background: tab === t ? color.bg : "transparent", boxShadow: tab === t ? `0 8px 24px ${color.glow}` : "none" }}
-          >
-            <span className="hidden xs:inline sm:inline">{t === "learn" ? "📖" : t === "chat" ? "🤖" : "🧠"}</span>
-            <span>{t === "learn" ? "Learn" : t === "chat" ? "Ask AI" : "Quiz"}</span>
-          </button>
-        ))}
+      {/* ── Tabs ────────────────────────────────────────────────── */}
+      <div
+        className="flex gap-1.5 mb-5 rounded-2xl border"
+        style={{
+          background: "rgba(255,255,255,0.04)",
+          borderColor: "rgba(255,255,255,0.05)",
+          padding: "0.375rem",
+        }}
+      >
+        {(["learn", "chat", "quiz"] as Tab[]).map((t) => {
+          const meta = TAB_META[t];
+          return (
+            <button
+              key={t}
+              onClick={() => setTab(t)}
+              className="flex-1 flex items-center justify-center font-bold border-none cursor-pointer transition-all duration-300"
+              style={{
+                gap: "clamp(0.25rem, 1.5vw, 0.5rem)",
+                padding: "clamp(0.5rem, 2vw, 0.875rem) 0.5rem",
+                borderRadius: "0.75rem",
+                fontSize: "clamp(0.72rem, 2.5vw, 0.875rem)",
+                background: tab === t ? color.bg : "transparent",
+                color: tab === t ? "#fff" : "var(--text-muted)",
+                boxShadow: tab === t ? `0 8px 24px ${color.glow}` : "none",
+              }}
+              aria-current={tab === t ? "page" : undefined}
+            >
+              <span aria-hidden="true">{meta.icon}</span>
+              <span>{meta.label}</span>
+            </button>
+          );
+        })}
       </div>
 
-      {/* Tab content */}
-      <div className="min-h-[400px]">
+      {/* ── Tab Content ─────────────────────────────────────────── */}
+      <div style={{ minHeight: "clamp(320px, 55vh, 520px)" }}>
+
+        {/* Learn */}
         {tab === "learn" && (
-          <div className="glass rounded-[20px] p-5 sm:p-8 md:p-10">
+          <div
+            className="glass rounded-[20px]"
+            style={{ padding: "clamp(1rem, 4vw, 2.5rem)" }}
+          >
             {loadingExplain && (
-              <div className="text-center py-16">
-                <div className="text-4xl sm:text-6xl animate-float mb-6">🤖</div>
-                <p className="text-[var(--text-secondary)] font-bold text-base sm:text-lg">Building your lesson…</p>
+              <div className="text-center" style={{ padding: "4rem 1rem" }}>
+                <div
+                  className="animate-float inline-block"
+                  style={{ fontSize: "clamp(2.5rem, 8vw, 4rem)", marginBottom: "1.5rem" }}
+                >
+                  🤖
+                </div>
+                <p
+                  className="font-bold"
+                  style={{
+                    color: "var(--text-secondary)",
+                    fontSize: "clamp(0.925rem, 3vw, 1.1rem)",
+                  }}
+                >
+                  Building your lesson…
+                </p>
               </div>
             )}
+
             {explainError && (
-              <div className="text-center py-12">
-                <p className="text-[#f87171] mb-6 font-bold text-sm sm:text-base">⚠️ {explainError}</p>
-                <button className="btn-primary" onClick={() => void fetchExplanation()}>Retry</button>
+              <div className="text-center" style={{ padding: "3rem 1rem" }}>
+                <p
+                  className="font-bold mb-6"
+                  style={{ color: "#f87171", fontSize: "clamp(0.85rem, 2.5vw, 1rem)" }}
+                >
+                  ⚠️ {explainError}
+                </p>
+                <button className="btn-primary" onClick={() => void fetchExplanation()}>
+                  Retry
+                </button>
               </div>
             )}
+
             {explanation && !loadingExplain && (
               <div>
-                <div className="flex justify-end mb-5 sm:mb-6">
+                {/* Read aloud */}
+                <div className="flex justify-end mb-5">
                   <button
                     onClick={() => {
                       window.speechSynthesis?.cancel();
                       const utt = new SpeechSynthesisUtterance(speakText);
-                      utt.lang = "en-IN"; utt.rate = 0.9;
+                      utt.lang = "en-IN";
+                      utt.rate = 0.9;
                       window.speechSynthesis?.speak(utt);
                     }}
-                    className="btn-secondary text-xs px-3 sm:px-4 py-2 flex items-center gap-2"
+                    className="btn-secondary flex items-center gap-2"
+                    style={{ fontSize: "0.8rem", padding: "0.4rem 0.875rem" }}
                   >
-                    🔊 <span className="hidden sm:inline">Read Lesson Aloud</span><span className="sm:hidden">Read Aloud</span>
+                    🔊 <span className="hidden sm:inline">Read Lesson Aloud</span>
+                    <span className="sm:hidden">Read Aloud</span>
                   </button>
                 </div>
+
+                {/* Content sections */}
                 {splitIntoSections(explanation).map((sec, idx) => {
                   const nepCfg = NEP_SECTIONS.find((s) => s.marker === sec.sectionKey);
                   if (nepCfg) {
                     return (
-                      <div key={idx} className="my-5 sm:my-8 rounded-2xl border p-4 sm:p-6 md:p-8" style={{ borderColor: nepCfg.border, background: nepCfg.bg }}>
-                        <div className="font-black text-[10px] sm:text-xs uppercase tracking-[0.1em] mb-3 sm:mb-4 flex items-center gap-2" style={{ color: nepCfg.color }}>
-                          {nepCfg.icon} {nepCfg.label}
+                      <div
+                        key={idx}
+                        className="rounded-2xl border animate-fade-in-up"
+                        style={{
+                          borderColor: nepCfg.border,
+                          background: nepCfg.bg,
+                          padding: "clamp(1rem, 3vw, 2rem)",
+                          marginBottom: "clamp(1rem, 3vw, 2rem)",
+                        }}
+                      >
+                        <div
+                          className="font-black uppercase flex items-center gap-2"
+                          style={{
+                            fontSize: "clamp(0.625rem, 1.8vw, 0.75rem)",
+                            letterSpacing: "0.1em",
+                            color: nepCfg.color,
+                            marginBottom: "clamp(0.625rem, 2vw, 1rem)",
+                          }}
+                        >
+                          <span>{nepCfg.icon}</span>
+                          <span>{nepCfg.label}</span>
                         </div>
                         <div className="prose prose-invert max-w-none">
                           <ReactMarkdown remarkPlugins={[remarkGfm]}>{sec.content}</ReactMarkdown>
@@ -258,7 +432,11 @@ export default function LearnClient({
                     );
                   }
                   return (
-                    <div key={idx} className="prose prose-invert max-w-none mb-5 sm:mb-6">
+                    <div
+                      key={idx}
+                      className="prose prose-invert max-w-none"
+                      style={{ marginBottom: "clamp(1rem, 3vw, 1.5rem)" }}
+                    >
                       <ReactMarkdown remarkPlugins={[remarkGfm]}>{sec.content}</ReactMarkdown>
                     </div>
                   );
@@ -268,36 +446,91 @@ export default function LearnClient({
           </div>
         )}
 
+        {/* Chat */}
         {tab === "chat" && (
-          <div className="glass rounded-[20px] p-4 sm:p-6 md:p-8">
+          <div
+            className="glass rounded-[20px]"
+            style={{ padding: "clamp(1rem, 3vw, 2rem)" }}
+          >
             <AIChat subject={subjectName} topic={topic.title} initialMessage={voiceInput} />
           </div>
         )}
 
+        {/* Quiz */}
         {tab === "quiz" && (
           <QuizCard subject={subjectName} topic={topic.title} topicId={topic.id} />
         )}
       </div>
 
-      {/* Prev / Next navigation */}
-      <div className="flex flex-col sm:flex-row justify-between items-stretch mt-8 sm:mt-10 gap-3 sm:gap-4">
+      {/* ── Prev / Next navigation ──────────────────────────────── */}
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: prevTopic && nextTopic ? "1fr 1fr" : prevTopic ? "1fr auto" : "auto 1fr",
+          gap: "clamp(0.625rem, 2vw, 1rem)",
+          marginTop: "clamp(2rem, 5vw, 2.5rem)",
+        }}
+      >
         {prevTopic ? (
-          <Link href={`/learn/${subjectSlug}/${prevTopic.id}`} className="no-underline flex-1">
-            <div className="glass glass-hover rounded-2xl p-4 sm:p-5 h-full">
-              <p className="text-[10px] sm:text-xs text-[var(--text-muted)] uppercase tracking-wider font-bold mb-1.5">← Previous</p>
-              <p className="font-black text-sm sm:text-base text-[var(--text-primary)] line-clamp-2">{prevTopic.title}</p>
+          <Link href={`/learn/${subjectSlug}/${prevTopic.id}`} className="no-underline">
+            <div className="glass glass-hover rounded-2xl h-full" style={{ padding: "clamp(0.875rem, 3vw, 1.25rem)" }}>
+              <p
+                className="font-bold uppercase"
+                style={{ fontSize: "0.65rem", letterSpacing: "0.08em", color: "var(--text-muted)", marginBottom: "0.375rem" }}
+              >
+                ← Previous
+              </p>
+              <p
+                className="font-black text-[var(--text-primary)]"
+                style={{
+                  fontSize: "clamp(0.8rem, 2.5vw, 0.9375rem)",
+                  display: "-webkit-box",
+                  WebkitLineClamp: 2,
+                  WebkitBoxOrient: "vertical" as const,
+                  overflow: "hidden",
+                }}
+              >
+                {prevTopic.title}
+              </p>
             </div>
           </Link>
-        ) : <div className="hidden sm:block flex-1" />}
+        ) : (
+          /* Empty spacer when no prev */
+          <div />
+        )}
 
         {nextTopic ? (
-          <Link href={`/learn/${subjectSlug}/${nextTopic.id}`} className="no-underline flex-1">
-            <div className="glass glass-hover rounded-2xl p-4 sm:p-5 h-full text-right border-r-4" style={{ borderColor: color.bg }}>
-              <p className="text-[10px] sm:text-xs text-[var(--text-muted)] uppercase tracking-wider font-bold mb-1.5">Next Topic →</p>
-              <p className="font-black text-sm sm:text-base text-[var(--text-primary)] line-clamp-2">{nextTopic.title}</p>
+          <Link href={`/learn/${subjectSlug}/${nextTopic.id}`} className="no-underline">
+            <div
+              className="glass glass-hover rounded-2xl h-full text-right border-r-4"
+              style={{
+                padding: "clamp(0.875rem, 3vw, 1.25rem)",
+                borderColor: color.bg,
+              }}
+            >
+              <p
+                className="font-bold uppercase"
+                style={{ fontSize: "0.65rem", letterSpacing: "0.08em", color: "var(--text-muted)", marginBottom: "0.375rem" }}
+              >
+                Next Topic →
+              </p>
+              <p
+                className="font-black text-[var(--text-primary)]"
+                style={{
+                  fontSize: "clamp(0.8rem, 2.5vw, 0.9375rem)",
+                  display: "-webkit-box",
+                  WebkitLineClamp: 2,
+                  WebkitBoxOrient: "vertical" as const,
+                  overflow: "hidden",
+                }}
+              >
+                {nextTopic.title}
+              </p>
             </div>
           </Link>
-        ) : <div className="hidden sm:block flex-1" />}
+        ) : (
+          <div />
+        )}
       </div>
     </div>
   );

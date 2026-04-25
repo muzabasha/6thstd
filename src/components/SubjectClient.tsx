@@ -34,35 +34,46 @@ export default function SubjectClient({ subject }: { subject: SubjectData; subje
   let topicIndex = 0;
 
   return (
-    <div className="max-w-[960px] mx-auto px-4 sm:px-6 lg:px-8 py-6 pb-16">
+    <div className="page-wrapper-md">
 
-      {/* Back breadcrumb */}
-      <div className="flex items-center gap-2 mb-6 text-sm">
-        <Link href="/" className="btn-secondary px-3 py-1.5 text-xs no-underline">
+      {/* ── Back breadcrumb ─────────────────────────────────── */}
+      <div className="flex items-center gap-2 mb-6" style={{ fontSize: "0.875rem" }}>
+        <Link href="/" className="btn-secondary no-underline" style={{ padding: "0.35rem 0.875rem", fontSize: "0.8rem" }}>
           ← Home
         </Link>
-        <span className="text-[var(--text-muted)]">/</span>
-        <span className="text-[var(--text-secondary)] font-bold">{subject.name}</span>
+        <span style={{ color: "var(--text-muted)" }}>/</span>
+        <span style={{ color: "var(--text-secondary)", fontWeight: 700 }}>{subject.name}</span>
       </div>
 
-      {/* Subject hero */}
-      <div className="glass rounded-2xl p-6 sm:p-8 mb-8 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-40 h-40 opacity-[0.07] rounded-bl-[80px] pointer-events-none"
-          style={{ background: color.bg }} />
+      {/* ── Subject hero ─────────────────────────────────────── */}
+      <div className="glass rounded-2xl relative overflow-hidden mb-8" style={{ padding: "clamp(1.25rem, 4vw, 2rem)" }}>
+        {/* Color sweep */}
+        <div
+          className="absolute top-0 right-0 opacity-[0.07] rounded-bl-[80px] pointer-events-none"
+          style={{ width: "clamp(100px, 20vw, 160px)", height: "clamp(100px, 20vw, 160px)", background: color.bg }}
+        />
 
         <div className="flex flex-col sm:flex-row items-center sm:items-start gap-5 mb-6 relative z-10">
           <div
-            className="w-16 h-16 rounded-2xl flex items-center justify-center text-3xl shrink-0"
-            style={{ background: color.bg, boxShadow: `0 8px 28px ${color.glow}` }}
+            className="rounded-2xl flex items-center justify-center shrink-0"
+            style={{
+              width: "clamp(3.5rem, 12vw, 4.5rem)",
+              height: "clamp(3.5rem, 12vw, 4.5rem)",
+              fontSize: "clamp(1.5rem, 5vw, 2rem)",
+              background: color.bg,
+              boxShadow: `0 8px 28px ${color.glow}`,
+            }}
           >
             {ICONS[subject.icon] ?? "📖"}
           </div>
           <div className="text-center sm:text-left">
-            <h1 className="font-['Poppins'] font-extrabold mb-1"
-              style={{ fontSize: "clamp(1.5rem, 5vw, 2.2rem)" }}>
+            <h1
+              className="font-['Poppins'] font-extrabold mb-1"
+              style={{ fontSize: "clamp(1.4rem, 5vw, 2.2rem)" }}
+            >
               {subject.name}
             </h1>
-            <p className="text-[var(--text-muted)] text-sm font-medium">
+            <p style={{ color: "var(--text-muted)", fontSize: "0.875rem", fontWeight: 600 }}>
               {subject.chapters.length} chapters · {totalTopics} topics
             </p>
           </div>
@@ -71,16 +82,44 @@ export default function SubjectClient({ subject }: { subject: SubjectData; subje
         <ProgressBar percent={pct} color={color.bg} label="Overall progress" />
       </div>
 
-      {/* Chapters */}
-      <div className="space-y-10">
-        {subject.chapters.map((chapter) => (
+      {/* ── Chapters ─────────────────────────────────────────── */}
+      <div style={{ display: "flex", flexDirection: "column", gap: "2.5rem" }}>
+        {subject.chapters.map((chapter, chIdx) => (
           <div key={chapter.title}>
-            <h2 className="font-bold text-base sm:text-lg mb-4 flex items-center gap-2"
-              style={{ color: color.text }}>
-              <span className="w-2 h-2 rounded-full shrink-0" style={{ background: color.bg }} />
-              {chapter.title}
-            </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {/* Chapter heading */}
+            <div className="chapter-heading" style={{ color: color.text }}>
+              {/* Chapter number badge */}
+              <span
+                className="flex items-center justify-center font-black shrink-0"
+                style={{
+                  width: "1.75rem",
+                  height: "1.75rem",
+                  borderRadius: "50%",
+                  background: color.bg,
+                  color: "#fff",
+                  fontSize: "0.7rem",
+                  boxShadow: `0 4px 12px ${color.glow}`,
+                }}
+              >
+                {chIdx + 1}
+              </span>
+              <span className="truncate">{chapter.title}</span>
+              <span
+                className="ml-auto shrink-0 font-bold"
+                style={{ fontSize: "0.7rem", color: "var(--text-muted)", whiteSpace: "nowrap" }}
+              >
+                {chapter.topics.length} topic{chapter.topics.length !== 1 ? "s" : ""}
+              </span>
+            </div>
+
+            {/* Topic cards grid */}
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 260px), 1fr))",
+                gap: "clamp(0.625rem, 2vw, 0.875rem)",
+              }}
+            >
               {chapter.topics.map((t) => {
                 const tp = prog[t.id];
                 topicIndex++;
